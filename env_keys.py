@@ -11,7 +11,7 @@ def api_key(name: str) -> str:
     return os.getenv(name)
 
 
-if __name__ == '__main__':
-    TEST_API_KEY = api_key('TEST_API_KEY')
+if __name__ == "__main__":
+    TEST_API_KEY = api_key("TEST_API_KEY")
 
     print(TEST_API_KEY)
