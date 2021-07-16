@@ -3,4 +3,5 @@
  
  - Uncompromising .gitignore
  - env_keys.py for handling api keys
- - [Python black](https://github.com/psf/black) for formatting 
+ - discord_notifications.py for easy notifications 
+ - [Python black](https://github.com/psf/black) for formatting
