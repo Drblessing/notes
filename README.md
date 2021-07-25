@@ -4,7 +4,7 @@
 
 [Install anaconda](https://www.anaconda.com/products/individual)
 
-####Upgrading base env
+#### Upgrading base env
 
 On your terminal, run:
 
@@ -21,7 +21,7 @@ $ virtualenv --python=$pythonversion $name
 $ source $name/bin/activate
 ```
 
-####Dependency management
+#### Dependency management
 
 Building dependency list:
 
