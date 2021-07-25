@@ -1,0 +1,13 @@
+boto3
+flask-bootstrap4
+flask-login
+flask-sqlalchemy
+flask-wtf
+gunicorn
+jupyter
+matplotlib
+pip-chill
+pytest
+python-dotenv
+sphinx
+virtualenv
