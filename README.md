@@ -102,10 +102,10 @@ If you're creating a crypto rugpull, consider a `.finance` domain.
 
 To point your new shiny domain name to your eb environment: 
 
-- Go to AWS Route 53 > Hosted Zone > Clock domain name
+- Go to AWS Route 53 > Hosted Zone > Domain name
 - Create Record > Wizard Create > Simple Routing 
 - Define Simple Record > Value/Route Traffic to > Alias to Elastic Beanstalk environmnet
-- Click your region > Click your eb env > Define simple record > Create records!
+- Click your region > Click your eb env > Define simple record > Create records
 
 #### HTTPS (port 443) 
 
@@ -141,7 +141,7 @@ Now go to your [EC2 instance](https://console.aws.amazon.com/ec2/v2) to force ht
 
 ### Public domain
 
-This project is in the worldwide [public domain](LICENSE.md). As stated in the unlicense:
+This project is in the worldwide [public domain](LICENSE). As stated in the unlicense:
 
 > Anyone is free to copy, modify, publish, use, compile, sell, or
 distribute this software, either in source code form or as a compiled
