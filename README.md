@@ -71,9 +71,9 @@ Or, build a [Docker image](Dockerfile), and deploy to [aws elastic beanstalk](ht
 
 Manually zip your files with no parent directory and upload directly to eb environments in your applications.
 
-For Flask envs, elastic beanstalk searches launches from `application` flask object in the root directory.
+For Flask envs, elastic beanstalk launches from `application` flask object in the root directory.
 
-For Docker envs, elastic beanstalk searchers launches from `Dockerfile` and `Dockerrun.aws.json` in the root directory. Implement a WSGI.
+For Docker envs, elastic beanstalk launches from `Dockerfile` and `Dockerrun.aws.json` in the root directory. Implement a WSGI.
 
 #### [EB CLI](https://github.com/aws/aws-elastic-beanstalk-cli-setup)
 
