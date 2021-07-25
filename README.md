@@ -53,7 +53,7 @@ Code your app.
 
 Add [Google analytics](https://analytics.google.com/), here's an [example script](ga.html).
 
-Put this at the start of your html files:
+Put this at the start of your html templates:
 
 ```html
 {% block head %}
