@@ -41,6 +41,12 @@ Installing dependencies:
 $ pip install -r requirements.txt
 ```
 
+Adding new environments to jupyter
+```shell
+$ (venv) pip install ipykernel
+$ (venv) ipython kernel install --user --name=envname
+```
+
 ## Website quickstart
 
 Create a new env and install packages:
