@@ -21,7 +21,7 @@ For temporal interval processes use crontab
 For everything else use tmux:
 
 ```bash
-$ sudo apt-get install tmux
+$ sudo yum install tmux
 $ tmux
 $ tmux detach
 $ tmux attach
