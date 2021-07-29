@@ -6,7 +6,9 @@ Free t2.micro
 
 Create new ssh key and put it in your .ssh folder
 
-sudo yum install git
+`sudo yum install git`
+
+`sudo yum instal gcc`
 
 ## Connecting to jupyter notebook
 ```bash
