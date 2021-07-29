@@ -6,6 +6,8 @@ Free t2.micro
 
 Create new ssh key and put it in your .ssh folder
 
+sudo yum install git
+
 ## Connecting to jupyter notebook
 ```bash
 $ ssh -i ~/.ssh/my-private-key.pem user-name@remote-hostname
