@@ -138,6 +138,21 @@ Now go to your [EC2 instance](https://console.aws.amazon.com/ec2/v2) to force ht
 - Add action > Redirect to... > https port 443
 - Update
 
+### IPFS Node
+
+```bash
+wget https://dist.ipfs.io/go-ipfs/v0.7.0/go-ipfs_v0.7.0_linux-amd64.tar.gz
+tar -xvzf go-ipfs_v0.7.0_linux-amd64.tar.gz
+cd go-ipfs
+bash install.sh
+ipfs --version
+ipfs init
+ipfs daemon
+```
+
+### Eth node
+
+
 ## Other
  
  - [Uncompromising .gitignore](.gitignore)
