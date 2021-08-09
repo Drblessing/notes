@@ -47,6 +47,11 @@ $ (venv) pip install ipykernel
 $ (venv) ipython kernel install --user --name=envname
 ```
 
+Deal with jupyter kernel errors
+```shell
+$ jupyter kernelspec list
+```
+
 ## Website quickstart
 
 Create a new env and install packages:
