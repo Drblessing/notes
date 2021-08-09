@@ -50,6 +50,7 @@ $ (venv) ipython kernel install --user --name=envname
 Deal with jupyter kernel errors
 ```shell
 $ jupyter kernelspec list
+$ jupyter kernelspec remove <kernel-name>
 ```
 
 ## Website quickstart
