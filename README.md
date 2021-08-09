@@ -44,7 +44,8 @@ $ pip install -r requirements.txt
 Adding new environments to jupyter
 ```shell
 $ (venv) pip install ipykernel
-$ (venv) ipython kernel install --user --name=envname
+$ (venv) pip install ipython 
+$ (venv) python -m ipykernel install --user --name=my-virtualenv-name
 ```
 
 Deal with jupyter kernel errors
