@@ -1,1 +1,1 @@
-
+from ..package2 import b

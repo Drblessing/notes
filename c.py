@@ -1,8 +1,6 @@
 import package1.a
 import sys
-import requests
 
-response = requests.get("https://randomuser.me/api")
 
 data = response.json()
 
