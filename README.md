@@ -183,4 +183,4 @@ means.
 
 ### Contact 
 
-If you'd like to contact me, please connect with me on [Twitter](twitter.com/dbless9). Thank you!
+If you'd like to contact me, please connect with me on [Twitter](https://twitter.com/dbless9). Thank you!
