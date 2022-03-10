@@ -2,7 +2,11 @@
 
 ## Python quickstart 
 
-[Install anaconda](https://www.anaconda.com/products/individual)
+### Install Python
+
+- [Install anaconda](https://www.anaconda.com/products/individual)
+- Homebrew
+- venv
 
 #### Upgrading base env
 
