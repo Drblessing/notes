@@ -179,4 +179,4 @@ means.
 
 ### Contact 
 
-If you'd like to contact me, please connect with me on [LinkedIn](https://www.linkedin.com/in/daniel-blessing-122806137/). Thank you!
+If you'd like to contact me, please connect with me on [Twitter](twitter.com/dbless9). Thank you!
