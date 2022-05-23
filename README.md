@@ -1,5 +1,11 @@
 # Utils
 
+## Cool Stuff
+- Deepsource
+- Blockchair
+- https://scrape.do/
+
+
 ## Python quickstart 
 
 ### Install Python
