@@ -1,12 +1,16 @@
 # Utils
 
 ## Cool Stuff
-- Deepsource
+
+- Deepsource / Deepscan
 - Blockchair
 - https://scrape.do/
 
+## HTTP Request Tester
 
-## Python quickstart 
+https://http.dog/
+
+## Python quickstart
 
 ### Install Python
 
@@ -39,26 +43,29 @@ Building dependency list:
 $ pip install pip-chill
 $ pip-chill > requirements.txt
 ```
+
 Or, if you want it without version numbers:
 
 ```shell
 $ pip-chill --no-version > requirements.txt
 ```
 
-Installing dependencies: 
+Installing dependencies:
 
 ```shell
 $ pip install -r requirements.txt
 ```
 
 Adding new environments to jupyter
+
 ```shell
 $ (venv) pip install ipykernel
-$ (venv) pip install ipython 
+$ (venv) pip install ipython
 $ (venv) python -m ipykernel install --user --name=my-virtualenv-name
 ```
 
 Deal with jupyter kernel errors
+
 ```shell
 $ jupyter kernelspec list
 $ jupyter kernelspec remove <kernel-name>
@@ -79,12 +86,10 @@ Add [Google analytics](https://analytics.google.com/), here's an [example script
 Put this at the start of your html templates:
 
 ```html
-{% block head %}
-{{ super() }}
-{% include "ga.html" %}
-{% endblock %}
+{% block head %} {{ super() }} {% include "ga.html" %} {% endblock %}
 ```
-Deploy flask directly to [aws elastic beanstalk](https://aws.amazon.com/elasticbeanstalk/), [pythonanywhere](https://www.pythonanywhere.com/), or [more options here](https://flask.palletsprojects.com/en/2.0.x/deploying/index.html). 
+
+Deploy flask directly to [aws elastic beanstalk](https://aws.amazon.com/elasticbeanstalk/), [pythonanywhere](https://www.pythonanywhere.com/), or [more options here](https://flask.palletsprojects.com/en/2.0.x/deploying/index.html).
 
 Or, build a [Docker image](Dockerfile), and deploy to [aws elastic beanstalk](https://aws.amazon.com/elasticbeanstalk/) or [more options here](https://geekflare.com/docker-hosting-platforms/).
 
@@ -100,37 +105,37 @@ For Docker envs, elastic beanstalk launches from `Dockerfile` and `Dockerrun.aws
 
 #### [EB CLI](https://github.com/aws/aws-elastic-beanstalk-cli-setup)
 
-For big brains, manage eb from the command line. 
+For big brains, manage eb from the command line.
 
-Build a `deploy.sh` script and requires a `docker-compose.yaml` file.  
+Build a `deploy.sh` script and requires a `docker-compose.yaml` file.
 
 #### Other Deployment methods
 
-You can also deploy environments from s3 buckets or private/public Docker repositories. 
+You can also deploy environments from s3 buckets or private/public Docker repositories.
 
-### Elastic Beanstalk Configuration  
+### Elastic Beanstalk Configuration
 
-Environments > Configuration on sidebar 
+Environments > Configuration on sidebar
 
-To manage maximum scaling up, edit the max field in capacity. If you set max to 1 you can limit potential max cost. 
-For cores per instance, check [here](https://aws.amazon.com/ec2/physicalcores/). For gunicorn, roughly # workers = # cores * 2 + 1
+To manage maximum scaling up, edit the max field in capacity. If you set max to 1 you can limit potential max cost.
+For cores per instance, check [here](https://aws.amazon.com/ec2/physicalcores/). For gunicorn, roughly # workers = # cores \* 2 + 1
 
 #### Better Domain
 
 For last-minute maximal convenience, purchase a domain from Amazon Route 53 [here](https://console.aws.amazon.com/route53/v2).
 
-`.io` domains are in vogue now. 
+`.io` domains are in vogue now.
 
-If you're creating a crypto rugpull, consider a `.finance` domain. 
+If you're creating a crypto rugpull, consider a `.finance` domain.
 
-To point your new shiny domain name to your eb environment: 
+To point your new shiny domain name to your eb environment:
 
 - Go to AWS Route 53 > Hosted Zone > Domain name
-- Create Record > Wizard Create > Simple Routing 
+- Create Record > Wizard Create > Simple Routing
 - Define Simple Record > Value/Route Traffic to > Alias to Elastic Beanstalk environmnet
 - Click your region > Click your eb env > Define simple record > Create records
 
-#### HTTPS (port 443) 
+#### HTTPS (port 443)
 
 First we need a certificate. Go to [AWS certificate manager](https://console.aws.amazon.com/acm):
 
@@ -141,7 +146,7 @@ First we need a certificate. Go to [AWS certificate manager](https://console.aws
 
 Now go back to eb console. Go to load balancer configuration:
 
-- Add listener on 443 with HTTPS protocol 
+- Add listener on 443 with HTTPS protocol
 - Click apply on bottom right of page
 
 Now go to your [EC2 instance](https://console.aws.amazon.com/ec2/v2) to force https connections:
@@ -151,7 +156,7 @@ Now go to your [EC2 instance](https://console.aws.amazon.com/ec2/v2) to force ht
 - Click listeners
 - Select port 80
 - Edit
-- Delete default action 
+- Delete default action
 - Add action > Redirect to... > https port 443
 - Update
 
@@ -169,24 +174,22 @@ ipfs daemon
 
 ### Eth node
 
-
 ## Other
- 
- - [Uncompromising .gitignore](.gitignore)
- - [env_keys.py](env_keys.py) for handling api keys
- - [discord_notifications.py](discord_notifications.py) for easy notifications 
- - [Python black](https://github.com/psf/black) for formatting
+
+- [Uncompromising .gitignore](.gitignore)
+- [env_keys.py](env_keys.py) for handling api keys
+- [discord_notifications.py](discord_notifications.py) for easy notifications
+- [Python black](https://github.com/psf/black) for formatting
 
 ### Public domain
 
 This project is in the worldwide [public domain](LICENSE). As stated in the unlicense:
 
 > Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+> distribute this software, either in source code form or as a compiled
+> binary, for any purpose, commercial or non-commercial, and by any
+> means.
 
-
-### Contact 
+### Contact
 
 If you'd like to contact me, please connect with me on [Twitter](https://twitter.com/dbless9). Thank you!
