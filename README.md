@@ -11,6 +11,8 @@ My mega awesome repo of all development and related tips and tricks I've learned
 
 This repo is mainly for myself, though if you read it and get some value from it that would make me smile. Furthermore, if you have some useful tips and tricks from your dev journey, please send a PR!
 
+Info Styled as a FAQ
+
 ## Cool Stuff
 
 - Deepsource / Deepscan
