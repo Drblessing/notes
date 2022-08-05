@@ -1,5 +1,16 @@
 # Utils
 
+My mega awesome repo of all development and related tips and tricks I've learned along the way, such as:
+
+- Current IDE: VSCode
+- Current Laptop: MacBook Pro (16-inch, 2021)
+- Laptop Setup: Apps, Virus Protection, Workflows, Keyboard Shortcuts, etc.
+- IDE Setup: VSCode Favorite Extensions, Default Keyboard Shortcuts, Snippets, Custom Keyboard Shortcuts, etc.
+- Full stack Dev Tips: NextJS, Typescript, etc.
+- Blockchain Dev Tips: Crypto tips and tricks
+
+This repo is mainly for myself, though if you read it and get some value from it that would make me smile. Furthermore, if you have some useful tips and tricks from your dev journey, please send a PR!
+
 ## Cool Stuff
 
 - Deepsource / Deepscan
