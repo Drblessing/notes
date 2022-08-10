@@ -1,5 +1,7 @@
 # IDE
 
+## Keyboard Shortcuts VSCode
+Fold All Regions = Cmd+K -> Cmd+0
 ## [Prettier + ESLint](https://www.robinwieruch.de/prettier-eslint/)
 
 Prettier handles form, ESLint handles substance.
