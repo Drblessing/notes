@@ -289,3 +289,35 @@ Transferring from 0x70997970c51812dc3a010c7d01b50e0d17dc79c8 to 0x3c44cdddb6a900
 ```
 
 
+Deployed to mainnet is not technically different then deploying to local hardhat network or test networks. We first add the networks we want to deploy to and our private key of the account deploying in our config file:
+
+```
+require("@nomicfoundation/hardhat-toolbox");
+
+// Go to https://www.alchemyapi.io, sign up, create
+// a new App in its dashboard, and replace "KEY" with its key
+const ALCHEMY_API_KEY = "KEY";
+
+// Replace this private key with your Goerli account private key
+// To export your private key from Metamask, open Metamask and
+// go to Account Details > Export Private Key
+// Beware: NEVER put real Ether into testing accounts
+const GOERLI_PRIVATE_KEY = "YOUR GOERLI PRIVATE KEY";
+
+module.exports = {
+  solidity: "0.8.9",
+  networks: {
+    goerli: {
+      url: `https://eth-goerli.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
+      accounts: [GOERLI_PRIVATE_KEY]
+    }
+  }
+};
+```
+
+Then run: 
+```
+npx hardhat run scripts/deploy.js --network goerli
+```
+
+
