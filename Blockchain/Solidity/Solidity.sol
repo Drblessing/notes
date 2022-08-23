@@ -20,3 +20,21 @@ contract MyContract is Ownable {
         // only the owner can call specialThing()!
     }
 }
+
+// WARNING: TONS OF CARE IS NEEDED
+// Destroyable
+// https://github.com/ConsenSysMesh/openzeppelin-solidity/blob/master/contracts/lifecycle/Destructible.sol
+contract Destructible is Ownable {
+    constructor() public payable {}
+
+    /**
+     * @dev Transfers the current balance to the owner and terminates the contract.
+     */
+    function destroy() public onlyOwner {
+        selfdestruct(owner);
+    }
+
+    function destroyAndSend(address _recipient) public onlyOwner {
+        selfdestruct(_recipient);
+    }
+}
