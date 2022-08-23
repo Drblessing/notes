@@ -38,3 +38,11 @@ contract Destructible is Ownable {
         selfdestruct(_recipient);
     }
 }
+
+// Make address payable
+// https://ethereum.stackexchange.com/questions/65693/how-to-cast-address-to-address-payable-in-solidity-0-5-0
+address addr = 0x****;
+address payable wallet = payable(addr);
+
+MyContract addr = MyContract(0x****);
+address payable wallet = payable(address(addr));
