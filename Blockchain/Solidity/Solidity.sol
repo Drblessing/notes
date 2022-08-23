@@ -24,20 +24,24 @@ contract MyContract is Ownable {
 // WARNING: TONS OF CARE IS NEEDED
 // Destroyable
 // https://github.com/ConsenSysMesh/openzeppelin-solidity/blob/master/contracts/lifecycle/Destructible.sol
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.16;
+import "@openzeppelin/contracts/access/Ownable.sol";
 contract Destructible is Ownable {
-    constructor() public payable {}
-
+    address payable payableOwner = payable(owner());
+    constructor() payable {
+    }
     /**
      * @dev Transfers the current balance to the owner and terminates the contract.
      */
     function destroy() public onlyOwner {
-        selfdestruct(owner);
+        selfdestruct(payableOwner);
     }
-
-    function destroyAndSend(address _recipient) public onlyOwner {
+    function destroyAndSend(address payable _recipient) public onlyOwner {
         selfdestruct(_recipient);
     }
 }
+
 
 // Make address payable
 // https://ethereum.stackexchange.com/questions/65693/how-to-cast-address-to-address-payable-in-solidity-0-5-0
