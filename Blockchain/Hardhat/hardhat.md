@@ -1,12 +1,17 @@
 # Hardhat
+
+## Installing
+
 Install
+
 ```
 npm install --save-dev hardhat
 npx hardhat
 Create a typescript project
 npm install --save-dev @nomicfoundation/hardhat-toolbox
 ```
-Hardhat-toolbox includes the recommended plugins: 
+
+Hardhat-toolbox includes the recommended plugins:
 
 ```
 // hardhat.config.js
@@ -18,18 +23,65 @@ module.exports = {
 };
 ```
 
-Hardhat is based on tasks and plugins, to get tasks, run: 
+## General
+
+Hardhat is based on tasks and plugins, to get tasks, run:
+
 ```
 npx hardhat
 ```
 
-To comiple: 
+To compile:
+
 ```
 npx hardhat compile
 ```
 
+## Verifying In Deploy Script
+
+Config
+
+```
+import { HardhatUserConfig } from 'hardhat/config';
+import '@nomicfoundation/hardhat-toolbox';
+import 'dotenv/config';
+import '@nomiclabs/hardhat-etherscan';
+
+const PRIVATE_KEY: string = process.env.PRIVATE_KEY ?? 'default';
+const POLYGON_SCAN: string = process.env.POLYGON_SCAN_API_KEY ?? 'default';
+const config: HardhatUserConfig = {
+  defaultNetwork: 'hardhat',
+  networks: {
+    hardhat: {},
+    matic: {
+      url: 'https://rpc-mumbai.maticvigil.com',
+      accounts: [PRIVATE_KEY],
+    },
+    fork_mumbai: {
+      url: 'https://polygon-mumbai.g.alchemy.com/v2/BNUuST5J0QnWZ47NhzBJOzsFSnl7BXKN',
+      accounts: [PRIVATE_KEY],
+    },
+  },
+  etherscan: {
+    apiKey: { polygonMumbai: POLYGON_SCAN },
+  },
+  solidity: '0.8.16',
+};
+
+export default config;
+```
+
+API key needs to go in etherscan.
+
+## Forking EVM net
+
+To fork an evm net, we need to use an acrhive node like Alchemy to fork the state of the current main net and then test functions
+
+## Testing
+
 Testing happens with ethers.js and Mocha.
 We create a directory called `test`, and write some example test using `Chai`, a JavaScript assertion library:
+
 ```
 const { expect } = require("chai");
 
@@ -46,7 +98,9 @@ describe("Token contract", function () {
   });
 });
 ```
+
 To send transactions and use multiple accounts:
+
 ```
 // ...previous tests ...
   it("Should transfer tokens between accounts", async function() {
@@ -112,7 +166,8 @@ describe("Token contract", function () {
 });
 ```
 
-Full test suite: 
+Full test suite:
+
 ```
 // This is an example test file. Hardhat will run every *.js file in `test/`,
 // so feel free to add new ones.
@@ -235,7 +290,8 @@ describe("Token contract", function () {
 });
 ```
 
-Output: 
+Output:
+
 ```
 $ npx hardhat test
 
@@ -250,8 +306,10 @@ $ npx hardhat test
 
 
   5 passing (1s)
-  ```
+```
+
 You can add console.log statements which will output to the console on nodes and during test:
+
 ```
 function transfer(address to, uint256 amount) external {
     require(balances[msg.sender] >= amount, "Not enough tokens");
@@ -288,7 +346,6 @@ Transferring from 0x70997970c51812dc3a010c7d01b50e0d17dc79c8 to 0x3c44cdddb6a900
   5 passing (2s)
 ```
 
-
 Deployed to mainnet is not technically different then deploying to local hardhat network or test networks. We first add the networks we want to deploy to and our private key of the account deploying in our config file:
 
 ```
@@ -315,9 +372,8 @@ module.exports = {
 };
 ```
 
-Then run: 
+Then run:
+
 ```
 npx hardhat run scripts/deploy.js --network goerli
 ```
-
-
