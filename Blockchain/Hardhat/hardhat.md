@@ -73,9 +73,45 @@ export default config;
 
 API key needs to go in etherscan.
 
+Then, the deployment script:
+
+```
+import { ethers } from 'hardhat';
+import hre from 'hardhat';
+
+const main = async () => {
+  const [owner, addr1, addr2] = await ethers.getSigners();
+  const contractName = 'ProgramVRFConsumer';
+  const contractFactory = await ethers.getContractFactory(contractName);
+
+  const contractInstance = await contractFactory.deploy({});
+  await contractInstance.deployTransaction.wait(5);
+  console.log('Contract instance deployed to:', contractInstance.address);
+
+  await hre.run('verify:verify', {
+    network: 'matic',
+    address: contractInstance.address,
+  });
+};
+```
+
+We use `hre.run('verify'...)` after 5 confirmations with `.wait(5)`
+
+Arguments to verify
+
+    network: 'matic',
+    contract: 'contracts/utils/PolygonVRFConfig.sol:PolygonVRFConfig',
+    address: contractInstance.address,
+
+Need to specify which contract when we use Inheritance because it doesn't know which contract was deployed
+
 ## Forking EVM net
 
 To fork an evm net, we need to use an acrhive node like Alchemy to fork the state of the current main net and then test functions
+
+## Debugging
+
+Try `npx hardhat clean` to fix JSON errors with artifacts and stuff
 
 ## Testing
 
