@@ -39,6 +39,8 @@ npx hardhat compile
 
 ## Verifying In Deploy Script
 
+https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan#complex-arguments
+
 Config
 
 ```
@@ -102,6 +104,19 @@ Arguments to verify
     network: 'matic',
     contract: 'contracts/utils/PolygonVRFConfig.sol:PolygonVRFConfig',
     address: contractInstance.address,
+
+Constructor Variables:
+
+```
+import { constructorArguments } from './arguments';
+export const constructorArguments = [1327];
+  await hre.run('verify:verify', {
+    network: 'matic',
+    contract: 'contracts/utils/SuperConsumer.sol',
+    address: contractInstance.address,
+    constructorArguments,
+  });
+```
 
 Need to specify which contract when we use Inheritance because it doesn't know which contract was deployed
 
