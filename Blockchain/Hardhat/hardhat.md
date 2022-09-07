@@ -23,6 +23,13 @@ module.exports = {
 };
 ```
 
+## Install chainlink and openzeppelin contracts
+
+```
+npm i @chainlink/contracts
+npm i @openzeppelin/contracts
+```
+
 ## General
 
 Hardhat is based on tasks and plugins, to get tasks, run:
