@@ -32,7 +32,7 @@ contract fooContract is fooOwned {
         // Logic
     }
 }
-```
+``` 
 
 Explicit Constructor in contract init
 

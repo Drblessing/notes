@@ -128,6 +128,57 @@ To fork an evm net, we need to use an acrhive node like Alchemy to fork the stat
 
 Try `npx hardhat clean` to fix JSON errors with artifacts and stuff
 
+## Complex Deploy and contract interaction strips
+
+```
+const getTheAbi = (name: string) => {
+  try {
+    const dir = path.resolve(
+      __dirname,
+      `./artifacts/contracts/${name}.sol/${name}.json`
+    );
+    const file = fs.readFileSync(dir.replace('/scripts', ''), 'utf8');
+    const json = JSON.parse(file);
+    const abi = json.abi;
+    return abi;
+  } catch (e) {
+    console.log(`e`, e);
+  }
+};
+
+const send_transactions = async (consumerAddress: any) => {
+  const [owner] = await ethers.getSigners();
+  const abi = getTheAbi('PolygonVRF');
+  const vrf = new ethers.Contract(consumerAddress, abi, owner);
+  await vrf.requestRandomWords();
+};
+
+const addConsumer = async (address: any) => {
+  const [owner] = await ethers.getSigners();
+  const abi = getTheAbi('VRFSubscriber');
+  const vrf = new ethers.Contract(
+    '0xda3560218d7f9fd9cfe35568011d4518f8f4c26c',
+    abi,
+    owner
+  );
+  await vrf.addConsumer(address);
+};
+
+const workflow = async () => {
+  const subAddress = await main();
+
+  console.log(subAddress, typeof subAddress);
+  // await addConsumer(subAddress);
+  // await send_transactions('0x01b411be1B366669207717960684ac1789e41964');
+};
+
+workflow().catch((error) => {
+  console.error(error);
+  console.log('ERROR DEPLOY');
+  process.exitCode = 1;
+});
+```
+
 ## Testing
 
 Testing happens with ethers.js and Mocha.
