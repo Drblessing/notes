@@ -10,6 +10,8 @@ Sync with your existing Github VSCode profile to automatically install extension
 
 
 
+## Running python 
 
+To run python on VSCode.dev, you need to connect to a Jupyter notebook server, and run the jupyter notebook. This can be a local jupyter notebook server, or an online hosted one. 
 
 
