@@ -1,6 +1,6 @@
 import discord
 import asyncio
-from env_keys import api_key
+from Python.env_keys import api_key
 
 DISCORD_BOT_TOKEN = api_key("discord_bot_token")
 
