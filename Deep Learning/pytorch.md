@@ -26,3 +26,7 @@ Can set dtype with `dtype=`
 Tensors of the same shape can use artihemtic operators together, or similar shapes can broadcast operations
 
 Tensors have over 300 operations that can be performed on them: Arhitmetic, Trigonmetric, Bitwise XOR, Det, SVD. Imagine a general model that determines the arthimetic calculations, what unintuitive patterns would it find? Also, hashing and zk technologies use XOR operations, could they be used in tensors or deep learning somehow? Could a neural network do stuff with hashes, ethereum transactions, etc.?
+
+You can specify the output of a tensor operation with an already initalized tensor with the `out` parameter, which does not allocate new memory, or perform operations inplace with a `_` after the operation name.
+
+As with any object in python, assigning a variable to it does not copy it and assigns the variable a *label* of the tensor
