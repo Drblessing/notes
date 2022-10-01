@@ -29,4 +29,4 @@ Tensors have over 300 operations that can be performed on them: Arhitmetic, Trig
 
 You can specify the output of a tensor operation with an already initalized tensor with the `out` parameter, which does not allocate new memory, or perform operations inplace with a `_` after the operation name.
 
-As with any object in python, assigning a variable to it does not copy it and assigns the variable a *label* of the tensor
+As with any object in python, assigning a variable to it does not copy it and assigns the variable a _label_ of the tensor
