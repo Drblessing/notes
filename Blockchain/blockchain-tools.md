@@ -80,6 +80,8 @@
 
 ### - ZK Rollups
 
+### - Bitcoin
+
 <br> <br>
 
 # **FAQs**
