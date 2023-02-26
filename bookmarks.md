@@ -1,8 +1,5 @@
 # Blockchain
 
-# Blockchain
-
-| First Header | Second Header |
-| ------------ | ------------- |
-| Content Cell | Content Cell  |
-| Content Cell | Content Cell  |
+| Name          | Link                           |
+| ------------- | ------------------------------ |
+| Solidity Blog | https://blog.soliditylang.org/ |
