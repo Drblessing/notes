@@ -21,7 +21,7 @@ You can either pass a tensor shape by remove `._like`, or automatically copy the
 
 `torch.tensor(data)` will create our tensor
 
-Can set dtype with `dtype=`
+Can set dtype with `dtype=`  
 
 Tensors of the same shape can use artihemtic operators together, or similar shapes can broadcast operations
 
@@ -30,3 +30,5 @@ Tensors have over 300 operations that can be performed on them: Arhitmetic, Trig
 You can specify the output of a tensor operation with an already initalized tensor with the `out` parameter, which does not allocate new memory, or perform operations inplace with a `_` after the operation name.
 
 As with any object in python, assigning a variable to it does not copy it and assigns the variable a _label_ of the tensor
+
+## [Pytorch.org Torchvision Tutorial](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html)
