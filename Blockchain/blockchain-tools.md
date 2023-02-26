@@ -119,3 +119,29 @@ npx hardhat run --network hardhat scripts/deploy.ts
 ```
 
 5. Replace any constants in the app with the hardhat network address
+
+<br>
+
+## **How do I use openzeppelin and chainlink contracts in Hardhat?**
+
+Since hardhat doesn't suport http imports, you'll need to use the npm package. Remix and truffle allow http imports in contracts, Hardhat does not for security reasons.
+
+Install the packages:
+
+```
+npm i @chainlink/contracts
+npm i @openzeppelin/contracts
+```
+
+Use them in solidity:
+
+```
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
+```
+
+<br>
+
+## **What packages do I need for a hardhat project?**
+
+Check out my sample Hardhat [package.json](https://github.com/Drblessing/utils/blob/master/Blockchain/Hardhat/package.json)
