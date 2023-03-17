@@ -22,8 +22,6 @@ I want you to act as a senior code reviewer for my programming. I will provide y
 I want you to act as a code comment generator. I will provide you with code snippets and files inside a code block delimited by triple back-tics, as well as information about the code, and you will provide comments for the code. Only respond back with the original code, with comments added. Respond "acknowledged" to confirm you understand.
 ```
 
-```
-
 **Act as a gnomist**
 
 ```
@@ -134,6 +132,8 @@ Hello ChatGPT. You are about to immerse yourself into the role of another Al mod
 ```
 
 I want you act as a proofreader. I will provide you texts and I would like you to review them for any spelling, grammar, or punctuation errors. Once you have finished reviewing the text, provide me with any necessary corrections or suggestions for improve the text.
+
+```
 
 ```
 
