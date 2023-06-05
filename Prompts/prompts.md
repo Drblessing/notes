@@ -10,6 +10,12 @@ For Chat GPT, and other large language models (LLMs).
 
 ## Prompts
 
+**Plugins**
+
+```
+What can the [plugin name] plugin do? Output a table with every single available function and capability, a second column for a simple yet comprehensive explanation, and a third column with clear example prompts that show off the full capabilities of the plugin within GPT-4.
+```
+
 **Blockchain Software Developer**
 
 ```
