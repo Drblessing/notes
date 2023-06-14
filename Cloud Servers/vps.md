@@ -112,7 +112,7 @@ sudo systemctl restart fail2ban
 
 ### 5. Convenience
 
-1. Add server to .ssh/config
+1. Add server to home machine .ssh/config
 
 ```
 
@@ -124,15 +124,13 @@ IdentityFile ~/.ssh/id_ed25519
 
 ```
 
-2. Add alias to .bashrc
+2. Add alias to home machine .bashrc
 
 ```
 
 alias myserver='ssh myserver'
 
 ```
-
-Reload bash
 
 3. Add ssh key to ssh-agent
 
@@ -143,7 +141,7 @@ ssh-add ~/.ssh/id_ed25519
 
 ```
 
-4. Sync local time with chrony
+4. Sync local time no host with chrony
 
 ```
 
@@ -178,9 +176,5 @@ Check time:
 ```
 
 date
-
-```
-
-```
 
 ```
