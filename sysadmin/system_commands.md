@@ -90,6 +90,17 @@ Archiving is the process of collecting multiple files and directories into a sin
 
 Compression is an optional feature, and is a process that reduces the size of files. It's not automatic when using tar, but you can add compression to a tar archive with options like -z (gzip), -j (bzip2), or -J (xz). The compressed tar file will have the file extension ".tar.gz", ".tar.bz2", or ".tar.xz" respectively.
 
+Can use the -a flag to automatically detect the compression type based on the file extension.
+
+File extensions:
+.tar - uncompressed tar archive
+.tar.gz - compressed tar archive
+.tgz - alias for .tar.gz
+.gz - compressed file
+.bz2 - better compressed tar archive
+.xz - best compressed tar archive
+.zip - windows compressed file
+
 ```bash
 tar -cvf archive.tar file1 file2  # Create archive
 tar -xvf archive.tar  # Extract archive
