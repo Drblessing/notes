@@ -10,9 +10,17 @@
 free -h
 ```
 
+On a mac:
+
+```
+top -l 1 | grep PhysMem
+```
+
+Available Memory = Physical Memory - Memory Used
+
 2. Get ram speed
 
-````bash
+```bash
 sudo apt-get install dmidecode
 sudo dmidecode -t memory
 ```
@@ -23,7 +31,7 @@ sudo dmidecode -t memory
 
 ```bash
 curl ifconfig.me
-````
+```
 
 2. Current logged in user
 
