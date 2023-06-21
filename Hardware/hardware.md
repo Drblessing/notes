@@ -48,7 +48,31 @@ A physical connector type and a data transfer protocol.
 
 ## SSDs
 
-- Native PCIe
+In decreasing order of performance:
+
 - M.2 NVMe
-- SATA
 - M.2 SATA
+- SATA
+- USB
+
+## Processor Architecture
+
+Processor Architecture is the design and organization of a central processing unit (CPU). It defines the processor’s instruction set - the basic operations it can perform, such as addition and multiplication, nad how software communicates these commands to the processor. It also influences other factors like power consumption, performance, and the kind of software it can run.
+
+The three most popular processor architectures are:
+
+1. **x86-64 (or AMD64)**
+
+This is a 64-bit version of the x86 architecture originally developed by AMD and adopted by Intel. It’s the most common architecture for desktop and laptop computers.
+
+2. **ARM**
+
+This is a RISC architecture that’s widely used in smartphones, tablets, and embedded systems due to its power efficiency. Recently, it’s being used in servers and personal computers, as seen in Apple’s ARM-based M1 chip.
+
+3. **RISC-V**
+
+RISC-V is an open standard instruction set architecture, free and open-source.
+
+4. **AArch64**
+
+AArch64 is a specific ARM architecture. Usually what people mean when they say “ARM64”. AArch64 is the 64-bit execution state of the ARMv8 Instruction Set Architecture (ISA) introduced by ARM Holdings.
