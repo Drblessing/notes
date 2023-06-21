@@ -192,7 +192,7 @@ cp file.txt directory  # Copy file to directory
 cp -r directory new_directory  # Copy directory to new directory
 ```
 
-17. List files by modification time
+17. List files
 
 -l flag shows the modification time
 -r flag reverses the order
@@ -200,6 +200,13 @@ cp -r directory new_directory  # Copy directory to new directory
 
 ```bash
 ls -ltr
+```
+
+For size:
+
+```bash
+du -sh *
+du -sh * | sort -h
 ```
 
 ## Hardware
