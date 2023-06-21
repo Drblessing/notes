@@ -1,5 +1,177 @@
 # System Commands
 
+## Terminal
+
+1. Page through output
+
+```bash
+ls -l | less
+```
+
+2. Search through output
+
+```bash
+ls -l | grep "file"
+```
+
+3. Open file in VSCode
+
+```bash
+code .
+```
+
+Use nano file.txt to open in nano.
+
+4. Piping commands
+
+```bash
+ls -l | grep "file" | less
+```
+
+Pipes the output of one command to the input of another.
+
+5. Redirecting output
+
+```bash
+ls -l > file.txt
+```
+
+Redirects the output of a command to a file. Use >> to append to a file.
+
+6. Viewing the start and end of a file
+
+```bash
+head file  # Shows the first 10 lines of file
+tail file  # Shows the last 10 lines of file
+```
+
+7. Counting lines, words, and characters
+
+```bash
+wc file
+```
+
+8. Finding files
+
+```bash
+find . -name "file.txt"
+```
+
+Find files by name in a directory and its subdirectories:
+
+```bash
+find /path/to/directory -name "example.txt"
+```
+
+Find files by extension:
+
+```bash
+find /path/to/directory -name "*.jpg"
+```
+
+Find files by size:
+(can use -type f to find files, -type d to find directories)
+
+```bash
+find /path/to/directory -size +100M
+```
+
+Find directories:
+
+```bash
+find /path/to/directory -type d -name"example_directory"
+```
+
+9. Archiving and compressing
+
+Tape Archive (tar) is a computer software utility for UNIX and Linux systems that creates tar archives. The name is derived from (t)ape (ar)chive, as it was originally developed to write data to sequential I/O devices with no file system of their own.
+
+Archiving is the process of collecting multiple files and directories into a single file. This single file is called a "tarball". The tarball can be compressed or uncompressed, and has the file extension ".tar". The single tar file is portable and can be moved around your file system, shared with others, backed up to an external device, or even sent over the network. It maintains the directory structure and file permissions of the original files, which makes it ideal for backups or transferring data between systems.
+
+Compression is an optional feature, and is a process that reduces the size of files. It's not automatic when using tar, but you can add compression to a tar archive with options like -z (gzip), -j (bzip2), or -J (xz). The compressed tar file will have the file extension ".tar.gz", ".tar.bz2", or ".tar.xz" respectively.
+
+```bash
+tar -cvf archive.tar file1 file2  # Create archive
+tar -xvf archive.tar  # Extract archive
+tar -zcvf archive.tar.gz file1 file2  # Create compressed archive
+tar -zxvf archive.tar.gz  # Extract compressed archive
+```
+
+10. Checking disk usage
+
+```bash
+du -sh directory  # Shows the total size of directory
+df -h  # Shows the disk usage and availability on your system
+```
+
+11. Findng text in files
+
+```bash
+grep -r "text" directory
+```
+
+12. Create a file
+
+```bash
+touch file.txt
+```
+
+13. Create a directory
+
+```bash
+mkdir directory
+```
+
+14. Help for a command
+
+```bash
+man command
+```
+
+15. Hashing a file
+
+md5:
+(must be a file, not a directory)
+
+```bash
+md5 file
+```
+
+sha1: (must be a file)
+
+```bash
+shasum file
+```
+
+sha256: (must be a file)
+
+```bash
+shasum -a 256 file
+```
+
+keccak256: (must be a file)
+
+First, install sha3sum.
+
+https://formulae.brew.sh/formula/sha3sum#default
+
+```bash
+brew install sha3sum
+keccak-256sum file
+```
+
+Hash an ethereum transaction, first get the raw tx hash from etherscan. Then, convert the hex string to binary and hash it. See if it matches the tx hash from etherscan. You can also save the hex data into a txt file and hash it with the -x flag to match etherscan txn hash.
+
+```bash
+echo "hex_string" | xxd -r -p | keccak-256sum
+```
+
+sha3-256: (must be a file)
+
+```bash
+sha3-256sum file
+```
+
 ## Hardware
 
 ### Ram
