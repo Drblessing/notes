@@ -183,6 +183,25 @@ sha3-256: (must be a file)
 sha3-256sum file
 ```
 
+16. Moving and copying files
+
+```bash
+mv -i file.txt directory  # Move file to directory
+mv -i file.txt new_file.txt  # Rename file
+cp file.txt directory  # Copy file to directory
+cp -r directory new_directory  # Copy directory to new directory
+```
+
+17. List files by modification time
+
+-l flag shows the modification time
+-r flag reverses the order
+-t flag sorts by modification time
+
+```bash
+ls -ltr
+```
+
 ## Hardware
 
 ### Ram
