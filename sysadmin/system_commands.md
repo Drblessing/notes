@@ -108,11 +108,11 @@ tar -zcvf archive.tar.gz file1 file2  # Create compressed archive
 tar -zxvf archive.tar.gz  # Extract compressed archive
 ```
 
-10. Checking disk usage
+10. Checking disk usage / storage
 
 ```bash
 du -sh directory  # Shows the total size of directory
-df -h  # Shows the disk usage and availability on your system
+df -h  # Shows the disk storage and availability on your system
 ```
 
 11. Findng text in files
@@ -211,7 +211,7 @@ du -sh * | sort -h
 
 ## Hardware
 
-### Ram
+### Ram / Memory
 
 1. Get total ram
 
