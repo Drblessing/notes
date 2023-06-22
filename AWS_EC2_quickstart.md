@@ -4,13 +4,14 @@
 
 Free t2.micro
 
-Create new ssh key and put it in your .ssh folder
+Create new ssh key and put it in your .ssh folder:
 
 `sudo yum install git`
 
 `sudo yum instal gcc`
 
 ## Connecting to jupyter notebook
+
 ```bash
 $ ssh -i ~/.ssh/my-private-key.pem user-name@remote-hostname
 $ jupyter notebook password
@@ -37,7 +38,3 @@ $ tmux attach
 $ wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
 $ bash Anaconda3-2021.05-Linux-x86_64.sh
 ```
-
-
-
-
