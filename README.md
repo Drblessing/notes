@@ -1,7 +1,5 @@
 # Utils
 
-## Note: Everything here is my humble opinion. If you have a suggestion, please send a PR!
-
 My mega awesome repo of all development and related tips and tricks I've learned along the way, such as:
 
 - Current IDE: VSCode

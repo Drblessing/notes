@@ -1,5 +1,0 @@
-asyncio
-black
-discord
-pip-chill
-python-dotenv
