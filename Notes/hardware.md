@@ -76,3 +76,5 @@ RISC-V is an open standard instruction set architecture, free and open-source.
 4. **AArch64**
 
 AArch64 is a specific ARM architecture. Usually what people mean when they say “ARM64”. AArch64 is the 64-bit execution state of the ARMv8 Instruction Set Architecture (ISA) introduced by ARM Holdings.
+
+[Fireship CPU Architecture](https://www.youtube.com/watch?v=vqs_0W-MSB0)
