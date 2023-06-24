@@ -1,5 +1,5 @@
 # Bookmarks
 
-Mirror of my bookmarks, which are stored in my Notion. Minus some personal stuff, and some 🏴‍☠️ stuff.
+Mirror of my bookmarks, which are stored in my Notion. Minus some personal stuff.
 
-Thoughts on piracy:
+A collection of useful news websites, tools, resources, retail sites, and more.
