@@ -43,6 +43,9 @@ def list_files(startpath):
 
     # Print top-level files and directories, sorted
     for f in sorted(files):
+        # Ignore .DS_Store files
+        if f == ".DS_Store":
+            continue
         # Add first level of indentation
         output_string += "    " + f + "\n"
 
@@ -63,6 +66,9 @@ def list_files(startpath):
 
         # Print files and directories, sorted
         for f in sorted(files):
+            # Ignore .DS_Store files
+            if f == ".DS_Store":
+                continue
             # Add second level of indentation
             output_string += "        " + f + "\n"
 
