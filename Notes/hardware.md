@@ -32,7 +32,7 @@ The most common types of keys are B and M. B-key is used for SATA SSDs or PCIe x
 
 M.2 is important because it defines a slim form factor, and can accomodate PCIe, SATA, and USB. Note that the physical form factors of M.2 and standard PCIe slots are different. An M.2 NVMe SSD cannot fit into a standard PCIe slot due to these differences.
 
-![Untitled](https://upload.wikimedia.org/wikipedia/commons/c/c2/M.2_connector_on_a_computer_motherboard.jpg)
+![M2](https://upload.wikimedia.org/wikipedia/commons/c/c2/M.2_connector_on_a_computer_motherboard.jpg)
 
 [M2 Ars Technica Guide](https://arstechnica.com/gadgets/2015/02/understanding-m-2-the-interface-that-will-speed-up-your-next-ssd/)
 

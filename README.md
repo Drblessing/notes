@@ -39,3 +39,19 @@ Notes from the wild wild west of technology!
 ## [Hosted Projects](Projects/hosted.md)
 
 ---
+
+## Useful Links
+
+[Tools](Notes/Tools.md)
+
+[UNIX Commands](Notes/system_commands.md)
+
+[AI](Notes/AI.md)
+
+[Blockchain](Notes/blockchain.md)
+
+[ChatGPT-plugins](Notes/ChatGPT-plugins.md)
+
+[Hardware](Notes/hardware.md)
+
+[PGP](Notes/pgp.md)
