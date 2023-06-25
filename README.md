@@ -37,3 +37,5 @@ Notes from the wild wild west of technology!
 ---
 
 ## [Hosted Projects](Projects/hosted.md)
+
+---
