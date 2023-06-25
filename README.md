@@ -36,4 +36,4 @@ Notes from the wild wild west of technology!
 
 ---
 
-## Best
+## [Hosted Projects](Projects/hosted.md)
