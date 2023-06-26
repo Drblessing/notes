@@ -34,3 +34,14 @@
 - vscode-pdf
 - WakaTime
 - GitLens
+
+## Exclusions
+
+Excluding files is key to avoid the problem of 100 config files in your root directory.
+
+You can also open them with:
+
+```bash
+ls -a # Find the files you want to open tmp
+code <file>
+```

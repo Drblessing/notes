@@ -63,6 +63,7 @@
     "plaintext": true,
     "markdown": true
   },
+  "remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],
   "eslint.alwaysShowStatus": true,
   "eslint.run": "onSave",
   "prettier.singleQuote": true,
@@ -179,5 +180,12 @@
     "terminal.ansiYellow": "#3E4C96"
   },
   "terminal.integrated.drawBoldTextInBrightColors": false,
-  "terminal.integrated.minimumContrastRatio": 4.5
+  "terminal.integrated.minimumContrastRatio": 4.5,
+  "files.exclude": {
+    "**/.gitattributes": true,
+    "**/node_modules": true,
+    "CONTRIBUTING.md": true,
+    "LICENSE": true,
+    "**/.gitignore": true
+  }
 }
