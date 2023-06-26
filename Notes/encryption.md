@@ -17,13 +17,21 @@ The GnuPG is the best way to encrypt files. It's a command line tool that can be
 0. Prestart
 
 [ ] Offline computer
+[ ] Disabled Wifi and Bluetooth
 [ ] Updated OS
 [ ] Updated Virus Scanner
+[ ] Update homebrew and packages
 [ ] Virus scanned hard drive
 [ ] Virus scanned USB drive
 [ ] USB drive
 [ ] GnuPG installed
 [ ] Sha3sum installed
+[ ] Secure physical location
+[ ] File backups
+[ ] Power cable plugged in
+[ ] Storage space
+[ ] Ample time
+[ ] Relaxed state of mind
 
 Install GnuPG
 
@@ -127,13 +135,21 @@ There should be no trace of the files on your computer.
 0. Prestart
 
 [ ] Offline computer
+[ ] Disabled Wifi and Bluetooth
 [ ] Updated OS
 [ ] Updated Virus Scanner
+[ ] Update homebrew and packages
 [ ] Virus scanned hard drive
 [ ] Virus scanned USB drive
 [ ] USB drive
 [ ] GnuPG installed
 [ ] Sha3sum installed
+[ ] Secure physical location
+[ ] File backups
+[ ] Power cable plugged in
+[ ] Storage space
+[ ] Ample time
+[ ] Relaxed state of mind
 
 1. Import files
 
@@ -190,3 +206,5 @@ Congrats! You've just encrypted and decrypted files. You can now use this to enc
 A note on verifying hashes: it ensures the encrypted files have not been tampered with or been corrupted.
 
 Also, if you want to fully delete the files, you can use a cli like `shred`. You can also never let the files touch your computer, and always keep them on a USB drive. This is the most secure way to do it.
+
+If you're really paranoid, you can use a live boot environment like a USB drive with Tails OS. This is the most secure way to do it.
