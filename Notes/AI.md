@@ -9,3 +9,7 @@
 ### Vicuna
 
 Just as restricted as ChatGPT.
+
+### LLAMA
+
+### Alpaca
