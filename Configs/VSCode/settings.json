@@ -185,7 +185,7 @@
     "**/.env": true,
     "**/.gitattributes": true,
     "**/.gitignore": true,
-    // "**/.venv": true,
+    "**/.venv": true,
     "**/node_modules": true,
     "**/CONTRIBUTING.md": true,
     "**/LICENSE": true,
