@@ -182,10 +182,13 @@
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.minimumContrastRatio": 4.5,
   "files.exclude": {
+    "**/.env": true,
     "**/.gitattributes": true,
+    "**/.gitignore": true,
+    "**/.venv": true,
     "**/node_modules": true,
     "CONTRIBUTING.md": true,
     "LICENSE": true,
-    "**/.gitignore": true
+    "README.md": true
   }
 }
