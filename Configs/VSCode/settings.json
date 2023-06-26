@@ -185,10 +185,23 @@
     "**/.env": true,
     "**/.gitattributes": true,
     "**/.gitignore": true,
-    "**/.venv": true,
+    // "**/.venv": true,
     "**/node_modules": true,
-    "CONTRIBUTING.md": true,
-    "LICENSE": true,
-    "README.md": true
+    "**/CONTRIBUTING.md": true,
+    "**/LICENSE": true,
+    "**/README.md": true,
+    "**/.env.example": true,
+    "**/.prettierrc": true,
+    "**/.prettierignore": true,
+    "**/.solhint.json": true,
+    "**/package-lock.json": true,
+    "**/tsconfig.json": true,
+    "**/yarn-error.log": true,
+    "**/yarn.lock": true,
+    "**/package.json": true,
+    "**/.yarn": true,
+    "**/.gitmodules": true,
+    "**/requirements.txt": true,
+    "**/__pycache__": true
   }
 }
