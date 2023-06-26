@@ -182,7 +182,8 @@
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.minimumContrastRatio": 4.5,
   "files.exclude": {
-    "**/.env": true,
+    // "**/.env": true,
+    // "**/.env.example": true,
     "**/.gitattributes": true,
     "**/.gitignore": true,
     "**/.venv": true,
@@ -190,7 +191,6 @@
     "**/CONTRIBUTING.md": true,
     "**/LICENSE": true,
     "**/README.md": true,
-    "**/.env.example": true,
     "**/.prettierrc": true,
     "**/.prettierignore": true,
     "**/.solhint.json": true,
@@ -202,6 +202,14 @@
     "**/.yarn": true,
     "**/.gitmodules": true,
     "**/requirements.txt": true,
-    "**/__pycache__": true
+    "**/__pycache__": true,
+    "**/.eslintignore": true,
+    "**/.eslintrc.js": true,
+    "**/jsconfig.json": true,
+    "**/.nvmrc": true,
+    "**/next.config.js": true,
+    "**/postcss.config.js": true,
+    "**/prettier.config.js": true,
+    "**/tailwind.config.js": true
   }
 }
