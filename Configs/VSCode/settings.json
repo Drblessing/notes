@@ -211,6 +211,7 @@
     "**/postcss.config.js": true,
     "**/prettier.config.js": true,
     "**/tailwind.config.js": true,
-    "**/default.nix": true
+    "**/default.nix": true,
+    "**/.next": true
   }
 }
