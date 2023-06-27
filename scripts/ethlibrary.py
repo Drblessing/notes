@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from typing import Union, Literal, Optional
 from decimal import Decimal, getcontext
 from typing import NamedTuple, Optional
