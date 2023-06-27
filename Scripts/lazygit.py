@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Lazy Git
 # A python script that runs `git add .`, `git commit -m "Lazy Git Commit"`, and `git push` in one command. Useful for quickly committing changes to a repo.
 

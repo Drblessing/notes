@@ -12,3 +12,4 @@ MacOS blocks adding script and binaries to /bin and /usr/bin, so I use `~/bin` i
 | reth      | Ethereum execution client written in Rust.                    |
 | speedtest | Opens speed.cloudflare.com in a browser                       |
 | hack      | Opens ~/Github/workbench in VSCode                            |
+| lazygit   | Runs lazy git                                                 |
