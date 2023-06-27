@@ -2,7 +2,7 @@
 
 ## Cloudflare Pages
 
-Static hosting, moving towards dynamic hosting with serverless apis and frameworks.
+Static hosting, moving towards dynamic hosting with serverless apis and frameworks. Unfortuantely, you can't run python fastapi on pages yet. You can run serverless api routes with frameworks like NextJS. However, it only supports the edge runtime, so not all packages are supported. Use cloudflare workers for more flexibility.
 
 ## Cloudflare Workers
 
