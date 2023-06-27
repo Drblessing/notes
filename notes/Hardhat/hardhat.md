@@ -131,7 +131,7 @@ Need to specify which contract when we use Inheritance because it doesn't know w
 
 To fork an evm net, we need to use an acrhive node like Alchemy to fork the state of the current main net and then test functions
 
-## Debugging
+## Hardhat Debugging
 
 Try `npx hardhat clean` to fix JSON errors with artifacts and stuff
 
