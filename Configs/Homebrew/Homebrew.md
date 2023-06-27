@@ -3,8 +3,7 @@
 ## Update
 
 ```bash
-brew update
-brew upgrade
+brew update && brew upgrade
 ```
 
 My favorite homebrew packages:
