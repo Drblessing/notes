@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.6",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "hardhat": "^2.12.7"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.6.1",
+    "@openzeppelin/contracts": "^4.8.1",
+    "dotenv": "^16.0.3"
+  }
+}
