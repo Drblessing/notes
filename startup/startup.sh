@@ -91,6 +91,10 @@ fi
 # Also, they should only append to existing config files, not overwrite them
 echo "Installing dotfiles..."
 DOTFILES_DIR="$HOME/Github/notes/configs/dotfiles"
+
+# Debug change home
+HOME="$HOME/tmp"
+
 if [[ "$SHELL" == "bash" ]]; then
     CONFIG_FILES=(".bashrc" ".bash_profile")
 elif [[ "$SHELL" == "zsh" ]]; then
