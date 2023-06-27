@@ -66,9 +66,9 @@ fi
 
 # 3. Clone notes repo
 # Check if notes repo is cloned. If not, clone it.
-if [[ ! -d "$HOME/G1ithub/notes" ]]; then
+if [[ ! -d "$HOME/Github/notes" ]]; then
     echo "Notes repo not found. Cloning notes repo..."
-    git clone https://github.com/Drblessing/notes.git
+    git clone https://github.com/Drblessing/notes.git "$HOME/Github/notes"
     echo "Notes repo cloned."
 # Else pull latest notes repo
 else
@@ -77,6 +77,7 @@ else
     git pull
     echo "Notes repo pulled."
 fi
+
 
 
 
