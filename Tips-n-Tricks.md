@@ -2,10 +2,15 @@
 
 ## Table of Contents
 
-1. [Free VPN](#free-vpn)
-2. [Running applications, packages, or software on any OS](#running-applications-packages-or-software)
-3. [DarkWeb](#darkweb)
-4. [Security](#security)
+1. [AI helper](#ai-helper)
+2. [Free VPN](#free-vpn)
+3. [Running applications, packages, or software on any OS](#running-applications-packages-or-software)
+4. [DarkWeb](#darkweb)
+5. [Security](#security)
+
+## AI helper
+
+Ask chatGPT, google bard, and github codespaces for help.
 
 ## Free VPN
 
