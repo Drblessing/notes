@@ -9,25 +9,10 @@ export NVM_DIR="$HOME/.nvm"
 
 # ---------------------------------------------
 # |                                           |
-# |        Google Cloud SDK Configuration     |
-# |                                           |
-# ---------------------------------------------
-if [ -f '/Users/dbless/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/dbless/google-cloud-sdk/path.zsh.inc'; fi
-if [ -f '/Users/dbless/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/dbless/google-cloud-sdk/completion.zsh.inc'; fi
-
-# ---------------------------------------------
-# |                                           |
 # |          OpenJDK Configuration            |
 # |                                           |
 # ---------------------------------------------
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-
-# ---------------------------------------------
-# |                                           |
-# |         WakaTime Configuration            |
-# |                                           |
-# ---------------------------------------------
-export WAKA="<API_KEY>"
 
 # ---------------------------------------------
 # |                                           |

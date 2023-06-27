@@ -78,6 +78,8 @@ else
     echo "Notes repo pulled."
 fi
 
+# 4. Install dotfiles
+
 echo "Setup completed."
 
 
