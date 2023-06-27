@@ -4,9 +4,10 @@
 
 1. [AI helper](#ai-helper)
 2. [Free VPN](#free-vpn)
-3. [Running applications, packages, or software on any OS](#running-applications-packages-or-software)
-4. [DarkWeb](#darkweb)
-5. [Security](#security)
+3. [Free Static Hosting](#free-static-hosting)
+4. [Running applications, packages, or software on any OS](#running-applications-packages-or-software)
+5. [DarkWeb](#darkweb)
+6. [Security](#security)
 
 ## AI helper
 
@@ -20,6 +21,19 @@ With OpenVPN, you can get free config files from [here](https://www.vpngate.net/
 Be warned, though, that the free VPNs are usually slow, have limited bandwith, and may be stealing your data.
 
 Cloudflare WARP is also a hidden gem that is a free VPN to your local Cloudflare data center.
+
+## Free Static Hosting
+
+You can host static assets a lot of places for free nowadays. Here's a list of some of them:
+
+- [Github raw user content](https://github.com/)
+  Soft 50mb limit.
+- [Cloudflare Pages](https://pages.cloudflare.com/)
+  You can host static assets up to 25mb.
+- [Github Pages](https://pages.github.com/)
+  You can host static assets up to 1gb.
+
+These are for **hobby** projects. They are not to be used for commercial purposes.
 
 ## Running applications, packages, or software on any OS
 
