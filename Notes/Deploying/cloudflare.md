@@ -2,7 +2,7 @@
 
 ## Cloudflare Pages
 
-The v2 beta comes with Node.js 18.16.0, and Python3.10.5. However, it says it can support any version, so we'll have to test Python 3.11 at some point. Maybe we could run AI models on it?
+Static hosting, moving towards dynamic hosting with serverless apis and frameworks.
 
 ## Cloudflare Workers
 
