@@ -78,9 +78,6 @@ else
     echo "Notes repo pulled."
 fi
 
-
-
-
 echo "Setup completed."
 
 
