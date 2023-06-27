@@ -48,6 +48,13 @@ if [[ "$OS" == "macOS" ]]; then
     brew update
 fi
 
+# For linux, update apt
+if [[ "$OS" == "Linux" ]]; then
+    echo "Updating apt..."
+    apt install sudo -y
+    sudo apt update -y
+fi
+
 # 2. Install git
 # Check if git is installed. If not, install it.
 if [[ ! -x "$(command -v git)" ]]; then
@@ -79,6 +86,25 @@ else
 fi
 
 # 4. Install dotfiles
+# Dotfiles are in configs/dotfiles/.*
+# They are for zsh shells, so will need to be changed for bash shells
+# Also, they should only append to existing config files, not overwrite them
+echo "Installing dotfiles..."
+DOTFILES_DIR="$HOME/Github/notes/configs/dotfiles"
+if [[ "$SHELL" == "bash" ]]; then
+    CONFIG_FILES=(".bashrc" ".bash_profile")
+elif [[ "$SHELL" == "zsh" ]]; then
+    CONFIG_FILES=(".zshrc" ".zprofile",".zshenv")
+fi
+for FILE in "${CONFIG_FILES[@]}"; do
+    if [[ -f "$HOME/$FILE" ]]; then
+        cat "$DOTFILES_DIR/$FILE" >> "$HOME/$FILE"
+        echo "Updated $FILE"
+    else 
+        # If file doesn't exist in home directory, copy it
+        cp "$DOTFILES_DIR/$FILE" "$HOME/$FILE"
+    fi
+done
 
 echo "Setup completed."
 
