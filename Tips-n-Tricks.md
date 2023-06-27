@@ -10,6 +10,8 @@
 
 ## AI helper
 
+LLMs, AI prompting, and AI chatbots are great helps while programming.
+
 Ask chatGPT, google bard, and github codespaces for help.
 
 ## Free VPN
