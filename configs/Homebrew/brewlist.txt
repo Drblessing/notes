@@ -38,7 +38,7 @@ gts			libxext			svt-av1
 guile			libxrender		tcl-tk
 harfbuzz		libyaml			tesseract
 highway			little-cms2		theora
-htop			lz4			unbound
+		lz4			unbound
 icu4c			lzo			webp
 imath			m4			x264
 jasper			mbedtls			x265

@@ -20,7 +20,6 @@ My favorite homebrew packages:
 | go          | Go programming language                            |
 | rust        | Rust programming language                          |
 | nvm         | Node version manager                               |
-| htop        | Interactive process viewer                         |
 | sqlite      | Command line interface for SQLite 3                |
 | ruby        | Ruby programming language                          |
 | solc-select | Solidity compiler version manager                  |
