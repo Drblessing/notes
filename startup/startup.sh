@@ -92,9 +92,6 @@ fi
 echo "Installing dotfiles..."
 DOTFILES_DIR="$HOME/Github/notes/configs/dotfiles"
 
-# Debug change home
-HOME="/tmp"
-
 if [[ "$SHELL" == "bash" ]]; then
     CONFIG_FILES=(".bashrc" ".bash_profile")
 elif [[ "$SHELL" == "zsh" ]]; then
@@ -106,7 +103,7 @@ for FILE in "${CONFIG_FILES[@]}"; do
         echo "Updated $FILE"
     else 
         # If file doesn't exist in home directory, copy it
-        cp -R "$DOTFILES_DIR/$FILE" "$HOME/"
+        cp -R "$DOTFILES_DIR/$FILE" "$HOME"
     fi
 done
 
