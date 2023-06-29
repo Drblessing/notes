@@ -27,3 +27,4 @@ PS1="%1~ 🐴 "
 # |                                           |
 # ---------------------------------------------
 export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/Github/notes/configs/bin:$PATH"
