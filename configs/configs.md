@@ -41,6 +41,6 @@ I have nothing too special in my .zshrc et al., just commands from software I ha
 
 Full of scripts I use. I symlink this to my $PATH so I can run them from anywhere.
 
-Check them out [here](bin/bin.md).
+Check them out [here](/bin/bin.md).
 
 Most are python and bash scripts.
