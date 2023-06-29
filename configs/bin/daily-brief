@@ -53,6 +53,13 @@ class DailyBrief:
         "https://hackernoon.com/exit-liquidity",
     ]
 
+    CONTENT_DICT = {
+        ContentType.DAILY: URLS_DAILY,
+        ContentType.NEWS: URLS_NEWS,
+        ContentType.RESEARCH: URLS_RESEARCH,
+        ContentType.BLOGS: URLS_BLOGS,
+    }
+
     def parse_args(self):
         """Parse arguments"""
         parser = argparse.ArgumentParser(
@@ -108,17 +115,7 @@ class DailyBrief:
             webbrowser.open_new_tab(url)
 
     def run(self):
-        match self.content:
-            case self.ContentType.NEWS:
-                self.open_list(self.URLS_NEWS)
-            case self.ContentType.RESEARCH:
-                self.open_list(self.URLS_RESEARCH)
-            case self.ContentType.BLOGS:
-                self.open_list(self.URLS_BLOGS)
-            case self.ContentType.DAILY:
-                self.open_list(self.URLS_DAILY)
-            case _:
-                print("Invalid content type")
+        self.open_list(self.CONTENT_DICT[self.content])
 
 
 if __name__ == "__main__":
