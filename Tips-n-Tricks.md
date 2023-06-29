@@ -59,25 +59,26 @@ The "darkweb" can be accessed through the official Tor Browser. Your jumping off
 
 ## Security
 
+Well, gather 'round, folks, and let's talk 'bout the wild, unpredictable frontier of digital security. Like the lawless plains of the Wild West, this terrain can be fraught with danger, and a good sheriff knows how to protect his town.
+
 ### Passwords
 
-#### Creating a password
+First things first, you gotta have a strong lock on your door to keep the outlaws out. This starts with creating a robust password. Imagine concocting a potent brew that can't easily be replicated. That's where EFF Diceware comes in handy, generating strong, unique, and hard-to-crack passwords.
 
-Create a password with EFF diceware.
+### Password Manager
 
-#### Password manager
+Next, you'll be needing a safe to store all those passwords, something like a secure chest where you keep all your gold nuggets. That's what a password manager is - I myself use 1Password. The key to this chest? A solid passphrase brewed up with Diceware.
 
-Use a password manager. I use 1password. Your password manager password should be a passhprase generated with diceware.
+### 2FA
 
-#### 2FA
+But having a good lock ain't enough, you need an extra layer of protection. Like having a trusted deputy guarding your door. That's your 2FA (Two-Factor Authentication) - use an authenticator app, not SMS. Now, remember, don't store these backups in your password manager, that's like putting all your eggs in one basket.
 
-Use 2FA with an authenticator app, not SMS. These backups should not be stored in your password manager.
+### Master Password
 
-#### Master password
+Next up, you need the key to the city. This is your master password, used to decrypt your 2FA backups. It should be a strong, unguessable passphrase, again brewed up with Diceware. Don't write this down anywhere, not in a journal or a hidden note, nowhere. This one, you gotta memorize. You could also use Shamir's Secret Sharing Scheme for an added layer of security - like having a map to your hidden gold, but the map is split into parts and shared with trusted friends.
 
-You should have a master password to decrypt your 2FA backups. This should be a passphrase generated with diceware, and should not be stored in your password manager. It should contain your password manager's password and backup codes. DO NOT write this down anywhere online or offline. Memorize it. Save it with Shamir's Secret Sharing Scheme.
-Use the linux package ssss for this.
+### Encrypting and Decrypting
 
-#### Encrypting and decrypting
+Lastly, all your precious digital cargo should be safely packed up. Like compressing gold dust into solid bars. That's where tar comes into play, bundling up your data. Then, it needs to be locked up tight in a secure vault - that's where GPG encryption comes into play. This way, even if bandits get to your data, all they'll have is a locked box they can't open.
 
-Your digital safe should be first compressed with tar and then encrypted with gpg.
+So there ya have it, partner. With this guide, you're ready to face the wild frontier of the digital world, with your data secure as a fort in the Wild West. Now saddle up and ride forth!
