@@ -1,22 +1,23 @@
 # Bin
 
-I keep my local user bin in `~/Github/notes/bin`.
+I keep my user bin in `~/Github/notes/bin`.
 This is where I put all my scripts and binaries that I want to be able to run from anywhere.
 This directory is added to my `$PATH` in my `.zshrc` file.
 Whenever I update my bin here, it gets updated on all my machines.
 
 ## Contents
 
-| File                  | Description                                                                      |
-| --------------------- | -------------------------------------------------------------------------------- |
-| dirp                  | Prints and copies the current directory contents and one sub-level deep.         |
-| reth                  | Ethereum execution client written in Rust.                                       |
-| speedtest             | Opens speed.cloudflare.com in a browser                                          |
-| hack                  | Opens ~/Github/workbench in VSCode                                               |
-| lazygit               | Runs lazy git                                                                    |
-| python-new/python.exe | Runs beta version of python compiled from source by myself                       |
-| daily-brief           | Opens daily websites in browser: news, blogs, research or daily info             |
-| update-notes          | Updates notes repo to keep machines in sync. A script updating itself, how cool. |
+| File         | Description                                                                      |
+| ------------ | -------------------------------------------------------------------------------- |
+| dirp         | Prints and copies the current directory contents and one sub-level deep.         |
+| reth         | Ethereum execution client written in Rust.                                       |
+| speedtest    | Opens speed.cloudflare.com in a browser                                          |
+| hack         | Opens ~/Github/workbench in VSCode                                               |
+| notes        | Opens ~/Github/notes in VSCode                                                   |
+| lazygit      | Runs lazy git                                                                    |
+| daily-brief  | Opens daily websites in browser: news, blogs, research or daily info             |
+| update-notes | Updates notes repo to keep machines in sync. A script updating itself, how cool. |
+| compare-hash | Compares the hash of two files                                                   |
 
 ## Examples
 
