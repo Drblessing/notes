@@ -16,22 +16,21 @@ The GnuPG is the best way to encrypt files. It's a command line tool that can be
 
 0. Prestart
 
-[ ] Offline computer
-[ ] Disabled Wifi and Bluetooth
-[ ] Updated OS
-[ ] Updated Virus Scanner
-[ ] Update homebrew and packages
-[ ] Virus scanned hard drive
-[ ] Virus scanned USB drive
-[ ] USB drive
-[ ] GnuPG installed
-[ ] Sha3sum installed
-[ ] Secure physical location
-[ ] File backups
-[ ] Power cable plugged in
-[ ] Storage space
-[ ] Ample time
-[ ] Relaxed state of mind
+- [ ] Relaxed state of mind
+- [ ] Ample time
+- [ ] Secure physical location
+- [ ] Plug in power cable
+- [ ] Install GnuPG
+- [ ] Install sha3sum
+- [ ] Check storage space
+- [ ] Update OS
+- [ ] Update virus scanner
+- [ ] Update homebrew and packages
+- [ ] Disable Wifi and Bluetooth
+- [ ] Virus scan hard drive
+- [ ] Attach USB drive
+- [ ] Virus scan USB drive
+- [ ] Create temporary file backups
 
 Install GnuPG
 
