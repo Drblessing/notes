@@ -6,11 +6,12 @@ MacOS blocks adding script and binaries to /bin and /usr/bin, so I use `~/bin` i
 
 ## Contents
 
-| File                  | Description                                                   |
-| --------------------- | ------------------------------------------------------------- |
-| dirp                  | Prints the current directory contents and one sub-level deep. |
-| reth                  | Ethereum execution client written in Rust.                    |
-| speedtest             | Opens speed.cloudflare.com in a browser                       |
-| hack                  | Opens ~/Github/workbench in VSCode                            |
-| lazygit               | Runs lazy git                                                 |
-| python-new/python.exe | Runs beta version of python compiled from source by myself    |
+| File                  | Description                                                          |
+| --------------------- | -------------------------------------------------------------------- |
+| dirp                  | Prints the current directory contents and one sub-level deep.        |
+| reth                  | Ethereum execution client written in Rust.                           |
+| speedtest             | Opens speed.cloudflare.com in a browser                              |
+| hack                  | Opens ~/Github/workbench in VSCode                                   |
+| lazygit               | Runs lazy git                                                        |
+| python-new/python.exe | Runs beta version of python compiled from source by myself           |
+| daily-brief           | Opens daily websites in browser: news, blogs, research or daily info |
