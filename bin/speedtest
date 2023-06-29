@@ -1,2 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
+# How fast is my internet?
+# Are we live? 
 open https://speed.cloudflare.com

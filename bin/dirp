@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Prints directory contents to the terminal and copies to clipboard.
 import os
 import pyperclip
 import argparse

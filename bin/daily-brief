@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Open daily brief of websites in browser
+# Open daily brief of websites in browser.
 import webbrowser
 import argparse
 from enum import Enum

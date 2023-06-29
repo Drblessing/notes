@@ -1,4 +1,5 @@
 #!/bin/bash
+# Compares the keccak-256sum of two files.
 
 # Check if both input files are provided
 if [ "$#" -ne 2 ]; then
