@@ -2,7 +2,7 @@
 
 Scripts I've written to make my life easier.
 
-Scripts that are in my bin are moved to [here](/configs/bin).
+Scripts that are in my bin are moved to [here](/bin).
 
 To use these scripts, you have to:
 
