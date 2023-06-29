@@ -27,6 +27,25 @@ class LazyGit:
     def __init__(self, commit_message: str | None = None):
         args = self.parse_args()
         self.override_commit_message = args.message
+        self.args = args
+
+    def show_changed_files(self):
+        """Show changed files"""
+        LazyGit.run_command(
+            [
+                "git",
+                "diff",
+                "--name-only",
+            ]
+        )
+        LazyGit.run_command(
+            [
+                "git",
+                "ls-files",
+                "--others",
+                "--exclude-standard",
+            ]
+        )
 
     @staticmethod
     def print_rainbow_text(text: str) -> None:
@@ -60,6 +79,13 @@ class LazyGit:
             action="version",
             version="%(prog)s 1.0",
             help="Show program's version number and exit.",
+        )
+
+        parser.add_argument(
+            "--changes",
+            "-c",
+            action="store_true",
+            help="Show changed files",
         )
 
         args = parser.parse_args()
@@ -135,11 +161,16 @@ class LazyGit:
     def run_all_commands(self):
         """Run all commands"""
         self.print_rainbow_text("Lazy Git")
-        self.pull_from_remote()
-        self.add_all_files_to_staging()
-        self.commit_with_funny_message()
-        self.push_to_remote()
-        print("Done!")
+
+        if self.args.changes:
+            self.show_changed_files()
+        else:
+            self.pull_from_remote()
+            self.add_all_files_to_staging()
+            self.commit_with_funny_message()
+            self.push_to_remote()
+
+        self.print_rainbow_text("Done!")
 
 
 if __name__ == "__main__":

@@ -1,5 +1,9 @@
 # Scripts
 
+Scripts I've written to make my life easier.
+
+Scripts that are in my bin are moved to [here](/configs/bin).
+
 To use these scripts, you have to:
 
 1. Add a shebang line to the top of the script with the path to the program interpreter. For example, `#!/usr/bin/env python3` for Python 3.
@@ -37,67 +41,3 @@ t = EthTransaction.from_dict(transaction_data)
 print(t.txn_fee, t.txn_fee.usdp)
 # 526714.737437720 gwei $0.99
 ```
-
-## Dirp
-
-A Python script to print the contents of a directory and one level down, then copy it to the keyboard. Also prints it to the console. Useful for pasting a directory listing into a text editor or LLM.
-
-Input: A directory path. Can be absolute or relative, i.e. ".". If no path is given, the current directory is used.
-
-Example usage: `$ dirp ~/Documents`
-
-```
-dbless@Daniels-MacBook-Pro Github % dirp
-Github/
-    notes/
-        .gitattributes
-        .gitignore
-        CONTRIBUTING.md
-        LICENSE
-        README.md
-        .git/
-        Blockchain/
-        Collaborations/
-        Deep Learning/
-        Docker/
-        Google Analytics/
-        Hardware/
-        MacOS Setup/
-        Next/
-        Notes/
-        OOP/
-        ProjectManagement/
-        Prompts/
-        Python/
-        References/
-        Scripts/
-        Tech Interviews/
-        Templates/
-        Tools/
-        Tutorials/
-        npm/
-        sysadmin/
-        vscode/
-    static/
-        README.md
-        .git/
-        Images/
-        References/
-    workbench/
-        .gitignore
-        CONTRIBUTING.md
-        LICENSE
-        README.md
-        .git/
-        .venv/
-        python/
-```
-
-## Lazy Git
-
-A bash script that runs `git add .`, `git commit -m "Lazy Git Commit"`, and `git push` in one command. Useful for quickly committing changes to a repo.
-
-0. `git pull`
-1. `git add .`
-2. `git commit -m "Lazy Git Commit"`
-3. `git push`
