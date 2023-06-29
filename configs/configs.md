@@ -14,7 +14,15 @@ This repo is always installed at ~/Github/notes, and I control all code, so I ca
 Then, I symlink my ~/.zshrc to [dotfiles/zshrc](dotfiles/.zshrc) as well as my .zshenv, and .zprofile.
 
 ```
+cp ~/.zshrc ~/.zshrc.bak
+cp ~/.zshenv ~/.zshenv.bak
+cp ~/.zprofile ~/.zprofile.bak
+rm ~/.zshrc
+rm ~/.zshenv
+rm ~/.zprofile
 ln -s ~/Github/configs/dotfiles/.zshrc ~/.zshrc
+ln -s ~/Github/configs/dotfiles/.zshenv ~/.zshenv
+ln -s ~/Github/configs/dotfiles/.zprofile ~/.zprofile
 ```
 
 Then, I add my ~/Github/notes/configs/bin to my $PATH in my .zshrc.

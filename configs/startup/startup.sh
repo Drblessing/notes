@@ -85,6 +85,11 @@ else
     echo "Notes repo pulled."
 fi
 
+# 3.5 Backup existing dotfiles
+cp ~/.zshrc ~/.zshrc.bak
+cp ~/.zprofile ~/.zprofile.bak
+cp ~/.zshenv ~/.zshenv.bak
+
 # 4. Install dotfiles
 # Dotfiles are in configs/dotfiles/.*
 # They are for zsh shells, so will need to be changed for bash shells
