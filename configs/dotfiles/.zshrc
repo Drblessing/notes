@@ -23,8 +23,8 @@ PS1="%1~ 🐴 "
 
 # ---------------------------------------------
 # |                                           |
-# |            ~/bin added to $PATH           |
+# |            /bin added to $PATH           |
 # |                                           |
 # ---------------------------------------------
-export PATH="$HOME/bin:$PATH"
-export PATH="$HOME/Github/notes/configs/bin:$PATH"
+export PATH="$HOME/Github/notes/bin:$PATH"
+
