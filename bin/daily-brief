@@ -27,6 +27,7 @@ class DailyBrief:
         "https://ultrasound.money/",
         "https://clientdiversity.org/#distribution",
         "https://defillama.com/",
+        "https://www.google.com/finance/quote/SCHW:NYSE",
     ]
 
     URLS_NEWS = [
