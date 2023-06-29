@@ -27,3 +27,5 @@ My favorite homebrew packages:
 | ffmpeg      | Play, record, convert, and stream audio and video  |
 | docker      | VM Containers (can also use Docker Desktop)        |
 | OpenVPN     | VPN client                                         |
+| irssi       | IRC client                                         |
+| ipfs        | IPFS client                                        |
