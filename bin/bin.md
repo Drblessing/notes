@@ -18,7 +18,7 @@ Whenever I update my bin here, it gets updated on all my machines. The programs 
 | daily-brief  | Opens daily websites in browser: news, blogs, research or daily info             |
 | update-notes | Updates notes repo to keep machines in sync. A script updating itself, how cool. |
 | compare-hash | Compares the hash of two files                                                   |
-| untar        | Untars a file to a directory, allowing renames                                   |
+| st           | Super Tar, adds renaming functionality to tar                                    |
 
 ## Examples
 
