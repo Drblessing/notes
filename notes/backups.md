@@ -63,11 +63,4 @@ How often, you ask? Well, that depends on how fast your gold mine is filling up.
 
 ## Hashes
 
-Check the hash of the archive, as well as the diff between original with:
-
-```bash
-diff -r /path/to/original/directory /path/to/extracted/directory
-```
-
-In no particular order or reason: <br>
-43b033e6f296f6363620aedcb6e065e99f106b7a35030c96f342ce7ce9a61fca
+Keep a record of the hashes of the backups to verify data integrity.
