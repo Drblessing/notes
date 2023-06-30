@@ -36,8 +36,14 @@ class DailyBrief:
         "https://www.xda-developers.com/",
         "https://www.visualcapitalist.com",
         "https://physicsworld.com",
-        "https://arstechnica.com/",
+        "https://4chan.org/biz",
+        "https://4chan.org/g/",
         "https://www.investopedia.com",
+        "https://instapundit.com/",
+        "https://zerohedge.com/",
+        "https://www.cato.org",
+        "https://www.n4g.com",
+        "https://pcgamer.com",
     ]
 
     URLS_RESEARCH = [

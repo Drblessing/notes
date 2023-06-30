@@ -1,8 +1,0 @@
-#!/usr/bin/env python3
-# Untar a file, also adds renaming functionality to avoid naming conflicts,
-# and when you don't know the output name of the file.
-# Usage: untar <file> <output name>
-
-
-import sys
-import tarfile
