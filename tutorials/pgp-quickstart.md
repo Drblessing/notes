@@ -1,22 +1,8 @@
 # PGP
 
-## Table of Contents
-
-Introduction
-<br>Installing GPG
-<br>Creating a New Key Pair
-<br>Exporting Your Public Key
-<br>Sharing Your Public Key to a Keyserver
-<br>Importing Someone Else's Public Key
-<br>Encrypting a Message
-<br>Decrypting a Message
-<br>Signing a Message
-<br>Verifying a Signed Message
-<br>Conclusion and Further Resources
-
 ## Introduction
 
-Welcome to our tutorial on using the GPG Command Line Interface (CLI) to manage your PGP keys and encrypt your communication. In this tutorial, we will walk you through everything you need to know to get started, from installing GPG to encrypting and signing messages. By the end of this tutorial, you'll be able to generate your own PGP keys, share them on a keyserver, and encrypt and sign your messages.
+Welcome to my tutorial on using the GPG Command Line Interface (CLI) to manage my PGP keys and encrypt your communication. In this tutorial, we will walk you through everything you need to know to get started, from installing GPG to encrypting and signing messages. By the end of this tutorial, you'll be able to generate your own PGP keys, share them on a keyserver, and encrypt and sign your messages.
 
 ## Installing GPG
 
@@ -46,7 +32,18 @@ You can generate a new key pair with the following command:
 gpg --full-generate-key
 ```
 
+To list keyids, you can use the `--list-keys` command.
+Keyids are the last 8 characters of the fingerprint.
+
+```bash
+gpg --list-keys --keyid short
+```
+
 To get the key fingerprint, you can ues the `--fingerprint` command:
+
+While both Key IDs and fingerprints can be used to identify GPG keys, fingerprints are generally considered more reliable for verification purposes. When sharing your public key with others, it is recommended to provide the fingerprint to ensure that the correct key is being used.
+
+When using GPG commands or interacting with keys, both Key IDs and fingerprints can be used interchangeably, depending on the context and requirements of the specific operation.
 
 ```bash
 gpg --fingerprint <your email address>
@@ -57,7 +54,7 @@ gpg --fingerprint <your email address>
 Once you have generated your key pair, you will need to export your public key so that you can share it with others. You can do this with the following command:
 
 ```bash
-gpg --armor --export <your email address> > public_key.asc
+gpg --armor --export <your email address, or keyid> > public_key.asc
 ```
 
 ## Sharing Your Public Key to a Keyserver
@@ -134,6 +131,20 @@ You can sign a message using the `--sign` command:
 gpg --sign message.txt
 ```
 
+You can also clear-sign, which will sign the message and output plaintext:
+
+```bash
+gpg --clear-sign message.txt
+```
+
+You can also create a detached signature, which will output the signature to a separate file:
+
+```bash
+gpg --detach-sign message.txt
+```
+
+Note that while the output may still have the .gpg extension, it is not an encrypted file, but rather a signature file, and anyone can read it and verify the signature.
+
 ## Verifying a Signed Message
 
 You can verify a signed message using the `--verify` command:
@@ -141,6 +152,26 @@ You can verify a signed message using the `--verify` command:
 ```bash
 gpg --verify message.txt.gpg
 ```
+
+## Encrypting and Signing a Message
+
+You can encrypt and sign a message using the `--encrypt` and `--sign` commands together:
+
+```bash
+gpg --encrypt --sign --recipient <recipient email> message.txt
+```
+
+Note that only the recipient will be able to decrypt the message and verify the signature.
+
+## Notes
+
+There's a lot going on here, let's recap. We'll break it down by file extensions.
+
+**.sig:** This is a detached signature. It is not encrypted, and anyone can read it. It can be used to verify the authenticity of a signed message, that is not included in the file.
+
+**.asc:** This is an ASCII-armored public key. It is not encrypted, and anyone can read it. It can be used to encrypt messages to the key owner. It can also be the output of a clear signature, which includes the message and the signature verifying it. This is also always unencrypted.
+
+**.gpg:** Either encrypted or unencrypted. One possibility is that this is an encrypted message to a recipient of a public key. The encrypted message is either signed or unsigned. Only the recipient can verify the signature, because it has to be decrypted first. It can also be an uncrypted but signed message from a sender. Anyone can read the message, and verify the signature, if they have the public key of the sender.
 
 ## Conclusion and Further Resources
 

@@ -30,7 +30,7 @@ PGP is closed source, whereas GNU Privacy Guard (GPG) is open source. GPG is a f
 
 [GPG link](https://gnupg.org/)
 
-Here is a tutorial for using GPG: (link to the pgp.md file in the tutorial folder) [test](../Tutorials/pgp.md)
+[Here](/tutorials/pgp-quickstart.md) is a tutorial for using GPG.
 
 Phil Zimmerman, the creator of PGP, was investigated by the US government for violating the Arms Export Control Act. The government claimed that PGP was a munition, and that it was illegal to export it. The investigation was eventually dropped. A munition is a weapon, ammunition, or explosive. Note that a piece of computer code is being compared to a bomb.
 
