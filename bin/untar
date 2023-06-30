@@ -1,18 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env python3
 # Untar a file, also adds renaming functionality to avoid naming conflicts,
 # and when you don't know the output name of the file.
 # Usage: untar <file> <output name>
 
-# Throw
 
-# Create a temporary directory with a whacky name to avoid naming conflicts
-tmpdir="/tmp/untar0xae2d2525c-$(date +%s%N)"
-mkdir "$tmpdir"
-
-# trap statement to remove the temporary directory
-trap 'rm -rf "$tmpdir"' EXIT
-echo "Created temporary directory $tmpdir"
-
-# Untar the file into the temporary directory
-# tar -xf "$1" -C "$tmpdir"
-
+import sys
+import tarfile
