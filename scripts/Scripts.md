@@ -41,3 +41,7 @@ t = EthTransaction.from_dict(transaction_data)
 print(t.txn_fee, t.txn_fee.usdp)
 # 526714.737437720 gwei $0.99
 ```
+
+## Convert
+
+Opus to mp3
