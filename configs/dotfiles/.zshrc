@@ -30,11 +30,9 @@ export PATH="$HOME/Github/notes/bin:$PATH"
 
 # ---------------------------------------------
 # |                                           |
-# |             ssh-agent                     |
+# |             Poetry                        |
 # |                                           |
 # ---------------------------------------------
-if [ -z "$SSH_AUTH_SOCK" ]; then
-   eval `ssh-agent -s`
-fi
+export PATH="/Users/dbless/.local/bin:$PATH"
 
 
