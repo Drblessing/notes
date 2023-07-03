@@ -8,11 +8,30 @@
 # 4. Commit with funny message
 # 5. Push to remote
 
+# Install libraries
+import sys
+import subprocess
+
+
+def install_packages():
+    """Install packages"""
+    subprocess.check_call(
+        [
+            sys.executable,
+            "-m",
+            "pip",
+            "install",
+            "requests",
+            "termcolor",
+        ]
+    )
+
+
+install_packages()
+
 # Import libraries
 import random
-import subprocess
 import requests
-import sys
 import argparse
 from termcolor import colored
 
