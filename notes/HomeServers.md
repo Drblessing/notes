@@ -9,3 +9,7 @@ This is a 2U rackmount server that I use as a hypervisor. It has 2 Intel Xeon E5
 ## [Dell PowerEdge R710](https://www.dell.com/support/home/en-us/product-support/product/poweredge-r710/manuals)
 
 This is a 2U rackmount server that I use as a NAS. It has 2 Intel Xeon E5620 CPUs, 64GB of RAM, and 6 2TB HDDs. It runs FreeNAS and hosts all of my media.
+
+## [Dell PowerEdge R610](https://www.dell.com/support/home/en-us/product-support/product/poweredge-r610/manuals)
+
+This is a 1U rackmount server that I use as a router. It has 2 Intel Xeon E5620 CPUs, 64GB of RAM, and 2 1TB SSDs. It runs pfSense and hosts all of my network services.
