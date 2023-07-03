@@ -5,3 +5,5 @@ Buying used servers is a great way to get a lot of computing power for cheap. Th
 ## Services Running on Servers
 
 Bitcoin Node
+Ethereum Node
+Monero Node
