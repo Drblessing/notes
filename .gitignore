@@ -12,6 +12,7 @@ __pycache__/
 Data/
 # Distribution / packaging
 .Python
+bin/google-cloud-sdk
 build/
 develop-eggs/
 dist/
