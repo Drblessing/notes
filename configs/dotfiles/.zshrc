@@ -35,4 +35,9 @@ export PATH="$HOME/Github/notes/bin:$PATH"
 # ---------------------------------------------
 export PATH="/Users/dbless/.local/bin:$PATH"
 
-
+# ---------------------------------------------
+# |                                           |
+# |             GCloud                        |
+# |                                           |
+# ---------------------------------------------
+export PATH="$HOME/Github/notes/bin/google-cloud-sdk/bin:$PATH"
