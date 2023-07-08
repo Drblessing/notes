@@ -27,7 +27,7 @@ giflib			libunibreak		sdl2
 git-lfs			libunistring		secp256k1
 glib			libusb			sha3sum
 gmp			libvidstab		slither-analyzer
-gnupg			libvmaf			snappy
+gnuipg			libvmaf			snappy
 gnutls			libvorbis		solc-select
 go			libvpx			solidity
 gobject-introspection	libx11			speex
