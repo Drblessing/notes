@@ -43,7 +43,6 @@ class PomodoroTimer:
     def load_image(path: str, size=(64, 64)) -> ImageTk.PhotoImage:
         """Loads an image from the assets folder and returns a resized image."""
         new_path = PomodoroTimer.dynamic_path(path)
-        print(new_path)
         image = Image.open(PomodoroTimer.dynamic_path(path))
         image = image.resize(size)
         return ImageTk.PhotoImage(image)
@@ -282,4 +281,5 @@ class PomodoroTimer:
 
 
 if __name__ == "__main__":
+    print("Happy Working!")
     pomodoro_timer = PomodoroTimer()
