@@ -3,7 +3,9 @@
 # |              Homebrew Configuration       |
 # |                                           |
 # ---------------------------------------------
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [[ "$(uname -m)" == *"arm"* ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 export HOMEBREW_NO_ANALYTICS=1
 
 # ---------------------------------------------
