@@ -162,7 +162,7 @@ class LazyGit:
     @staticmethod
     def add_all_files_to_staging():
         """Add all files to staging"""
-        LazyGit.run_command(["git", "add", "."])
+        LazyGit.run_command(["git", "add", "-A"])
 
     # 4. Commit with funny message
     def commit_with_funny_message(self):
