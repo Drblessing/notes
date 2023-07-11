@@ -2,8 +2,6 @@
 
 Notes from the wild wild west of technology!
 
----
-
 ## Current Setup
 
 | Category  | Name             |
@@ -14,8 +12,6 @@ Notes from the wild wild west of technology!
 | Processor | AArch64 (ARM64)  |
 | Computer  | MacBook Pro (M1) |
 | VPN       | Cloudflare WARP  |
-
----
 
 ## Public Goods Infrastructure
 
@@ -28,17 +24,11 @@ Notes from the wild wild west of technology!
 | Tor Node           | Anonymous decentralized internet      |
 | Lightning Node     | Decentralized payments                |
 
----
-
 ## PGP Key
 
 7520 DAE8 0FC1 79E1 25FB D5D6 FE3C 4525 0F06 BC6B
 
----
-
 ## [Hosted Projects](Projects/hosted.md)
-
----
 
 ## Useful Links
 
