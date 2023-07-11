@@ -9,19 +9,18 @@ Whenever I update my bin here, it gets updated on all my machines. The programs 
 
 ### Self-made scripts
 
-| File             | Description                                                                      |
-| ---------------- | -------------------------------------------------------------------------------- |
-| dirp             | Prints and copies the current directory contents and one sub-level deep.         |
-| reth             | Ethereum execution client written in Rust.                                       |
-| speedtest        | Opens speed.cloudflare.com in a browser                                          |
-| hack             | Opens ~/Github/workbench in VSCode                                               |
-| notes            | Opens ~/Github/notes in VSCode                                                   |
-| lazygit          | Runs lazy git                                                                    |
-| daily-brief      | Opens daily websites in browser: news, blogs, research or daily info             |
-| update-notes     | Updates notes repo to keep machines in sync. A script updating itself, how cool. |
-| compare-hashes   | Compares the hash of two files                                                   |
-| st               | Super Tar, adds renaming functionality to tar                                    |
-| Google cloud sdk | GCloud                                                                           |
+| File           | Description                                                                      |
+| -------------- | -------------------------------------------------------------------------------- |
+| speedtest      | Opens speed.cloudflare.com in a browser.                                         |
+| dirp           | Prints and copies the current directory contents and one sub-level deep.         |
+| hack           | Opens ~/Github/workbench in VSCode.                                              |
+| notes          | Opens ~/Github/notes in VSCode.                                                  |
+| lazygit        | Runs lazy git.                                                                   |
+| daily-brief    | Opens daily websites in browser: news, blogs, research or daily info.            |
+| update-notes   | Updates notes repo to keep machines in sync. A script updating itself, how cool. |
+| compare-hashes | Compares the hash of two files.                                                  |
+| st             | Super Tar, adds renaming functionality to tar.                                   |
+| pomodoro       | A pomodoro timer.                                                                |
 
 ### Other software
 
