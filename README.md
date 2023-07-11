@@ -28,7 +28,7 @@ Notes from the wild wild west of technology!
 
 7520 DAE8 0FC1 79E1 25FB D5D6 FE3C 4525 0F06 BC6B
 
-## [Hosted Projects](Projects/hosted.md)
+## [Hosted Projects](projects/projects.md)
 
 ## Useful Links
 
