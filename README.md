@@ -32,7 +32,7 @@ Notes from the wild wild west of technology!
 
 ## Useful Links
 
-[Tools](Notes/Tools.md)
+[Tools](notes/Tools.md)
 
 [UNIX Commands](Notes/system_commands.md)
 
