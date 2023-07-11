@@ -32,6 +32,8 @@ Notes from the wild wild west of technology!
 
 ## Useful Links
 
+[Personal Dev Log](log.md)
+
 [Tools](notes/Tools.md)
 
 [UNIX Commands](Notes/system_commands.md)
