@@ -14,3 +14,26 @@ r = requests.get(
     headers={"Authorization": f"Bearer {TOKEN}"},
 )
 r.text
+
+# Other way to do it
+
+
+from google.oauth2 import id_token
+from google.oauth2 import service_account
+import google.auth
+import google.auth.transport.requests
+from google.auth.transport.requests import AuthorizedSession
+
+target_audience = "https://<project-id>.cloudfunctions.net/function-3"
+url = "https://<project-id>.cloudfunctions.net/function-3"
+
+creds = service_account.IDTokenCredentials.from_service_account_file(
+    "keyfile.json", target_audience=target_audience
+)
+
+authed_session = AuthorizedSession(creds)
+
+# make authenticated request and print the response, status_code
+resp = authed_session.get(url)
+print(resp.status_code)
+print(resp.text)

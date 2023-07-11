@@ -31,6 +31,8 @@ r = requests.get(
 r.text
 ```
 
+More in [gcloud_functions.py](scripts/gcloud_functions.py)
+
 4. To do it with the authenticated request session, you need to create a authenticated reqeust session.
 
 ## Adding pip dependencies to AWS lambda functions
