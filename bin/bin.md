@@ -7,6 +7,8 @@ Whenever I update my bin here, it gets updated on all my machines. The programs 
 
 ## Contents
 
+### Self-made scripts
+
 | File             | Description                                                                      |
 | ---------------- | -------------------------------------------------------------------------------- |
 | dirp             | Prints and copies the current directory contents and one sub-level deep.         |
@@ -20,6 +22,13 @@ Whenever I update my bin here, it gets updated on all my machines. The programs 
 | compare-hashes   | Compares the hash of two files                                                   |
 | st               | Super Tar, adds renaming functionality to tar                                    |
 | Google cloud sdk | GCloud                                                                           |
+
+### Other software
+
+| File             | Description                                |
+| ---------------- | ------------------------------------------ |
+| reth             | Ethereum execution client written in Rust. |
+| Google cloud sdk | GCloud                                     |
 
 ## Examples
 
