@@ -32,7 +32,7 @@ Notes from the wild wild west of technology!
 
 ## PGP Key
 
-7EA8 A064 3DA5 B6B2 34C9 CA0D C3DE F57A 0F98 39F9
+7520 DAE8 0FC1 79E1 25FB D5D6 FE3C 4525 0F06 BC6B
 
 ---
 
