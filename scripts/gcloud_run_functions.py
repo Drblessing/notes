@@ -15,7 +15,7 @@ r = requests.get(
 )
 r.text
 
-# Other way to do it
+# Other way to do it:
 
 
 from google.oauth2 import id_token
