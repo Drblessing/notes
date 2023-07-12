@@ -35,6 +35,10 @@ More in [gcloud_functions.py](scripts/gcloud_functions.py)
 
 4. To do it with the authenticated request session, you need to create a authenticated reqeust session.
 
+## Creating Google Cloud Function
+
+You can use the cli but you can also upload a zip file with the code and requirements.txt. Needs to use functions frameworks and main.py.
+
 ## Adding pip dependencies to AWS lambda functions
 
 This is also a pain, you can't just have it install from a requirements.txt, you need to either add the depenedencies as a layer, or zip the dependencies with the function. For C-dependent packages, you have to use layers. You can also create a Docker image of the function and deploy it that way.
