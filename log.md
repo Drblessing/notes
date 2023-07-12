@@ -44,3 +44,23 @@ This is also a pain, you can't just have it install from a requirements.txt, you
 AWS Lambda or Google CLoud Functions have generous free tiers.
 
 If you use Docker, use AWS Lambda, because you can create a Docker image and deploy it to AWS Lambda.
+
+## Deploying Docker images to AWS Lambda
+
+https://docs.aws.amazon.com/lambda/latest/dg/python-image.html#python-image-instructions
+
+The main part is you have to export access keys from aws that have ecr permissions, and then use the aws cli to login to docker.
+
+Login to docker:
+
+`aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 111111111.dkr.ecr.us-east-1.amazonaws.com`
+
+Build the image:
+
+`docker tag docker-image:test 111111111.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest`
+
+Push the image:
+
+`docker push 111111111.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest`
+
+Replace 111111111 with your account id, and hello-world with the name of your image, and Amazon ECR repository URI with the repositoryURI of your ECR repository.
