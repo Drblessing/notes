@@ -1,5 +1,9 @@
 # 2023-07-12
 
+## Replit
+
+Hosting simple python projects on replit is a cool free option, a bit buggy.
+
 ## Python load envs boilerplate
 
 ```python
