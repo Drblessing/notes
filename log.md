@@ -1,3 +1,22 @@
+# 2023-07-12
+
+## Python load envs boilerplate
+
+```python
+def load_envs(*names) -> list:
+    import os
+    import dotenv
+
+    dotenv.load_dotenv()
+
+    if len(names) == 1 and isinstance(names[0], list):
+        names = names[0]
+
+    return [os.getenv(name, "") for name in names]
+```
+
+Works with list or multiple arguments.
+
 # 2023-07-11
 
 ## Running authenticated google cloud functions
