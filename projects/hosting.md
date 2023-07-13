@@ -15,3 +15,20 @@ Python Fastapi can be hosted serverless on AWS Lambda or Google Cloud functions 
 Simple Tutorial: https://github.com/pixegami/fastapi-tutorial
 
 Bugfixes: Use fastapi 0.99.0, and use a fresh directory.
+
+## Static Content
+
+Cloudflare pages is by far the best place to host static content and sites. Even without a framework, you can just throw your files, whether they be pdf, insanely large jpeg, pdfs, books, binaries, etc. with no limits, and it's free, unlimited, and ultra fast.
+
+For example, I hosted a repo that only had this structure:
+
+```
+Images/
+    img1.jpg
+    4kimg2.png
+    ...
+```
+
+And they were available at <cloudflare-pages-url>/Images/img1.jpg, etc. So any file you put in the repo is available at the url in the file structure.
+
+I'm not sure hosting a commercial site on cloudflare pages is a good idea, but it's great for personal projects, and you can use it to host your static content, and then use a serverless API to serve dynamic content.
