@@ -31,4 +31,4 @@ Images/
 
 And they were available at <cloudflare-pages-url>/Images/img1.jpg, etc. So any file you put in the repo is available at the url in the file structure.
 
-I'm not sure hosting a commercial site on cloudflare pages is a good idea, but it's great for personal projects, and you can use it to host your static content, and then use a serverless API to serve dynamic content.
+I'm not sure using it as a CDN is allowed, but it's a great way to host static content for hobby projects. There are commercial plans for more advanced features.
