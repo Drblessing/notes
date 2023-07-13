@@ -21,6 +21,10 @@ def load_envs(*names) -> list:
 
 Works with list or multiple arguments.
 
+## Fastapi on AWS Lambda
+
+Finally got this working. Some weird heisen-bugs in my pwd where the lib of packages was much too large and wouldn't import packages correclty. Fixed it by starting the tutorial in a new repo. Another bug with the new fastapi 0.100.0, fixed by pinning to 0.99.0 as suggest on stack overflow.
+
 # 2023-07-11
 
 ## Running authenticated google cloud functions
@@ -64,7 +68,11 @@ You can use the cli but you can also upload a zip file with the code and require
 
 ## Adding pip dependencies to AWS lambda functions
 
-This is also a pain, you can't just have it install from a requirements.txt, you need to either add the depenedencies as a layer, or zip the dependencies with the function. For C-dependent packages, you have to use layers. You can also create a Docker image of the function and deploy it that way.
+pip install -t lib -r requirements.txt
+(cd lib; zip ../lambda_function.zip -r .)
+zip lambda_function.zip -u main.py
+
+Note using the cool paranthesis trick to not edit main shell.
 
 ## Hosting simple python apps
 
