@@ -1,3 +1,9 @@
+# 2023-07-13
+
+## Pytorch Tips
+
+Pytorch is great
+
 # 2023-07-12
 
 ## Replit
