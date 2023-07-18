@@ -48,3 +48,4 @@ export PATH="$HOME/Github/notes/bin/google-cloud-sdk/bin:$PATH"
 # |                                           |
 # ---------------------------------------------
 alias lg="lazygit"
+alias dbr="daily-brief"

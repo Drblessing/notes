@@ -3,19 +3,45 @@
 import webbrowser
 import argparse
 from enum import Enum
+from dataclasses import dataclass
+import os
 
 
-class DailyBrief:
-    """Opens a daily brief of cool stuff in the browser."""
+@dataclass
+class ContentCategory:
+    """Class for storing content categories."""
 
-    # List of urls to open
-    class ContentType(Enum):
-        DAILY = 1
-        NEWS = 2
-        RESEARCH = 3
-        BLOGS = 4
+    name: str
+    urls: list[str]
 
-    URLS_DAILY = [
+
+@dataclass
+class ContentCollection:
+    """Class for storing multiplte content categories."""
+
+    categories: dict[str, ContentCategory]
+
+
+CONTENT_DAILY = ContentCategory(
+    name="Daily",
+    urls=[
+        "https://gmail.com",
+        "https://www.icloud.com/calendar/",
+        "https://www.notion.so/",
+        "https://web.telegram.org/",
+        "https://discord.com/app",
+        "https://www.linkedin.com/",
+        "https://www.twitter.com/",
+        "https://www.fiverr.com/",
+        "https://www.upwork.com/",
+        "https://chat.openai.com/",
+    ],
+)
+
+
+CONTENT_INFO = ContentCategory(
+    name="Info",
+    urls=[
         "https://companiesmarketcap.com/assets-by-market-cap/",
         "https://www.coingecko.com/",
         "https://github.com/trending",
@@ -28,9 +54,12 @@ class DailyBrief:
         "https://clientdiversity.org/#distribution",
         "https://defillama.com/",
         "https://www.google.com/finance/quote/SCHW:NYSE",
-    ]
+    ],
+)
 
-    URLS_NEWS = [
+CONTENT_NEWS = ContentCategory(
+    name="News",
+    urls=[
         "https://rekt.news",
         "https://weekinethereumnews.com/",
         "https://www.xda-developers.com/",
@@ -44,39 +73,57 @@ class DailyBrief:
         "https://www.cato.org",
         "https://www.n4g.com",
         "https://pcgamer.com",
-    ]
+    ],
+)
 
-    URLS_RESEARCH = [
-        "https://forum.soliditylang.org/",
-        "https://ethresear.ch/",
-        "https://collective.flashbots.net/latest",
-    ]
-
-    URLS_BLOGS = [
+CONTENT_BLOGS = ContentCategory(
+    name="Blogs",
+    urls=[
         "https://dbless.dev",
         "https://cmichel.io",
         "https://simonelnahas.com/",
         "https://www.saianeesh.com/",
         "https://hackernoon.com/exit-liquidity",
-    ]
+    ],
+)
 
-    CONTENT_DICT = {
-        ContentType.DAILY: URLS_DAILY,
-        ContentType.NEWS: URLS_NEWS,
-        ContentType.RESEARCH: URLS_RESEARCH,
-        ContentType.BLOGS: URLS_BLOGS,
-    }
+CONTENT_AI = ContentCategory(
+    name="AI",
+    urls=[
+        "https://chat.openai.com/",
+        "https://bard.google.com/",
+        # Also opens Bing Chat in the edge browser.
+    ],
+)
+
+CONTENT_BORED = ContentCategory(
+    name="Bored",
+    urls=[
+        "https://web.telegram.org/",
+        "https://discord.com/app",
+        "https://www.twitter.com/",
+    ],
+)
+
+
+class DailyBrief:
+    """Opens different content in the browser."""
+
+    CONTENT_COLLECTION = ContentCollection(
+        categories={
+            "daily": CONTENT_DAILY,
+            "info": CONTENT_INFO,
+            "news": CONTENT_NEWS,
+            "blogs": CONTENT_BLOGS,
+            "ai": CONTENT_AI,
+            "bored": CONTENT_BORED,
+        }
+    )
 
     def parse_args(self):
         """Parse arguments"""
         parser = argparse.ArgumentParser(
             description="A python script that opens a daily brief of cool stuff in the browser."
-        )
-        parser.add_argument(
-            "-n",
-            "--news",
-            action="store_true",
-            help="Opens news sites.",
         )
 
         parser.add_argument(
@@ -87,43 +134,40 @@ class DailyBrief:
             help="Show program's version number and exit.",
         )
 
+        # Add category argument
         parser.add_argument(
-            "--research",
-            "-r",
-            action="store_true",
-            help="Opens research sites.",
-        )
-
-        parser.add_argument(
-            "--blogs",
-            "-b",
-            action="store_true",
-            help="Opens blogs.",
+            "--category",
+            "-c",
+            choices=self.CONTENT_COLLECTION.categories.keys(),
+            default="daily",
+            help="Choose a category.",
         )
 
         args = parser.parse_args()
+        self.category = args.category
 
         return args
 
     def __init__(self):
-        args = self.parse_args()
-        if args.news:
-            self.content = self.ContentType.NEWS
-        elif args.research:
-            self.content = self.ContentType.RESEARCH
-        elif args.blogs:
-            self.content = self.ContentType.BLOGS
-        else:
-            self.content = self.ContentType.DAILY
+        """Initializes the DailyBrief class."""
+        self.parse_args()
+        self.open_category()
 
-    def open_list(self, list):
+    @staticmethod
+    def open_list(list):
         """Opens a list of urls in the browser."""
         for url in list:
             webbrowser.open_new_tab(url)
 
-    def run(self):
-        self.open_list(self.CONTENT_DICT[self.content])
+    def open_category(self):
+        """Opens a category of urls in the browser."""
+        category = self.CONTENT_COLLECTION.categories[self.category]
+        self.open_list(category.urls)
+
+        # Open Bing Chat in the edge browser.
+        if self.category == "ai":
+            os.system('open -a "Microsoft Edge" https://www.bing.com/chat')
 
 
 if __name__ == "__main__":
-    DailyBrief().run()
+    daily_brief = DailyBrief()
