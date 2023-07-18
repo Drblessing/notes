@@ -10,17 +10,17 @@ https://developers.cloudflare.com/pages/framework-guides/deploy-a-nextjs-site/
 
 4. Build step
 
-Configuration option Value
-Production branch main
-Build command npx @cloudflare/next-on-pages@1
-Build directory .vercel/output/static
+**Configuration option:** Value <br>
+**Production branch:** Main <br>
+**Build command:** npx @cloudflare/next-on-pages@ <br>
+**Build directory:** .vercel/output/static
 
 4. Comptability flags
 
-Settings > Functions > Compatibility Flags.
-nodejs_compat flag for both production and preview.
+Settings > Functions > Compatibility Flags <br>
+`nodejs_compat` flag for both production and preview.
 
-Compatibility Date and configure a compatibility date that is at least 2022-11-30 for both production and preview.
+**Compatibility Date:** At least 2022-11-30
 
 5. Smart Placement off
 
