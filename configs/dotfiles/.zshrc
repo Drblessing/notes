@@ -41,3 +41,10 @@ export PATH="/Users/dbless/.local/bin:$PATH"
 # |                                           |
 # ---------------------------------------------
 export PATH="$HOME/Github/notes/bin/google-cloud-sdk/bin:$PATH"
+
+# ---------------------------------------------
+# |                                           |
+# |             Aliases                       |
+# |                                           |
+# ---------------------------------------------
+alias lg="lazygit"
