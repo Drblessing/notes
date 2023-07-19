@@ -2,7 +2,34 @@
 
 ## Pytorch Tips
 
-Pytorch is great
+Pytorch is great for easy prototyping of neural networks. Here are some tips I learned.
+
+### Models
+
+All models inherit from nn.Module and have to implement `__init__` and `forward` methods.
+
+Dataclasses and Dataloaders handle Data
+
+### Layers
+
+- Linear
+- Relu
+- Dropout
+- Pooling
+- Normalization
+- Transformer
+- LSTM
+
+### Training
+
+- Tensorboard logging images, validation loss, accuracy, and 3d clustering
+
+### Best practices training script
+
+- Log training and validation loss in tensorboard with add_scalars
+- Track best vloss and save best models
+- Train model in loop: zero_grad, loss.backward, optimizer.step
+- Can refactor training into general functions like FastAI does
 
 # 2023-07-12
 
