@@ -92,6 +92,7 @@ CONTENT_AI = ContentCategory(
     urls=[
         "https://chat.openai.com/",
         "https://bard.google.com/",
+        "https://llama2.ai/"
         # Also opens Bing Chat in the edge browser.
     ],
 )
