@@ -17,7 +17,7 @@ def load_environment_variables(env_variables: list[str]) -> dict[str, str]:
     """Loads environment variables from a .env file."""
 
     # Throw error if .env doesn't exist.
-    if dotenv.load_dotenv() is False:
+    if dotenv.load_dotenv(override=True) is False:
         raise FileNotFoundError(".env file not found.")
 
     environment_variables = {}
@@ -39,7 +39,7 @@ def load_all_environment_variables() -> dict[str, str]:
     # Throw error if .env.example doesn't exist.
     env_example_path = dotenv.find_dotenv(".env.example", raise_error_if_not_found=True)
     # Throw error if .env doesn't exist.
-    if dotenv.load_dotenv() is False:
+    if dotenv.load_dotenv(override=True) is False:
         raise FileNotFoundError(".env file not found.")
 
     # Read .env.example file.
