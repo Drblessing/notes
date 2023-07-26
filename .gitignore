@@ -2,6 +2,9 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 ### Python ###
 # Byte-compiled / optimized / DLL files
+chromedriver
+geckodriver
+msedgedriver
 __pycache__/
 *.py[cod]
 *$py.class
