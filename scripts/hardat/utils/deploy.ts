@@ -1,7 +1,11 @@
 import { ethers } from 'hardhat';
 import { verifyContract } from './verifyRuntime';
 
-async function main(contractName: string, args: any[], value: string) {
+export async function mainDeploy(
+  contractName: string,
+  args: any[],
+  value: string
+) {
   const contract = await ethers.deployContract(contractName, args, {
     value,
   });

@@ -17,10 +17,15 @@ export async function verifyContract(deployedContract: any, args?: any[]) {
     throw new Error('Deployment transaction not found');
   }
 
-  await deployTxn.wait(3);
+  await deployTxn.wait(4);
 
   await run('verify:verify', {
     address: address,
     constructorArguments: args,
   });
+
+  console.log(`Txn: ${deployTxn.hash}`);
+
+  const tendrly = `https://dashboard.tenderly.co/tx/${networkName}/${deployTxn.hash}`;
+  console.log(`Tenderly: ${tendrly}`);
 }
