@@ -16,7 +16,7 @@ const config: HardhatUserConfig = {
     },
   },
   solidity: {
-    version: '0.8.21',
+    version: '0.8.19',
     settings: {
       optimizer: {
         enabled: true,
@@ -27,7 +27,7 @@ const config: HardhatUserConfig = {
   etherscan: {
     apiKey: {
       sepolia: etherscan_api_key('ETHERSCAN'),
-      mumbai: etherscan_api_key('POLYGONSCAN'),
+      polygonMumbai: etherscan_api_key('POLYGONSCAN'),
     },
   },
 };

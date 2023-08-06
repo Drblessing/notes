@@ -17,6 +17,8 @@ export async function mainDeploy(
   const address = await contract.getAddress();
 
   console.log(`Deployed ${contractName} to ${address} with args ${args}`);
+
+  return contract;
 }
 
 // We recommend this pattern to be able to use async/await everywhere
