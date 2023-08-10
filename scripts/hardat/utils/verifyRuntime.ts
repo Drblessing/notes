@@ -17,8 +17,10 @@ export async function verifyContract(deployedContract: any, args?: any[]) {
     throw new Error('Deployment transaction not found');
   }
 
-  // Wait a while for mumbai
+  // Wait a while for mumbai and polygon
   if (networkName === 'mumbai') {
+    await deployTxn.wait(10);
+  } else if (networkName === 'polygon') {
     await deployTxn.wait(10);
   } else {
     await deployTxn.wait(4);

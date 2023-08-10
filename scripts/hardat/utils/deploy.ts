@@ -1,11 +1,14 @@
 import { ethers } from 'hardhat';
 import { verifyContract } from './verifyRuntime';
+import { warnIfMainnet } from './warnIfMainnet';
 
 export async function mainDeploy(
   contractName: string,
   args: any[],
   value: string
 ) {
+  await warnIfMainnet();
+
   const contract = await ethers.deployContract(contractName, args, {
     value,
   });
@@ -20,10 +23,3 @@ export async function mainDeploy(
 
   return contract;
 }
-
-// We recommend this pattern to be able to use async/await everywhere
-// and properly handle errors.
-// main().catch((error) => {
-//   console.error(error);
-//   process.exitCode = 1;
-// });
