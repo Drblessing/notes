@@ -34,7 +34,6 @@ CONTENT_DAILY = ContentCategory(
         "https://www.twitter.com/",
         "https://www.fiverr.com/",
         "https://www.upwork.com/",
-        "https://chat.openai.com/",
     ],
 )
 
