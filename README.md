@@ -8,7 +8,7 @@ Notes from the wild wild west of technology!
 | --------- | ---------------- |
 | IDE       | VSCode           |
 | OS        | MacOS            |
-| Browser   | Brave            |
+| Browser   | Brave/Fireefox   |
 | Processor | AArch64 (ARM64)  |
 | Computer  | MacBook Pro (M1) |
 | VPN       | Cloudflare WARP  |
