@@ -4,14 +4,14 @@ Notes from the wild wild west of technology!
 
 ## Current Setup
 
-| Category  | Name             |
-| --------- | ---------------- |
-| IDE       | VSCode           |
-| OS        | MacOS            |
-| Browser   | Brave/Fireefox   |
-| Processor | AArch64 (ARM64)  |
-| Computer  | MacBook Pro (M1) |
-| VPN       | Cloudflare WARP  |
+| Category  | Name                          |
+| --------- | ----------------------------- |
+| IDE       | VSCode                        |
+| OS        | MacOS with UTM Virtualization |
+| Browser   | Brave/Fireefox                |
+| Processor | AArch64 (ARM64)               |
+| Computer  | MacBook Pro (M1)              |
+| VPN       | Cloudflare WARP               |
 
 ## Public Goods Infrastructure
 
