@@ -1,4 +1,6 @@
-# This script edits mp3 metadata.
+#!/bin/bash
+
+# This script edits ogg metadata.
 
 # Check if enough arguments are provided
 if [[ $# -lt 4 ]]; then
@@ -16,25 +18,25 @@ while [[ "$#" -gt 0 ]]; do
     shift
 done
 
-# Loop over all .mp3 files in the current directory
-for file in *.mp3; do
+# Loop over all .ogg files in the current directory
+for file in *.ogg; do
     # Extract the track number from the filename
     track_number=$(echo "$file" | cut -d'.' -f1)
 
     # Remove all tags
-    eyeD3 --remove-all "$file"
+    vorbiscomment -w -c /dev/null "$file"
 
     # Set the artist name, album name, and track number
-    eyeD3 --artist="$artist" --album="$album" --track="$track_number" "$file"
-    
+    vorbiscomment -a -t "ARTIST=$artist" "$file"
+    vorbiscomment -a -t "ALBUM=$album" "$file"
+    vorbiscomment -a -t "TRACKNUMBER=$track_number" "$file"
 
-    # Set the album art to "Album_Cover.jpg" (uncomment if needed)
-    eyeD3 --add-image=Album_Cover.jpg:FRONT_COVER "$file"
+    # Note: Setting album art in OGG files is a bit more involved and isn't handled by vorbiscomment directly. 
+    # You'd need other tools or scripts for that purpose. Hence, that step is omitted here.
 
     # Remove track number from prefix of filename
-    # So "1. song.mp3" becomes "song.mp3"
+    # So "1. song.ogg" becomes "song.ogg"
     mv "$file" "${file#$track_number. }"
 done
 
-echo "All mp3 files have been updated!"
-
+echo "All ogg files have been updated!"
