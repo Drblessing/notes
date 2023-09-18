@@ -1,26 +1,39 @@
-# Scripts
+# 🥾 Scripts
 
-Scripts I've written to make my life easier.
+Howdy Partner!
+This here is where I keep all my precious tools, like that trusty old python logger setup of mine.
 
-Scripts that are in my bin are moved to [here](/bin).
+| **Script**    | **Description**                                                                        |
+| ------------- | -------------------------------------------------------------------------------------- |
+| python_logger | A python logger setup that I use in all my projects.                                   |
+| ethlibrary    | A library for working with ethereum numbers.                                           |
+| hardhat       | A script for setting up a hardhat project.                                             |
+| media         | Scripts for converting media files.                                                    |
+| env loader    | A script for loading environment variables from a .env file. with extra functionality. |
 
-To use these scripts, you have to:
+## Usage
 
-1. Add a shebang line to the top of the script with the path to the program interpreter. For example, `#!/usr/bin/env python3` for Python 3.
+To use these scripts as command line tools, you have to:
+
+1. Add a shebang line to the top of the script with the path to the program interpreter. For example, `#!/usr/bin/env python3` for, you gessed it, Python3.
 
 2. Make the script executable with `chmod +x <script>`.
 
-3. Add the script to your path. For example, `sudo cp <script> /usr/local/bin`. I have a directory ~/.local/bin in my path, so I put them there.
+You're all set! For convenience you can also:
+
+3. Add the script to your path. The bin folder of this Github is added to my path, so I put them there.
 
 4. Rename the script to remove the extension. For example, `mv <script>.py <script>`.
 
 5. Run it anywhere with `<script>`.
 
+## Python Logger
+
+My default python logging setup. Logs to a local .log file and optionally to the console. Includes the formatted date, log level, file name and line number, and the message.
+
 ## Eth Library
 
 Containes classes for working with ethereum numbers and transactions. Will auto-calculate and convert Ethereum numbers to and from wei, gwei, and ether. Will auto-convert ethereum numbers to USD with apis, as well as current gas prices. Can input a few numbers into transaction and will auto-calculate transaction cost in USD, burnt eth, etc.
-
-Makes us of Python OOP features like dunder methods, properties, static methods, NamedTuples, and typehints.
 
 ```python
 from ethlibrary import EthNumber, EthTransaction
