@@ -5,7 +5,7 @@ This here is where I keep all my precious tools, like that trusty old python log
 
 | **Script**    | **Description**                                                                        |
 | ------------- | -------------------------------------------------------------------------------------- |
-| python_logger | A python logger setup that I use in all my projects.                                   |
+| Python Logger | A python logger setup that I use in all my projects.                                   |
 | ethlibrary    | A library for working with ethereum numbers.                                           |
 | hardhat       | A script for setting up a hardhat project.                                             |
 | media         | Scripts for converting media files.                                                    |
@@ -55,6 +55,6 @@ print(t.txn_fee, t.txn_fee.usdp)
 # 526714.737437720 gwei $0.99
 ```
 
-## Convert
+## Media
 
-Opus to mp3
+Opus to mp3 and metadata editor scripts.
