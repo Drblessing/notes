@@ -3,13 +3,17 @@
 Howdy Partner!
 This here is where I keep all my precious tools, like that trusty old python logger setup of mine.
 
-| **Script**    | **Description**                                                                        |
-| ------------- | -------------------------------------------------------------------------------------- |
-| Python Logger | A python logger setup that I use in all my projects.                                   |
-| ethlibrary    | A library for working with ethereum numbers.                                           |
-| hardhat       | A script for setting up a hardhat project.                                             |
-| media         | Scripts for converting media files.                                                    |
-| env loader    | A script for loading environment variables from a .env file. with extra functionality. |
+| **Script**           | **Description**                                                                        |
+| -------------------- | -------------------------------------------------------------------------------------- |
+| Python Logger        | A python logger setup that I use in all my projects.                                   |
+| ethlibrary           | A library for working with ethereum numbers.                                           |
+| hardhat              | A script for setting up a hardhat project.                                             |
+| media                | Scripts for converting media files.                                                    |
+| env loader           | A script for loading environment variables from a .env file. with extra functionality. |
+| encrypt              | Simple python script for encrypting and decrypting data.                               |
+| Firefox User Profile | A script for creating and using a new firefox user profile.                            |
+| GCloud Functions     | Running gcloud functions.                                                              |
+| Pytorch Config       | Standard template for pytorch projects.                                                |
 
 ## Usage
 
