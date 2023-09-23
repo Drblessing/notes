@@ -260,7 +260,7 @@ def setup_logging():
     # Get the cwd of this file.
     cwd = Path(__file__).parent
     # Create a path to the log file.
-    log_file = cwd / "audio-helper.log"
+    log_file = cwd / "logs" / "audio-helper.log"
     # Configure root logger with a file handler.
     # Also, my preferred log format and level.
     # Overwrite the log file each time the file is run.

@@ -9,7 +9,7 @@ def main():
     # Get the cwd of this file.
     cwd = Path(__file__).parent
     # Create a path to the log file.
-    log_file = cwd / "myapp.log"
+    log_file = cwd / "logs" / "myapp.log"
     # Configure root logger with a file handler.
     # Also, my preferred log format and level.
     # Overwrite the log file each time myapp.py is run.
