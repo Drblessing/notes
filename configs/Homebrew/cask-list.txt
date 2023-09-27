@@ -1,3 +1,0 @@
-visual-studio-code
-google-chrome
-rectangle
