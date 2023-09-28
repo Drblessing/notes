@@ -11,7 +11,6 @@ Whenever I update my bin here, it gets updated on all my machines. The programs 
 
 | File           | Description                                                                      |
 | -------------- | -------------------------------------------------------------------------------- |
-| speedtest      | Opens speed.cloudflare.com in a browser.                                         |
 | dirp           | Prints and copies the current directory contents and one sub-level deep.         |
 | hack           | Opens ~/Github/workbench in VSCode.                                              |
 | notes          | Opens ~/Github/notes in VSCode.                                                  |
@@ -21,6 +20,7 @@ Whenever I update my bin here, it gets updated on all my machines. The programs 
 | compare-hashes | Compares the hash of two files.                                                  |
 | st             | Super Tar, adds renaming functionality to tar.                                   |
 | pomodoro       | A pomodoro timer.                                                                |
+| audio-helper   | Convert audio files                                                              |
 
 ### Other software
 
