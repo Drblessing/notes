@@ -1,7 +1,5 @@
 # Configs
 
-My configs for various programs.
-
 ## Overview
 
 On new machines, I run [startup.sh](startup/startup.sh) to install all the programs I use. This is a WIP so it's not perfect yet.

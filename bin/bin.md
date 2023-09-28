@@ -19,15 +19,8 @@ Whenever I update my bin here, it gets updated on all my machines. The programs 
 | lazygit        | Runs lazy git.                                                                   |
 | notes          | Opens ~/Github/notes in VSCode.                                                  |
 | pomodoro       | A pomodoro timer.                                                                |
-| update-notes   | Updates notes repo to keep machines in sync. A script updating itself, how cool. |
 | st             | Super Tar, adds renaming functionality to tar.                                   |
-
-### Other software
-
-| File             | Description                                |
-| ---------------- | ------------------------------------------ |
-| reth             | Ethereum execution client written in Rust. |
-| Google cloud sdk | GCloud                                     |
+| update-notes   | Updates notes repo to keep machines in sync. A script updating itself, how cool. |
 
 ## Examples
 
