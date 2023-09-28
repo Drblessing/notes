@@ -36,3 +36,11 @@ My favorite homebrew packages:
 | tor-browser        | Web browser                                        |
 | transmission       | BitTorrent client                                  |
 | rectangle          | Move and resize windows using keyboard shortcuts   |
+| vlc                | Media player                                       |
+| awscli             | AWS CLI                                            |
+| qemu               | Virtual machine manager                            |
+| wireshark          | Network protocol analyzer                          |
+| openssl@3          | TLS/SSL and crypto library                         |
+| ca-certificates    | Root certificates for TLS/SSL and crypto library   |
+| glib               | Core application library for C                     |
+| node               | Node.js                                            |

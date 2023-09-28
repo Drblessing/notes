@@ -24,3 +24,8 @@ firefox
 tor-browser
 transmission
 rectangle
+vlc
+awscli
+qemu
+wireshark
+node
