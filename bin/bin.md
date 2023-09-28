@@ -11,16 +11,16 @@ Whenever I update my bin here, it gets updated on all my machines. The programs 
 
 | File           | Description                                                                      |
 | -------------- | -------------------------------------------------------------------------------- |
+| audio-helper   | Convert audio files                                                              |
+| compare-hashes | Compares the hash of two files.                                                  |
+| daily-brief    | Opens daily websites in browser: news, blogs, research or daily info.            |
 | dirp           | Prints and copies the current directory contents and one sub-level deep.         |
 | hack           | Opens ~/Github/workbench in VSCode.                                              |
-| notes          | Opens ~/Github/notes in VSCode.                                                  |
 | lazygit        | Runs lazy git.                                                                   |
-| daily-brief    | Opens daily websites in browser: news, blogs, research or daily info.            |
-| update-notes   | Updates notes repo to keep machines in sync. A script updating itself, how cool. |
-| compare-hashes | Compares the hash of two files.                                                  |
-| st             | Super Tar, adds renaming functionality to tar.                                   |
+| notes          | Opens ~/Github/notes in VSCode.                                                  |
 | pomodoro       | A pomodoro timer.                                                                |
-| audio-helper   | Convert audio files                                                              |
+| update-notes   | Updates notes repo to keep machines in sync. A script updating itself, how cool. |
+| st             | Super Tar, adds renaming functionality to tar.                                   |
 
 ### Other software
 
