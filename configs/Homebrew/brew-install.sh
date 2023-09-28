@@ -9,7 +9,7 @@ fi
 brew update
 
 echo "Installing packages..."
-cat brew-list.txt | while read package || [[ -n "$package" ]]; do
+cat brewlist.txt | while read package || [[ -n "$package" ]]; do
   brew install $package
 done
 
