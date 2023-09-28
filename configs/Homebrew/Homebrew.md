@@ -44,3 +44,8 @@ My favorite homebrew packages:
 | ca-certificates    | Root certificates for TLS/SSL and crypto library   |
 | glib               | Core application library for C                     |
 | node               | Node.js                                            |
+
+Casks
+
+| Package | Description |
+| wireshark | Network protocol analyzer |
