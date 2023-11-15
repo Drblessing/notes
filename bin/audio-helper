@@ -292,5 +292,6 @@ def setup_logging():
 
 
 if __name__ == "__main__":
+    print("hello")
     # setup_logging()
     # a = AudioHelper("")
