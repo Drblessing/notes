@@ -42,7 +42,7 @@ from termcolor import colored
 
 
 class LazyGit:
-    # 1. Get funny commit message from whatthecommit, add default message if it fails, as a property
+    # 1. Get funny commit message from whatthecommit list, add default message if it fails, as a property
     # Class property
     COMMIT_MESSAGES_MAIN = "https://raw.githubusercontent.com/Drblessing/notes/master/References/commit_messages.txt"
     COMMIT_MESSAGES_FALLBACK = "https://raw.githubusercontent.com/ngerakines/commitment/main/commit_messages.txt"
