@@ -12,6 +12,9 @@ sudo ifconfig $INTERFACE down
 # Change the MAC address
 sudo ifconfig $INTERFACE ether $NEW_MAC
 
+# Change lladr
+sudo ifconfig $INTERFACE lladdr $NEW_MAC
+
 # Turn Wi-Fi back on
 sudo ifconfig $INTERFACE up
 
