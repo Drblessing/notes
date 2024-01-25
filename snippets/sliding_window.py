@@ -21,8 +21,8 @@ def sliding_window[
     # Handle edge cases
     # Empty sequence
     # Create a generator that returns nothing
-    # if len(seq) == 0:
-    #     return
+    if len(seq) == 0:
+        return
 
     if window_size > len(seq):
         raise ValueError("window_size must be smaller than seq length.")
