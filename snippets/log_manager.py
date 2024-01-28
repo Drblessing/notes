@@ -1,3 +1,13 @@
+"""
+This module contains functions for managing logs. It initializes a sensible logger setup and provides other methods to access it.
+The logger will be named app for all of the modules that log.
+
+Functions:
+    - init_logs_dir_and_file: Create the brother log directory, and return a Path object for the desired log file.
+    - init_logger: Initialize a logger that outputs to standard output and to a log file in logs/ directory.
+    - get_logger: Get the logger named app. Pretty simple. 
+"""
+
 from .path_utils import get_module_path, get_logs_dir, make_logs_dir
 from pathlib import Path
 import logging
