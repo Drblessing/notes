@@ -52,7 +52,7 @@ def init_logger(file: str, log_name: str = "app.log"):
     file_handler.setLevel(logging.DEBUG)
     file_handler.setFormatter(
         logging.Formatter(
-            "%(asctime)s %(filename)-15s %(lineno)4d %(levelname)-7s - %(message)s",
+            "%(asctime)s %(filename)-15s %(lineno)4d %(levelname)-8s - %(message)s",
             datefmt="%Y-%m-%d %H:%M:%S",
         )
     )
