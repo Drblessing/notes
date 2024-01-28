@@ -17,7 +17,7 @@ def get_module_path(file: str) -> Path:
     return Path(file)
 
 
-def get_log_dir(file: str) -> Path:
+def get_logs_dir(file: str) -> Path:
     """Gets the path of a "logs" directory in the same
     directory as the current module, i.e. as a brother directory.
     """
@@ -25,7 +25,7 @@ def get_log_dir(file: str) -> Path:
     return get_module_path(file).parent / "logs"
 
 
-def make_log_dir(log_dir: Path) -> None:
+def make_logs_dir(log_dir: Path):
     """Create the brother log directory if it doesn't exist."""
 
     log_dir.mkdir(parents=True, exist_ok=True)
@@ -34,11 +34,11 @@ def make_log_dir(log_dir: Path) -> None:
 # Example
 if __name__ == "__main__":
     # Create the log directory here
-    log_dir = get_log_dir(__file__)
+    logs_dir = get_logs_dir(__file__)
     # Check that the directory exists
-    make_log_dir(log_dir)
-    assert log_dir.exists()
+    make_logs_dir(logs_dir)
+    assert logs_dir.exists()
     # Delete the log directory
-    log_dir.rmdir()
+    logs_dir.rmdir()
     # Check that the directory doesn't exist
-    assert not log_dir.exists()
+    assert not logs_dir.exists()
