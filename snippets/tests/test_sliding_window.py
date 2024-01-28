@@ -1,5 +1,5 @@
 import pytest
-from sliding_window import sliding_window
+from snippets.sliding_window import sliding_window
 
 
 def test_sliding_window():
