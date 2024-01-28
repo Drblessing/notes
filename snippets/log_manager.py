@@ -1,4 +1,4 @@
-from path_utils import get_module_path, get_logs_dir, make_logs_dir
+from .path_utils import get_module_path, get_logs_dir, make_logs_dir
 from pathlib import Path
 import logging
 
