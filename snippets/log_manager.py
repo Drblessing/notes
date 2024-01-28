@@ -33,7 +33,8 @@ def init_logger(file: str, log_name: str = "app.log"):
     # Create the console handler
     console_handler = logging.StreamHandler()
     console_handler.setLevel(logging.ERROR)
-    console_handler.setFormatter(logging.Formatter("%(levelname)s: %(message)s"))
+    console_formatter_string = "%(levelname)s:%(filename)s:%(lineno)d 🐴 %(message)s"
+    console_handler.setFormatter(logging.Formatter(console_formatter_string))
     logger.addHandler(console_handler)
 
     # Create the file handler
@@ -41,10 +42,14 @@ def init_logger(file: str, log_name: str = "app.log"):
     file_handler.setLevel(logging.DEBUG)
     file_handler.setFormatter(
         logging.Formatter(
-            "%(asctime)s %(levelname)s - %(message)s", datefmt="%Y-%m-%d %H:%M:%S"
+            "%(asctime)s %(filename)-20s %(lineno)4d %(levelname)-7s - %(message)s",
+            datefmt="%Y-%m-%d %H:%M:%S",
         )
     )
     logger.addHandler(file_handler)
+
+    # Log an informational message
+    logger.info("Logger initialized successfully!")
 
 
 def get_logger() -> logging.Logger:
