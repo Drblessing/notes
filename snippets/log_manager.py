@@ -43,7 +43,7 @@ def init_logger(file: str, log_name: str = "app.log"):
     # Create the console handler
     console_handler = logging.StreamHandler()
     console_handler.setLevel(logging.ERROR)
-    console_formatter_string = "%(levelname)s:%(filename)s:%(lineno)d 🐴 %(message)s"
+    console_formatter_string = "%(levelname)s:%(filename)s:%(lineno)d ❌ %(message)s"
     console_handler.setFormatter(logging.Formatter(console_formatter_string))
     logger.addHandler(console_handler)
 

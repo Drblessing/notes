@@ -82,7 +82,7 @@ def test_error_logging(manage_logs_dir, capsys):
 
     # Verify the error message was logged to console
     captured = capsys.readouterr()
-    assert captured.err == "ERROR:test_log_manager.py:81 🐴 This is an error message\n"
+    assert captured.err == "ERROR:test_log_manager.py:81 ❌ This is an error message\n"
 
     # Verify the error message was logged to the log file
     with open(log_dir / log_file, "r") as f:
