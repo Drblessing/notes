@@ -1,5 +1,5 @@
 import logging
-from snippets.log_manager import init_logger, get_logger
+from log_manager import init_logger, get_logger
 from pathlib import Path
 import os
 import sys
