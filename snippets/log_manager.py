@@ -59,7 +59,7 @@ def init_logger(file: str, log_name: str = "app.log"):
     logger.addHandler(file_handler)
 
     # Log an informational message
-    logger.info("Logger initialized successfully!")
+    logger.info("Logger initialized.")
 
 
 def get_logger() -> logging.Logger:
