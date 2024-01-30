@@ -212,3 +212,17 @@
   ```bash
   git merge --squash <branch-name>
   ```
+
+## Deleting Branches
+
+- **Delete Local Branch**:
+
+  ```bash
+  git branch -d <branch-name>
+  ```
+
+- **Delete Remote Branch**:
+
+  ```bash
+  git push origin --delete <branch-name>
+  ```
