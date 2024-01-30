@@ -226,3 +226,61 @@
   ```bash
   git push origin --delete <branch-name>
   ```
+
+## Reverting
+
+- **Revert Last Commit**:
+
+  ```bash
+  git revert HEAD
+  ```
+
+- **Revert Specific Commit**:
+
+  ```bash
+  git revert <commit-hash>
+  ```
+
+- **Revert Merge Commit**:
+
+  ```bash
+  git revert -m 1 <merge-commit-hash>
+  ```
+
+## Resetting
+
+- **Reset Last Commit**:
+
+  ```bash
+  git reset HEAD~1
+  ```
+
+- **Reset Specific Commit**:
+
+  ```bash
+  git reset <commit-hash>
+  ```
+
+- **Reset to Specific Commit**:
+
+  ```bash
+  git reset --hard <commit-hash>
+  ```
+
+## Rebase
+
+- **Rebase Branch**:
+
+  ```bash
+  git rebase <branch-name>
+  ```
+
+## Handling conflicts
+
+- **Visual tols**:
+
+  You can use VSCode, Github Desktop, or Github Web to resolve conflicts.
+
+## Summary
+
+With git we create new branches to work on new features, and we merge them back to the main branch when we are done. We can also revert commits, reset to a previous commit, and rebase branches. We can also stash changes to work on them later. We can also use git to handle conflicts. Good luck!
