@@ -185,3 +185,30 @@
     ```bash
     git remote show origin
     ```
+
+## Merging
+
+- **Merge Branch into main**:
+
+  ```bash
+  git checkout main
+  git merge <branch-name>
+  ```
+
+- **Merge Branch (Fast-Forward)**:
+
+  ```bash
+  git merge --ff-only <branch-name>
+  ```
+
+- **Merge Branch (No Fast-Forward)**:
+
+  ```bash
+  git merge --no-ff <branch-name>
+  ```
+
+- **Merge Branch (Squash)**:
+
+  ```bash
+  git merge --squash <branch-name>
+  ```
