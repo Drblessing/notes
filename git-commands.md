@@ -76,6 +76,12 @@
   git push -u origin <branch-name>
   ```
 
+- **Auto push new branches**:
+
+  ```bash
+  git config --global push.default current
+  ```
+
 ## Stashing
 
 - **Stash Changes**:
@@ -179,7 +185,3 @@
     ```bash
     git remote show origin
     ```
-
-### Auto push new branches
-
-`git config --global push.default current`
