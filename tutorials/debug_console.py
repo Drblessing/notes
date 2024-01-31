@@ -49,9 +49,12 @@ def buggy_function(n):
 - You can use the debug console to run code that is not part of your program, such as importing a module or running a function.
 - You can use the debug console to run code in the context of your program, which can be useful for debugging and testing.
 - You can edit variables in the variabes tab in VSCode also!
-- Shift + Enter lets you write multiple lines of code in the debug console. Handy!"""
+- Shift + Enter lets you write multiple lines of code in the debug console. Handy!
+- There's a "Toggle All Active Breakpoints" button in the debug console, which lets you disable all breakpoints at once."""
 
 
 if __name__ == "__main__":
     result = buggy_function(5)
+    # Notice if you run this code, it fails,
+    # but if you fix it in the debug console, it works.
     assert result == 120, f"Expected 120, but got {result}"
