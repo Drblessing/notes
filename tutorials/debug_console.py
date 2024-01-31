@@ -57,4 +57,5 @@ if __name__ == "__main__":
     result = buggy_function(5)
     # Notice if you run this code, it fails,
     # but if you fix it in the debug console, it works.
+    # Just to remember to fix the source code after you've fixed it in the debug console!
     assert result == 120, f"Expected 120, but got {result}"
