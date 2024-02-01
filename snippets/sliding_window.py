@@ -44,6 +44,36 @@ def sliding_window[
         yield seq[i : i + window_size]
 
 
+# removing types for older python versions
+def sliding_window_old(seq, window_size, step=1):
+    """Returns a generator that will iterate through
+    the defined chunks of input sequence. Input sequence
+    must be iterable.
+    """
+
+    if not isinstance(seq, Iterable):
+        raise TypeError("seq must be iterable.")
+    if not isinstance(window_size, int):
+        raise TypeError("window_size must be int.")
+    if not isinstance(step, int):
+        raise TypeError("step must be int.")
+
+    # Handle edge cases
+    # Empty sequence
+    # Create a generator that returns nothing
+    if len(seq) == 0:
+        return
+
+    if window_size > len(seq):
+        raise ValueError("window_size must be smaller than seq length.")
+    if step > window_size:
+        raise ValueError("step must be smaller than or equal to window_size.")
+    if step < 1:
+        raise ValueError("step must be a positive integer.")
+    for i in range(0, len(seq) - window_size + 1, step):
+        yield seq[i : i + window_size]
+
+
 # Testing and Examples
 if __name__ == "__main__":
     # Test with a list of integers
