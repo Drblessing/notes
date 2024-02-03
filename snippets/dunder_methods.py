@@ -16,6 +16,7 @@ class CoffeeMaker:
         self.model = model
         self.price = price
         self.coffee_type = coffee_type
+        self._attributes = {"model": model, "price": price, "coffee_type": coffee_type}
 
     def __repr__(self):
         """Returns an unambiguous string representation of the object.
@@ -42,9 +43,42 @@ class CoffeeMaker:
         """
         return f"{self.model} model, priced at ${self.price}, Coffee Type: {self.coffee_type}"
 
+    def __getitem__(self, key):
+        """Allows dict-like access to the object's attributes"""
+        return self._attributes.get(key, None)
+
+    def __setitem__(self, key, value):
+        """Enables setting attributes like a dictionary."""
+        if key in self._attributes:
+            setattr(
+                self, key, value
+            )  # Update the attribute using the built-in setattr function
+            self._attributes[key] = value  # Keep the _attributes dictionary in sync
+
+    def __delitem__(self, key):
+        """Allows deletion of attributes like a dictionary, with some restrictions for essential attributes."""
+        if key in [
+            "model",
+            "price",
+            "coffee_type",
+        ]:  # Prevent deleting essential attributes
+            raise KeyError("Cannot delete essential attribute.")
+        del self._attributes[key]
+
+    def __contains__(self, key):
+        """Check if a certain attribute exists within the object."""
+        return key in self._attributes
+
+    def __hash__(self):
+        """Make object hashable, based on immutable attributes."""
+        # Assuming model, price, and coffee_type together define the uniqueness of the object
+        return hash((self.model, self.price, self.coffee_type))
+
     def __del__(self):
         """Called when the object is about to be destroyed.
         It is used to clean up resources or perform other cleanup activities.
+        This is not really recommended to use, as it is not guaranteed to be called.
+        Instead, we use context managers or explicitly call a cleanup method.
         """
         print(f"{self.model} is being destroyed!")
 
@@ -151,3 +185,32 @@ class CoffeeMaker:
         """
         print("Cleaning up resources...")
         return True
+
+
+if __name__ == "__main__":
+    coffe_maker = CoffeeMaker("Breville", 200, "Espresso")
+    print(coffe_maker)
+    print(repr(coffe_maker))
+    print(len(coffe_maker))
+    print(coffe_maker())
+    with coffe_maker:
+        print("Making coffee...")
+    print("Done!")
+    coffee_maker2 = CoffeeMaker("Breville", 200, "Espresso")
+    coffee_maker3 = CoffeeMaker("Keurig", 150, "Drip")
+    for i in coffe_maker:
+        print(i)
+    print(coffee_maker2 == coffee_maker3)
+    print(coffee_maker2 != coffee_maker3)
+    print(coffee_maker2 < coffee_maker3)
+    print(coffe_maker + coffee_maker2)
+    # Dictionary-like access
+    print(coffe_maker["model"])
+    coffe_maker["model"] = "Keurig"
+    print(coffe_maker["model"])
+    if "model" in coffe_maker:
+        print("Yes")
+    print(hash(coffe_maker))
+    d = {}
+    d[coffe_maker] = "Breville"
+    print(coffe_maker.model)
