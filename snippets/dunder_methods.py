@@ -48,21 +48,11 @@ class CoffeeMaker:
         return self._attributes.get(key, None)
 
     def __setitem__(self, key, value):
-        """Enables setting attributes like a dictionary."""
-        if key in self._attributes:
-            setattr(
-                self, key, value
-            )  # Update the attribute using the built-in setattr function
-            self._attributes[key] = value  # Keep the _attributes dictionary in sync
+        """Set an item in the _attributes dictionary"""
+        self._attributes[key] = value
 
     def __delitem__(self, key):
-        """Allows deletion of attributes like a dictionary, with some restrictions for essential attributes."""
-        if key in [
-            "model",
-            "price",
-            "coffee_type",
-        ]:  # Prevent deleting essential attributes
-            raise KeyError("Cannot delete essential attribute.")
+        """Allows deletion of elements in the _attributes dictionary"""
         del self._attributes[key]
 
     def __contains__(self, key):
@@ -205,9 +195,9 @@ if __name__ == "__main__":
     print(coffee_maker2 < coffee_maker3)
     print(coffe_maker + coffee_maker2)
     # Dictionary-like access
-    print(coffe_maker["model"])
-    coffe_maker["model"] = "Keurig"
-    print(coffe_maker["model"])
+    # print(coffe_maker["model"])
+    # coffe_maker["model"] = "Keurig"
+    # print(coffe_maker["model"])
     if "model" in coffe_maker:
         print("Yes")
     print(hash(coffe_maker))
