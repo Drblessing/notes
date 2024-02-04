@@ -195,9 +195,9 @@ if __name__ == "__main__":
     print(coffee_maker2 < coffee_maker3)
     print(coffe_maker + coffee_maker2)
     # Dictionary-like access
-    # print(coffe_maker["model"])
-    # coffe_maker["model"] = "Keurig"
-    # print(coffe_maker["model"])
+    print(coffe_maker["model"])
+    coffe_maker["model"] = "Keurig"
+    print(coffe_maker["model"])
     if "model" in coffe_maker:
         print("Yes")
     print(hash(coffe_maker))
