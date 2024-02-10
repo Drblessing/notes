@@ -20,3 +20,6 @@ rectangle
 transmission
 1password
 appcleaner
+ipfs
+monero-wallet
+bitcoin-core

@@ -27,12 +27,14 @@ ssss
 # Utilities
 xz
 sqlite
-curl
 zlib
 htop
 youtube-dl
 zip
 tree
+bitcoin
+ethereum
+monero
 
 # Virtualization and Containers
 qemu
