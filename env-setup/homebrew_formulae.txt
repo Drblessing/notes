@@ -1,0 +1,49 @@
+# Development Tools
+cmake
+git
+gnutls
+gcc
+llvm
+git-lfs
+
+# Programming Languages
+python@3.12
+python@3.11
+node
+go
+rust
+solidity
+
+# Version Control
+git
+gh
+
+# Security
+openssl@3
+ca-certificates
+gnupg
+ssss
+
+# Utilities
+xz
+sqlite
+curl
+zlib
+htop
+youtube-dl
+zip
+tree
+
+# Virtualization and Containers
+qemu
+docker
+
+# Command Line Tools
+nvm
+awscli
+ffmpeg
+ipfs
+
+# Audio
+flac
+opus

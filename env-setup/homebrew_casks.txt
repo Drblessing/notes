@@ -1,0 +1,22 @@
+# Browsers
+firefox
+tor-browser
+
+# Development
+visual-studio-code
+docker
+balenaetcher
+utm
+chromedriver
+github
+
+# Communication
+discord
+signal
+telegram
+
+# Utilities
+rectangle
+transmission
+1password
+appcleaner
