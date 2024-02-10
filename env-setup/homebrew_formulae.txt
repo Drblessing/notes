@@ -32,9 +32,7 @@ htop
 youtube-dl
 zip
 tree
-bitcoin
-ethereum
-monero
+
 
 # Virtualization and Containers
 qemu
@@ -49,3 +47,8 @@ ipfs
 # Audio
 flac
 opus
+
+# References
+# bitcoin
+# ethereum
+# monero
