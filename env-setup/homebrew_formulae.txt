@@ -39,7 +39,6 @@ docker
 nvm
 awscli
 ffmpeg
-ipfs
 
 # Audio
 flac

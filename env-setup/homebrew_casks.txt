@@ -20,7 +20,6 @@ rectangle
 transmission
 1password
 appcleaner
-ipfs
 
 # References
 # monero-wallet
