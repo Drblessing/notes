@@ -5,6 +5,7 @@ gnutls
 gcc
 llvm
 git-lfs
+gh
 
 # Programming Languages
 python@3.12
@@ -13,10 +14,6 @@ node
 go
 rust
 solidity
-
-# Version Control
-git
-gh
 
 # Security
 openssl@3
