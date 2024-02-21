@@ -32,6 +32,7 @@ htop
 youtube-dl
 zip
 tree
+imagemagick
 
 
 # Virtualization and Containers
