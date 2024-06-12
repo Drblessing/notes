@@ -1,4 +1,40 @@
-from typing import Iterable, Hashable, List
+"""
+A trie implementation in Python.
+It takes an interable of elements and creates a trie data structure.
+Time Complexities: 
+Insertion: O(m) where m is the length of the word.
+Search: O(m) where m is the length of the word.
+Delete: O(m) where m is the length of the word.
+
+The trie structures gets expensive in terms of space complexity.
+Space complexity is O(n * m) where n is the number of words and m is the length of the word.
+
+In practical terms, though, tries are incredibly space-efficient for datasets with a lot of shared prefixes, 
+like dictionaries, because they allow for the sharing of common prefixes. It's like carpooling to work; 
+everyone going in the same direction piles into one car, saving on gas and reducing traffic.
+
+Trie nodes are indeed a classic example of the time-space tradeoff in computer science. 
+This concept essentially means that in many algorithms and data structures, including tries, 
+you can often achieve faster execution times (time efficiency) at the expense of using more memory (space efficiency), or vice versa.
+
+In the case of tries: 
+
+Time Efficiency: Tries provide very efficient search, insert, and delete operations, all typically running in O(m) time, 
+where m is the length of the key being processed. 
+This efficiency is fantastic for operations involving large sets of strings, 
+such as autocomplete features, spell checkers, or prefix matching, making tries a go-to choice when performance is critical. 
+It's like having a fast-pass in an amusement park; you get to enjoy the rides (operations) quickly!
+
+Space Cost: The tradeoff comes in the form of space complexity. 
+A trie can consume more memory than other data structures like hash tables or binary search trees when storing the same set of keys, e
+specially if the set of characters (alphabet) is large and the keys are short. 
+This is because each node in a trie may need to hold a large number of pointers (to its child nodes), 
+even if many of those pointers are null (especially in sparse tries). 
+It's akin to renting a huge warehouse to store your vast collection of hats,
+because you want the luxury of picking any hat at a moment's notice, even if it means a lot of unused space.
+"""
+
+from typing import Iterable, Hashable
 
 
 class TrieNode:
@@ -55,53 +91,3 @@ class Trie:
             else:
                 return False
         return True
-
-    def find_shortest_root(self, iterable: Iterable[Hashable]) -> Hashable:
-        """Returns the shortest root of the iterable in the trie.
-        If the iterable is not in the trie, returns the original iterable."""
-
-        node = self.root
-        shortest_root = iterable
-
-        # Iterate through the iterable, checking for is_end_of_iterable
-        for i, char in enumerate(iterable):
-            if char in node.children:
-                node = node.children[char]
-                if node.is_end_of_iterable:
-                    shortest_root = iterable[: i + 1]
-                    return shortest_root
-            else:
-                return shortest_root
-
-        return shortest_root
-
-
-def substring_iterator(word):
-    return (word[:i] for i in range(1, len(word)))
-
-
-class Solution:
-    def replaceWords(self, dictionary: List[str], sentence: str) -> str:
-        trie = Trie()
-        for word in dictionary:
-            trie.insert(word)
-
-        sentence_words = sentence.split(" ")
-
-        new_sentence = []
-        for word in sentence_words:
-            new_sentence.append(trie.find_shortest_root(word))
-
-        return " ".join(new_sentence)
-
-
-def test_replaceWords():
-    dictionary = ["a", "aa", "aaa", "aaaa"]
-    sentence = "a aa a aaaa aaa aaa aaa aaaaaa bbb baba ababa"
-
-    solution = Solution()
-
-    assert solution.replaceWords(dictionary, sentence) == "a a a a a a a a bbb baba a"
-
-
-test_replaceWords()
