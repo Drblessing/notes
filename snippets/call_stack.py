@@ -1,3 +1,6 @@
+"""Illustrates the call stack in Python."""
+
+
 def print_message(message):
     print(message)
 
