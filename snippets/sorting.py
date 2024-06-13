@@ -61,15 +61,17 @@ def merge_sort(arr):
             k += 1
 
         # Checking if any element was left
-        while i < len(L):
-            arr[k] = L[i]
-            i += 1
-            k += 1
+        # while i < len(L):
+        #     arr[k] = L[i]
+        #     i += 1
+        #     k += 1
 
-        while j < len(R):
-            arr[k] = R[j]
-            j += 1
-            k += 1
+        # while j < len(R):
+        #     arr[k] = R[j]
+        #     j += 1
+        #     k += 1
+        # After the main merge loop
+        arr[k:] = L[i:] + R[j:]
 
 
 # Example usage:
