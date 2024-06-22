@@ -1,5 +1,5 @@
 import pytest
-from snippets.custom_hashmap import MyHashMap
+from custom_hashmap import MyHashMap
 
 
 def test_put_get():
