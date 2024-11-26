@@ -1,0 +1,5 @@
+requesets
+termcolor
+webrowser
+argparse
+mutagen
