@@ -1,5 +1,5 @@
 import pytest
-from code.prefix_sum import (
+from src.prefix_sum import (
     compute_prefix_sum,
     range_sum,
     PrefixSumArray,
