@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/Users/dbless/Github/notes/bin/.benv/bin/python
 # SuperTar
 # Tar/Untar a file, also adds renaming functionality to avoid naming conflicts,
 # and when you don't know the output name of the file.
