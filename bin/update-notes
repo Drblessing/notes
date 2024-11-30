@@ -1,5 +1,0 @@
-#!/bin/bash
-# Update the notes Github repository to keep my .zshrc and bin files in sync
-# with the notes repository.
-cd ~/Github/notes
-git pull
