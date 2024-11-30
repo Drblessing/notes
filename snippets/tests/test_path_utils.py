@@ -1,5 +1,5 @@
 import pytest
-from snippets.path_utils import get_module_path, get_logs_dir, make_logs_dir
+from code.path_utils import get_module_path, get_logs_dir, make_logs_dir
 from pathlib import Path
 
 

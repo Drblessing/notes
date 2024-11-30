@@ -1,5 +1,5 @@
 import pytest
-from snippets.trie import Trie
+from code.trie import Trie
 
 
 def test_insert_search():

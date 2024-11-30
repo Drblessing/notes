@@ -1,5 +1,5 @@
 import pytest
-from snippets.hashing import hash_message_shake_256, hash_message_sha3_256
+from code.hashing import hash_message_shake_256, hash_message_sha3_256
 
 
 def test_hash_message_shake_256():

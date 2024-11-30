@@ -1,5 +1,5 @@
 import pytest
-from snippets.custom_counter import MyCounter
+from code.custom_counter import MyCounter
 
 
 def test_counter():
