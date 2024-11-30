@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/Users/dbless/Github/notes/bin/.benv/bin/python
 # Open daily brief of websites in browser.
 import webbrowser
 import argparse
