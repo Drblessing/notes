@@ -46,6 +46,6 @@ flac
 opus
 
 # References
-# bitcoin
+# bitcoin (triggers antivirus)
 # ethereum
 # monero

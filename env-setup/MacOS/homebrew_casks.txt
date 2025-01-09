@@ -23,5 +23,5 @@ transmission
 appcleaner
 
 # References
-# monero-wallet
+# monero-wallet (triggers antivirus)
 # bitcoin-core
