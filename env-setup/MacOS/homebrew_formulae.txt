@@ -8,12 +8,11 @@ git-lfs
 gh
 
 # Programming Languages
-python@3.12
-python@3.11
+python
 node
-go
-rust
-solidity
+# go
+# rust
+# solidity
 
 # Security
 openssl@3
