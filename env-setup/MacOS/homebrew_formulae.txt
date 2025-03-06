@@ -34,7 +34,7 @@ imagemagick
 
 # Virtualization and Containers
 qemu
-docker
+# docker
 
 # Command Line Tools
 nvm
