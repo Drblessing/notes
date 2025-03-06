@@ -1,6 +1,5 @@
-# Browsers
-firefox
-tor-browser
+# Browser
+librewolf
 
 # Development
 visual-studio-code
