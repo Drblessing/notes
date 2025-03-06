@@ -1,25 +1,27 @@
 # Browser
 librewolf
+# firefox
+# tor-browser
 
 # Development
 visual-studio-code
-docker
-balenaetcher
-utm
 chromedriver
-github
+# docker
+# balenaetcher
+# utm
+# github
 
 # Communication
 discord
 signal
-telegram
 neofetch
+# telegram
 
 # Utilities
 rectangle
-transmission
 1password
-appcleaner
+# appcleaner
+# transmission
 
 # References
 # monero-wallet (triggers antivirus)
