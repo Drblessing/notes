@@ -1,0 +1,15 @@
+requests
+numpy
+pandas
+matplotlib
+scikit-learn
+pyperclip
+beautifulsoup4
+pytest
+seaborn
+pillow
+fastapi
+selenium
+python-dotenv
+sqlalchemy
+jupyter
