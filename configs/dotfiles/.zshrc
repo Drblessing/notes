@@ -49,7 +49,4 @@ export PATH="$HOME/Github/notes/bin/google-cloud-sdk/bin:$PATH"
 # ---------------------------------------------
 alias lg="lazygit"
 alias lgit="lazygit"
-alias dbr="daily-brief"
-alias leetcode="code ~/Github/workbench/python/leetcode/Leetcode\ 75/"
 alias notes="code ~/Github/notes" 
-alias hack="code ~/Github/workbench"
