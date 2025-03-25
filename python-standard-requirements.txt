@@ -15,3 +15,5 @@ selenium
 python-dotenv
 trio
 pytest-trio
+termcolor
+webcolors
