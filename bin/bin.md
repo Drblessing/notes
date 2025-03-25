@@ -9,18 +9,12 @@ Whenever I update my bin here, it gets updated on all my machines. The programs 
 
 ### Self-made scripts
 
-| File           | Description                                                                      |
-| -------------- | -------------------------------------------------------------------------------- |
-| audio-helper   | Convert audio files                                                              |
-| compare-hashes | Compares the hash of two files.                                                  |
-| daily-brief    | Opens daily websites in browser: news, blogs, research or daily info.            |
-| dirp           | Prints and copies the current directory contents and one sub-level deep.         |
-| hack           | Opens ~/Github/workbench in VSCode.                                              |
-| lazygit        | Runs lazy git.                                                                   |
-| notes          | Opens ~/Github/notes in VSCode.                                                  |
-| pomodoro       | A pomodoro timer.                                                                |
-| st             | Super Tar, adds renaming functionality to tar.                                   |
-| update-notes   | Updates notes repo to keep machines in sync. A script updating itself, how cool. |
+| File           | Description                                    |
+| -------------- | ---------------------------------------------- |
+| compare-hashes | Compares the hash of two files.                |
+| lazygit        | Runs lazy git.                                 |
+| pomodoro       | A pomodoro timer.                              |
+| st             | Super Tar, adds renaming functionality to tar. |
 
 ## Examples
 
