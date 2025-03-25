@@ -1,47 +1,54 @@
 # VSCode
 
+VSCode is the best IDE. It is fast, has a lot of extensions, and is very customizable. Case closed. Cry about it, Vim users.
+
 ## Extensions
 
-- Bazel
 - Black Formatter
+- Data Wrangler
 - DotENV
-- ETHover
 - GitHub Codespaces
 - GitHub Copilot
-- GitHub Pull Requests and Issues
-- Go
-- Graphviz
-- Image Preview
-- Inline Bookmarks
+- GitHub Copilot Chat
+- GitHub Pull Requests
+- GitHub Repositories
+- Image preview
 - isort
 - JSON Crack
 - Jupyter
+- Jupyter Cell Tags
+- Jupyter Keymap
+- Jupyter Notebook Renderers
+- Jupyter Slide Show
 - Live Share
 - Material Icon Theme
 - Monokai Pro
-- PlantUML
 - Prettier
 - Prisma
 - Pylance
 - Python
+- Python Debugger
+- Rainbow CSV
 - Remote - SSH
+- Remote - SSH: Editing Configuration Files
 - Remove Explorer
-- rust-analyzer
+- Remote Repositories
 - Solidity
-- Solidity Language & Themes
-- Solidity Visual Developer
+- SQLite Viewer
 - TODO Tree
 - vscode-pdf
-- WakaTime
-- GitLens
+- WSL
 
-## Exclusions
+## File Exclusions
 
-Excluding files is key to avoid the problem of 100 config files in your root directory.
+Nobody wants to see that stuff.
 
-You can also open them with:
-
-```bash
-ls -a # Find the files you want to open tmp
-code <file>
+```json
+  "files.exclude": {
+    "**/.pytest_cache": true,
+    "**/__pycache__": true,
+    "**/LICENSE": true,
+    "**/.gitattributes": true,
+    "**/.gitmodules": true
+  }
 ```

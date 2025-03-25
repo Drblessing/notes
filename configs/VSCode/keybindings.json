@@ -1,19 +1,6 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
   {
-    "key": "cmd+r",
-    "command": "-python.refreshTensorBoard",
-    "when": "python.hasActiveTensorBoardSession"
-  },
-  {
-    "key": "cmd+r",
-    "command": "python.execInTerminal"
-  },
-  {
-    "key": "shift+alt+s",
-    "command": "git.sync"
-  },
-  {
     "key": "ctrl+alt+q",
     "command": "workbench.action.toggleMaximizedPanel",
     // "command": "workbench.action.toggleEditorVisibility"  either one
@@ -95,5 +82,13 @@
   {
     "key": "cmd+4",
     "command": "-workbench.action.focusFourthEditorGroup"
+  },
+  {
+    "key": "cmd+y",
+    "command": "workbench.action.terminal.kill"
+  },
+  {
+    "key": "cmd+r",
+    "command": "python.execInTerminal-icon"
   }
 ]

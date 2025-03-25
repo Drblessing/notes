@@ -1,25 +1,25 @@
 # Browser
-librewolf
+# librewolf
 # firefox
 # tor-browser
 
 # Development
-visual-studio-code
-chromedriver
+# visual-studio-code
+# chromedriver
 # docker
 # balenaetcher
 # utm
 # github
 
 # Communication
-discord
-signal
-neofetch
+# discord
+# signal
+# neofetch
 # telegram
 
 # Utilities
-rectangle
-1password
+# rectangle
+# 1password
 # appcleaner
 # transmission
 

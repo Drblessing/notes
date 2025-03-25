@@ -7,72 +7,9 @@ Whenever I update my bin here, it gets updated on all my machines. The programs 
 
 ## Contents
 
-### Self-made scripts
-
 | File           | Description                                    |
 | -------------- | ---------------------------------------------- |
 | compare-hashes | Compares the hash of two files.                |
 | lazygit        | Runs lazy git.                                 |
 | pomodoro       | A pomodoro timer.                              |
 | st             | Super Tar, adds renaming functionality to tar. |
-
-## Examples
-
-### Dirp
-
-Useful for talkign about a directory structure with someone, including AI models.
-
-A Python script to print the contents of a directory and one level down, then copy it to the keyboard. Also prints it to the console.
-
-Input: A directory path. Can be absolute or relative, i.e. ".". If no path is given, the current directory is used.
-
-Example usage:
-
-```bash
-dbless@Daniels-MacBook-Pro Github % dirp
-Github/
-    notes/
-        .gitattributes
-        .gitignore
-        CONTRIBUTING.md
-        LICENSE
-        README.md
-        .git/
-        Blockchain/
-        Collaborations/
-        Deep Learning/
-        Docker/
-        Google Analytics/
-        Hardware/
-        MacOS Setup/
-        Next/
-        Notes/
-        OOP/
-        ProjectManagement/
-        Prompts/
-        Python/
-        References/
-        Scripts/
-        Tech Interviews/
-        Templates/
-        Tools/
-        Tutorials/
-        npm/
-        sysadmin/
-        vscode/
-    static/
-        README.md
-        .git/
-        Images/
-        References/
-    workbench/
-        .gitignore
-        CONTRIBUTING.md
-        LICENSE
-        README.md
-        .git/
-        .venv/
-        python/
-```
-
-### TODO: Add examples

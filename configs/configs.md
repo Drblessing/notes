@@ -2,12 +2,13 @@
 
 ## Overview
 
-On new machines, I run [startup.sh](startup/startup.sh) to install all the programs I use. This is a WIP so it's not perfect yet.
-This repo is always installed at ~/Github/notes, and I control all code, so I can be sure it's safe.
+I like MacOS configurd to be cozy and easy.
 
-```bash
-./startup.sh
-```
+## Installation
+
+I keep my configuration in this Githup repository for easy access and syncing across machines.
+
+On new machines, I first install homebrew, then git, then clone this repository.
 
 Then, I symlink my ~/.zshrc to [dotfiles/zshrc](dotfiles/.zshrc) as well as my .zshenv, and .zprofile.
 
@@ -31,9 +32,19 @@ echo "PATH=$PATH:~/Github/configs/bin" > ~/.zshrc
 
 Now, I can edit my configs and scripts and push them to Github, and they'll be installed on all my machines.
 
+## Python Installation
+
+I use homebrew to manage my python installations and easily update them. In scenarios where this is inconvenient, I'll install the specific version using the python installer from pyhton.org, or build from source.
+
+I always use virtual environments for my python projects.
+
+## Node Installation
+
+I use nvm installed via homebrew to manage my node and npm.
+
 ## dotfiles
 
-I have nothing too special in my .zshrc et al., just commands from software I have installed, adding the Github bin, and commenting/uncommenting pyenv when I need it.
+Smiles!
 
 ## bin
 
@@ -42,3 +53,7 @@ Full of scripts I use. I symlink this to my $PATH so I can run them from anywher
 Check them out [here](/bin/bin.md).
 
 Most are python and bash scripts.
+
+```
+
+```

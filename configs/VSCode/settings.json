@@ -10,7 +10,7 @@
   "git.confirmSync": false,
   "tabnine.experimentalAutoImports": true,
   "jupyter.askForKernelRestart": false,
-  "emmet.triggerExpansionOnTab": true,
+  // "emmet.triggerExpansionOnTab": true,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "kite.showWelcomeNotificationOnStartup": false,
@@ -105,20 +105,8 @@
   "editor.autoClosingQuotes": "never",
   "editor.linkedEditing": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "solidity-va.deco.argumentsMode": "color only",
-  "solidity-va.test.defaultUnittestTemplate": "hardhat",
   "githubPullRequests.createOnPublishBranch": "never",
-  "solidity-va.deco.warn.externalCalls": false,
-  "[solidity]": {
-    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
-  },
   "editor.formatOnSave": true,
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  },
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
-  },
   "todo-tree.general.statusBar": "total",
   "todo-tree.highlights.backgroundColourScheme": [
     "red",
@@ -152,37 +140,36 @@
   "terminal.integrated.fontWeight": "400",
   "terminal.integrated.fontWeightBold": "700",
   "terminal.integrated.cursorWidth": 1,
-  "workbench.colorCustomizations": {
-    "terminal.background": "#031A16",
-    "terminal.foreground": "#81B5AC",
-    "terminalCursor.background": "#81B5AC",
-    "terminalCursor.foreground": "#81B5AC",
-    "terminal.ansiBlack": "#031A16",
-    "terminal.ansiBlue": "#96883E",
-    "terminal.ansiBrightBlack": "#2B685E",
-    "terminal.ansiBrightBlue": "#96883E",
-    "terminal.ansiBrightCyan": "#963E4C",
-    "terminal.ansiBrightGreen": "#883E96",
-    "terminal.ansiBrightMagenta": "#4C963E",
-    "terminal.ansiBrightRed": "#3E9688",
-    "terminal.ansiBrightWhite": "#D2E7E4",
-    "terminal.ansiBrightYellow": "#3E4C96",
-    "terminal.ansiCyan": "#963E4C",
-    "terminal.ansiGreen": "#883E96",
-    "terminal.ansiMagenta": "#4C963E",
-    "terminal.ansiRed": "#3E9688",
-    "terminal.ansiWhite": "#81B5AC",
-    "terminal.ansiYellow": "#3E4C96"
-  },
+  // "workbench.colorCustomizations": {
+  //   "terminal.background": "#031A16",
+  //   "terminal.foreground": "#81B5AC",
+  //   "terminalCursor.background": "#81B5AC",
+  //   "terminalCursor.foreground": "#81B5AC",
+  //   "terminal.ansiBlack": "#031A16",
+  //   "terminal.ansiBlue": "#96883E",
+  //   "terminal.ansiBrightBlack": "#2B685E",
+  //   "terminal.ansiBrightBlue": "#96883E",
+  //   "terminal.ansiBrightCyan": "#963E4C",
+  //   "terminal.ansiBrightGreen": "#883E96",
+  //   "terminal.ansiBrightMagenta": "#4C963E",
+  //   "terminal.ansiBrightRed": "#3E9688",
+  //   "terminal.ansiBrightWhite": "#D2E7E4",
+  //   "terminal.ansiBrightYellow": "#3E4C96",
+  //   "terminal.ansiCyan": "#963E4C",
+  //   "terminal.ansiGreen": "#883E96",
+  //   "terminal.ansiMagenta": "#4C963E",
+  //   "terminal.ansiRed": "#3E9688",
+  //   "terminal.ansiWhite": "#81B5AC",
+  //   "terminal.ansiYellow": "#3E4C96"
+  // },
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.minimumContrastRatio": 4.5,
   "files.exclude": {
     "**/.pytest_cache": true,
-    "**/__pycache__": true
-    // "**/LICENSE": true
-    // "**/.gitignore": true,
-    // "**/.gitmodules": true,
-    // "**/.gitattributes": true
+    "**/__pycache__": true,
+    "**/LICENSE": true,
+    "**/.gitattributes": true,
+    "**/.gitmodules": true
     // "**/.eslintignore": true,
     // "**/.eslintrc.js": true,
     // "**/.gitattributes": true,
@@ -227,7 +214,7 @@
   "application.shellEnvironmentResolutionTimeout": 30,
   "editor.accessibilitySupport": "off",
   "interactiveWindow.executeWithShiftEnter": true,
-  "workbench.preferredLightColorTheme": "Monokai Pro Light",
+  "workbench.preferredLightColorTheme": "Monokai Pro Light (Filter Sun)",
   "explorer.confirmPasteNative": false,
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.js",
@@ -242,5 +229,9 @@
     "*.db3": "${capture}.${extname}-*",
     "*.sdb": "${capture}.${extname}-*",
     "*.s3db": "${capture}.${extname}-*"
-  }
+  },
+  "[solidity]": {
+    "editor.defaultFormatter": "JuanBlanco.solidity"
+  },
+  "solidity.formatter": "forge"
 }
