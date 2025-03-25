@@ -1,0 +1,12 @@
+tailwindcss
+react
+prisma
+typescript
+next
+react-dom
+axios
+jest
+viem
+wagmi
+@rainbow-me/rainbowkit
+@tanstack/react-query
