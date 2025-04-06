@@ -1,15 +1,15 @@
 # Development Tools
-cmake
 git
-gnutls
-gcc
-llvm
 git-lfs
 gh
+# gnutls
+# cmake
+# gcc
+# llvm
 
 # Programming Languages
 python
-node
+# node
 # go
 # rust
 # solidity
@@ -21,24 +21,24 @@ gnupg
 ssss
 
 # Utilities
-xz
-sqlite
-zlib
 htop
-youtube-dl
+# xz
+# sqlite
+# zlib
+# youtube-dl
 zip
 tree
 imagemagick
 
 
 # Virtualization and Containers
-qemu
+# qemu
 # docker
 
 # Command Line Tools
 nvm
-awscli
 ffmpeg
+# awscli
 
 # Audio
 flac
