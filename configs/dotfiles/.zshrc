@@ -47,9 +47,9 @@ export PATH="$HOME/Github/notes/bin/google-cloud-sdk/bin:$PATH"
 # |             Aliases                       |
 # |                                           |
 # ---------------------------------------------
-alias lg="lazygit"
 alias notes="code ~/Github/notes" 
-alias bru="brew update && brew upgrade && brew cleanup"
 alias c="clear"
-alias ds="directory.sh"
+alias bru="brew update && brew upgrade && brew cleanup"
 alias b="brew update && brew upgrade && brew cleanup"
+alias ds="directory.sh"
+alias lg="lazygit"
