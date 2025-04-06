@@ -22,13 +22,13 @@ ssss
 
 # Utilities
 htop
+zip
+tree
+imagemagick
 # xz
 # sqlite
 # zlib
 # youtube-dl
-zip
-tree
-imagemagick
 
 
 # Virtualization and Containers
