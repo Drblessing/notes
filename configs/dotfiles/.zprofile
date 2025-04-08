@@ -3,9 +3,7 @@
 # |              Homebrew Configuration       |
 # |                                           |
 # ---------------------------------------------
-if [[ "$(uname -m)" == *"arm"* ]]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
+eval "$(/opt/homebrew/bin/brew shellenv)"
 export HOMEBREW_NO_ANALYTICS=1
 
 # ---------------------------------------------
@@ -21,8 +19,8 @@ export PATH="$PATH:/Users/dbless/.foundry/bin"
 # |                                           |
 # ---------------------------------------------
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # ---------------------------------------------
 # |                                           |
