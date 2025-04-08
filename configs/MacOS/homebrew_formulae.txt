@@ -1,50 +1,12 @@
-# Development Tools
-git
-git-lfs
 gh
-# gnutls
-# cmake
-# gcc
-# llvm
-
-# Programming Languages
+fastfetch
+git-lfs
 python
-# node
-# go
-# rust
-# solidity
-
-# Security
-openssl@3
-ca-certificates
 gnupg
 ssss
-
-# Utilities
 htop
-zip
 tree
-imagemagick
-# xz
-# sqlite
-# zlib
-# youtube-dl
-
-
-# Virtualization and Containers
-# qemu
-# docker
-
-# Command Line Tools
 nvm
 ffmpeg
-# awscli
 
-# Audio
-flac
-opus
 
-# References
-# bitcoin (triggers antivirus)
-# ethereum
-# monero
