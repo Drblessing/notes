@@ -1,59 +1,79 @@
-# Configs
+# MacOS Configs
 
-## Overview
-
-I like MacOS configurd to be cozy and easy.
+I like my MacOS to be cozy.
 
 ## Installation
 
-I keep my configuration in this Githup repository for easy access and syncing across machines.
+**1. Install Homebrew.**
 
-On new machines, I first install homebrew, then git, then clone this repository.
-
-Then, I symlink my ~/.zshrc to [dotfiles/zshrc](dotfiles/.zshrc) as well as my .zshenv, and .zprofile.
-
-```
-cp ~/.zshrc ~/.zshrc.bak
-cp ~/.zshenv ~/.zshenv.bak
-cp ~/.zprofile ~/.zprofile.bak
-rm ~/.zshrc
-rm ~/.zshenv
-rm ~/.zprofile
-ln -s ~/Github/configs/dotfiles/.zshrc ~/.zshrc
-ln -s ~/Github/configs/dotfiles/.zshenv ~/.zshenv
-ln -s ~/Github/configs/dotfiles/.zprofile ~/.zprofile
+```zsh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Then, I add my ~/Github/notes/configs/bin to my $PATH in my .zshrc.
+**2. Install Xcode from Apple Store.**
 
-```
-echo "PATH=$PATH:~/Github/configs/bin" > ~/.zshrc
-```
+Also install the iOS simulator. Do not install code completion model.
 
-Now, I can edit my configs and scripts and push them to Github, and they'll be installed on all my machines.
+**3. Install 1Password.**
 
-## Python Installation
+**4. Install the Notes Github repository.**
 
-I use homebrew to manage my python installations and easily update them. In scenarios where this is inconvenient, I'll install the specific version using the python installer from pyhton.org, or build from source.
-
-I always use virtual environments for my python projects.
-
-## Node Installation
-
-I use nvm installed via homebrew to manage my node and npm.
-
-## dotfiles
-
-Smiles!
-
-## bin
-
-Full of scripts I use. I symlink this to my $PATH so I can run them from anywhere.
-
-Check them out [here](/bin/bin.md).
-
-Most are python and bash scripts.
-
+```zsh
+mkdir ~/Github
+cd ~/Github
+git clone https://github.com/Drblessing/notes.git
 ```
 
+**5. Install Homebrew packages**
+
+Install formulae
+
+```zsh
+xargs brew install < ~/Github/notes/configs/homebrew/homebrew_formulae.txt
+```
+
+Install casks
+
+```zsh
+xargs brew install --cask < ~/Github/notes/configs/homebrew/homebrew_casks.txt
+```
+
+**6. Install dotfiles.**
+
+```zsh
+ln -s ~/Github/notes/configs/dotfiles/.zprofile ~/.zprofile
+ln -s ~/Github/notes/configs/dotfiles/.zshrc ~/.zshrc
+```
+
+**7. Install VSCode Application.**
+
+https://code.visualstudio.com/
+
+Sync settings to Github.
+
+Install "code" command in PATH.
+
+**8. Install Google Chrome.**
+
+https://www.google.com/chrome/
+
+Login to your Google account, and sync settings.
+
+**9. Install node.**
+
+```zsh
+nvm install --lts
+```
+
+**10. Install Python.**
+
+```zsh
+ln -s /opt/homebrew/bin/python3 /opt/homebrew/bin/python
+ln -s /opt/homebrew/bin/pip3 /opt/homebrew/bin/pip
+```
+
+**11. Install Foundry.**
+
+```zsh
+curl -L https://foundry.paradigm.xyz | bash
 ```
