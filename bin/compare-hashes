@@ -18,5 +18,5 @@ if [ ! -f "$file1" ] || [ ! -f "$file2" ]; then
 fi
 
 # Calculate keccak-256sum for each file
-keccak-256sum "$file1" 
-keccak-256sum "$file2" 
+sha256sum "$file1" 
+sha256sum "$file2" 
