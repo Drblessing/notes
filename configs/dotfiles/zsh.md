@@ -2,8 +2,10 @@
 
 Have a little fun with the terminal!
 
-I set my prompt to be a horse emoji 🐴. Neigh! I also removed the username, computer name, and directory from the prompt. Simple, elegant. I also changed the color of the terminal to be green.
+I set my prompt to be a smile. Neigh! I also removed the username, computer name, and directory from the prompt. Simple, elegant.
 
-Dear Future Me,
+To install .zprofile, run the following command:
 
-Here's what I did to set up my ZSH. I used a symlink to link the default ~/.zsh files to this folder.
+```zsh
+ln -s ~/configs/dotfiles/zsh/.zprofile ~/.zprofile
+```
