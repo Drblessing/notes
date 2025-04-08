@@ -137,3 +137,41 @@ In Desktop & Dock:
 - For Default web browser, select "Google Chrome".
 - Unselect "Tiled windows have margins."
 - Unselect "Displays have separate Space."
+
+In Screen Saver:
+
+- Select Shuffle Landscape, every 12 hours.
+
+In Spotlight:
+
+- Turn off Siri Suggestions, Webiste, Tips, Presentations, Fonts, Movies, and Help Apple Improve Search in Search.
+
+In Sound:
+
+- Turn off "Play sound on startup".
+- Turn off "Play user interface sound effects".
+
+In Lock Screen:
+
+- For Start Screen Save when inactive, select "For 5 minutes".
+- For Turn display off on battery when inactive, select "For 10 minutes".
+- For Turn display off on power adapter when inactive, select "For 30 minutes".
+- For Require password, select "Immediately".
+- Turn off "Show the Sleep, Restart, and Shut Down button.
+- Turn off "Show user name and photo".
+- Turn off "Show large clock".
+
+In Internet Accounts:
+
+- Sign into Google account, only sync Mail, not Calendar, Contacts, and Notes.
+
+In Apple Pay:
+
+- Add Debit Card.
+
+In Widgets:
+
+- Add Weather to menu bar.
+- Add Clock to widgets.
+- Add Weather to widgeets.
+- Swipe left with two fingers from edge to see widgets.
