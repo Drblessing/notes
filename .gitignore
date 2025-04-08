@@ -100,6 +100,7 @@ celerybeat.pid
 .env/
 .venv/
 !bin/.benv/**
+!bin/.benv
 env/
 venv/
 ENV/
