@@ -56,4 +56,3 @@ Notes from the wild wild west of technology!
 | next.js         | React framework for server-side rendering and static site generation |
 | cloudflare-docs | Documentation for Cloudflare services and APIs                       |
 | react.dev       | React documentation and resources for developers                     |
-| workers-sdk     | Cloudflare Workers SDK for building serverless applications          |
