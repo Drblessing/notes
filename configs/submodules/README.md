@@ -1,1 +1,1 @@
-git submodule add -b main --ignore=all https://github.com/reactjs/react.dev submodules/react.dev
+git submodule --ignore=all add -b main https://github.com/reactjs/react.dev submodules/react.dev
