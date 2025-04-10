@@ -2,6 +2,7 @@ gh
 python
 htop
 nvm
+yarn
 tree
 git-lfs
 ffmpeg
