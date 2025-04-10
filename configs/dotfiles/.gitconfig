@@ -10,3 +10,5 @@
 	rebase = true
 [rebase]
 	autoStash = true
+[submodule]
+    ignore = all
