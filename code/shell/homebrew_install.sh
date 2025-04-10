@@ -8,6 +8,7 @@ if command -v brew &> /dev/null; then
     brew update
     brew upgrade
     brew cleanup
+    brew doctor
     # Exit if Homebrew is already installed
     exit 0
 else
