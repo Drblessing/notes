@@ -2,3 +2,4 @@
 	path = submodules/react.dev
 	url = https://github.com/reactjs/react.dev.git
 	branch = main
+	ignore = all
