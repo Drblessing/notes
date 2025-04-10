@@ -66,7 +66,7 @@ gh auth login
 ```zsh
 mkdir ~/Github
 cd ~/Github
-gh repo clone Drblessing/notes
+git clone --recurse-submodules https://github.com/drblessing/notes.git
 ln -s ~/Github/notes/configs/dotfiles/.zprofile ~/.zprofile
 ln -s ~/Github/notes/configs/dotfiles/.zshrc ~/.zshrc
 ln -s ~/Github/notes/configs/dotfiles/.gitconfig ~/.gitconfig
