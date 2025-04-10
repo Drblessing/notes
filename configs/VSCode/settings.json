@@ -73,7 +73,7 @@
   "remoteHub.commitDirectlyWarning": "off",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "workbench.colorTheme": "Monokai Pro",
-  "workbench.iconTheme": "Monokai Pro Icons",
+  "workbench.iconTheme": "material-icon-theme",
   "jupyter.widgetScriptSources": ["jsdelivr.com", "unpkg.com"],
   "notebook.formatOnSave.enabled": true,
   "editor.fontSize": 13,
@@ -189,5 +189,9 @@
     "editor.defaultFormatter": "JuanBlanco.solidity"
   },
   "solidity.formatter": "forge",
-  "workbench.statusBar.visible": false
+  "workbench.statusBar.visible": false,
+  "git.confirmSync": false,
+  "git.detectSubmodules": false,
+  "git.ignoredRepositories": ["**/subrepositories/**"],
+  "git.autoRepositoryDetection": false
 }
