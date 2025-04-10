@@ -11,3 +11,19 @@ mkdir -p ~/Github
 # Run Homebrew installation script
 echo "Running Homebrew installation..."
 bash ~/Github/notes/configs/shell/homebrew_install.sh
+
+# Run Github login
+echo "Running GitHub login script..."
+bash ~/Github/notes/configs/shell/gh_login.sh
+
+# Run dotfiles installation script
+echo "Running dotfiles installation script..."
+bash ~/Github/notes/configs/shell/dotfiles_install.sh
+
+# Run repository installation script
+echo "Running repository installation script..."
+bash ~/Github/notes/configs/shell/repos_install.sh
+
+# Run benv installation script
+echo "Running benv installation script..."
+bash ~/Github/notes/configs/shell/benv_install.sh

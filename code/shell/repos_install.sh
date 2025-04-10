@@ -1,10 +1,5 @@
 #!/bin/bash
-
 # Install my favorite personal repos into ~/Github
-
-
-# Create directory if it doesn't exist
-mkdir -p ~/Github
 
 # Clone the repositories
 gh repo clone Drblessing/blockchain-development ~/Github
