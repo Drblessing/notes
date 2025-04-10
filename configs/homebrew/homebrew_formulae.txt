@@ -1,6 +1,6 @@
 gh
-htop
 python
+htop
 nvm
 tree
 git-lfs
