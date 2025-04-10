@@ -23,3 +23,19 @@ else
     eval "$(/usr/local/bin/brew shellenv)"
 fi
 export HOMEBREW_NO_ANALYTICS=1
+
+# ---------------------------------------------
+# |                                           |
+# |              NVM Configuration            |
+# |                                           |
+# ---------------------------------------------
+# Check if the system is running on Apple Silicon and set the path accordingly.
+if [[ "$(uname -m)" == "arm64" ]]; then
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+    [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  
+else
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+    [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  
+fi

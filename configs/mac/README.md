@@ -91,32 +91,40 @@ Loose threads:
 ```zsh
 mkdir ~/.nvm
 git lfs install
-ln -s /opt/homebrew/bin/python3 /opt/homebrew/bin/python
-ln -s /opt/homebrew/bin/pip3 /opt/homebrew/bin/pip
 nvm install --lts
+if [[ "$(uname -m)" == "arm64" ]]; then
+    ln -s /opt/homebrew/bin/python3 /opt/homebrew/bin/python
+    ln -s /opt/homebrew/bin/pip3 /opt/homebrew/bin/pip
+else
+    ln -s /usr/local/bin/python3 /usr/local/bin/python
+    ln -s /usr/local/bin/pip3 /usr/local/bin/pip
+fi
 ```
 
-**7. Install VSCode Application.**
+**8. Install VSCode Application.**
 
 https://code.visualstudio.com/
 
-Sync settings to Github.
+- Sync settings to Github.
+- Install "code" command in PATH.
 
-Install "code" command in PATH.
-
-**8. Install Google Chrome.**
+**9. Install Google Chrome.**
 
 https://www.google.com/chrome/
 
 Login to your Google account, and sync settings.
 
-**11. Install Foundry.**
+**10. Install Foundry.**
 
 ```zsh
 curl -L https://foundry.paradigm.xyz | bash
 ```
 
-**12. Install Cloudflare WARP.**
+```zsh
+foundryup
+```
+
+**11. Install Cloudflare WARP.**
 
 https://one.one.one.one/
 

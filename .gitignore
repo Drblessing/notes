@@ -99,9 +99,8 @@ celerybeat.pid
 .env
 .env/
 .venv/
-!bin/.benv/**
-!bin/.benv
 env/
+.benv/
 venv/
 ENV/
 env.bak/
