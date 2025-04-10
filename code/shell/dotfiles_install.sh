@@ -19,3 +19,11 @@ else
     ln -s /usr/local/bin/pip3 /usr/local/bin/pip
 fi
 
+# Source the new files
+source ~/.zprofile
+source ~/.zshrc
+
+
+# Install Node.js LTS version
+echo "Installing Node.js LTS version..."
+nvm install --lts

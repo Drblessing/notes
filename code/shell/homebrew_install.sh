@@ -57,10 +57,6 @@ git lfs install
 # Create ~/.nvm directory if it doesn't exist
 mkdir -p ~/.nvm
 
-# Install Node.js LTS version
-echo "Installing Node.js LTS version..."
-nvm install --lts
-
 # Cleanup 
 echo "Performing Homebrew cleanup..."
 brew cleanup
