@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 # Clone the submodules already added to the repository
 
 # Store current directory
@@ -15,3 +15,6 @@ echo "Submodules initialized. Current status:"
 git submodule status
 
 echo "Submodule initialization complete!"
+
+# Return to the original directory
+cd "$current_dir"
