@@ -3,7 +3,20 @@
 # |              Homebrew Configuration       |
 # |                                           |
 # ---------------------------------------------
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# Get Homebrew prefix
+UNAME_MACHINE="$(/usr/bin/uname -m)"
+
+if [[ "${UNAME_MACHINE}" == "arm64" ]]
+then
+# On ARM macOS, this script installs to /opt/homebrew only
+HOMEBREW_PREFIX="/opt/homebrew"
+else
+# On Intel macOS, this script installs to /usr/local only
+HOMEBREW_PREFIX="/usr/local/homebrew"
+fi
+
+# Eval with HOMEBREW_PREFIX/bin/brew shellenv
+eval "$(${HOMEBREW_PREFIX}/bin/brew shellenv)"
 export HOMEBREW_NO_ANALYTICS=1
 
 # ---------------------------------------------
