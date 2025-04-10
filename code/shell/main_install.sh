@@ -27,3 +27,7 @@ bash ~/Github/notes/code/shell/repos_install.sh
 # Run benv installation script
 echo "Running benv installation script..."
 bash ~/Github/notes/code/shell/benv_install.sh
+
+# Run submodules installation script
+echo "Running submodules installation script..."
+bash ~/Github/notes/code/shell/init_submodules.sh
