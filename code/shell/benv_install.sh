@@ -8,6 +8,12 @@ ORIGINAL_DIR=$(pwd)
 # Navigate to notes/bin
 cd ~/Github/notes/bin
 
+# Remove .benv if it already exists
+if [ -d ".benv" ]; then
+    echo "Removing existing .benv directory..."
+    rm -rf .benv
+fi
+
 # Install python there using homebrew python
 python3 -m venv .benv
 
