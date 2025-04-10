@@ -110,7 +110,7 @@
   "terminal.integrated.enablePersistentSessions": false,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontFamily": "'Fira Code', monospace",
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 15,
   "terminal.integrated.letterSpacing": 0.5,
   "terminal.integrated.lineHeight": 1.1,
   "terminal.integrated.fontWeight": "400",
