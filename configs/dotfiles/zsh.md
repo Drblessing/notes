@@ -9,4 +9,5 @@ To install, run the following commands:
 ```zsh
 ln -s ~/Github/notes/configs/dotfiles/.zprofile ~/.zprofile
 ln -s ~/Github/notes/configs/dotfiles/.zshrc ~/.zshrc
+ln -s ~/Github/notes/configs/dotfiles/.gitconfig ~/.gitconfig
 ```
