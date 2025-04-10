@@ -1,12 +1,12 @@
 gh
-fastfetch
-git-lfs
 python
-gnupg
-ssss
+nvm
 htop
 tree
-nvm
+git-lfs
 ffmpeg
+gnupg
+ssss
+fastfetch
 
 

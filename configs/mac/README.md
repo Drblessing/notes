@@ -43,6 +43,7 @@ xargs brew install --cask < ~/Github/notes/configs/homebrew/homebrew_casks.txt
 ```zsh
 ln -s ~/Github/notes/configs/dotfiles/.zprofile ~/.zprofile
 ln -s ~/Github/notes/configs/dotfiles/.zshrc ~/.zshrc
+ln -s ~/Github/notes/configs/dotfiles/.gitconfig ~/.gitconfig
 ```
 
 **7. Install VSCode Application.**
