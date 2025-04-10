@@ -4,29 +4,77 @@ I like my MacOS to be cozy.
 
 ## Installation
 
-**1. Install Homebrew.**
+**1. Install MacOS**
+
+Install MacOS, either from a newly purcahsed machine, or reinstalling on an existing machine.
+
+Reinstalling MacOS: Settings > General > Transfer or Reset > Erase All Content and Settings.
+
+**2. Install Apps from the App store.**
+
+Since we will need these later, and they don't need any other configuration, we will install them now.
+
+- Install Apple Pages.
+- Install Apple Numbers.
+- Install XCode.
+  - Install iOS simulator.
+  - Do not install code completion model.
+
+**3. Install 1passowrd.**
+
+Since we require 1pasword to login to Github, we will install it now.
+
+- Install 1Password from Safari.
+  - https://1password.com/downloads/mac
+- Login to 1Password.
+
+**4. Install Homebrew.**
+
+Homebrew must be installed before Github respositories, because you need gh to login to Github through the terminal.
+
+Install homebrew:
 
 ```zsh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-**2. Install Xcode from Apple Store.**
+Install homebrew in .zshrc:
 
-Also install the iOS simulator. Do not install code completion model.
+```zsh
+if [[ "$(uname -m)" == "arm64" ]]; then
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
+else
+    echo 'eval "$(/usr/local/bin/brew shellenv)"' >> ~/.zshrc
+fi
+export HOMEBREW_NO_ANALYTICS=1
+```
 
-**3. Install 1Password.**
+**5. Install gh.**
 
-**4. Install the Notes Github repository.**
+```zsh
+brew install gh
+```
+
+Login to your Github account:
+
+```zsh
+gh auth login
+```
+
+**6. Install the Notes Github repository.**
 
 ```zsh
 mkdir ~/Github
 cd ~/Github
-git clone https://github.com/Drblessing/notes.git
+gh repo clone Drblessing/notes
+ln -s ~/Github/notes/configs/dotfiles/.zprofile ~/.zprofile
+ln -s ~/Github/notes/configs/dotfiles/.zshrc ~/.zshrc
+ln -s ~/Github/notes/configs/dotfiles/.gitconfig ~/.gitconfig
 ```
 
-**5. Install Homebrew packages**
+**7. Install Homebrew packages**
 
-Install formulae
+Install formulae:
 
 ```zsh
 xargs brew install < ~/Github/notes/configs/homebrew/homebrew_formulae.txt
@@ -38,12 +86,14 @@ Install casks
 xargs brew install --cask < ~/Github/notes/configs/homebrew/homebrew_casks.txt
 ```
 
-**6. Install dotfiles.**
+Loose threads:
 
 ```zsh
-ln -s ~/Github/notes/configs/dotfiles/.zprofile ~/.zprofile
-ln -s ~/Github/notes/configs/dotfiles/.zshrc ~/.zshrc
-ln -s ~/Github/notes/configs/dotfiles/.gitconfig ~/.gitconfig
+mkdir ~/.nvm
+git lfs install
+ln -s /opt/homebrew/bin/python3 /opt/homebrew/bin/python
+ln -s /opt/homebrew/bin/pip3 /opt/homebrew/bin/pip
+nvm install --lts
 ```
 
 **7. Install VSCode Application.**
@@ -59,19 +109,6 @@ Install "code" command in PATH.
 https://www.google.com/chrome/
 
 Login to your Google account, and sync settings.
-
-**9. Install node.**
-
-```zsh
-nvm install --lts
-```
-
-**10. Install Python.**
-
-```zsh
-ln -s /opt/homebrew/bin/python3 /opt/homebrew/bin/python
-ln -s /opt/homebrew/bin/pip3 /opt/homebrew/bin/pip
-```
 
 **11. Install Foundry.**
 
@@ -176,3 +213,7 @@ In Widgets:
 - Add Clock to widgets.
 - Add Weather to widgeets.
 - Swipe left with two fingers from edge to see widgets.
+
+```
+
+```
