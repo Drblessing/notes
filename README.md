@@ -62,10 +62,10 @@ Notes from the wild wild west of technology!
 ```zsh
 mkdir subrepositories
 
-git submodule add https://github.com/expo/expo.git references/expo
-git submodule add https://github.com/vercel/next.js.git references/next.js
-git submodule add https://github.com/cloudflare/cloudflare-docs.git references/cloudflare-docs
-git submodule add https://github.com/reactjs/react.dev.git references/react.dev
+git submodule add https://github.com/expo/expo.git subrepositories/expo
+git submodule add https://github.com/vercel/next.js.git subrepositories/next.js
+git submodule add https://github.com/cloudflare/cloudflare-docs.git subrepositories/cloudflare-docs
+git submodule add https://github.com/reactjs/react.dev.git subrepositories/react.dev
 ```
 
 ```zsh
