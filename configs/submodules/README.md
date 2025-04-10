@@ -6,5 +6,7 @@ git config submodule.submodules/react.dev.ignore all
 
 # Get the submodule on fresh repo
 
+git submodule init
+git submodule sync
 git submodule update --init --remote submodules/react.dev
 git submodule update --init submodules/react.dev
