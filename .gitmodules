@@ -1,5 +1,4 @@
 [submodule "submodules/react.dev"]
 	path = submodules/react.dev
-	url = https://github.com/reactjs/react.dev
+	url = https://github.com/reactjs/react.dev.git
 	branch = main
-	ignore = all
