@@ -56,3 +56,91 @@ Notes from the wild wild west of technology!
 | next.js         | React framework for server-side rendering and static site generation |
 | cloudflare-docs | Documentation for Cloudflare services and APIs                       |
 | react.dev       | React documentation and resources for developers                     |
+
+**Adding submodules (subrepositories) to a Git repository**
+
+```zsh
+mkdir subrepositories
+
+git submodule add https://github.com/expo/expo.git references/expo
+git submodule add https://github.com/vercel/next.js.git references/next.js
+git submodule add https://github.com/cloudflare/cloudflare-docs.git references/cloudflare-docs
+git submodule add https://github.com/reactjs/react.dev.git references/react.dev
+```
+
+```zsh
+git commit -m "Add reference submodules for offline documentation"
+```
+
+**Cloning Your Repository with Submodules**
+
+```zsh
+git clone --recurse-submodules https://github.com/your-username/notes.git
+```
+
+Or
+
+```zsh
+git clone https://github.com/your-username/notes.git
+cd notes
+git submodule init
+git submodule update
+```
+
+**Updating Submodules**
+
+```zsh
+git submodule update --remote
+git commit -m "Update submodules"
+```
+
+**Check the status of submodules**
+
+```zsh
+git submodule status
+```
+
+**Remove a submodule**
+
+```zsh
+git submodule deinit -f references/expo
+```
+
+```zsh
+git rm -f references/expo
+```
+
+```zsh
+rm -rf .git/modules/references/expo
+```
+
+```zsh
+git commit -m "Remove expo submodule"
+```
+
+## References
+
+| References                                                    | Description                                                                             |
+| ------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| A Method for Obtaining Digital Signatures...                  | The original paper describing the RSA encryption algorithm                              |
+| Bitcoin: A Peer-to-Peer Electronic Cash System                | The Bitcoin whitepaper by Satoshi Nakamoto that introduced blockchain technology        |
+| EFF Large Wordlist                                            | Electronic Frontier Foundation's large wordlist for generating secure passphrases       |
+| Ethereum: A Next-Generation Smart Contract and DApp Platform. | The Ethereum whitepaper by Vitalik Buterin describing the Ethereum platform             |
+| Flashboys 2.0                                                 | Research paper on high-frequency trading and market structure in cryptocurrency markets |
+| How to Share a Secret                                         | Adi Shamir's seminal paper on secret sharing algorithms                                 |
+| King James Bable                                              | The King James Version of the Bible                                                     |
+| Mastering Ethereum                                            | Comprehensive guide to Ethereum by Andreas Antonopoulos and Gavin Wood                  |
+| Monero Whitepaper                                             | The Monero cryptocurrency whitepaper describing its privacy features                    |
+| New Directions in Cryptography                                | The seminal paper introducing public-key cryptography                                   |
+
+### PGP Keys
+
+| File                      | Description                                             |
+| ------------------------- | ------------------------------------------------------- |
+| pgp/satoshi_nakamoto.asc  | PGP key attributed to Satoshi Nakamoto                  |
+| pgp/vitalik_buterin.asc   | PGP public key for Vitalik Buterin (Ethereum founder)   |
+| pgp/charles_hoskinson.asc | PGP public key for Charles Hoskinson (Cardano founder)  |
+| pgp/daniel_blessing.asc   | PGP public key for Daniel Blessing                      |
+| pgp/moneroHases.asc       | PGP signed hashes for Monero releases                   |
+| pgp/darkfail.asc          | PGP public key for Dark.fail (darknet market directory) |
+| pgp/binaryFate.asc        | PGP public key for binaryFate (Monero core team member) |
