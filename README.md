@@ -78,7 +78,7 @@ git commit -m "Add reference submodules for offline documentation"
 git clone --recurse-submodules https://github.com/your-username/notes.git
 ```
 
-Or
+Or:
 
 ```zsh
 git clone https://github.com/your-username/notes.git
