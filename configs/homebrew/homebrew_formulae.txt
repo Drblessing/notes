@@ -1,7 +1,7 @@
 gh
+htop
 python
 nvm
-htop
 tree
 git-lfs
 ffmpeg
