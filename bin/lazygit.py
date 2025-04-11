@@ -177,12 +177,10 @@ class LazyGit:
             self.sync_branches()
             return
 
-        print()
         self.pull_from_remote()
         self.add_all_files_to_staging()
         self.commit()
         self.push_to_remote()
-        print()
         self.print_rainbow_text("Done!")
 
     # Helper functions
