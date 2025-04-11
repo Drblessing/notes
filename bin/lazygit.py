@@ -144,7 +144,7 @@ class LazyGit:
     @staticmethod
     def push_to_remote():
         """Push to remote"""
-        LazyGit.run_command(["git", "push"])
+        LazyGit.run_command(["git", "push", "--quiet"])
 
     @staticmethod
     def print_rainbow_text(text: str) -> None:
