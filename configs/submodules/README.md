@@ -1,11 +1,44 @@
 # Submodules
 
-# Get the submodule on fresh repo
+Git submodules allow you to include one Git repository inside another subdirectory, while keeping their histories completely separate.
 
-git submodule init
-git submodule sync
-git submodule update --init --remote submodules/react.dev
-git submodule update --init submodules/react.dev
+## Adding a Submodule
+
+```zsh
+git submodule add <repository-url> <path>
+```
+
+Use the .git url for added clarity.
+
+Example:
+
+```zsh
+git submodule add https://github.com/reactjs/react.dev.git subrepos/react.dev
+```
+
+## Ignore changes to a submodule
+
+```zsh
+git config -f .gitmodules submodule.<path-to-submodule>ignore all`
+```
+
+Example:
+
+```zsh
+git config -f .gitmodules submodule.subrepos/react.dev.ignore all
+```
+
+## Updating a Submodule
+
+```zsh
+git submodule update --remote --merge
+```
+
+## Cloning a Repository with Submodules
+
+```zsh
+git clone --recurse-submodules <repository-url>
+```
 
 ## Submodules
 
@@ -54,3 +87,11 @@ git submodule update --init submodules/react.dev
 | https://github.com/modelcontextprotocol/servers.git           | Model Context Protocol Servers  |
 | https://github.com/karpathy/nanoGPT.git                       | nanoGPT                         |
 | https://github.com/microsoft/TypeScript.git                   | TypeScript programming language |
+
+```
+
+```
+
+```
+
+```
