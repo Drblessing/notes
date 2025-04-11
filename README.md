@@ -1,6 +1,6 @@
 # Notes
 
-Notes from the wild wild west of technology!
+Notes from the wild wild west of technology! Yee haw
 
 ## Setup
 
