@@ -186,11 +186,14 @@ class LazyGit:
     def run(self):
         """Run all commands"""
         self.print_rainbow_text("Lazy Git")
+        print("\n" * 1)
         self.pull_from_remote()
         self.add_all_files_to_staging()
         self.commit()
         self.push_to_remote()
+        print("\n" * 1)
         self.print_rainbow_text("Done!")
+        print("\n" * 1)
 
 
 if __name__ == "__main__":
