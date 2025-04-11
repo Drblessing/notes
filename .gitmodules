@@ -2,3 +2,15 @@
 	path = subrepos/react.dev
 	url = https://github.com/reactjs/react.dev.git
 	ignore = all
+[submodule "subrepos/expo"]
+	path = subrepos/expo
+	url = https://github.com/expo/expo.git
+	ignore = all
+[submodule "subrepos/next.js"]
+	path = subrepos/next.js
+	url = https://github.com/vercel/next.js.git
+	ignore = all
+[submodule "subrepos/cloudflare-docs"]
+	path = subrepos/cloudflare-docs
+	url = https://github.com/cloudflare/cloudflare-docs.git
+	ignore = all
