@@ -158,9 +158,9 @@ class LazyGit:
         commit_message = self.get_commit_message()
         # Make some terminal whitepsace and print commit message
         # Print one line of whitepsace
-        print("\n" * 1)
+        print()
         self.print_rainbow_text(commit_message)
-        print("\n" * 1)
+        print()
         LazyGit.run_command(["git", "commit", "-m", commit_message])
 
     @staticmethod
@@ -193,7 +193,7 @@ class LazyGit:
         self.push_to_remote()
         print()
         self.print_rainbow_text("Done!")
-        print("\n" * 1)
+        print()
 
 
 if __name__ == "__main__":
