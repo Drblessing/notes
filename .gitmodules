@@ -1,0 +1,4 @@
+[submodule "subrepos/react.dev"]
+	path = subrepos/react.dev
+	url = https://github.com/reactjs/react.dev.git
+	ignore = all
