@@ -12,29 +12,6 @@
 import sys
 import subprocess
 import importlib
-
-
-def install_packages():
-    """Install packages"""
-    try:
-        importlib.import_module("requests")
-        importlib.import_module("termcolor")
-    except ImportError:
-        subprocess.check_call(
-            [
-                sys.executable,
-                "-m",
-                "pip",
-                "install",
-                "requests",
-                "termcolor",
-            ]
-        )
-
-
-install_packages()
-
-# Import libraries
 import random
 import requests
 import argparse
