@@ -69,7 +69,7 @@ class LazyGit:
             "--version",
             "-v",
             action="version",
-            version="%(prog)s 1.0",
+            version="%(prog)s 1.1",
             help="Show program's version number and exit.",
         )
 
