@@ -163,6 +163,10 @@ class LazyGit:
         print(colored("Fetching all branches...", "cyan"))
         self.run_command(["git", "fetch", "--all"])
 
+        # Then pull all branches
+        print(colored("Pulling all branches...", "cyan"))
+        self.run_command(["git", "pull", "--all"])
+
     def run(self):
         """Run all commands"""
         self.clear_console()
