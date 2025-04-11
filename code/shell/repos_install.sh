@@ -19,3 +19,4 @@ clone_if_not_exists Drblessing/blockchain-development ~/Github/blockchain-develo
 clone_if_not_exists Drblessing/react-learn ~/Github/react-learn
 clone_if_not_exists Drblessing/learn-expo ~/Github/learn-expo
 clone_if_not_exists Drblessing/private-workbench ~/Github/private-workbench
+clone_if_not_exists Drblessing/my-monorepo ~/Github/my-monorepo
