@@ -26,8 +26,5 @@ pip install --upgrade pip
 # Install requirements
 pip install -r requirements.txt
 
-# Deactivate the virtual environment
-deactivate
-
 # Navigate back to the original directory
 cd "$ORIGINAL_DIR"

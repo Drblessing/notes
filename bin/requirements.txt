@@ -3,3 +3,4 @@ termcolor
 pillow
 rich
 ipykernel
+pyfiglet

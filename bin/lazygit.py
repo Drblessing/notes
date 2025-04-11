@@ -16,11 +16,10 @@ import random
 import requests
 import argparse
 from termcolor import colored
+import os
 
 
 class LazyGit:
-    # 1. Get funny commit message from whatthecommit list, add default message if it fails, as a property
-    # Class property
     COMMIT_MESSAGES_MAIN = "https://raw.githubusercontent.com/ngerakines/commitment/main/commit_messages.txt"
     DEFAULT_COMMIT_MESSAGE = "Lazy Git Commit"
     CENSOR_LIST = [
@@ -164,6 +163,8 @@ class LazyGit:
     # 6. Run all commands
     def run(self):
         """Run all commands"""
+
+        self.clear_console()
         self.print_rainbow_text("Lazy Git")
         print()
         self.pull_from_remote()
@@ -173,6 +174,12 @@ class LazyGit:
         print()
         self.print_rainbow_text("Done!")
         print()
+
+    # Helper functions
+    @staticmethod
+    def clear_console():
+        """Clear the console"""
+        os.system("cls" if os.name == "nt" else "clear")
 
 
 if __name__ == "__main__":
