@@ -5,15 +5,17 @@ Git submodules allow you to include one Git repository inside another subdirecto
 ## Adding a Submodule
 
 ```zsh
-git submodule add <repository-url> <path>
+git submodule add --depth 1 <repository-url> <path>
 ```
+
+Depth 1 is used to limit the history to the latest commit, which can speed up the cloning process.
 
 Use the .git url for added clarity.
 
 Example:
 
 ```zsh
-git submodule add https://github.com/reactjs/react.dev.git subrepos/react.dev
+git submodule add --depth 1 https://github.com/reactjs/react.dev.git subrepos/react.dev
 ```
 
 ## Ignore changes to a submodule
