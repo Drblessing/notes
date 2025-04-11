@@ -6,4 +6,4 @@ git config -f .gitmodules submodule.subrepos/react.dev.ignore all
 git config -f .gitmodules submodule.subrepos/expo.ignore all
 git config -f .gitmodules submodule.subrepos/next.js.ignore all
 git config -f .gitmodules submodule.subrepos/cloudflare-docs.ignore all
-# gh repo clone notes -- -recurse-submodules --depth 1
+# gh repo clone notes -- --recurse-submodules --shallow-submodules
