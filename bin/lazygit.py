@@ -136,7 +136,7 @@ class LazyGit:
     @staticmethod
     def pull_from_remote():
         """Pull from remote to make sure we're up to date"""
-        LazyGit.run_command(["git", "pull"])
+        LazyGit.run_command(["git", "pull", "--quiet"])
 
     @staticmethod
     def add_all_files_to_staging():
