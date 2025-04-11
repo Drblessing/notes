@@ -24,6 +24,7 @@ class LazyGit:
     DEFAULT_COMMIT_MESSAGE = "Lazy Git Commit"
     CENSOR_LIST = [
         "shit",
+        "fuck",
         "fucking",
         "damn",
         "god",
@@ -46,6 +47,7 @@ class LazyGit:
         "bull",
         "asshole",
         "motherfucker",
+        "Wubbalubbadubdub!",
     ]
 
     def __init__(self):
@@ -91,20 +93,21 @@ class LazyGit:
 
             # Loop until we find a message that does not contain any censored words.
             while messages:
-                commit_message = random.choice(messages)
-                lower_message = commit_message.lower()
-                # If any word in the censor list is found in the commit message,
-                # remove this message from the list and try another one.
-                if any(bad_word in lower_message for bad_word in cls.CENSOR_LIST):
-                    messages.remove(commit_message)
-                    continue
-                # A valid commit message was found.
-                return commit_message
+                message = random.choice(messages)
+                if not cls.isCensoredMessage(message):
+                    return message
+
+                # Remove the censored message from the list.
+                messages.remove(message)
 
             # If no valid message is found, return the default commit message.
             return cls.DEFAULT_COMMIT_MESSAGE
 
         except (requests.exceptions.HTTPError, requests.exceptions.ConnectionError):
+            return cls.DEFAULT_COMMIT_MESSAGE
+
+        # Excpet any other error
+        except Exception as e:
             return cls.DEFAULT_COMMIT_MESSAGE
 
     def get_commit_message(self) -> str:
@@ -130,7 +133,7 @@ class LazyGit:
     @staticmethod
     def add_all_files_to_staging():
         """Add all files to staging"""
-        LazyGit.run_command(["git", "add", "-A"])
+        LazyGit.run_command(["git", "add", "--all"])
 
     def commit(self):
         commit_message = self.get_commit_message()
@@ -146,21 +149,6 @@ class LazyGit:
         """Push to remote"""
         LazyGit.run_command(["git", "push", "--quiet"])
 
-    @staticmethod
-    def print_rainbow_text(text: str) -> None:
-        """Return text in rainbow colors"""
-        colors = ["red", "yellow", "green", "cyan", "blue", "magenta"]
-        rainbow_text_str = ""
-
-        for i in range(len(text)):
-            # Choose the next color in the colors list
-            color = colors[i % len(colors)]
-            # Colorize the next character
-            rainbow_text_str += colored(text[i], color)
-        print(rainbow_text_str)
-        return
-
-    # 6. Run all commands
     def run(self):
         """Run all commands"""
 
@@ -179,6 +167,28 @@ class LazyGit:
     def clear_console():
         """Clear the console"""
         os.system("cls" if os.name == "nt" else "clear")
+
+    @staticmethod
+    def isCensoredMessage(message: str) -> bool:
+        """Check if the message is censored"""
+        for word in LazyGit.CENSOR_LIST:
+            if word.lower() in message.lower():
+                return True
+        return False
+
+    @staticmethod
+    def print_rainbow_text(text: str) -> None:
+        """Return text in rainbow colors"""
+        colors = ["red", "yellow", "green", "cyan", "blue", "magenta"]
+        rainbow_text_str = ""
+
+        for i in range(len(text)):
+            # Choose the next color in the colors list
+            color = colors[i % len(colors)]
+            # Colorize the next character
+            rainbow_text_str += colored(text[i], color)
+        print(rainbow_text_str)
+        return
 
 
 if __name__ == "__main__":
