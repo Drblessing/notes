@@ -191,7 +191,7 @@ class LazyGit:
         self.add_all_files_to_staging()
         self.commit()
         self.push_to_remote()
-        print("\n" * 1)
+        print()
         self.print_rainbow_text("Done!")
         print("\n" * 1)
 
