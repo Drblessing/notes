@@ -39,6 +39,7 @@ def combinations_example():
     """
     Example of how to use combinations
     """
+    print("Combinations example:")
     print("Combinations of 'ABCD', 2:")
     print(list(combinations("ABCD", 2)))
     print("Combinations of 'ABCD', 3:")
