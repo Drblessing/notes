@@ -54,18 +54,6 @@ class LazyGit:
         self.override_commit_message = args.message
 
     def parse_args(self):
-        parser = argparse.ArgumentParser(
-            description="Runs 'git pull', 'git add -A', 'git commit -m <message>', and 'git push' in one command."
-        )
-        parser.add_argument(
-            "-m",
-            "--message",
-            type=str,
-            help="Override commit message with a custom message.",
-        )
-        return parser.parse_args()
-
-    def parse_args(self):
         """Parse arguments"""
         parser = argparse.ArgumentParser(
             description="A python script that runs `git add .`, `git commit -m <random funny git message>`, and `git push` in one command. Useful for quickly committing changes to a repo."
@@ -85,16 +73,7 @@ class LazyGit:
             help="Show program's version number and exit.",
         )
 
-        parser.add_argument(
-            "--changes",
-            "-c",
-            action="store_true",
-            help="Show changed files",
-        )
-
-        args = parser.parse_args()
-
-        return args
+        return parser.parse_args()
 
     @classmethod
     def get_commit_message_from_url(cls, url: str = None) -> str:
