@@ -21,9 +21,33 @@ from termcolor import colored
 class LazyGit:
     # 1. Get funny commit message from whatthecommit list, add default message if it fails, as a property
     # Class property
-    COMMIT_MESSAGES_MAIN = "https://raw.githubusercontent.com/Drblessing/notes/master/References/commit_messages.txt"
-    COMMIT_MESSAGES_FALLBACK = "https://raw.githubusercontent.com/ngerakines/commitment/main/commit_messages.txt"
+    COMMIT_MESSAGES_MAIN = "https://raw.githubusercontent.com/ngerakines/commitment/main/commit_messages.txt"
     DEFAULT_COMMIT_MESSAGE = "Lazy Git Commit"
+    CENSOR_LIST = [
+        "shit",
+        "fucking",
+        "damn",
+        "god",
+        "dare",
+        "ass",
+        "bastard",
+        "hell",
+        "pussy",
+        "prick",
+        "kill",
+        "cock",
+        "penis",
+        "vagina",
+        "cunt",
+        "bitch",
+        "slut",
+        "whore",
+        "mother",
+        "father",
+        "bull",
+        "asshole",
+        "motherfucker",
+    ]
 
     def __init__(self, commit_message: str | None = None):
         args = self.parse_args()
@@ -94,26 +118,43 @@ class LazyGit:
         return args
 
     @classmethod
-    def get_commit_message_from_url(cls, url: str = COMMIT_MESSAGES_MAIN) -> str | None:
-        """Get commit message from url"""
+    def get_commit_message_from_url(cls, url: str = None) -> str:
+        """Fetch a commit message from the URL, filtering out any with censored words."""
+        # Use the default URL if none is provided.
+        if url is None:
+            url = cls.COMMIT_MESSAGES_MAIN
+
         try:
-            r = requests.get(url)
-            r.raise_for_status()
-            text = r.text
-            text = text.split("\n")
-            # Get random commit message from text
-            commit_message = random.choice(text)
-            return commit_message
+            response = requests.get(url)
+            response.raise_for_status()
+            # Split the fetched text into a list of non-empty, stripped messages.
+            messages = [
+                msg.strip() for msg in response.text.splitlines() if msg.strip()
+            ]
+
+            # Loop until we find a message that does not contain any censored words.
+            while messages:
+                commit_message = random.choice(messages)
+                lower_message = commit_message.lower()
+                # If any word in the censor list is found in the commit message,
+                # remove this message from the list and try another one.
+                if any(bad_word in lower_message for bad_word in cls.CENSOR_LIST):
+                    messages.remove(commit_message)
+                    continue
+                # A valid commit message was found.
+                return commit_message
+
+            # If no valid message is found, return the default commit message.
+            return cls.DEFAULT_COMMIT_MESSAGE
 
         except (requests.exceptions.HTTPError, requests.exceptions.ConnectionError):
-            return
+            return cls.DEFAULT_COMMIT_MESSAGE
 
     def get_commit_message(self) -> str:
-        """Get commit message"""
+        """Return the commit message from an override, from the fetched URL, or the default."""
         commit_message = (
             self.override_commit_message
             or self.get_commit_message_from_url()
-            or self.get_commit_message_from_url(self.COMMIT_MESSAGES_FALLBACK)
             or self.DEFAULT_COMMIT_MESSAGE
         )
         return commit_message
