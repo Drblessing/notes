@@ -53,6 +53,7 @@ class LazyGit:
     def __init__(self):
         args = self.parse_args()
         self.override_commit_message = args.message
+        self.sync_mode = args.sync
 
     def parse_args(self):
         """Parse arguments"""
@@ -72,6 +73,13 @@ class LazyGit:
             action="version",
             version="%(prog)s 1.2",
             help="Show program's version number and exit.",
+        )
+
+        parser.add_argument(
+            "--sync",
+            "-s",
+            action="store_true",
+            help="Sync all branches from origin, checking for local changes",
         )
 
         return parser.parse_args()
@@ -149,11 +157,22 @@ class LazyGit:
         """Push to remote"""
         LazyGit.run_command(["git", "push", "--quiet"])
 
+    def sync_branches(self):
+        """Sync all branches from origin"""
+        # Fetch all branches
+        print(colored("Fetching all branches...", "cyan"))
+        self.run_command(["git", "fetch", "--all"])
+
     def run(self):
         """Run all commands"""
-
         self.clear_console()
         self.print_rainbow_text("Lazy Git")
+
+        # If sync mode is enabled, run sync first
+        if self.sync_mode:
+            self.sync_branches()
+            return
+
         print()
         self.pull_from_remote()
         self.add_all_files_to_staging()
