@@ -8,8 +8,6 @@
 	smudge = git-lfs smudge -- %f
 [pull]
 	rebase = true
-[rebase]
-	autoStash = true
 [url "https://github.com/"]
 	insteadOf = git@github.com:
 [url "https://"]

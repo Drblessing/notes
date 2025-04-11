@@ -1,12 +1,7 @@
 # Notes
 
-<<<<<<< Updated upstream
-Notes from the wild wild west of technology! Yee hawasdf
-a
-=======
-Notes from the wild wild west o
+Notes from the wild wild west of technology! Yee haw
 
->>>>>>> Stashed changes
 ## Setup
 
 | Category             | Name                                     |
