@@ -1,17 +1,17 @@
 #!$HOME/Github/notes/bin/.benv/bin/python
-# Lazy Git
-# A python script that runs `git add .`, `git commit -m "Lazy Git Commit"`, and `git push` in one command. Useful for quickly committing changes to a repo.
-
-# 1. Get funny commit message from whatthecommit, add default message if it fails
-# 2. Pull from remote to make sure we're up to date
-# 3. Add all files to staging
-# 4. Commit with funny message
-# 5. Push to remote
+"""
+Lazy Git
+A quick Python script to run:
+  git pull
+  git add --all
+  git commit -m "<funny commit message>"
+  git push
+in a single command.
+"""
 
 # Install libraries.
 import sys
 import subprocess
-import importlib
 import random
 import requests
 import argparse
@@ -49,42 +49,21 @@ class LazyGit:
         "motherfucker",
     ]
 
-    def __init__(self, commit_message: str | None = None):
+    def __init__(self):
         args = self.parse_args()
         self.override_commit_message = args.message
-        self.args = args
 
-    def show_changed_files(self):
-        """Show changed files"""
-        LazyGit.run_command(
-            [
-                "git",
-                "diff",
-                "--name-only",
-            ]
+    def parse_args(self):
+        parser = argparse.ArgumentParser(
+            description="Runs 'git pull', 'git add -A', 'git commit -m <message>', and 'git push' in one command."
         )
-        LazyGit.run_command(
-            [
-                "git",
-                "ls-files",
-                "--others",
-                "--exclude-standard",
-            ]
+        parser.add_argument(
+            "-m",
+            "--message",
+            type=str,
+            help="Override commit message with a custom message.",
         )
-
-    @staticmethod
-    def print_rainbow_text(text: str) -> None:
-        """Return text in rainbow colors"""
-        colors = ["red", "yellow", "green", "cyan", "blue", "magenta"]
-        rainbow_text_str = ""
-
-        for i in range(len(text)):
-            # Choose the next color in the colors list
-            color = colors[i % len(colors)]
-            # Colorize the next character
-            rainbow_text_str += colored(text[i], color)
-        print(rainbow_text_str)
-        return
+        return parser.parse_args()
 
     def parse_args(self):
         """Parse arguments"""
@@ -152,14 +131,8 @@ class LazyGit:
 
     def get_commit_message(self) -> str:
         """Return the commit message from an override, from the fetched URL, or the default."""
-        commit_message = (
-            self.override_commit_message
-            or self.get_commit_message_from_url()
-            or self.DEFAULT_COMMIT_MESSAGE
-        )
-        return commit_message
+        return self.override_commit_message or self.get_commit_message_from_url()
 
-    # 2. Pull from remote to make sure we're up to date
     @staticmethod
     def run_command(command: list[str]):
         """Run a command and handle errors"""
@@ -176,15 +149,12 @@ class LazyGit:
         """Pull from remote to make sure we're up to date"""
         LazyGit.run_command(["git", "pull"])
 
-    # 3. Add all files to staging
     @staticmethod
     def add_all_files_to_staging():
         """Add all files to staging"""
         LazyGit.run_command(["git", "add", "-A"])
 
-    # 4. Commit with funny message
-    def commit_with_funny_message(self):
-        """Commit with funny message"""
+    def commit(self):
         commit_message = self.get_commit_message()
         # Make some terminal whitepsace and print commit message
         # Print one line of whitepsace
@@ -193,28 +163,36 @@ class LazyGit:
         print("\n" * 1)
         LazyGit.run_command(["git", "commit", "-m", commit_message])
 
-    # 5. Push to remote
     @staticmethod
     def push_to_remote():
         """Push to remote"""
         LazyGit.run_command(["git", "push"])
 
+    @staticmethod
+    def print_rainbow_text(text: str) -> None:
+        """Return text in rainbow colors"""
+        colors = ["red", "yellow", "green", "cyan", "blue", "magenta"]
+        rainbow_text_str = ""
+
+        for i in range(len(text)):
+            # Choose the next color in the colors list
+            color = colors[i % len(colors)]
+            # Colorize the next character
+            rainbow_text_str += colored(text[i], color)
+        print(rainbow_text_str)
+        return
+
     # 6. Run all commands
-    def run_all_commands(self):
+    def run(self):
         """Run all commands"""
         self.print_rainbow_text("Lazy Git")
-
-        if self.args.changes:
-            self.show_changed_files()
-        else:
-            self.pull_from_remote()
-            self.add_all_files_to_staging()
-            self.commit_with_funny_message()
-            self.push_to_remote()
-
+        self.pull_from_remote()
+        self.add_all_files_to_staging()
+        self.commit()
+        self.push_to_remote()
         self.print_rainbow_text("Done!")
 
 
 if __name__ == "__main__":
     lazygit = LazyGit()
-    lazygit.run_all_commands()
+    lazygit.run()
