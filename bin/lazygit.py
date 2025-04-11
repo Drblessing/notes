@@ -139,7 +139,7 @@ class LazyGit:
         print()
         self.print_rainbow_text(commit_message)
         print()
-        LazyGit.run_command(["git", "commit", "-m", commit_message])
+        LazyGit.run_command(["git", "commit", "--quiet", "-m", commit_message])
 
     @staticmethod
     def push_to_remote():
