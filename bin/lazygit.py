@@ -173,7 +173,6 @@ class LazyGit:
         self.push_to_remote()
         print()
         self.print_rainbow_text("Done!")
-        print()
 
     # Helper functions
     @staticmethod
