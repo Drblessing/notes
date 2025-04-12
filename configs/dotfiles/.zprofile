@@ -3,7 +3,7 @@
 # |              Foundry Configuration        |
 # |                                           |
 # ---------------------------------------------
-export PATH="$PATH:/Users/dbless/.foundry/bin"
+export PATH="$PATH:~/.foundry/bin"
 
 # ---------------------------------------------
 # |                                           |
