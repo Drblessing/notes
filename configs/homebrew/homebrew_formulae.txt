@@ -5,9 +5,8 @@ nvm
 yarn
 tree
 git-lfs
+jupyterlab
 ffmpeg
 gnupg
 ssss
 fastfetch
-
-
