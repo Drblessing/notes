@@ -17,3 +17,4 @@ trio
 pytest-trio
 termcolor
 webcolors
+black
