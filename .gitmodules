@@ -14,3 +14,7 @@
 	path = subrepos/cloudflare-docs
 	url = https://github.com/cloudflare/cloudflare-docs.git
 	ignore = all
+[submodule "subrepos/three.js"]
+	path = subrepos/three.js
+	url = https://github.com/mrdoob/three.js.git
+	ignore = all
