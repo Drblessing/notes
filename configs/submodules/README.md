@@ -21,7 +21,7 @@ git submodule add --depth 1 https://github.com/reactjs/react.dev.git subrepos/re
 ## Ignore changes to a submodule
 
 ```zsh
-git config -f .gitmodules submodule.<path-to-submodule>ignore all`
+git config -f .gitmodules submodule.<path-to-submodule>ignore all
 ```
 
 Example:
@@ -30,10 +30,12 @@ Example:
 git config -f .gitmodules submodule.subrepos/react.dev.ignore all
 ```
 
-## Updating a Submodule
+## Updating Submodules
+
+I do not care about local changes to submodules, so I will always update them to the latest commit. Also, I use the force option to ensure that the submodule is updated even if there are local changes.
 
 ```zsh
-git submodule update --remote --merge
+git submodule update --remote --force
 ```
 
 ## Cloning a Repository with Submodules
@@ -91,11 +93,3 @@ git clone --recurse-submodules <repository-url>
 | https://github.com/modelcontextprotocol/servers.git           | Model Context Protocol Servers  |
 | https://github.com/karpathy/nanoGPT.git                       | nanoGPT                         |
 | https://github.com/microsoft/TypeScript.git                   | TypeScript programming language |
-
-```
-
-```
-
-```
-
-```
