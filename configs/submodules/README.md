@@ -46,12 +46,16 @@ git clone --recurse-submodules <repository-url>
 
 **My submodules**
 
-| url                                               |
-| ------------------------------------------------- |
-| https://github.com/reactjs/react.dev.git          |
-| https://github.com/cloudflare/cloudflare-docs.git |
-| https://github.com/vercel/next.js.git             |
-| https://github.com/expo/expo.git                  |
+| url                                               | Description              |
+| ------------------------------------------------- | ------------------------ |
+| https://github.com/reactjs/react.dev.git          | React documentation      |
+| https://github.com/cloudflare/cloudflare-docs.git | Cloudflare documentation |
+| https://github.com/vercel/next.js.git             | Next.js framework        |
+| https://github.com/expo/expo.git                  | Expo framework           |
+| https://github.com/openai/openai-cookbook.git     | OpenAI Cookbook          |
+| https://github.com/mrdoob/three.js.git            | Three.js library         |
+
+|
 
 **Comprehensive List of Submodules**
 
