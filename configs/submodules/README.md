@@ -55,8 +55,6 @@ git clone --recurse-submodules <repository-url>
 | https://github.com/openai/openai-cookbook.git     | OpenAI Cookbook          |
 | https://github.com/mrdoob/three.js.git            | Three.js library         |
 
-|
-
 **Comprehensive List of Submodules**
 
 | url                                                           | Description                     |
