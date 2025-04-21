@@ -18,3 +18,7 @@
 	path = subrepos/three.js
 	url = https://github.com/mrdoob/three.js.git
 	ignore = all
+[submodule "subrepos/openai-cookbook"]
+	path = subrepos/openai-cookbook
+	url = https://github.com/openai/openai-cookbook.git
+	ignore = all

@@ -11,6 +11,7 @@ git config -f .gitmodules submodule.subrepos/expo.ignore all
 git config -f .gitmodules submodule.subrepos/next.js.ignore all
 git config -f .gitmodules submodule.subrepos/cloudflare-docs.ignore all
 git config -f .gitmodules submodule.subrepos/three.js.ignore all
+git config -f .gitmodules submodule.subrepos/openai-cookbook.ignore all
 
 # For installing submodules on a new clone, run: 
 # git submodule update --init --recursive --depth 1
