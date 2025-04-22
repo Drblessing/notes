@@ -42,11 +42,19 @@ Notes from the wild wild west of technology. yee haw!
 | Apple Music    | Music streaming service        |
 | ChatGPT Plus   | AI language model subscription |
 | iCloud         | Cloud storage service          |
-| 1Password      | Password manager               |
 | Cloudflare     | Hosting and DDoS protection    |
 | Claude AI      | AI language model subscription |
 | Github Copilot | AI code assistant subscription |
-| GeForce Now    | Cloud gaming service           |
+
+## AI
+
+| Name           | Description                                        |
+| -------------- | -------------------------------------------------- |
+| ChatGPT        | Conversational AI by OpenAI                        |
+| Claude AI      | Conversational AI by Anthropic                     |
+| Github Copilot | AI-powered code assistant for developers           |
+| DALL·E         | AI for generating images from textual descriptions |
+| MidJourney     | AI for creating art and images                     |
 
 ## Submodules
 
