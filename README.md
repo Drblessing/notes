@@ -48,13 +48,12 @@ Notes from the wild wild west of technology. yee haw!
 
 ## AI
 
-| Name           | Description                                        |
-| -------------- | -------------------------------------------------- |
-| ChatGPT        | Conversational AI by OpenAI                        |
-| Claude AI      | Conversational AI by Anthropic                     |
-| Github Copilot | AI-powered code assistant for developers           |
-| DALL·E         | AI for generating images from textual descriptions |
-| MidJourney     | AI for creating art and images                     |
+| Name           | Description                    |
+| -------------- | ------------------------------ |
+| ChatGPT        | Conversational AI by OpenAI    |
+| Claude AI      | Conversational AI by Anthropic |
+| Github Copilot | AI assitant built-in to VSCode |
+| ChatGPT Images | Image generation by OpenAI     |
 
 ## Submodules
 
@@ -64,6 +63,7 @@ Notes from the wild wild west of technology. yee haw!
 | next.js         | React framework for server-side rendering and static site generation |
 | cloudflare-docs | Documentation for Cloudflare services and APIs                       |
 | react.dev       | React documentation and resources for developers                     |
+| three.js        | JavaScript library for 3D graphics and animations                    |
 
 ## References
 
