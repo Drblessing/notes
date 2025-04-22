@@ -2,27 +2,36 @@
 
 Notes from the wild wild west of technology. yee haw!
 
+## Table of Contents
+
+- [Setup](#setup)
+- [Public Goods Infrastructure](#public-goods-infrastructure)
+- [Subscriptions](#subscriptions)
+- [AI](#ai)
+- [Submodules](#submodules)
+- [References](#references)
+  - [PGP Keys](#pgp-keys)
+
 ## Setup
 
-| Category             | Name                                     |
-| -------------------- | ---------------------------------------- |
-| IDE                  | VSCode                                   |
-| OS                   | MacOS with UTM Virtualization for Windos |
-| Browser              | Chrome                                   |
-| Processor            | AArch64 (ARM64)                          |
-| Computer             | MacBook Pro (M1)                         |
-| VPN                  | Cloudflare WARP                          |
-| Emeail               | Gmail                                    |
-| Passowrd             | 1Password                                |
-| Storage              | iCloud                                   |
-| Package Manager      | Homebrew                                 |
-| Calendar             | iCalendar                                |
-| Task Manager         | Apple Reminders                          |
-| Music                | Apple Music                              |
-| AdBlock              | uBlock Origin                            |
-| Programming Language | Python, JavaScript                       |
-| Web Framework        | React, Next.js                           |
-| Hosting              | Cloudflare                               |
+| Category             | Name                                      |
+| -------------------- | ----------------------------------------- |
+| IDE                  | VSCode                                    |
+| OS                   | MacOS with UTM Virtualization for Windows |
+| Browser              | Chrome                                    |
+| Processor            | AArch64 (ARM64)                           |
+| Computer             | MacBook Pro (M1)                          |
+| VPN                  | Cloudflare WARP                           |
+| Email                | Gmail                                     |
+| Storage              | iCloud                                    |
+| Package Manager      | Homebrew                                  |
+| Calendar             | iCalendar                                 |
+| Task Manager         | Apple Reminders                           |
+| Music                | Apple Music                               |
+| AdBlock              | uBlock Origin                             |
+| Programming Language | Python, JavaScript                        |
+| Web Framework        | React, Next.js                            |
+| Hosting              | Cloudflare                                |
 
 ## Public Goods Infrastructure
 
@@ -48,12 +57,12 @@ Notes from the wild wild west of technology. yee haw!
 
 ## AI
 
-| Name           | Description                    |
-| -------------- | ------------------------------ |
-| ChatGPT        | Conversational AI by OpenAI    |
-| Claude AI      | Conversational AI by Anthropic |
-| Github Copilot | AI assitant built-in to VSCode |
-| ChatGPT Images | Image generation by OpenAI     |
+| Name           | Description                     |
+| -------------- | ------------------------------- |
+| ChatGPT        | Conversational AI by OpenAI     |
+| Claude AI      | Conversational AI by Anthropic  |
+| Github Copilot | AI assistant built-in to VSCode |
+| ChatGPT Images | Image generation by OpenAI      |
 
 ## Submodules
 
