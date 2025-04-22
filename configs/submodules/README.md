@@ -93,3 +93,4 @@ git clone --recurse-submodules <repository-url>
 | https://github.com/modelcontextprotocol/servers.git           | Model Context Protocol Servers  |
 | https://github.com/karpathy/nanoGPT.git                       | nanoGPT                         |
 | https://github.com/microsoft/TypeScript.git                   | TypeScript programming language |
+| https://github.com/shadcn-ui/ui.git                           | shadcn UI                       |
