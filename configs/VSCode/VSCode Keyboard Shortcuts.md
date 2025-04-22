@@ -27,3 +27,7 @@ hehe, so convenient to use the keyboard shortcuts to switch between the file exp
 Toggle Primary Sidebar: Cmd + B
 
 The most used keyboard shortcut in my life. Essential.
+
+Show Extensions: Cmd + Shift + X
+
+You only need to open this occasionally to update extensions. So I use the default shortcut.
