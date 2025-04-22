@@ -9,3 +9,11 @@ As a sketchpad, I use the following commands most frequently:
 - Toggle Primarysidebar Visibility
 - Reveal File Explorer
 - Reveal Source Control
+
+## My Cookbook
+
+Git Sync: Cmd+G
+
+Git Refresh: Cmd+R
+
+He,he such great git commands and easy to remember shortcuts.
