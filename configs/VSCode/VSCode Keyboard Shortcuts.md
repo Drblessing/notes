@@ -17,3 +17,13 @@ Git Sync: Cmd+G
 Git Refresh: Cmd+R
 
 He,he such great git commands and easy to remember shortcuts.
+
+Show File Explorer: Cmd+1
+
+Show Source Control: Cmd+2
+
+hehe, so convenient to use the keyboard shortcuts to switch between the file explorer and source control.
+
+Toggle Primary Sidebar: Cmd + B
+
+The most used keyboard shortcut in my life. Essential.
