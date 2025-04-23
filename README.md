@@ -1,6 +1,6 @@
 # Notes
 
-Notes from the wild wild west of technology. yee haw!
+Notes from the wild wild west of technology. Yee haw!
 
 ## Table of Contents
 
