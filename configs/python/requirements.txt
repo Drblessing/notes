@@ -1,20 +1,20 @@
 requests
-numpy
-pandas
-matplotlib
-scikit-learn
-pyperclip
-beautifulsoup4
-pytest
-seaborn
-pillow
-sqlalchemy
 jupyter
-fastapi
-selenium
-python-dotenv
-trio
-pytest-trio
-termcolor
-webcolors
-black
+# numpy
+# pandas
+# pytest
+# matplotlib
+# scikit-learn
+# pyperclip
+# beautifulsoup4
+# seaborn
+# pillow
+# sqlalchemy
+# fastapi
+# selenium
+# python-dotenv
+# trio
+# pytest-trio
+# termcolor
+# webcolors
+# black
