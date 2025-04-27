@@ -12,12 +12,8 @@ Show File Explorer: Cmd+1
 
 Show Source Control: Cmd+2
 
-hehe, so convenient to use the keyboard shortcuts to switch between the file explorer and source control.
+Show Copilot: Cmd+3
 
 Toggle Primary Sidebar: Cmd + B
 
-The most used keyboard shortcut in my life. Essential.
-
 Show Extensions: Cmd + Shift + X
-
-You only need to open this occasionally to update extensions. So I use the default shortcut.
