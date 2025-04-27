@@ -17,3 +17,7 @@ Show Copilot: Cmd+3
 Toggle Primary Sidebar: Cmd + B
 
 Show Extensions: Cmd + Shift + X
+
+Toggle Terminal: Cmd + J
+
+Focus Editor Left/Right: Cmd + Shift + [ or ]
