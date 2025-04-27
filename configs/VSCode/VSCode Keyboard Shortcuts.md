@@ -1,22 +1,12 @@
 # VSCode Keyboard Shortcuts
 
-My philosophy is to use the keyboard as much as possible, and have the most frequently used commands use the easiest key combinations to remember.
+My philosophy is to use the keyboard as much as possible, and have the most frequently used commands as the easiest key combinations.
 
-## Most Frequently Used Commands
-
-As a sketchpad, I use the following commands most frequently:
-
-- Toggle Primarysidebar Visibility
-- Reveal File Explorer
-- Reveal Source Control
-
-## My Cookbook
+## My Shortcuts
 
 Git Sync: Cmd+G
 
 Git Refresh: Cmd+R
-
-He,he such great git commands and easy to remember shortcuts.
 
 Show File Explorer: Cmd+1
 
