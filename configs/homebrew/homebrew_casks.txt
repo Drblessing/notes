@@ -1,2 +1,2 @@
 chromedriver
-librewolf
+firefox
