@@ -35,14 +35,15 @@ Notes from the wild wild west of technology. Yee-haw!
 
 ## Public Goods Infrastructure
 
-| Name           | Description                           |
-| -------------- | ------------------------------------- |
-| IPFS Node      | Distributed file storage and delivery |
-| Ethereum Node  | Decentralized smart contracts         |
-| Bitcoin Node   | Decentralized money                   |
-| Monero Node    | Anonymous decentralized money         |
-| Tor Node       | Anonymous decentralized internet      |
-| Lightning Node | Decentralized payments                |
+| Name              | Description                           |
+| ----------------- | ------------------------------------- |
+| IPFS Node         | Distributed file storage and delivery |
+| Ethereum Node     | Decentralized smart contracts         |
+| Bitcoin Node      | Decentralized money                   |
+| Monero Node       | Anonymous decentralized money         |
+| Tor Node          | Anonymous decentralized internet      |
+| Lightning Node    | Decentralized payments                |
+| Public MCP server | Public AI chatbot                     |
 
 ## Subscriptions
 
