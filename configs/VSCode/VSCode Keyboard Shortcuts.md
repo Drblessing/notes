@@ -21,3 +21,5 @@ Show Extensions: Cmd + Shift + X
 Toggle Terminal: Cmd + J
 
 Focus Editor Left/Right: Cmd + Shift + [ or ]
+
+Collapse Folders in Siedbar: Cmd + M
