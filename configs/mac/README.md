@@ -20,13 +20,9 @@ Since we will need these later, and they don't need any other configuration, we 
   - Install iOS simulator.
   - Do not install code completion model.
 
-**3. Install 1passowrd.**
+**3. Install password manager.**
 
-Since we require 1pasword to login to Github, we will install it now.
-
-- Install 1Password from Safari.
-  - https://1password.com/downloads/mac
-- Login to 1Password.
+Install your password manager of choice.
 
 **4. Install Homebrew.**
 
