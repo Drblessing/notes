@@ -1,5 +1,11 @@
-npx create-next-app@latest my-next-app
+# Update npm to the latest version
+npm install -g npm
+
 # Check outdated packages
 npm outdated
+
 # Update all packages
-npm update
+npm update --save
+
+# Create a new Next.js app
+npx create-next-app@latest my-next-app
