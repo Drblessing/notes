@@ -1,6 +1,7 @@
 requests
 jupyter
 openai
+python-dotenv
 # numpy
 # pandas
 # pytest
