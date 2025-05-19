@@ -2,6 +2,7 @@ requests
 jupyter
 openai
 python-dotenv
+# web3
 # numpy
 # pandas
 # pytest
