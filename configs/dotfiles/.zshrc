@@ -39,3 +39,7 @@ else
     [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
     [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  
 fi
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/danielblessing/.lmstudio/bin"
+# End of LM Studio CLI section
+

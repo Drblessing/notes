@@ -1,6 +1,7 @@
 requests
 jupyter
 openai
+pydoll-python
 python-dotenv
 # web3
 # numpy
