@@ -16,7 +16,6 @@ python-dotenv
 # sqlalchemy
 # fastapi
 # selenium
-# python-dotenv
 # trio
 # pytest-trio
 # termcolor
