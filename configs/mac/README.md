@@ -66,6 +66,7 @@ git clone --recurse-submodules https://github.com/drblessing/notes.git
 ln -s ~/Github/notes/configs/dotfiles/.zprofile ~/.zprofile
 ln -s ~/Github/notes/configs/dotfiles/.zshrc ~/.zshrc
 ln -s ~/Github/notes/configs/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/Github/notes/configs/.ssh/config ~/.ssh/config
 ```
 
 **7. Install Homebrew packages**
@@ -85,8 +86,8 @@ xargs brew install --cask < ~/Github/notes/configs/homebrew/homebrew_casks.txt
 Loose threads:
 
 ```zsh
-mkdir ~/.nvm
 git lfs install
+mkdir ~/.nvm
 nvm install --lts
 if [[ "$(uname -m)" == "arm64" ]]; then
     ln -s /opt/homebrew/bin/python3 /opt/homebrew/bin/python
@@ -217,7 +218,3 @@ In Widgets:
 - Add Clock to widgets.
 - Add Weather to widgeets.
 - Swipe left with two fingers from edge to see widgets.
-
-```
-
-```

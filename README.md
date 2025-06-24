@@ -53,7 +53,7 @@ Notes from the wild wild west of technology. Yee-haw!
 | ChatGPT Plus   | AI language model subscription |
 | iCloud         | Cloud storage service          |
 | Cloudflare     | Hosting and DDoS protection    |
-| Claude AI      | AI language model subscription |
+| Grok           | AI language model subscription |
 | Github Copilot | AI code assistant subscription |
 
 ## AI
