@@ -24,11 +24,11 @@ python3-venv
 nodejs
 npm
 git-lfs
-cockpit
 
 # System monitoring and utilities
 fastfetch
 ffmpeg
+cockpit
 
 # Networking tools
 speedtest-cli
