@@ -1,0 +1,8 @@
+# Snap packages for Ubuntu server
+# Development tools
+code --classic
+docker
+
+# System utilities
+btop
+lsd

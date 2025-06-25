@@ -1,0 +1,17 @@
+# Python packages to install globally
+# Development tools
+jupyter
+jupyterlab
+requests
+black
+flake8
+autopep8
+
+# System utilities
+rich
+click
+pyyaml
+python-dotenv
+
+# Security
+cryptography

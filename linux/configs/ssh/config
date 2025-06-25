@@ -1,0 +1,55 @@
+# SSH Client Configuration for Linux Servers
+
+# Default settings for all hosts
+
+Host \*
+ServerAliveInterval 60
+ServerAliveCountMax 3
+IdentitiesOnly yes
+AddKeysToAgent yes
+UseKeychain no
+
+# GitHub SSH Access
+
+Host github.com
+HostName github.com
+User git
+IdentityFile ~/.ssh/id_ed25519
+IdentitiesOnly yes
+
+# Personal Server Template
+
+Host personal-server
+HostName example.com
+User daniel
+Port 22
+IdentityFile ~/.ssh/id_ed25519
+IdentitiesOnly yes
+
+# Work Server Template
+
+Host work-server
+HostName work.example.com
+User daniel
+Port 22
+IdentityFile ~/.ssh/id_ed25519
+IdentitiesOnly yes
+
+# Local Development VM
+
+Host dev-vm
+HostName 192.168.1.100
+User developer
+Port 22
+IdentityFile ~/.ssh/id_ed25519
+IdentitiesOnly yes
+
+# Example Production Server
+
+Host prod-server
+HostName prod.example.com
+User deploy
+Port 2222
+IdentityFile ~/.ssh/id_ed25519
+IdentitiesOnly yes
+StrictHostKeyChecking yes

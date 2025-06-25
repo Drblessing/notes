@@ -1,0 +1,10 @@
+ufw
+fail2ban
+unattended-upgrades
+logrotate
+iptables-persistent
+rkhunter
+chkrootkit
+lynis
+clamav
+clamav-daemon

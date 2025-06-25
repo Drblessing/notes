@@ -1,0 +1,57 @@
+# SSH Server Configuration for Ubuntu Server
+
+# File location: /etc/ssh/sshd_config
+
+# Restart SSH after editing: sudo systemctl restart ssh
+
+# General settings
+
+Port 22
+AddressFamily any
+Protocol 2
+
+# Authentication settings
+
+PasswordAuthentication no
+PermitEmptyPasswords no
+ChallengeResponseAuthentication no
+KbdInteractiveAuthentication no
+PubkeyAuthentication yes
+PermitRootLogin no
+AuthorizedKeysFile .ssh/authorized_keys .ssh/authorized_keys2
+
+# Connection limits
+
+MaxAuthTries 3
+MaxSessions 3
+MaxStartups 10:30:100
+LoginGraceTime 60
+
+# Security options
+
+AllowUsers daniel
+X11Forwarding no
+AllowTcpForwarding no
+AllowStreamLocalForwarding no
+GatewayPorts no
+PermitTunnel no
+
+# Logging
+
+SyslogFacility AUTH
+LogLevel INFO
+
+# Keep connections alive
+
+ClientAliveInterval 300
+ClientAliveCountMax 2
+
+# Disable unused authentication methods
+
+HostbasedAuthentication no
+IgnoreRhosts yes
+PermitUserEnvironment no
+
+# Banner (optional)
+
+# Banner /etc/ssh/ssh_banner
