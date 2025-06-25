@@ -8,6 +8,9 @@ APT_LIST="$NOTES_REPO_PATH/linux/packages/apt_packages.txt"
 
 echo "Starting APT package installation..."
 
+# Add fastfetch PPA
+sudo add-apt-repository -y ppa:zhangsongcui3371/fastfetch
+# Update package lists
 sudo apt update
 
 if [[ -f "$APT_LIST" ]]; then
