@@ -8,9 +8,7 @@ esac
 PS1=" \w 🐴 "
 
 # Package management shortcuts
-alias apt-update='sudo apt update && sudo apt upgrade -y'
-alias apt-search='apt search'
-alias apt-install='sudo apt install'
+alias up='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
 alias myip='curl -s ifconfig.me'
 
 # Path
