@@ -26,5 +26,17 @@ bash "$NOTES_REPO_PATH/linux/scripts/dotfiles_install.sh"
 bash "$NOTES_REPO_PATH/linux/scripts/ufw_install.sh"
 bash "$NOTES_REPO_PATH/linux/scripts/plex_install.sh"
 
+# Install netdata
+echo "Get netdata claim token from https://app.netdata.cloud/claim"
+# Input your claim token below
+read -p "Enter your Netdata claim token: " CLAIM_TOKEN
+if [ -z "$CLAIM_TOKEN" ]; then
+  echo "Error: Claim token cannot be empty."
+  exit 1
+fi
+
+echo "Installing Netdata..."
+curl https://get.netdata.cloud/kickstart.sh > /tmp/netdata-kickstart.sh && sh /tmp/netdata-kickstart.sh --stable-channel --disable-telemetry --claim-token "$CLAIM_TOKEN" --claim-url https://app.netdata.cloud --claim-rooms "default" --claim-description "Linux Server"
+
 echo "Full Linux setup complete ✅"
 echo "You may want to restart your shell or run: source ~/.bashrc"
