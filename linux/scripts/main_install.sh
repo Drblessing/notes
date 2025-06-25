@@ -19,7 +19,9 @@ fi
 
 # Run install scripts
 bash "$NOTES_REPO_PATH/linux/scripts/apt_install.sh"
-bash "$NOTES_REPO_PATH/linux/scripts/snap_install.sh"
+bash "$NOTES_REPO_PATH/linux/scripts/cloudflare_install.sh"
+bash "$NOTES_REPO_PATH/linux/scripts/docker_install.sh"
+bash "$NOTES_REPO_PATH/linux/scripts/fastfetch_install.sh"
 bash "$NOTES_REPO_PATH/linux/scripts/dotfiles_install.sh"
 
 echo "Full Linux setup complete ✅"

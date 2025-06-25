@@ -32,3 +32,10 @@ ffmpeg
 # Networking tools
 speedtest-cli
 cloudflared
+
+# Monitoring
+glances
+ncdu
+
+# Fun
+sl
