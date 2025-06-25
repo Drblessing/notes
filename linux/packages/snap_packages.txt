@@ -1,4 +1,3 @@
 # Snap packages for Ubuntu server setup
-docker
 speedtest-cli
 
