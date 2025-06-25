@@ -29,3 +29,6 @@ git-lfs
 # System monitoring and utilities
 fastfetch
 ffmpeg
+
+# Networking tools
+cloudflare-warp
