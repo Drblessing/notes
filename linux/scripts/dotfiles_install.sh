@@ -11,7 +11,7 @@ echo "Using notes repo: $NOTES_REPO_PATH"
 
 # Remove existing dotfiles
 echo "Removing existing dotfiles..."
-rm -f ~/.bashr ~/.gitconfig 
+rm -f ~/.bashrc ~/.gitconfig 
 
 # Symlink bash-related dotfiles
 echo "Linking bash dotfiles..."
