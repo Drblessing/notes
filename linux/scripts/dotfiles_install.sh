@@ -4,7 +4,7 @@
 set -e
 
 # Define repo path
-NOTES_REPO_PATH="${NOTES_REPO_PATH:-$HOME/Github/notes}"
+NOTES_REPO_PATH="${NOTES_REPO_PATH:-$HOME/github/notes}"
 LINUX_DOTFILES="$NOTES_REPO_PATH/linux/configs/dotfiles"
 
 echo "Using notes repo: $NOTES_REPO_PATH"

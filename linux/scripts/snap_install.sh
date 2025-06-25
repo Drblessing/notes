@@ -3,7 +3,7 @@
 
 set -e
 
-NOTES_REPO_PATH="${NOTES_REPO_PATH:-$HOME/Github/notes}"
+NOTES_REPO_PATH="${NOTES_REPO_PATH:-$HOME/github/notes}"
 SNAP_LIST="$NOTES_REPO_PATH/linux/packages/snap_packages.txt"
 
 echo "Starting Snap package installation..."

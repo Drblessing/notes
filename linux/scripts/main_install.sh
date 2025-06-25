@@ -6,7 +6,7 @@ set -e
 echo "Starting full Linux server setup..."
 
 # Define notes repo path
-NOTES_REPO_PATH="${NOTES_REPO_PATH:-$HOME/Github/notes}"
+NOTES_REPO_PATH="${NOTES_REPO_PATH:-$HOME/github/notes}"
 export NOTES_REPO_PATH
 
 # Verify notes repo exists
