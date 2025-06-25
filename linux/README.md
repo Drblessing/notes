@@ -12,6 +12,12 @@ curl -fsSL https://raw.githubusercontent.com/drblessing/notes/main/linux/scripts
 
 `ssh -i /Users/danielblessing/.ssh/id_ed25519 'drblessing@192.168.7.57'`
 
+`scp ~/Github/notes/configs/.ssh/sshd_config  drblessing@192.168.7.57:/tmp/sshd_config`
+
+`ssh drblessing@192.168.7.57`
+
+`sudo mv /tmp/sshd_config /etc/ssh/sshd_config && sudo systemctl restart ssh`
+
 Or for manual installation:
 
 ```bash
