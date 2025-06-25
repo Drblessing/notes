@@ -1,3 +1,0 @@
-# Snap packages for Ubuntu server setup
-speedtest-cli
-

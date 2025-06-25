@@ -1,4 +1,3 @@
-# Essential APT packages for Ubuntu server setup
 # Core system tools
 curl
 wget
