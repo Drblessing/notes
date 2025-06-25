@@ -1,1 +1,3 @@
 bitcoin-core
+ipfs
+monero

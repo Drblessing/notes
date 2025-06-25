@@ -23,7 +23,6 @@ bash "$NOTES_REPO_PATH/linux/scripts/cloudflare_install.sh"
 bash "$NOTES_REPO_PATH/linux/scripts/docker_install.sh"
 bash "$NOTES_REPO_PATH/linux/scripts/dotfiles_install.sh"
 bash "$NOTES_REPO_PATH/linux/scripts/fastfetch_install.sh"
-bash "$NOTES_REPO_PATH/linux/scripts/ipfs_install.sh"
 bash "$NOTES_REPO_PATH/linux/scripts/plex_install.sh"
 bash "$NOTES_REPO_PATH/linux/scripts/ufw_install.sh"
 
