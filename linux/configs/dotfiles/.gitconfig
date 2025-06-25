@@ -1,47 +1,12 @@
 [user]
 	name = Daniel Blessing
-	email = dr.blessing@pm.me
-	signingkey = 
-
-[init]
-	defaultBranch = main
-
-[core]
-	editor = vim
-	autocrlf = input
-	safecrlf = true
-
-[push]
-	default = simple
-	autoSetupRemote = true
-
-[pull]
-	rebase = false
-
-[color]
-	ui = auto
-
-[alias]
-	st = status
-	co = checkout
-	br = branch
-	ci = commit
-	lg = log --oneline --graph --decorate --all
-	unstage = reset HEAD --
-	last = log -1 HEAD
-	visual = !gitk
-
-[credential]
-	helper = store
-
-[diff]
-	tool = vimdiff
-
-[merge]
-	tool = vimdiff
-
+	email = drblessing@gmail.com
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[url "https://github.com/"]
+	insteadOf = git@github.com:
+[url "https://"]
+	insteadOf = git://
