@@ -11,6 +11,7 @@ sudo ufw allow 8443
 sudo ufw allow 3000
 sudo ufw allow 5000
 sudo ufw allow 8000
+sudo ufw limit ssh
 sudo ufw disable
 sudo ufw enable
 sudo ufw status verbose
