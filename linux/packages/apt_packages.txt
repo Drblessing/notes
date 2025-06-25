@@ -29,3 +29,6 @@ git-lfs
 fastfetch
 ffmpeg
 
+# Networking tools
+speedtest-cli
+cloudflared
