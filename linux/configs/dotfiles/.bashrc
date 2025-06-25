@@ -5,7 +5,7 @@ case $- in
 esac
 
 # Prompt
-PS1=" \w 😃 "
+PS1=" \w 🐴 "
 
 # Package management shortcuts
 alias apt-update='sudo apt update && sudo apt upgrade -y'

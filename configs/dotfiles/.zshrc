@@ -1,5 +1,5 @@
 # Custom prompt
-PS1=" %1~ 😃 "
+PS1=" %1~ 🐴 "
 
 # Homebrew
 if [[ "$(uname -m)" == "arm64" ]]; then
