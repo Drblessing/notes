@@ -38,5 +38,11 @@ fi
 echo "Installing Netdata..."
 curl https://get.netdata.cloud/kickstart.sh > /tmp/netdata-kickstart.sh && sh /tmp/netdata-kickstart.sh --stable-channel --disable-telemetry --claim-token "$CLAIM_TOKEN" --claim-url https://app.netdata.cloud --claim-rooms "default" --claim-description "Linux Server"
 
+# Set server timezone to Detroit
+echo "Setting server timezone to Detroit..."
+sudo timedatectl set-timezone America/Detroit
+
+
+
 echo "Full Linux setup complete ✅"
 echo "You may want to restart your shell or run: source ~/.bashrc"
