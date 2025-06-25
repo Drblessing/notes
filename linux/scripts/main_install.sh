@@ -23,6 +23,8 @@ bash "$NOTES_REPO_PATH/linux/scripts/cloudflare_install.sh"
 bash "$NOTES_REPO_PATH/linux/scripts/docker_install.sh"
 bash "$NOTES_REPO_PATH/linux/scripts/fastfetch_install.sh"
 bash "$NOTES_REPO_PATH/linux/scripts/dotfiles_install.sh"
+bash "$NOTES_REPO_PATH/linux/scripts/ufw_install.sh"
+bash "$NOTES_REPO_PATH/linux/scripts/plex_install.sh"
 
 echo "Full Linux setup complete ✅"
 echo "You may want to restart your shell or run: source ~/.bashrc"
