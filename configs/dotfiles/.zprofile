@@ -1,22 +1,10 @@
-# ---------------------------------------------
-# |                                           |
-# |              Foundry Configuration        |
-# |                                           |
-# ---------------------------------------------
+# Foundry
 export PATH="$PATH:~/.foundry/bin"
 
-# ---------------------------------------------
-# |                                           |
-# |            / bin added to $PATH           |
-# |                                           |
-# ---------------------------------------------
+# Path
 export PATH="$HOME/Github/notes/bin:$PATH"
 
-# ---------------------------------------------
-# |                                           |
-# |             Aliases                       |
-# |                                           |
-# ---------------------------------------------
+# Aliases
 alias notes="code ~/Github/notes" 
 alias c="clear"
 alias b="brew update && brew upgrade && brew cleanup"

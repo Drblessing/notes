@@ -1,8 +1,4 @@
-# Snap packages for Ubuntu server
-# Development tools
-code --classic
+# Snap packages for Ubuntu server setup
 docker
+speedtest-cli
 
-# System utilities
-btop
-lsd

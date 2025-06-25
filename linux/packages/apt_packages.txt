@@ -3,13 +3,13 @@
 curl
 wget
 git
-vim
-nano
+btop
 htop
 tree
 unzip
 zip
 build-essential
+openssl
 
 # Security tools
 ufw
@@ -27,21 +27,5 @@ npm
 git-lfs
 
 # System monitoring and utilities
-neofetch
-tmux
-screen
-rsync
-jq
+fastfetch
 ffmpeg
-
-# Network tools
-net-tools
-dnsutils
-traceroute
-nmap
-
-# Additional utilities
-bat
-fzf
-ripgrep
-fd-find

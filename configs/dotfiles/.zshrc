@@ -7,7 +7,6 @@ if [[ "$(uname -m)" == "arm64" ]]; then
 else
     eval "$(/usr/local/bin/brew shellenv)"
 fi
-export HOMEBREW_NO_ANALYTICS=1
 
 # nvm
 if [[ "$(uname -m)" == "arm64" ]]; then
@@ -23,3 +22,7 @@ fi
 # LM Studio
 export PATH="$PATH:/Users/danielblessing/.lmstudio/bin"
 
+# Disable telemetry
+export HOMEBREW_NO_ANALYTICS=1
+export NEXT_TELEMETRY_DISABLED=1
+export GATSBY_TELEMETRY_DISABLED=1
