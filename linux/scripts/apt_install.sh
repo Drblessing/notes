@@ -20,4 +20,14 @@ echo "Running APT cleanup..."
 sudo apt autoremove -y
 sudo apt autoclean
 
+# Install snap packages
+SNAP_LIST="$NOTES_REPO_PATH/linux/packages/snap_packages.txt"
+if [[ -f "$SNAP_LIST" ]]; then
+  echo "Installing snap packages from $SNAP_LIST..."
+  grep -Ev '^\s*#|^\s*$' "$SNAP_LIST" | xargs sudo snap install
+else
+  echo "Error: Snap package list not found at $SNAP_LIST"
+  exit 1
+fi
+
 echo "APT installation complete ✅"
