@@ -29,6 +29,7 @@ git-lfs
 fastfetch
 ffmpeg
 cockpit
+cockpit-pcp
 
 # Networking tools
 speedtest-cli
