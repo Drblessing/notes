@@ -66,52 +66,23 @@ bash ~/Github/notes/linux/scripts/main_install.sh
 - Git configuration linked from main configs
 - Custom prompt with emoji 😃
 
-## Directory Structure
-
-```
-linux/
-├── README.md                 # This file
-├── SETUP_GUIDE.md           # Detailed setup guide
-├── configs/                 # Configuration files
-│   ├── sshd_config         # SSH server config
-│   ├── limits.conf         # System limits
-│   ├── sysctl.conf         # Kernel parameters
-│   ├── dotfiles/           # Shell configuration
-│   ├── ufw/                # Firewall rules
-│   └── fail2ban/           # Intrusion prevention
-├── packages/               # Package lists
-│   ├── essential.txt       # Core system packages
-│   ├── development.txt     # Development tools
-│   └── security.txt        # Security packages
-└── scripts/               # Installation scripts
-    ├── main_install.sh     # Main installation script
-    ├── server_setup.sh     # Remote bootstrap script
-    ├── firewall_setup.sh   # UFW configuration
-    ├── security_setup.sh   # Security hardening
-    ├── dotfiles_install.sh # Shell configuration
-    ├── monitoring_setup.sh # System monitoring
-    └── maintenance.sh      # Regular maintenance
-```
-
 ## Post-Installation
+
+### VSCode Setup
+
+From your local machine, connect to the server using VSCode with the Remote - SSH extension:
+
+- Open the command palette and select "Remote-SSH: Connect to Host...".
+- Enter your server's SSH connection string: `user@server-ip`.
+- Once connected, you can open the terminal and start using the server directly from VS.Code.
 
 ### SSH Key Setup
 
-1. Copy your SSH public key to the server:
+Copy your SSH public key to the server:
 
-   ```bash
-   ssh-copy-id user@server-ip
-   ```
-
-2. Or manually add it:
-
-   ```bash
-   mkdir -p ~/.ssh
-   echo "your-public-key-here" >> ~/.ssh/authorized_keys
-   chmod 600 ~/.ssh/authorized_keys
-   ```
-
-3. Test SSH key authentication before disconnecting!
+```bash
+ssh-copy-id user@server-ip
+```
 
 ### Verification Commands
 
@@ -260,25 +231,3 @@ sudo ufw --force reset
 # Re-run firewall setup
 bash ~/Github/notes/linux/scripts/firewall_setup.sh
 ```
-
-## Contributing
-
-To add new features or configurations:
-
-1. Add packages to appropriate `.txt` files
-2. Update configuration files in `configs/`
-3. Modify installation scripts in `scripts/`
-4. Test on a fresh Ubuntu installation
-5. Update this documentation
-
-## Security Notes
-
-⚠️ **Important Security Reminders:**
-
-- SSH password authentication is disabled
-- Only SSH key authentication works
-- Make sure you have SSH keys configured before disconnecting
-- The server is configured to be very restrictive by default
-- Always test changes in a safe environment first
-
-This setup prioritizes security and minimalism while providing a productive development environment. All configurations can be customized based on your specific needs.
