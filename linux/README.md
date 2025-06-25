@@ -10,6 +10,8 @@ For a complete server setup, run:
 curl -fsSL https://raw.githubusercontent.com/drblessing/notes/main/linux/scripts/server_setup.sh | bash
 ```
 
+`ssh -i /Users/danielblessing/.ssh/id_ed25519 'drblessing@192.168.7.57'`
+
 Or for manual installation:
 
 ```bash
