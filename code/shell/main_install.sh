@@ -28,3 +28,6 @@ bash ~/Github/notes/code/shell/repos_install.sh
 echo "Running benv installation script..."
 bash ~/Github/notes/code/shell/benv_install.sh
 
+# Run newsboat installation script
+echo "Running newsboat installation script..."
+bash ~/Github/notes/code/shell/newsboat_install.sh
