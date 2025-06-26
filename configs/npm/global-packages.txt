@@ -2,3 +2,4 @@
 # Must be installed for each nvm node version
 @openai/codex
 npm-check-updates
+@google/gemini-cli
