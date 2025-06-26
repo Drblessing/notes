@@ -1,50 +1,75 @@
-# Newsboat Configuration
+# Newsboat Configuration 🌸
+# Light Theme - Minimal, Soft Contrast, Emoji and Unicode Friendly
 
-# Appearance
-color background         white   default
-color listnormal         white   default
-color listnormal_unread  white   default  bold
-color listfocus          black   yellow
-color listfocus_unread   black   yellow   bold
-color info               white   black    bold
-color article            white   default
+########## Color Theme ##########
+color background              black          white
+color listnormal              black          white
+color listfocus               white          blue
+color listnormal_unread       blue           white
+color listfocus_unread        white          magenta
+color article                 black          white
+color info                    black          lightgray
+color title                   blue           white
+color hint-key                magenta        white
+color hint-description        black          white
+color error                   red            white
+color feedlist-empty          black          white
+color feedlist-normal         black          white
+color feedlist-unread         blue           white
+color feedlist-focus          white          blue
+color feedlist-focus-unread   white          magenta
 
-# Auto-reload feeds every 30 minutes
+########## Unicode & Fonts ##########
+use-unicode yes
+text-width 100
+wrap-links yes
+visual-bell yes
+
+########## Browser ##########
+browser "open %u"          # macOS default browser opener
+html-renderer "w3m -dump -T text/html"   # Inline article rendering
+
+########## Auto Reload ##########
 auto-reload yes
 reload-time 30
+refresh-on-startup yes
 
-# Keep articles for 30 days
+########## Article Retention ##########
 keep-articles-days 30
 
-# Show read articles
+########## Feed Display ##########
 show-read-articles yes
+max-items 100
+feedlist-format "📡 %n ▶ %t (%u unread)"
 
-# Browser command
-browser "open %u"
+########## Downloads ##########
+download-path "~/Downloads/%n"
 
-# Key bindings (vim-style)
+########## Vim-style Keybindings ##########
+unbind-key j
+unbind-key k
+unbind-key h
+unbind-key l
+
 bind-key j down
 bind-key k up
+bind-key h quit
+bind-key l open
 bind-key J next-feed articlelist
 bind-key K prev-feed articlelist
 bind-key G end
 bind-key g home
 bind-key d pagedown
 bind-key u pageup
-bind-key l open
-bind-key h quit
 bind-key a toggle-article-read
 bind-key n next-unread
 bind-key N prev-unread
 bind-key D pb-download
 bind-key U show-urls
 bind-key x pb-delete
+bind-key r reload
+bind-key R reload-all
 
-# Download path
-download-path "~/Downloads/%n"
-
-# Max items per feed
-max-items 100
-
-# Refresh on startup
-refresh-on-startup yes
+########## Fun Extras ##########
+# Emoji Feed Title Markers 🎉
+feedlist-format "📡 %n ▶ %t (%u unread)"
