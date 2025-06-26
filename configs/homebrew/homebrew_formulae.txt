@@ -10,3 +10,4 @@ ffmpeg
 gnupg
 ssss
 fastfetch
+newsboat
