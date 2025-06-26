@@ -1,24 +1,20 @@
 #!/bin/bash
 # Install .benv for bin scripts
 
+# Error handling
+set -euo pipefail
 
-# Navigate to notes/bin
-cd ~/Github/notes/bin
+# Remove existing .benv
+rm -rf ~/Github/notes/bin/.benv
 
-# Remove .benv if it already exists
-if [ -d ".benv" ]; then
-    echo "Removing existing .benv directory..."
-    rm -rf .benv
-fi
-
-# Install python there using homebrew python
-python3 -m venv .benv
+# Install python 
+python3 -m venv ~/Github/notes/bin/.benv
 
 # Activate the virtual environment
-source .benv/bin/activate
+source ~/Github/notes/bin/.benv/bin/activate
 
 # Upgrade pip
 pip install --upgrade pip
 
 # Install requirements
-pip install -r requirements.txt
+pip install -r ~/Github/notes/bin/requirements.txt
