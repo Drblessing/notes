@@ -1,7 +1,7 @@
 #!/bin/bash
 # Install Cloudflare Warp and Cloudflared on Ubuntu
 
-set -e
+set -euo pipefail
 
 echo "Installing Cloudflare packages..."
 
