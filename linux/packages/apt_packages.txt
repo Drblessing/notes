@@ -2,8 +2,6 @@
 curl
 wget
 git
-btop
-htop
 tree
 unzip
 zip
