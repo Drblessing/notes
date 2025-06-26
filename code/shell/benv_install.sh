@@ -5,16 +5,16 @@
 set -euo pipefail
 
 # Remove existing .benv
-rm -rf ~/Github/notes/bin/.benv
+rm -rf ~/github/notes/bin/.benv
 
 # Install python 
-python3 -m venv ~/Github/notes/bin/.benv
+python3 -m venv ~/github/notes/bin/.benv
 
 # Activate the virtual environment
-source ~/Github/notes/bin/.benv/bin/activate
+source ~/github/notes/bin/.benv/bin/activate
 
 # Upgrade pip
 pip install --upgrade pip
 
 # Install requirements
-pip install -r ~/Github/notes/bin/requirements_tracked.txt
+pip install -r ~/github/notes/bin/requirements_tracked.txt
