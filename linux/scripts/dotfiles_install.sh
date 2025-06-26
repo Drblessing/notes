@@ -16,6 +16,6 @@ rm -f ~/.bashrc ~/.gitconfig
 # Symlink bash-related dotfiles
 echo "Linking bash dotfiles..."
 ln -s "$LINUX_DOTFILES/.bashrc" ~/.bashrc
-ln -s "$LINUX_DOTFILES/.gitconfig" ~/.gitconfig
+ln -s "$NOTES_REPO_PATH/configs/dotfiles/.gitconfig" ~/.gitconfig
 
 echo "Dotfiles linked ✅"
