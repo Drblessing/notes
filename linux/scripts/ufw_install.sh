@@ -32,6 +32,9 @@ sudo ufw allow 30303 comment "Allow Ethereum node"
 sudo ufw allow 8545 comment "Allow Ethereum RPC port"
 # Arweave node ports
 sudo ufw allow 1984 comment "Allow Arweave node"
+# Glances
+sudo ufw allow 61208 comment "Allow Glances"
+
 sudo ufw limit ssh
 sudo ufw disable
 sudo ufw enable
