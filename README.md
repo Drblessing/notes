@@ -54,7 +54,7 @@ Notes from the wild wild west of technology. Yee-haw!
 | iCloud         | Cloud storage service          |
 | Cloudflare     | Hosting and DDoS protection    |
 | Grok           | AI language model subscription |
-| Github Copilot | AI code assistant subscription |
+| github Copilot | AI code assistant subscription |
 
 ## AI
 
@@ -62,7 +62,7 @@ Notes from the wild wild west of technology. Yee-haw!
 | -------------- | ------------------------------- |
 | ChatGPT        | Conversational AI by OpenAI     |
 | Claude AI      | Conversational AI by Anthropic  |
-| Github Copilot | AI assistant built-in to VSCode |
+| github Copilot | AI assistant built-in to VSCode |
 | ChatGPT Images | Image generation by OpenAI      |
 
 ## Submodules

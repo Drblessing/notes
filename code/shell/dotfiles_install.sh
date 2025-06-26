@@ -4,9 +4,9 @@
 rm -rf ~/.zshrc ~/.zprofile ~/.zshrc ~/.gitconfig
 
 # Link the dotfiles from the notes repository to the home directory.
-ln -s ~/Github/notes/configs/dotfiles/.zprofile ~/.zprofile
-ln -s ~/Github/notes/configs/dotfiles/.zshrc ~/.zshrc
-ln -s ~/Github/notes/configs/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/github/notes/configs/dotfiles/.zprofile ~/.zprofile
+ln -s ~/github/notes/configs/dotfiles/.zshrc ~/.zshrc
+ln -s ~/github/notes/configs/dotfiles/.gitconfig ~/.gitconfig
 
 # Link python to python3 from homebrew.
 if [[ "$(uname -m)" == "arm64" ]]; then

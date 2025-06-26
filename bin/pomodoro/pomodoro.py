@@ -1,4 +1,4 @@
-#!/Users/dbless/Github/notes/bin/.benv/bin/python
+#!/Users/dbless/github/notes/bin/.benv/bin/python
 # Simple Pomodoro Timer
 import tkinter
 from PIL import Image, ImageTk

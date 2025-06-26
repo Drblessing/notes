@@ -2,10 +2,10 @@
 export PATH="$PATH:~/.foundry/bin"
 
 # Path
-export PATH="$HOME/Github/notes/bin:$PATH"
+export PATH="$HOME/github/notes/bin:$PATH"
 
 # Aliases
-alias notes="code ~/Github/notes" 
+alias notes="code ~/github/notes" 
 alias c="clear"
 alias b="brew update && brew upgrade && brew cleanup"
 alias d="directory.sh"

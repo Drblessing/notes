@@ -5,29 +5,29 @@
 
 echo "Starting complete installation..."
 
-# Create Github directory if it doesn't exist
-mkdir -p ~/Github
+# Create github directory if it doesn't exist
+mkdir -p ~/github
 
 # Run Homebrew installation script
 echo "Running Homebrew installation..."
-bash ~/Github/notes/code/shell/homebrew_install.sh
+bash ~/github/notes/code/shell/homebrew_install.sh
 
-# Run Github login
-echo "Running GitHub login script..."
-bash ~/Github/notes/code/shell/gh_login.sh
+# Run github login
+echo "Running github login script..."
+bash ~/github/notes/code/shell/gh_login.sh
 
 # Run dotfiles installation script
 echo "Running dotfiles installation script..."
-bash ~/Github/notes/code/shell/dotfiles_install.sh
+bash ~/github/notes/code/shell/dotfiles_install.sh
 
 # Run repository installation script
 echo "Running repository installation script..."
-bash ~/Github/notes/code/shell/repos_install.sh
+bash ~/github/notes/code/shell/repos_install.sh
 
 # Run benv installation script
 echo "Running benv installation script..."
-bash ~/Github/notes/code/shell/benv_install.sh
+bash ~/github/notes/code/shell/benv_install.sh
 
 # Run newsboat installation script
 echo "Running newsboat installation script..."
-bash ~/Github/notes/code/shell/newsboat_install.sh
+bash ~/github/notes/code/shell/newsboat_install.sh

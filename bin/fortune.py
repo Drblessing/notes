@@ -1,5 +1,5 @@
 
-#!/Users/danielblessing/Github/notes/bin/.benv/bin/python
+#!/Users/danielblessing/github/notes/bin/.benv/bin/python
 
 import random
 import pyfiglet

@@ -19,8 +19,8 @@ if [ -f ~/.newsboat/urls ]; then
 fi
 
 # Link the config files from the notes repository
-ln -s ~/Github/notes/configs/newsboat/config ~/.newsboat/config
-ln -s ~/Github/notes/configs/newsboat/urls ~/.newsboat/urls
+ln -s ~/github/notes/configs/newsboat/config ~/.newsboat/config
+ln -s ~/github/notes/configs/newsboat/urls ~/.newsboat/urls
 
 echo "Newsboat configuration installed successfully!"
 echo "Run 'newsboat' to start reading feeds"

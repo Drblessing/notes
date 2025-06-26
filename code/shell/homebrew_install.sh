@@ -30,7 +30,7 @@ export HOMEBREW_NO_ANALYTICS=1
 
 # Make sure we have the notes repository path
 if [ -z "$NOTES_REPO_PATH" ]; then
-    NOTES_REPO_PATH=~/Github/notes
+    NOTES_REPO_PATH=~/github/notes
     echo "Using default notes repository path: $NOTES_REPO_PATH"
 fi
 

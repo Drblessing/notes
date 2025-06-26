@@ -1,2 +1,2 @@
 #!/bin/bash
-"$HOME/Github/notes/bin/.benv/bin/python" "$HOME/Github/notes/bin/lazygit.py" "$@"
+"$HOME/github/notes/bin/.benv/bin/python" "$HOME/github/notes/bin/lazygit.py" "$@"

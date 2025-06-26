@@ -1,5 +1,5 @@
 #!/bin/bash
-# Install my favorite personal repos into ~/Github
+# Install my favorite personal repos into ~/github
 
 # Function to clone a repository if it doesn't already exist
 clone_if_not_exists() {
@@ -15,8 +15,8 @@ clone_if_not_exists() {
 }
 
 # Clone the repositories
-clone_if_not_exists Drblessing/blockchain-development ~/Github/blockchain-development
-clone_if_not_exists Drblessing/react-learn ~/Github/react-learn
-clone_if_not_exists Drblessing/learn-expo ~/Github/learn-expo
-clone_if_not_exists Drblessing/private-workbench ~/Github/private-workbench
-clone_if_not_exists Drblessing/my-monorepo ~/Github/my-monorepo
+clone_if_not_exists Drblessing/blockchain-development ~/github/blockchain-development
+clone_if_not_exists Drblessing/react-learn ~/github/react-learn
+clone_if_not_exists Drblessing/learn-expo ~/github/learn-expo
+clone_if_not_exists Drblessing/private-workbench ~/github/private-workbench
+clone_if_not_exists Drblessing/my-monorepo ~/github/my-monorepo

@@ -1,4 +1,4 @@
-#!$HOME/Github/notes/bin/.benv/bin/python
+#!$HOME/github/notes/bin/.benv/bin/python
 """
 Lazy Git
 A quick Python script to run:
