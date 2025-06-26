@@ -1,9 +1,6 @@
 #!/bin/bash
 # Install .benv for bin scripts
-# Run from any directory
 
-# Store original directory
-ORIGINAL_DIR=$(pwd)
 
 # Navigate to notes/bin
 cd ~/Github/notes/bin
@@ -25,6 +22,3 @@ pip install --upgrade pip
 
 # Install requirements
 pip install -r requirements.txt
-
-# Navigate back to the original directory
-cd "$ORIGINAL_DIR"
