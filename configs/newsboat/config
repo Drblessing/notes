@@ -1,49 +1,42 @@
 # Newsboat Configuration 🌸
-# Light Theme - Minimal, Soft Contrast, Emoji and Unicode Friendly
+# Light Theme – Minimal, Soft Contrast, Emoji-Ready
 
 ########## Color Theme ##########
-color background              black          white
-color listnormal              black          white
-color listfocus               white          blue
-color listnormal_unread       blue           white
-color listfocus_unread        white          magenta
-color article                 black          white
-color info                    black          lightgray
-color title                   blue           white
-color hint-key                magenta        white
-color hint-description        black          white
-color error                   red            white
-color feedlist-empty          black          white
-color feedlist-normal         black          white
-color feedlist-unread         blue           white
-color feedlist-focus          white          blue
-color feedlist-focus-unread   white          magenta
+color background            default   default
+color listnormal            black     white
+color listfocus             white     blue
+color listnormal_unread     blue      white
+color listfocus_unread      white     magenta
+color article               black     white
+color info                  black     cyan
+color hint-key              magenta   white
+color hint-description      black     white
+color hint-keys-delimiter   magenta   white
+color hint-separator        magenta   white
 
-########## Unicode & Fonts ##########
-use-unicode yes
+########## Unicode & Display ##########
 text-width 100
-wrap-links yes
-visual-bell yes
+show-read-feeds no
+show-read-articles yes
+feedlist-format "📡 %n ▶ %t (%u unread, %t total) %> %S"
+articlelist-format "%4i %f %D  %?T?|%-17T|  ?%t"
 
 ########## Browser ##########
-browser "open %u"          # macOS default browser opener
-html-renderer "w3m -dump -T text/html"   # Inline article rendering
+browser "open %u"                       # macOS "open" command
+html-renderer "w3m -dump -T text/html"  # inline article rendering
 
-########## Auto Reload ##########
+########## Auto-reload ##########
 auto-reload yes
 reload-time 30
 refresh-on-startup yes
 
 ########## Article Retention ##########
 keep-articles-days 30
-
-########## Feed Display ##########
 show-read-articles yes
 max-items 100
-feedlist-format "📡 %n ▶ %t (%u unread)"
 
 ########## Downloads ##########
-download-path "~/Downloads/%n"
+download-path "~/Downloads/newsboat/%n"
 
 ########## Vim-style Keybindings ##########
 unbind-key j
@@ -71,5 +64,6 @@ bind-key r reload
 bind-key R reload-all
 
 ########## Fun Extras ##########
-# Emoji Feed Title Markers 🎉
-feedlist-format "📡 %n ▶ %t (%u unread)"
+notify-program "terminal-notifier -title 'Newsboat 📰' -message"
+notify-always yes
+notify-format "🔔 %d new articles (%n unread articles, %f unread feeds)"
