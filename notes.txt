@@ -1,0 +1,1 @@
+git submodule add -b main --depth 1 https://github.com/vercel/vercel.git subrepos/vercel
