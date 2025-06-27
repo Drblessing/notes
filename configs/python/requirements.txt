@@ -3,13 +3,14 @@ jupyter
 openai
 pydoll-python
 python-dotenv
+matplotlib
+numpy
+pandas
+pyperclip
+black
 # web3
-# numpy
-# pandas
 # pytest
-# matplotlib
 # scikit-learn
-# pyperclip
 # beautifulsoup4
 # seaborn
 # pillow
@@ -20,4 +21,3 @@ python-dotenv
 # pytest-trio
 # termcolor
 # webcolors
-# black
