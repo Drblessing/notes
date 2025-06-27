@@ -1,24 +1,24 @@
 [submodule "subrepos/react.dev"]
-	path = subrepos/react.dev
-	url = https://github.com/reactjs/react.dev.git
-	ignore = all
+    path = subrepos/react.dev
+    url  = https://github.com/reactjs/react.dev.git
+    branch = main         
 [submodule "subrepos/expo"]
-	path = subrepos/expo
-	url = https://github.com/expo/expo.git
-	ignore = all
+    path = subrepos/expo
+    url  = https://github.com/expo/expo.git
+    branch = main
 [submodule "subrepos/next.js"]
-	path = subrepos/next.js
-	url = https://github.com/vercel/next.js.git
-	ignore = all
+    path = subrepos/next.js
+    url  = https://github.com/vercel/next.js.git
+    branch = canary
 [submodule "subrepos/cloudflare-docs"]
-	path = subrepos/cloudflare-docs
-	url = https://github.com/cloudflare/cloudflare-docs.git
-	ignore = all
+    path = subrepos/cloudflare-docs
+    url  = https://github.com/cloudflare/cloudflare-docs.git
+    branch = production
 [submodule "subrepos/three.js"]
-	path = subrepos/three.js
-	url = https://github.com/mrdoob/three.js.git
-	ignore = all
+    path = subrepos/three.js
+    url  = https://github.com/mrdoob/three.js.git
+    branch = dev
 [submodule "subrepos/openai-cookbook"]
-	path = subrepos/openai-cookbook
-	url = https://github.com/openai/openai-cookbook.git
-	ignore = all
+    path = subrepos/openai-cookbook
+    url  = https://github.com/openai/openai-cookbook.git
+    branch = main
