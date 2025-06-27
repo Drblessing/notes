@@ -44,6 +44,7 @@ Notes from the wild wild west of technology. Yee-haw!
 | Tor Node          | Anonymous decentralized internet      |
 | Lightning Node    | Decentralized payments                |
 | Public MCP server | Public AI chatbot                     |
+| Torrent Seeding   | Seeding 1TB of open source software   |
 
 ## Subscriptions
 
