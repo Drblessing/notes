@@ -110,3 +110,7 @@
 # git submodule deinit subrepos/<repo-name>
 # git rm subrepos/<repo-name>
 # rm -rf .git/modules/subrepos/<repo-name>
+[submodule "subrepos/vercel"]
+	path = subrepos/vercel
+	url = https://github.com/vercel/vercel.git
+	branch = main
