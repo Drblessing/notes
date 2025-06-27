@@ -1,1 +1,2 @@
 git submodule add -b main --depth 1 https://github.com/vercel/vercel.git subrepos/vercel
+git submodule add -b main --depth 1 https://github.com/awsdocs/aws-doc-sdk-examples.git subrepos/aws-doc-sdk-examples

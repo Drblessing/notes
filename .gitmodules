@@ -88,6 +88,13 @@
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts.git
 	branch = master
     ignore = all
+# Vercel: Next.js cloud platform
+[submodule "subrepos/vercel"]
+	path = subrepos/vercel
+	url = https://github.com/vercel/vercel.git
+	branch = main
+    ignore = all
+
 
 # How to add a new submodule:
 # git submodule add -b <branch> --depth 1 <repository-url> subrepos/<repo-name>
@@ -110,7 +117,3 @@
 # git submodule deinit subrepos/<repo-name>
 # git rm subrepos/<repo-name>
 # rm -rf .git/modules/subrepos/<repo-name>
-[submodule "subrepos/vercel"]
-	path = subrepos/vercel
-	url = https://github.com/vercel/vercel.git
-	branch = main
