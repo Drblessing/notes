@@ -8,8 +8,8 @@ numpy
 pandas
 pyperclip
 black
+pytest
 # web3
-# pytest
 # scikit-learn
 # beautifulsoup4
 # seaborn
