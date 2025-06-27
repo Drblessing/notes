@@ -1,27 +1,33 @@
 [submodule "subrepos/react.dev"]
     path = subrepos/react.dev
     url  = https://github.com/reactjs/react.dev.git
-    branch = main         
+    branch = main
+    ignore = all
 [submodule "subrepos/expo"]
     path = subrepos/expo
     url  = https://github.com/expo/expo.git
     branch = main
+    ignore = all
 [submodule "subrepos/next.js"]
     path = subrepos/next.js
     url  = https://github.com/vercel/next.js.git
     branch = canary
+    ignore = all
 [submodule "subrepos/cloudflare-docs"]
     path = subrepos/cloudflare-docs
     url  = https://github.com/cloudflare/cloudflare-docs.git
     branch = production
+    ignore = all
 [submodule "subrepos/three.js"]
     path = subrepos/three.js
     url  = https://github.com/mrdoob/three.js.git
     branch = dev
+    ignore = all
 [submodule "subrepos/openai-cookbook"]
     path = subrepos/openai-cookbook
     url  = https://github.com/openai/openai-cookbook.git
     branch = main
+    ignore = all
 
 # How to add a new submodule:
 # git submodule add -b <branch> --depth 1 <repository-url> subrepos/<repo-name>
@@ -34,7 +40,7 @@
 # If you have already cloned the repo without submodules, run:
 # git submodule update --init --recursive --depth 1
 
-# Update submoudles to latest commit on their respective branches:
+# Update submodules to latest commit on their respective branches:
 # git submodule update --remote
 
 # To update a specific submodule:
