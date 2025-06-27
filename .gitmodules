@@ -117,3 +117,11 @@
 # git submodule deinit subrepos/<repo-name>
 # git rm subrepos/<repo-name>
 # rm -rf .git/modules/subrepos/<repo-name>
+[submodule "subrepos/aws-doc-sdk-examples"]
+	path = subrepos/aws-doc-sdk-examples
+	url = https://github.com/awsdocs/aws-doc-sdk-examples.git
+	branch = main
+[submodule "subrepos/aws-lambda-developer-guide"]
+	path = subrepos/aws-lambda-developer-guide
+	url = https://github.com/awsdocs/aws-lambda-developer-guide.git
+	branch = main
