@@ -27,3 +27,20 @@
 # git submodule add -b <branch> --depth 1 <repository-url> subrepos/<repo-name>
 # Example:
 # git submodule add -b main --depth 1 https://github.com/lodash/lodash.git subrepos/lodash
+
+# How to clone the repo with submodules:
+# git clone --recurse-submodules --depth 1 <repository-url>
+
+# If you have already cloned the repo without submodules, run:
+# git submodule update --init --recursive --depth 1
+
+# Update submoudles to latest commit on their respective branches:
+# git submodule update --remote
+
+# To update a specific submodule:
+# git submodule update --remote subrepos/<repo-name>
+
+# To remove a submodule:
+# git submodule deinit subrepos/<repo-name>
+# git rm subrepos/<repo-name>
+# rm -rf .git/modules/subrepos/<repo-name>
