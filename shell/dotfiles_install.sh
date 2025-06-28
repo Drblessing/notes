@@ -39,7 +39,6 @@ if [[ "$OS_TYPE" == "macOS" ]]; then
         ln -sfn /opt/homebrew/bin/python3 /opt/homebrew/bin/python
         ln -sfn /opt/homebrew/bin/pip3 /opt/homebrew/bin/pip
     else
-        rm -sfn /usr/local/bin/python /usr/local/bin/pip
         ln -sfn /usr/local/bin/python3 /usr/local/bin/python
         ln -sfn /usr/local/bin/pip3 /usr/local/bin/pip
     fi
