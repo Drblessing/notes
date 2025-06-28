@@ -1,7 +1,7 @@
 # Install dotfiles from the notes repository into the home directory.
 
 # First delete any existing dotfiles in the home directory.
-rm -rf ~/.zshrc ~/.zprofile ~/.zshrc ~/.gitconfig
+rm -rf ~/.zshrc ~/.zprofile ~/.gitconfig
 
 # Link the dotfiles from the notes repository to the home directory.
 ln -s ~/github/notes/configs/dotfiles/.zprofile ~/.zprofile

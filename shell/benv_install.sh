@@ -1,9 +1,6 @@
 #!/bin/bash
 # Install .benv for bin scripts
 
-# Error handling
-set -euo pipefail
-
 # Remove existing .benv
 rm -rf ~/github/notes/bin/.benv
 
