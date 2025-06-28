@@ -2,14 +2,13 @@
 # from a client machine with the private key already set up. 
 
 # Installation
-echo "To enable GitHub access, please copy your SSH private key to this machine."
-echo "For example, from your client machine, run:"
+echo "Please copy your ssh pub/priv key to this machine."
+echo "For example, run:"
+echo ""
 echo "scp ~/.ssh/id_ed25519 user@server:~/.ssh/id_ed25519"
-echo "If you don't have access to the server, use ssh-copy-id."
+echo ""
 echo "ssh-copy-id user@server"
-echo "This should prompt you for your password, and then you can modify the sshd_config file"
-echo "to enforce key-based authentication."
-echo "If this is a personal device, like a new macbook, you have to manually copy the key."
+echo ""
 read -p "Press Enter once you have copied the key..."
 echo ""
 
