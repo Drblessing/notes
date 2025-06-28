@@ -1,6 +1,8 @@
 # Complete Installation Script
 # This script coordinates the installation of Homebrew, repositories, dotfiles, and other configurations
 
+echo "Howdy, Partner! Starting the complete installation script..."
+
 # Determine OS type
 OS="$(uname)"
 if [[ "$OS" == "Darwin" ]]; then
@@ -19,9 +21,11 @@ export OS_TYPE
 # If/elif/else structure to handle OS-specific tasks
 if [[ "$OS_TYPE" == "Linux" ]]; then
     echo "Linux specific installation steps will be handled in individual scripts."
+
+
 elif [[ "$OS_TYPE" == "macOS" ]]; then
-    echo "macOS specific installation steps will be handled in individual scripts."
-    echo "Starting complete installation..."
+    # Install ssh keys for GitHub access
+    
 
     # Create github directory if it doesn't exist
     mkdir -p ~/github
