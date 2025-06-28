@@ -16,5 +16,8 @@ echo "Cloned notes repository to $HOME/github/notes"
 
 echo "✓ Notes installed successfully!"
 echo ""
+echo "To install submodules, run:"
+echo "cd $HOME/github/notes && git submodule update --init --recursive --depth 1"
+echo ""
 echo "To complete setup, run:"
 echo "bash $HOME/github/notes/shell/main_install.sh"
