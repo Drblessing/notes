@@ -20,10 +20,6 @@ bash ~/github/notes/code/shell/gh_login.sh
 echo "Running dotfiles installation script..."
 bash ~/github/notes/code/shell/dotfiles_install.sh
 
-# Run repository installation script
-echo "Running repository installation script..."
-bash ~/github/notes/code/shell/repos_install.sh
-
 # Run benv installation script
 echo "Running benv installation script..."
 bash ~/github/notes/code/shell/benv_install.sh
