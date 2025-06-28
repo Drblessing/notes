@@ -26,7 +26,7 @@ if [[ "$OS_TYPE" == "Linux" ]]; then
 fi
 
 # macOS specific setup
-elif [[ "$OS_TYPE" == "macOS" ]]; then
+if [[ "$OS_TYPE" == "macOS" ]]; then
     echo "Performing macOS specific setup..."
 
     # Link the dotfiles from the notes repository to the home directory.
