@@ -60,13 +60,13 @@ gh auth login
 **6. Install the Notes Github repository.**
 
 ```zsh
-mkdir ~/Github
-cd ~/Github
+mkdir ~/github
+cd ~/github
 git clone --recurse-submodules https://github.com/drblessing/notes.git
-ln -s ~/Github/notes/configs/dotfiles/.zprofile ~/.zprofile
-ln -s ~/Github/notes/configs/dotfiles/.zshrc ~/.zshrc
-ln -s ~/Github/notes/configs/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/Github/notes/configs/.ssh/config ~/.ssh/config
+ln -s ~/github/notes/configs/dotfiles/.zprofile ~/.zprofile
+ln -s ~/github/notes/configs/dotfiles/.zshrc ~/.zshrc
+ln -s ~/github/notes/configs/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/github/notes/configs/.ssh/config ~/.ssh/config
 ```
 
 **7. Install Homebrew packages**
@@ -74,13 +74,13 @@ ln -s ~/Github/notes/configs/.ssh/config ~/.ssh/config
 Install formulae:
 
 ```zsh
-xargs brew install < ~/Github/notes/configs/homebrew/homebrew_formulae.txt
+xargs brew install < ~/github/notes/configs/homebrew/homebrew_formulae.txt
 ```
 
 Install casks
 
 ```zsh
-xargs brew install --cask < ~/Github/notes/configs/homebrew/homebrew_casks.txt
+xargs brew install --cask < ~/github/notes/configs/homebrew/homebrew_casks.txt
 ```
 
 Loose threads:
