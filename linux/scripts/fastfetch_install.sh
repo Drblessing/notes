@@ -1,7 +1,6 @@
 #!/bin/bash
 # Install Fastfetch from PPA (for Ubuntu 22.04+)
 
-set -e
 
 echo "Installing Fastfetch..."
 
