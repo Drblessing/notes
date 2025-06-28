@@ -4,13 +4,22 @@ Notes from the wild wild west of technology. Yee-haw!
 
 ## Table of Contents
 
+- [Installation](#installation)
 - [Setup](#setup)
 - [Public Goods Infrastructure](#public-goods-infrastructure)
 - [Subscriptions](#subscriptions)
 - [AI](#ai)
 - [Submodules](#submodules)
 - [References](#references)
-  - [PGP Keys](#pgp-keys)
+- [PGP Keys](#pgp-keys)
+
+## Installation
+
+On a new machine, run the following command:
+
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/danielblessing/notes/main/shell/github_notes_install.sh)"
+```
 
 ## Setup
 
