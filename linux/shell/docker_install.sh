@@ -1,8 +1,4 @@
-#!/bin/bash
-# Install Docker CE from the official Docker apt repository on Ubuntu
-
-set -e
-
+# Install docker
 echo "Starting Docker installation..."
 
 # Remove any old Docker-related packages

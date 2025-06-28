@@ -1,8 +1,4 @@
-#!/bin/bash
 # Install Cloudflare Warp and Cloudflared on Ubuntu
-
-set -euo pipefail
-
 echo "Installing Cloudflare packages..."
 
 # Detect Ubuntu codename (like focal, jammy, noble)
