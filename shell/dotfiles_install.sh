@@ -17,8 +17,13 @@ fi
 # Linux specific setup
 if [[ "$OS_TYPE" == "Linux" ]]; then
     echo "Performing Linux specific setup..."
+    # Make backup
+    if [ -f ~/.bashrc ]; then
+        cp ~/.bashrc ~/.bashrc.bak
+        echo "Backup of existing .bashrc created at ~/.bashrc.bak"
+    fi
     # Remove existing .bashrc 
-    rm -rf ~/.bashrc
+    rm -f ~/.bashrc
     # Link the Linux .bashrc from the notes repository to the home directory.
     ln -s ~/github/notes/configs/dotfiles/.bashrc ~/.bashrc
     # Source the new .bashrc
@@ -30,11 +35,21 @@ if [[ "$OS_TYPE" == "Linux" ]]; then
 fi
 
 # macOS specific setup
-elseif [[ "$OS_TYPE" == "macOS" ]]; then
+elif [[ "$OS_TYPE" == "macOS" ]]; then
     echo "Performing macOS specific setup..."
+    # Make backups
+    if [ -f ~/.zshrc ]; then
+        cp ~/.zshrc ~/.zshrc.bak 
+    fi
+    if [ -f ~/.zprofile ]; then
+        cp ~/.zprofile ~/.zprofile.bak 
+    fi
+    if [ -f ~/.gitconfig ]; then
+        cp ~/.gitconfig ~/.gitconfig.bak
+    fi
 
     # First delete any existing dotfiles in the home directory.
-    rm -rf ~/.zshrc ~/.zprofile ~/.gitconfig
+    rm -f ~/.zshrc ~/.zprofile ~/.gitconfig
 
     # Link the dotfiles from the notes repository to the home directory.
     ln -s ~/github/notes/configs/dotfiles/.zprofile ~/.zprofile
