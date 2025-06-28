@@ -13,3 +13,8 @@ fi
 mkdir -p "$HOME/github"
 git clone https://github.com/drblessing/notes.git "$HOME/github/notes"
 echo "Cloned notes repository to $HOME/github/notes"
+
+echo "✓ Notes installed successfully!"
+echo ""
+echo "To complete setup, run:"
+echo "bash $HOME/github/notes/shell/main_install.sh"
