@@ -9,15 +9,17 @@ pandas
 pyperclip
 black
 pytest
+rich
+termcolor
+pillow
+pyfiglet
 # web3
 # scikit-learn
 # beautifulsoup4
 # seaborn
-# pillow
 # sqlalchemy
 # fastapi
 # selenium
 # trio
 # pytest-trio
-# termcolor
 # webcolors
