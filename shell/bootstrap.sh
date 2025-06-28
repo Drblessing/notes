@@ -1,7 +1,7 @@
 # Bootstrap Install ~/github/notes/shell/bootstrap.sh
 # Install https://github.com/drblessing/notes into host machine ~/github/notes
 # Usage: 
-#   curl -fsSL https://raw.githubusercontent.com/drblessing/notes/main/shell/bootstrap.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/drblessing/notes/master/shell/bootstrap.sh | bash
 
 # Make a backup of existing notes directory if it exists
 if [ -d "$HOME/github/notes" ]; then
