@@ -27,10 +27,6 @@ elif [[ "$OS_TYPE" == "macOS" ]]; then
     # Install ssh keys for GitHub access
     bash ~/github/notes/shell/ssh_install.sh
     
-
-    # Create github directory if it doesn't exist
-    mkdir -p ~/github
-
     # Run Homebrew installation script
     echo "Running Homebrew installation..."
     bash ~/github/notes/code/shell/homebrew_install.sh
