@@ -14,6 +14,8 @@ Show Source Control: Cmd+2
 
 Show Copilot: Cmd+3
 
+Open Copilot in Editor: Cmd+L
+
 Toggle Primary Sidebar: Cmd + B
 
 Show Extensions: Cmd + Shift + X
