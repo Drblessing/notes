@@ -8,6 +8,12 @@
   "explorer.confirmDelete": false,
   "workbench.preferredDarkColorTheme": "Monokai Pro",
   "editor.suggestSelection": "first",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/*.log": true,
+    "**/dist": true,
+    "**/subrepos": true
+  },
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "python.testing.pytestEnabled": true,
   "explorer.confirmDragAndDrop": false,
@@ -124,7 +130,11 @@
     "**/LICENSE": true,
     "**/.gitattributes": true
     // "**/.gitmodules": true
-    // "**/.gitignore": true,
+    // "**/.gitignore": true
+    // "cache": true
+    // "out": true
+    // ".env": true
+    // "lib": true,
     // "**/.eslintignore": true,
     // "**/.eslintrc.js": true,
     // "**/.gitattributes": true,
@@ -169,7 +179,6 @@
   "application.shellEnvironmentResolutionTimeout": 30,
   "editor.accessibilitySupport": "off",
   "interactiveWindow.executeWithShiftEnter": true,
-  "workbench.preferredLightColorTheme": "Monokai Pro Light (Filter Sun)",
   "explorer.confirmPasteNative": false,
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.js",
@@ -189,9 +198,11 @@
     "editor.defaultFormatter": "JuanBlanco.solidity"
   },
   "solidity.formatter": "forge",
-  "workbench.statusBar.visible": false,
   "git.confirmSync": false,
   "git.detectSubmodules": false,
   "git.ignoredRepositories": ["**/subrepositories/**"],
-  "git.autoRepositoryDetection": false
+  "git.autoRepositoryDetection": false,
+  "workbench.preferredLightColorTheme": "Default Light+",
+  "workbench.statusBar.visible": false,
+  "github.copilot.selectedCompletionModel": ""
 }
