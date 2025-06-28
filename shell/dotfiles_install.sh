@@ -1,4 +1,31 @@
 # Install dotfiles from the notes repository into the home directory.
+# Supports both macOS and Linux.
+
+# Determine the operating system.
+OS="$(uname)"
+if [[ "$OS" == "Darwin" ]]; then
+    echo "Detected macOS"
+    OS_TYPE="macOS"
+elif [[ "$OS" == "Linux" ]]; then
+    echo "Detected Linux"
+    OS_TYPE="Linux"
+else
+    echo "Unsupported OS: $OS"
+    exit 1
+fi
+
+# Linux specific setup
+if [[ "$OS_TYPE" == "Linux" ]]; then
+    echo "Performing Linux specific setup..."
+    # Remove existing .bashrc 
+    rm -rf ~/.bashrc
+    # Link the Linux .bashrc from the notes repository to the home directory.
+    ln -s ~/github/notes/configs/dotfiles/.bashrc ~/.bashrc
+    # Source the new .bashrc
+    source ~/.bashrc
+    # Exit after Linux setup
+    exit 0
+fi
 
 # First delete any existing dotfiles in the home directory.
 rm -rf ~/.zshrc ~/.zprofile ~/.gitconfig
@@ -23,6 +50,3 @@ fi
 source ~/.zprofile
 source ~/.zshrc
 
-# Install Node.js LTS version
-echo "Installing Node.js LTS version..."
-nvm install --lts
