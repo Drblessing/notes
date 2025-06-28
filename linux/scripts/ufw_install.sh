@@ -1,4 +1,4 @@
-set -e
+# ufw setup script
 
 sudo ufw reset
 sudo ufw default deny incoming
