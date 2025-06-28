@@ -10,6 +10,7 @@ alias c="clear"
 alias d="directory.sh"
 alias lg="lazygit.sh"
 alias n="newsboat"
+alias p="ssh personal-server"
 
 # Homebrew
 alias b="brew update && brew upgrade && brew cleanup"
