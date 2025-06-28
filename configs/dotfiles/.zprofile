@@ -16,4 +16,4 @@ alias gb="git branch -a"
 alias gs="git stash list" # List all stashes
 alias gsc="git stash clear" # Clear all stashes
 alias gsp="git stash pop" # Restore most recent stash
-alias gp= "git pull" # Pull latest changes. Equivalent to git fetch && git merge
+alias gp="git pull" # Pull latest changes. Equivalent to git fetch && git merge
