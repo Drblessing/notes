@@ -22,18 +22,25 @@ export OS_TYPE
 if [[ "$OS_TYPE" == "Linux" ]]; then
     echo "Linux specific installation steps will be handled in individual scripts."
 
+    # Run ssh installation script
+    echo "Running SSH installation script..."
+    bash ~/github/notes/shell/ssh_install.sh
+
+    # Run dotfiles installation script
+    echo "Running dotfiles installation script..."
+    bash ~/github/notes/code/shell/dotfiles_install.sh
+
+    # Run 
+
 
 elif [[ "$OS_TYPE" == "macOS" ]]; then
     # Install ssh keys for GitHub access
+    echo "Running SSH installation script..."
     bash ~/github/notes/shell/ssh_install.sh
     
     # Run Homebrew installation script
     echo "Running Homebrew installation..."
     bash ~/github/notes/code/shell/homebrew_install.sh
-
-    # Run github login
-    echo "Running github login script..."
-    bash ~/github/notes/code/shell/gh_login.sh
 
     # Run dotfiles installation script
     echo "Running dotfiles installation script..."

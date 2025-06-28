@@ -28,6 +28,25 @@ if [[ "$OS_TYPE" == "Linux" ]]; then
     ln -s ~/github/notes/configs/dotfiles/.bashrc ~/.bashrc
     # Source the new .bashrc
     source ~/.bashrc
+
+    # Install ~/.ssh files
+    ln -s ~/github/notes/configs/ssh/config ~/.ssh/config
+    ln -s ~/github/notes/configs/ssh/sshd_config ~/.ssh/sshd_config
+
+    # Add to authorized_keys if not already present
+    if [ -f ~/.ssh/id_ed25519.pub ]; then
+        grep -q -f ~/.ssh/id_ed25519.pub ~/.ssh/authorized_keys
+        if [ $? -ne 0 ]; then
+            cat ~/.ssh/id_ed25519.pub >> ~/.ssh/authorized_keys
+            echo "Added public key to ~/.ssh/authorized_keys"
+        else
+            echo "Public key already present in ~/.ssh/authorized_keys"
+        fi
+    else
+        echo "Warning: ~/.ssh/id_ed25519.pub not found. Please ensure your SSH keys are set up correctly."
+    fi
+
+
     echo "Dotfiles installation complete. Please restart your terminal."
 
     # Exit after Linux setup

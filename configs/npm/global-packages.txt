@@ -1,4 +1,0 @@
-# npm install -g <package>
-# Must be installed for each nvm node version
-@openai/codex
-@google/gemini-cli

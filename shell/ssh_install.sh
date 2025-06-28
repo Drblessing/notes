@@ -14,6 +14,7 @@ read -p "Press Enter once you have copied the key..."
 echo ""
 
 # Set correct permissions for the SSH key
+mkdir -p ~/.ssh
 chmod 600 ~/.ssh/id_ed25519
 chmod 644 ~/.ssh/id_ed25519.pub
 chmod 700 ~/.ssh
