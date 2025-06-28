@@ -25,6 +25,7 @@ if [[ "$OS_TYPE" == "Linux" ]]; then
 
 elif [[ "$OS_TYPE" == "macOS" ]]; then
     # Install ssh keys for GitHub access
+    bash ~/github/notes/shell/ssh_install.sh
     
 
     # Create github directory if it doesn't exist

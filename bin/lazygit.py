@@ -22,33 +22,13 @@ import os
 class LazyGit:
     COMMIT_MESSAGES_MAIN = "https://raw.githubusercontent.com/ngerakines/commitment/main/commit_messages.txt"
     DEFAULT_COMMIT_MESSAGE = "Lazy Git Commit"
-    CENSOR_LIST = [
-        "shit",
-        "fuck",
-        "fucking",
-        "damn",
-        "god",
-        "dare",
-        "ass",
-        "bastard",
-        "hell",
-        "pussy",
-        "prick",
-        "kill",
-        "cock",
-        "penis",
-        "vagina",
-        "cunt",
-        "bitch",
-        "slut",
-        "whore",
-        "mother",
-        "father",
-        "bull",
-        "asshole",
-        "motherfucker",
-        "Wubbalubbadubdub!",
-    ]
+    # Upload a list of censored words to a gist and link to it here.
+    # No naughty words in this saloon, partner.
+    CENSOR_LIST = requests.get(
+        "https://gist.githubusercontent.com/Drblessing/d7c2908627f3def2962197b45c92e1f5/raw/1ae487029302d8dc7c22997caa36832ae07e7011/censor_list.txt"
+    )
+    CENSOR_LIST.raise_for_status()
+    CENSOR_LIST = CENSOR_LIST.text.splitlines()
 
     def __init__(self):
         args = self.parse_args()
