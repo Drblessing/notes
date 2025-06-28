@@ -1,59 +1,31 @@
-# Interactive shell check
-case $- in
-    *i*) ;;
-      *) return;;
-esac
-
-# Prompt
+# Set the command prompt
 PS1=" \w 🎛️  "
 
-# Package management shortcuts
+# Aliases
 alias up='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
-alias myip='curl -s ifconfig.me'
+alias c="clear"
+alias d="directory.sh"
+alias lg="lazygit.sh"
+alias n="newsboat"
+
+# Git
+alias g="git fetch && git status"
+alias gb="git branch -a"
+alias gs="git stash list" # List all stashes
+alias gsc="git stash clear" # Clear all stashes
+alias gsp="git stash pop" # Restore most recent stash
+alias gp="git pull" # Pull latest changes. Equivalent to git fetch && git merge
+alias gsw="git switch" # Switch branches
 
 # Path
-export PATH="$HOME/github/notes/bin:$HOME/.local/bin:$PATH"
+export PATH="$HOME/github/notes/bin:$PATH"
 
 # Disable telemetry
+export HOMEBREW_NO_ANALYTICS=1
 export NEXT_TELEMETRY_DISABLED=1
 export GATSBY_TELEMETRY_DISABLED=1
 
-# System Settings
+# System settings
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export TZ=America/Detroit
-
-# History settings
-HISTCONTROL=ignoreboth
-shopt -s histappend
-HISTSIZE=1000
-HISTFILESIZE=2000
-shopt -s checkwinsize
-
-# Color support for ls, grep, etc.
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
-
-# Handy ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-# Bash completion
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
-fi
-
-# Welcome message
-echo "Welcome to $(hostname)! 😃"
-echo "Today is $(date)"
-echo ""
