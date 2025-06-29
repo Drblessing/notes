@@ -21,6 +21,9 @@ if [[ "$OS_TYPE" == "Linux" ]]; then
     ln -sfn ~/github/notes/configs/dotfiles/.bashrc ~/.bashrc
     source ~/.bashrc
 
+    # Install .gitconfig
+    ln -sfn ~/github/notes/configs/dotfiles/.gitconfig ~/.gitconfig 
+
     echo "Dotfiles installation complete. Please restart your terminal."
     exit 0
 fi
