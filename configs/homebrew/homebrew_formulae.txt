@@ -11,3 +11,4 @@ gnupg
 ssss
 fastfetch
 newsboat
+deno
