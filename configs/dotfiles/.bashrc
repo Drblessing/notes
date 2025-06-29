@@ -29,3 +29,5 @@ export GATSBY_TELEMETRY_DISABLED=1
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export TZ=America/Detroit
+
+. "/home/drblessing/.deno/env"
