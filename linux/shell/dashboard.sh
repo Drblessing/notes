@@ -20,6 +20,17 @@ DASHBOARD_ID=1860
 read -sp "Enter Grafana admin password: " GRAFANA_PASS
 echo
 
+# --- Check Grafana Status ---
+echo "Checking Grafana server status at $GRAFANA_URL..."
+# Use curl to check if the Grafana login page is accessible.
+if ! curl -s --head "$GRAFANA_URL/login" | head -n 1 | grep "200 OK" > /dev/null; then
+    echo "Error: Could not connect to Grafana at $GRAFANA_URL."
+    echo "Please ensure the Grafana service is running and accessible."
+    echo "You can check its status with: sudo systemctl status grafana-server"
+    exit 1
+fi
+echo "Grafana server is responding."
+
 # --- Step 1: Add Prometheus Data Source ---
 echo "Attempting to add Prometheus as a Grafana data source..."
 
