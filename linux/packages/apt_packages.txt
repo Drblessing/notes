@@ -41,3 +41,6 @@ sl
 # System Monitoring
 htop
 btop
+prometheus
+node-exporter
+grafana
