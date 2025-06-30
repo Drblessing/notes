@@ -7,6 +7,7 @@ alias c="clear"
 alias d="directory.sh"
 alias lg="lazygit.sh"
 alias n="newsboat"
+alias localip="hostname -I | awk '{print \$1}'"
 
 # Git
 alias g="git fetch && git status"
