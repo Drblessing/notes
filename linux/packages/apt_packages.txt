@@ -41,8 +41,4 @@ sl
 # System Monitoring
 htop
 btop
-prometheus
-software-properties-common
-apt-transport-https
-jq
-# grafana requires manual stuff
+glances
