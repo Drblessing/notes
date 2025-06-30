@@ -17,6 +17,9 @@ alias gsp="git stash pop" # Restore most recent stash
 alias gp="git pull" # Pull latest changes. Equivalent to git fetch && git merge
 alias gsw="git switch" # Switch branches
 
+# Deno
+alias dr="deno run --allow-all"
+
 # Path
 export PATH="$HOME/github/notes/bin:$PATH"
 
