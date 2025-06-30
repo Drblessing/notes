@@ -19,4 +19,4 @@ sudo systemctl restart prometheus
 
 # Check the status of the Prometheus service
 echo "Checking Prometheus status..."
-sudo systemctl status prometheus --no-
+sudo systemctl status prometheus --no-pager
