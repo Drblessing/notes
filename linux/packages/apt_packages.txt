@@ -42,5 +42,6 @@ sl
 htop
 btop
 prometheus
-node-exporter
-grafana
+software-properties-common
+apt-transport-https
+# grafana requires manual stuff
