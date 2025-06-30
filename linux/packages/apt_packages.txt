@@ -27,8 +27,9 @@ git-lfs
 # System monitoring and utilities
 fastfetch
 ffmpeg
-cockpit
-cockpit-pcp
+htop
+btop
+glances
 
 # Networking tools
 speedtest-cli
@@ -38,7 +39,3 @@ net-tools
 # Fun
 sl
 
-# System Monitoring
-htop
-btop
-glances
