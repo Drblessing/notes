@@ -37,3 +37,7 @@ net-tools
 
 # Fun
 sl
+
+# System Monitoring
+htop
+btop
