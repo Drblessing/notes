@@ -1,41 +1,53 @@
-# ufw setup script
+# ufw_install.sh – opinionated UFW baseline + full Plex port set
 
-sudo ufw reset
+# ── 1. Reset & sane defaults ────────────────────────────────────────────────────
+sudo ufw --force reset
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
-sudo ufw allow ssh
-sudo ufw allow http
-sudo ufw allow https
-sudo ufw allow 8080
-sudo ufw allow 8443
-sudo ufw allow 3000
-sudo ufw allow 5000
-sudo ufw allow 8000
-sudo ufw allow 9090
-sudo ufw allow 32400/tcp comment "Allow Plex Media Server"
-sudo ufw allow 32400/udp comment "Allow Plex Media Server"
-sudo ufw allow 1900/udp comment "Allow Plex discovery"
-sudo ufw allow 5353/udp comment "Allow mDNS for Plex"
-# Bitcoin node ports
-sudo ufw allow 8333 comment "Allow Bitcoin node"
-# IPFS ports
-sudo ufw allow 4001 comment "Allow IPFS swarm port"
-sudo ufw allow 5001 comment "Allow IPFS API port"
-sudo ufw allow 8080 comment "Allow IPFS gateway port"
-# IPFS WebUI port
-sudo ufw allow 5002 comment "Allow IPFS WebUI port"
-# Monero node ports
-sudo ufw allow 18080 comment "Allow Monero node"
-sudo ufw allow 18081 comment "Allow Monero RPC port"
-# Ethereum node ports
-sudo ufw allow 30303 comment "Allow Ethereum node"
-sudo ufw allow 8545 comment "Allow Ethereum RPC port"
-# Arweave node ports
-sudo ufw allow 1984 comment "Allow Arweave node"
-# Glances
-sudo ufw allow 61208 comment "Allow Glances"
 
-sudo ufw limit ssh
-sudo ufw disable
-sudo ufw enable
+# helper to keep the rule list readable
+allow() { sudo ufw allow "$1" comment "$2" ; }
+
+# ── 2. Core access ──────────────────────────────────────────────────────────────
+allow ssh          "OpenSSH"
+sudo ufw limit ssh                       # brute-force protection
+
+allow http         "HTTP"
+allow https        "HTTPS"
+
+# ── 3. Generic service ports you mentioned ─────────────────────────────────────
+for p in 8443 3000 5000 8000 9090; do
+    allow "$p"     "Generic service $p"
+done
+
+# ── 4. Plex Media Server (complete set, incl. GDM & DLNA) ──────────────────────
+allow 32400        "Plex Web / streams"
+allow 32400        "Plex UDP (rare)"
+allow 32469        "Plex DLNA"
+allow 3005         "Plex Companion"
+allow 8324         "Plex Companion (Roku)"
+allow 1900         "DLNA discovery"
+allow 5353         "mDNS / Bonjour"
+allow 32410:32414  "Plex GDM discovery"
+
+# ── 5. Bitcoin / IPFS / Monero / Ethereum / Arweave / Glances ──────────────────
+allow 8333         "Bitcoin node"
+
+allow 4001         "IPFS swarm"
+allow 5001         "IPFS API"
+allow 8080         "IPFS gateway"
+allow 5002         "IPFS WebUI"
+
+allow 18080        "Monero node"
+allow 18081        "Monero RPC"
+
+allow 30303        "Ethereum node"
+allow 8545         "Ethereum RPC"
+
+allow 1984         "Arweave node"
+
+allow 61208        "Glances"
+
+# ── 6. Enable & show status ─────────────────────────────────────────────────────
+sudo ufw --force enable
 sudo ufw status verbose
