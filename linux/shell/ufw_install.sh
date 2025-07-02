@@ -21,8 +21,7 @@ for p in 8443 3000 5000 8000 9090; do
 done
 
 # ── 4. Plex Media Server (complete set, incl. GDM & DLNA) ──────────────────────
-allow 32400        "Plex Web / streams"
-allow 32400        "Plex UDP (rare)"
+allow 32400        "Plex Web"
 allow 32469        "Plex DLNA"
 allow 3005         "Plex Companion"
 allow 8324         "Plex Companion (Roku)"
@@ -34,7 +33,7 @@ allow 32410:32414  "Plex GDM discovery"
 allow 8333         "Bitcoin node"
 
 allow 4001         "IPFS swarm"
-allow 5001         "IPFS API"
+# allow 5001         "IPFS API"
 allow 8080         "IPFS gateway"
 allow 5002         "IPFS WebUI"
 
@@ -42,7 +41,7 @@ allow 18080        "Monero node"
 allow 18081        "Monero RPC"
 
 allow 30303        "Ethereum node"
-allow 8545         "Ethereum RPC"
+# allow 8545         "Ethereum RPC"
 
 allow 1984         "Arweave node"
 
