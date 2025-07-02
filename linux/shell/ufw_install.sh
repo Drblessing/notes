@@ -48,5 +48,5 @@ allow 1984         "Arweave node"
 allow 61208        "Glances"
 
 # ── 6. Enable & show status ─────────────────────────────────────────────────────
-sudo ufw --force enable
+sudo ufw reload 
 sudo ufw status verbose
