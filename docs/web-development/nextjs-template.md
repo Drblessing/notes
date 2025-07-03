@@ -56,6 +56,7 @@ A UI component library for Next.js and Tailwind CSS.
 
 ```
 npx shadcn@latest init
+npx shadcn@latest add --all
 ```
 
 Installs class-variance-authority, clsx, lucide-react, tw-animate-css, and other dependencies.
@@ -65,5 +66,13 @@ Installs class-variance-authority, clsx, lucide-react, tw-animate-css, and other
 A React Hooks library for data fetching.
 
 ```
-npm install swr
+npm i swr
+```
+
+### Motion
+
+For animations and transitions in React applications.
+
+```
+npm i motion
 ```
