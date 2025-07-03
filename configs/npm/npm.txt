@@ -2,13 +2,16 @@
 npm install -g npm
 
 # Check outdated packages
+npm outdated -g
 npm outdated
 
 # Update all packages
-npm update --save
+npm update -g
+npm update 
 
-# List globally installed packages
-npm list -g --depth=0
+# List packages
+npm list -g 
+npm list 
 
 # Create a new Next.js app
 npx create-next-app@latest my-next-app
