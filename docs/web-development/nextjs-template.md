@@ -60,4 +60,10 @@ npx shadcn@latest init
 
 Installs class-variance-authority, clsx, lucide-react, tw-animate-css, and other dependencies.
 
-### Tailwind CSS
+### swr
+
+A React Hooks library for data fetching.
+
+```
+npm install swr
+```
