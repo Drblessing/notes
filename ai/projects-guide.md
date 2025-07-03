@@ -8,19 +8,26 @@ ChatGPT Projects allow you to create persistent workspaces with uploaded files, 
 
 ### Essential Documents to Include:
 
-1. **Project Overview** (`README.md` or `project-overview.txt`)
+1. **Project Overview** (`README.md`)
 
    - Clear project goals and objectives
    - Current progress and milestones
    - Key questions or problems to solve
 
-2. **Context Documents**
+2. **Custom Instructions** (`custom-instructions.md`)
+
+   - Per-project guidance for tone, format, forbidden topics
+   - Your background and expertise
+   - Preferred interaction style (formal, casual, etc.)
+   - Specific formats or structures you want for responses
+
+3. **Context Documents**
 
    - Background information
    - Reference materials
    - Style guides or preferences
 
-3. **Examples and Templates**
+4. **Examples and Templates**
    - Sample outputs you like
    - Templates for consistent formatting
    - Previous successful work
