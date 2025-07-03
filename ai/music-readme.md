@@ -2,7 +2,9 @@
 
 ## Project Overview
 
-Learning to play guitar and sing at a performance level, focusing on Christian worship music and soft pop genres. Target: proficient in 6 months, performance-ready in 12 months.
+Learning to play guitar and sing at a performance level, focusing on Christian worship music and soft pop genres.
+
+Target: proficient in 6 months, performance-ready in 12 months.
 
 ## Personal Profile
 
@@ -40,23 +42,52 @@ Learning to play guitar and sing at a performance level, focusing on Christian w
 - Capo usage for key changes
 - Play and sing simultaneously without thinking
 
-## Practice Schedule (30 min/day)
+## Practice Schedule (60 min/day, Mon-Sat)
 
-### Daily Structure
+### Guitar Practice (30 min/day)
 
-- **5 min**: Warm-up (chord transitions, scales)
-- **10 min**: New material (learning songs/techniques)
-- **10 min**: Repertoire practice (maintaining learned songs)
-- **5 min**: Singing with playing
+#### Using Hal Leonard Guitar Method Books 1, 2, 3
 
-### Weekly Focus
+- **5 min**: Warm-up & Tuning
+  - Tune guitar
+  - Finger stretches
+  - Chromatic exercises from current book
+- **15 min**: Hal Leonard Lesson Work
+  - Current chapter exercises
+  - New concepts/techniques
+  - Sight-reading practice
+- **8 min**: Song Application
+  - Apply learned techniques to worship/pop songs
+  - Work on current repertoire piece
+- **2 min**: Cool-down
+  - Slow chord transitions
+  - Review trouble spots
 
-- **Monday**: New chord progressions
-- **Tuesday**: Strumming patterns
-- **Wednesday**: Singing technique
-- **Thursday**: Full song practice
-- **Friday**: Performance run-throughs
-- **Weekend**: Review and fun play
+### Vocal Practice (30 min/day)
+
+#### Using Simplified Singing Udemy Course
+
+- **5 min**: Physical Warm-up
+  - Posture check
+  - Breathing exercises
+  - Lip trills and humming
+- **15 min**: Udemy Course Content
+  - Watch lesson segment
+  - Practice exercises from course
+  - Technical drills
+- **8 min**: Song Application
+  - Apply techniques to repertoire
+  - Practice worship/pop songs
+  - Record and review
+- **2 min**: Cool-down
+  - Gentle humming
+  - Breathing exercises
+
+### Weekly Schedule
+
+- **Monday-Friday**: Full 60-minute practice (30 guitar + 30 vocal)
+- **Saturday**: 60-minute practice + weekly recording session
+- **Sunday**: Rest day (optional informal play/sing)
 
 ## Target Repertoire
 
@@ -68,6 +99,19 @@ Learning to play guitar and sing at a performance level, focusing on Christian w
 4. "Paradise" - Coldplay (simplified version)
 
 ## Learning Resources
+
+### Guitar Resources
+
+- Hal Leonard Guitar Method Books 1, 2, 3
+- Guitar for Dummies
+- First 50 Songs You Should Play on Acoustic Guitar
+- Tabs app
+
+### Vocal Resources
+
+- Simplified Singing Udemy Course
+- How To Determine Your Vocal Range
+- Apple Music recording for researching breath patterns of favorite artists
 
 ### Priority Skills
 
@@ -115,17 +159,17 @@ Learning to play guitar and sing at a performance level, focusing on Christian w
 
 **Daily Must-Do's**:
 
-1. Tune guitar
-2. 5-minute chord transition drill
-3. Practice one new element
-4. Play one full song
+1. Complete both 30-minute sessions
+2. Play one full song
 
 **Weekly Goals**:
 
-- Learn one new song
-- Master one new technique
-- Record practice video
-- Review and adjust goals
+1. Master one new technique
+2. Finish Singing Simplified course section
+3. Finish one chapter in Hal Leonard book
+4. Record practice video
+5. Review and adjust goals
+6. Celebrate weekly progress
 
 ---
 
