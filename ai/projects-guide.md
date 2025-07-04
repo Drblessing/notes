@@ -38,18 +38,11 @@ ChatGPT Projects allow you to create persistent workspaces with uploaded files, 
 
 ```
 music-project/
-├── README.md (project goals, musical preferences)
-├── my-music-profile.md (instruments, experience level, genres)
-├── sheet-music/
-│   ├── current-pieces.pdf
-│   └── reference-scores.pdf
-├── recordings/
-│   ├── my-performances.mp3
-│   └── inspiration-tracks.mp3
-├── theory-notes/
-│   └── concepts-to-learn.md
+├── README.md (project goals, musical preferences, my music background, instruments, equipment)
+├── sheet-music-pieces.pdf
+├── recordings.mpe
+├── theory-notes.md
 ├── practice-log.md
-└── equipment-list.md
 ```
 
 ### Key Files to Include:
@@ -66,18 +59,7 @@ music-project/
 ```
 dashboard-project/
 ├── README.md (project requirements, tech stack)
-├── design/
-│   ├── mockups.png
-│   ├── wireframes.pdf
-│   └── color-scheme.md
-├── src/
-│   ├── current-code.js
-│   └── api-documentation.md
-├── data/
-│   ├── sample-data.json
-│   └── data-schema.md
-├── requirements.md
-└── deployment-notes.md
+├── mockups.png
 ```
 
 ### Key Files to Include:
@@ -95,18 +77,8 @@ dashboard-project/
 gre-tutoring/
 ├── README.md (target score, timeline, weak areas)
 ├── student-profile.md
-├── practice-tests/
-│   ├── completed-tests.pdf
-│   └── score-tracking.xlsx
-├── study-materials/
-│   ├── vocab-lists.md
-│   ├── math-formulas.pdf
-│   └── essay-samples.md
-├── weak-areas/
-│   ├── problem-types.md
-│   └── mistake-patterns.md
-├── study-schedule.md
-└── progress-reports/
+├── practice-tests.pdf
+├── error-log.csv
 ```
 
 ### Key Files to Include:
@@ -116,43 +88,36 @@ gre-tutoring/
 - **Problem Areas**: Specific question types or concepts that need work
 - **Progress Tracking**: Score improvements, mastered concepts
 
-## Pro Tips for All Projects
+## Tips
 
-1. **Use Clear Filenames**: Make files self-explanatory (e.g., `week1-progress.md` not `notes.md`)
+1. **Create project readme.md**: Always start with a `README.md` that outlines:
 
-2. **Include Meta-Instructions**: Create a `how-to-use-this-project.md` file explaining:
+   - Project goals
+   - Key context, like equipment or software
+   - Current status and next steps
 
-   - How you want ChatGPT to interact with you
-   - Preferred response formats
-   - Communication style (formal, casual, encouraging, etc.)
+2. **Custom Instructions**: Use a `custom-instructions.md` file to specify:
 
-3. **Update Regularly**: Keep a `changelog.md` or update your README with:
+   - Preferred interaction style (formal, casual, etc.)
+   - Specific formats or structures you want for responses
 
-   - Recent accomplishments
-   - Current challenges
-   - Next steps
+3. **Add Visual Context**: Include:
 
-4. **Add Visual Context**: Include:
-
-   - Screenshots of current work
+   - Screenshots of current work or ideal work
    - Diagrams of concepts
    - Charts showing progress
 
-5. **Create Templates**: For recurring tasks, include templates like:
+4. **Create Templates**: For recurring tasks, include templates like:
    - Daily practice logs
    - Code review checklists
    - Study session formats
 
-## Example Custom Instructions for Projects
+## Example readme.md
 
 ```markdown
-# Custom Instructions for [Project Name]
+# readme for [Project Name]
 
-## My Background
-
-- [Relevant experience]
-- [Current skill level]
-- [Time availability]
+Brief project description and purpose.
 
 ## Project Goals
 
@@ -160,9 +125,16 @@ gre-tutoring/
 - Secondary: [Additional goals]
 - Timeline: [Deadlines or milestones]
 
+## My Background
+
+- [Relevant experience]
+- [Current skill level]
+- [Time availability]
+- [Equipment context]
+
 ## Preferred Interaction Style
 
-- [Formal/Casual/Encouraging]
+- [Formal, casual, etc.]
 - [Level of detail needed]
 - [Specific formats for responses]
 
