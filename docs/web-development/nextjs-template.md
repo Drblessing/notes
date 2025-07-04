@@ -76,3 +76,11 @@ For animations and transitions in React applications.
 ```
 npm i motion
 ```
+
+### Lodash
+
+A utility library for JavaScript that provides functions for common programming tasks.
+
+```
+npm i lodash
+```
