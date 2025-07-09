@@ -10,5 +10,6 @@ newsboat
 nvm
 python
 ssss
+telnet
 tree
 yarn
