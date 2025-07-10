@@ -82,37 +82,19 @@ tsconfig.json: TypeScript configuration file.
 
 ## Additional Packages
 
-### Shadcn
-
-A UI component library for Next.js and Tailwind CSS.
-
-```
-npx shadcn@latest init
-npx shadcn@latest add --all
+```bash
+npm i swr framer-motion lodash && npm i -D daisyui
 ```
 
-Installs class-variance-authority, clsx, lucide-react, tw-animate-css, and other dependencies.
+- DaisyUI: A Tailwind CSS component library that provides pre-built UI components.
+- SWR: A React Hooks library for data fetching.
+- Motion: A library for animations in React.
+- Lodash: A utility library for JavaScript that provides helpful functions for working with arrays, objects, and more.
 
-### swr
+## Appendix
 
-A React Hooks library for data fetching.
-
-```
-npm i swr
-```
-
-### Motion
-
-For animations and transitions in React applications.
-
-```
-npm i motion
-```
-
-### Lodash
-
-A utility library for JavaScript that provides functions for common programming tasks.
-
-```
-npm i lodash
-```
+- [shadcn ui](https://ui.shadcn.com/): A collection of free and open-source UI components built with Tailwind CSS and React.
+- [Shadcn Blocks](https://www.shadcnblocks.com/): A collection of pre-built UI components for Shadcn. Site templates, and component libraries.
+- [DaisyUI Store](https://daisyui.com/store/): A collection of professional pre-built UI components for DaisyUI. Site templates, and component libraries.
+- [Tailwind Plus](https://tailwindcss.com/plus): A collection of professional pre-built UI components for Tailwind CSS. Site templates, and component libraries. Personal: $299 one-time
+- [Tailwind Toolbox](https://www.tailwindtoolbox.com/): A collection of free and open-source UI components for Tailwind CSS. Site templates, and component libraries.
