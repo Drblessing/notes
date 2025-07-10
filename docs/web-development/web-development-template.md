@@ -2,7 +2,7 @@
 
 ## Scaffold Project with Cloudflare
 
-Create project:
+Create project on Cloudflare workers:
 
 ```bash
 npm create cloudflare@latest -- my-cloudflare-app --framework=next
@@ -82,14 +82,43 @@ tsconfig.json: TypeScript configuration file.
 
 ## Additional Packages
 
+### Installation
+
+First, install the packages:
+
 ```bash
-npm i swr framer-motion lodash && npm i -D daisyui
+npm i swr motion lodash viem wagmi @rainbow-me/rainbowkit @tanstack/react-query
+npm i -D daisyui jest ts-jest @types/jest @testing-library/react @testing-library/jest-dom @testing-library/user-event
+npx jest --init
 ```
+
+Then, add daisyui to app/globals.css:
+
+```app/globals.css
+@plugin "daisyui";
+```
+
+For Wagmi and RainbowKit, you'll need to wrap your application in the appropriate providers. For jest, you can create a setup file for your tests.
+
+### Optional Installation
+
+For 3D graphics, you can also install Three.js and React Three Fiber:
+
+```bash
+npm install three @types/three @react-three/fiber
+```
+
+### Explanation
 
 - DaisyUI: A Tailwind CSS component library that provides pre-built UI components.
 - SWR: A React Hooks library for data fetching.
 - Motion: A library for animations in React.
 - Lodash: A utility library for JavaScript that provides helpful functions for working with arrays, objects, and more.
+- Viem: A library for interacting with Ethereum and other EVM-compatible blockchains.
+- Wagmi: A React Hooks library for Ethereum that provides a set of hooks for interacting with Ethereum and other EVM-compatible blockchains.
+- RainbowKit: A React component library for building Ethereum wallets and dapps.
+- TanStack Query: A powerful data-fetching library for React that provides hooks for fetching, caching, and synchronizing data in your application.
+- Jest: A JavaScript testing framework that works with projects using Babel, TypeScript, Node.js, React, Angular, Vue.js, and more.
 
 ## Appendix
 
