@@ -1,18 +1,50 @@
-# NextJS Template
+# Web Development Template
 
-Install:
+## Scaffold Project with Cloudflare
 
-npx create-next-app@latest [project-name]
+Create project:
 
-Options:
+```bash
+npm create cloudflare@latest -- my-cloudflare-app --framework=next
 
-- Typescript
-- No ESLint
-- Tailwind CSS
-- No code inside src/ directory
-- App Router
-- Turbopack
-- No customize the import alias
+# create-next-app questions
+# Would you like to use TypeScript? Yes
+# Would you like to use ESLint? No
+# Would you like to use Tailwind CSS? Yes
+# Would you like your code inside a src/ directory? No
+# Would you like to use the App Router? Yes
+# Would you like to use Turbopack? Yes
+# Would you like to customize the import alias? No
+
+# create-cloudflare questions
+# Do you want to use git for version control? Yes
+# Do you want to deploy your application? Yes
+```
+
+Installs:
+
+- react
+- react-dom
+- next
+- @opennextjs/cloudflare
+
+devDependencies:
+
+- typescript
+- wrangler
+- @types/node
+- @types/react
+- @types/react-dom
+- @tailwindcss/postcss
+- tailwindcss
+
+Delete .vscode directory, as it contains settings for VSCode that are not needed in the project.
+
+## GitHub Setup
+
+Using GithubDesktop, select `add` -> `add existing repository`, then select the project directory.
+
+Then, publish the repository to Github, as a private repository.
 
 ## Directory Structure
 
@@ -27,7 +59,7 @@ Options:
 ├── next.config.ts
 ├── postcss.config.mjs
 ├── tsconfig.json
-
+...
 ```
 
 App: Contains the main application logic and routing, as well as api routes in /api/route.ts.
@@ -48,7 +80,7 @@ postcss.config.mjs: PostCSS configuration file for Tailwind CSS.
 
 tsconfig.json: TypeScript configuration file.
 
-## Packages
+## Additional Packages
 
 ### Shadcn
 
