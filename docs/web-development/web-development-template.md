@@ -87,7 +87,7 @@ tsconfig.json: TypeScript configuration file.
 First, install the packages:
 
 ```bash
-npm i swr motion lodash viem wagmi @rainbow-me/rainbowkit @tanstack/react-query
+npm i swr motion lodash viem wagmi @rainbow-me/rainbowkit @tanstack/react-query three @types/three @react-three/fiber
 npm i -D daisyui
 ```
 
@@ -101,14 +101,6 @@ Then, add daisyui to app/globals.css:
 
 For Wagmi and RainbowKit, you'll need to wrap your application in the appropriate providers.
 
-### Optional Installation
-
-For 3D graphics, you can also install Three.js and React Three Fiber:
-
-```bash
-npm install three @types/three @react-three/fiber
-```
-
 ### Explanation
 
 - DaisyUI: A Tailwind CSS component library that provides pre-built UI components.
@@ -119,6 +111,7 @@ npm install three @types/three @react-three/fiber
 - Wagmi: A React Hooks library for Ethereum that provides a set of hooks for interacting with Ethereum and other EVM-compatible blockchains.
 - RainbowKit: A React component library for building Ethereum wallets and dapps.
 - TanStack Query: A powerful data-fetching library for React that provides hooks for fetching, caching, and synchronizing data in your application.
+- Three.js: A JavaScript library for creating 3D graphics in the browser.
 
 ## Appendix
 
