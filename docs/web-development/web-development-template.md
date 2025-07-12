@@ -88,9 +88,10 @@ First, install the packages:
 
 ```bash
 npm i swr motion lodash viem wagmi @rainbow-me/rainbowkit @tanstack/react-query
-npm i -D daisyui jest ts-jest @types/jest @testing-library/react @testing-library/jest-dom @testing-library/user-event
-npx jest --init
+npm i -D daisyui
 ```
+
+From chatGPT:
 
 Then, add daisyui to app/globals.css:
 
@@ -98,7 +99,7 @@ Then, add daisyui to app/globals.css:
 @plugin "daisyui";
 ```
 
-For Wagmi and RainbowKit, you'll need to wrap your application in the appropriate providers. For jest, you can create a setup file for your tests.
+For Wagmi and RainbowKit, you'll need to wrap your application in the appropriate providers.
 
 ### Optional Installation
 
@@ -118,7 +119,6 @@ npm install three @types/three @react-three/fiber
 - Wagmi: A React Hooks library for Ethereum that provides a set of hooks for interacting with Ethereum and other EVM-compatible blockchains.
 - RainbowKit: A React component library for building Ethereum wallets and dapps.
 - TanStack Query: A powerful data-fetching library for React that provides hooks for fetching, caching, and synchronizing data in your application.
-- Jest: A JavaScript testing framework that works with projects using Babel, TypeScript, Node.js, React, Angular, Vue.js, and more.
 
 ## Appendix
 
