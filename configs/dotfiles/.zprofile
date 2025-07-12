@@ -18,11 +18,11 @@ alias b="brew update && brew upgrade && brew cleanup"
 # Git
 alias g="git fetch && git status"
 alias gb="git branch -a"
-alias gs="git stash list" # List all stashes
+alias gst="git stash list" # List all stashes
 alias gsc="git stash clear" # Clear all stashes
 alias gsp="git stash pop" # Restore most recent stash
-alias gp="git pull" # Pull latest changes. Equivalent to git fetch && git merge
-alias gsw="git switch" # Switch branches
+alias gp="git pull" # git fetch && git merge
+alias gs="git switch" # Switch branches
 
 # Deno
 alias dr="deno run --allow-all"
