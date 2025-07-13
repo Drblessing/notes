@@ -87,7 +87,7 @@ tsconfig.json: TypeScript configuration file.
 First, install the packages:
 
 ```bash
-npm i swr motion lodash viem wagmi @rainbow-me/rainbowkit @tanstack/react-query three @types/three @react-three/fiber
+npm i swr motion lodash viem wagmi @rainbow-me/rainbowkit @tanstack/react-query three @types/three @react-three/fiber @react-three/drei
 npm i -D daisyui
 ```
 
