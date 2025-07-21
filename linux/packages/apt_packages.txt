@@ -1,8 +1,5 @@
 # Core system tools
 curl
-wget
-git
-tree
 unzip
 zip
 build-essential
@@ -10,7 +7,6 @@ openssl
 
 # Security tools
 ufw
-fail2ban
 openssh-server
 gnupg
 ca-certificates
@@ -25,15 +21,10 @@ npm
 git-lfs
 
 # System monitoring and utilities
-fastfetch
 ffmpeg
-htop
-btop
-glances
 
 # Networking tools
 speedtest-cli
-cloudflared
 net-tools
 
 # Fun
