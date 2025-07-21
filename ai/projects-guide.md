@@ -38,6 +38,12 @@ music-project/
 - Create practice schedules and exercises
 - Find local venues, open mics, or competitions
 - Market your music online
+- **Social Media Campaign**: Create posts, hashtags, and engagement strategies
+- **Songwriting**: Compose original melodies and lyrics
+- Suggest enhanced equipment as budget and quality improves
+- Help hire session musicians or producers on fiverr or upwork
+- Create a website or portfolio to showcase your music
+- Create setlists for gigs
 
 ## Ubuntu Server Dashboard Project
 
@@ -47,3 +53,10 @@ dashboard-project/
 ├── mockups.png
 |-- Whole Project Code
 ```
+
+### What AI can do with this:
+
+- Review and optimize code
+- Write code
+- Add features
+- Debug issues
