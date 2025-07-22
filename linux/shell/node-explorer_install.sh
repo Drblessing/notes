@@ -31,3 +31,5 @@ sudo systemctl enable node_exporter
 
 # Check status
 sudo systemctl status node_exporter
+
+# Grafana Dashboard id: 10242
