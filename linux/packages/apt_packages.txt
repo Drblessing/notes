@@ -25,8 +25,6 @@ ffmpeg
 
 # Networking tools
 speedtest-cli
-net-tools
 
 # Fun
 sl
-
