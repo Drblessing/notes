@@ -19,7 +19,6 @@ pipx
 nodejs
 npm
 git-lfs
-cloudflared
 
 # System monitoring and utilities
 ffmpeg
