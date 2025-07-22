@@ -1,3 +1,5 @@
 bitcoin-core
 tailscale
 grafana
+prometheus
+docker

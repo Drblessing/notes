@@ -1,4 +1,4 @@
-# ufw_install.sh – opinionated UFW baseline + full Plex port set
+# ufw_install.sh – opinionated UFW baseline
 
 # ── 1. Reset & sane defaults ────────────────────────────────────────────────────
 sudo ufw --force reset
