@@ -91,12 +91,10 @@ npm i swr motion lodash viem wagmi @rainbow-me/rainbowkit @tanstack/react-query 
 npm i -D daisyui
 ```
 
-From chatGPT:
-
 Then, add daisyui to app/globals.css:
 
 ```app/globals.css
-@plugin "daisyui";
+@import 'daisyui';
 ```
 
 For Wagmi and RainbowKit, you'll need to wrap your application in the appropriate providers.
