@@ -26,3 +26,6 @@ alias gs="git switch" # Switch branches
 
 # Deno
 alias dr="deno run --allow-all"
+
+# Python
+alias s="source .venv/bin/activate" # Activate Python virtual environment
