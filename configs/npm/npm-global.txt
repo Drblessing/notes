@@ -1,3 +1,4 @@
 @openai/codex
 @google/gemini-cli
 wrangler
+# npm i -g @openai/codex @google/gemini-cli wrangler
