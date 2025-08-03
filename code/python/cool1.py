@@ -181,7 +181,7 @@ level = 1
 
 
 # Auto-fire variables
-FIRE_RATE = 10  # bullets per second
+FIRE_RATE = 40  # bullets per second
 fire_delay = 1000 // FIRE_RATE  # milliseconds between shots
 last_shot_time = pygame.time.get_ticks()
 
