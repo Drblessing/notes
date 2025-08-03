@@ -95,7 +95,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/danielblessing/notes/mai
 | Ethereum: A Next-Generation Smart Contract and DApp Platform. | The Ethereum whitepaper by Vitalik Buterin describing the Ethereum platform             |
 | Flashboys 2.0                                                 | Research paper on high-frequency trading and market structure in cryptocurrency markets |
 | How to Share a Secret                                         | Adi Shamir's seminal paper on secret sharing algorithms                                 |
-| King James Bable                                              | The King James Version of the Bible                                                     |
+| King James Bible                                              | The King James Version of the Bible                                                     |
 | Mastering Ethereum                                            | Comprehensive guide to Ethereum by Andreas Antonopoulos and Gavin Wood                  |
 | Monero Whitepaper                                             | The Monero cryptocurrency whitepaper describing its privacy features                    |
 | New Directions in Cryptography                                | The seminal paper introducing public-key cryptography                                   |

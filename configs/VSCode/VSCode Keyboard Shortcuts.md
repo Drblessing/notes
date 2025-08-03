@@ -24,4 +24,4 @@ Toggle Terminal: Cmd + J
 
 Focus Editor Left/Right: Cmd + Shift + [ or ]
 
-Collapse Folders in Siedbar: Cmd + M
+Collapse Folders in Sidebar: Cmd + M
