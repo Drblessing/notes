@@ -6,7 +6,6 @@ git-lfs
 gnupg
 htop
 jupyterlab
-newsboat
 nvm
 python
 ssss
