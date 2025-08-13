@@ -3,12 +3,12 @@
 **Adding submodules (subrepositories) to a Git repository**
 
 ```zsh
-mkdir subrepositories
+mkdir subrepos
 
-git submodule add https://github.com/expo/expo.git subrepositories/expo
-git submodule add https://github.com/vercel/next.js.git subrepositories/next.js
-git submodule add https://github.com/cloudflare/cloudflare-docs.git subrepositories/cloudflare-docs
-git submodule add https://github.com/reactjs/react.dev.git subrepositories/react.dev
+git submodule add https://github.com/expo/expo.git subrepos/expo
+git submodule add https://github.com/vercel/next.js.git subrepos/next.js
+git submodule add https://github.com/cloudflare/cloudflare-docs.git subrepos/cloudflare-docs
+git submodule add https://github.com/reactjs/react.dev.git subrepos/react.dev
 ```
 
 ```zsh
@@ -46,17 +46,8 @@ git submodule status
 **Remove a submodule**
 
 ```zsh
-git submodule deinit -f references/expo
-```
-
-```zsh
-git rm -f references/expo
-```
-
-```zsh
-rm -rf .git/modules/references/expo
-```
-
-```zsh
+git submodule deinit -f subrepos/expo
+git rm -f subrepos/expo
+rm -rf .git/modules/subrepos/expo
 git commit -m "Remove expo submodule"
 ```

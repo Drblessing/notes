@@ -75,16 +75,6 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/danielblessing/notes/mai
 | Github Copilot | AI assistant built-in to VSCode |
 | ChatGPT Images | Image generation by OpenAI      |
 
-## Submodules
-
-| Name            | Description                                                          |
-| --------------- | -------------------------------------------------------------------- |
-| expo            | React Native framework for cross-platform mobile app development     |
-| next.js         | React framework for server-side rendering and static site generation |
-| cloudflare-docs | Documentation for Cloudflare services and APIs                       |
-| react.dev       | React documentation and resources for developers                     |
-| three.js        | JavaScript library for 3D graphics and animations                    |
-
 ## References
 
 | References                                                    | Description                                                                             |
