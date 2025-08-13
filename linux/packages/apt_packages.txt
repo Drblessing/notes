@@ -19,13 +19,18 @@ pipx
 python3
 python3-pip
 python3-venv
+software-properties-common
 
-# System monitoring and utilities
-ffmpeg
+# System monitoring 
 htop
+
+# Utilities 
+ffmpeg
+tree
 
 # Networking tools
 net-tools
+iproute2
 speedtest-cli
 
 # Fun
