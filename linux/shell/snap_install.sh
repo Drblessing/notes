@@ -1,1 +1,0 @@
-xargs -r -n1 sudo snap install --ignore-running < <(grep -hvE '^\s*($|#)' ~/github/notes/linux/packages/snap_packages.txt)
