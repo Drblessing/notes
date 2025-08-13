@@ -1,3 +1,4 @@
+# nvm installation script.
 source ~/.zshrc
 mkdir -p ~/.nvm
 nvm install --lts

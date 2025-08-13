@@ -14,7 +14,7 @@
 # sudo systemctl restart ssh || sudo service ssh restart
 # echo "Done. SSH key installed and service restarted."
 
-# ssh setup for my home server
+# An ssh setup script for my home server.
 
 
 # Set variables for SSH key paths

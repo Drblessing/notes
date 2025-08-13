@@ -1,4 +1,4 @@
-# Homebrew installation script
+# Homebrew installation script.
 # This script installs and configures Homebrew and related packages
 
 # Check if Homebrew is already installed

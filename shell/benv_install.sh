@@ -1,4 +1,3 @@
-#!/bin/bash
 # Install .benv for bin scripts
 
 # Remove existing .benv
