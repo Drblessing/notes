@@ -20,8 +20,8 @@ scp "$PUBKEY" "$UBUNTU_USER@$UBUNTU_SERVER:~/.ssh/id_ed25519.pub"
 # Chmod
 ssh "$UBUNTU_USER@$UBUNTU_SERVER" "chmod 600 ~/.ssh/id_ed25519 && chmod 644 ~/.ssh/id_ed25519.pub"
 
-# Add public key to authorized_keys
-ssh "$UBUNTU_USER@$UBUNTU_SERVER" "cat ~/.ssh/id_ed25519.pub >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys"
+# Move local authorized keys file to server
+scp "$HOME/github/notes/configs/.ssh/authorized_keys" "$UBUNTU_USER@$UBUNTU_SERVER:~/.ssh/authorized_keys"
 
 # Sudo copy sshd_config
 scp "$SSHD" "$UBUNTU_USER@$UBUNTU_SERVER:/tmp/sshd_config"
