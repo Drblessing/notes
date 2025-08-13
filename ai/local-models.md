@@ -1,8 +1,8 @@
 # Local AI Models Guide
 
-## LM Studio Setup
+To run AI models locally, I like Apple computers running LM studio.
 
-### Installation
+## Installation
 
 ```bash
 # Download from https://lmstudio.ai/
@@ -10,10 +10,10 @@
 brew install --cask lm-studio
 ```
 
-### Recommended Models
+## My Models
 
-| Model                  | Size | Use Case                   |
-| ---------------------- | ---- | -------------------------- |
-| dolphin3.0-llama3.1-8b | 8GB  | Uncensored general purpose |
-| codellama-7b           | 7GB  | Code generation            |
-| mistral-7b-instruct    | 7GB  | Fast general purpose       |
+| Description     | Model                          | Size    |
+| --------------- | ------------------------------ | ------- |
+| General chat    | gemma-3-12b 4bit               | 8.07 GB |
+| Coding          | deepseek-r1-0528-qwen3-8b 8bit | 8.71 GB |
+| Uncensored chat | dolphin3.0-llama3.1-8b         | 4.69 GB |
