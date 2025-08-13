@@ -1,1 +1,2 @@
 nvm install --lts
+xargs npm install -g < ~/github/notes/configs/npm/npm-global.txt
