@@ -6,7 +6,7 @@ alias up='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
 alias c="clear"
 alias d="directory.sh"
 alias lg="lazygit.sh"
-alias localip="hostname -I | awk '{print \$1}'"
+alias myip="hostname -I | awk '{print \$1}'"
 
 # Git
 alias g="git fetch && git status"
