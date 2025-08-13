@@ -1,4 +1,3 @@
-#!/bin/bash
 # Homebrew installation script
 # This script installs and configures Homebrew and related packages
 
