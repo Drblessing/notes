@@ -10,6 +10,19 @@ PUBKEY=${HOME}/github/notes/configs/.ssh/id_ed25519.pub
 UBUNTU_SERVER="192.168.7.186"
 UBUNTU_USER="drblessing"
 
+# Make sure the .ssh directory exists
+ssh "$UBUNTU_USER@$UBUNTU_SERVER" "mkdir -p ~/.ssh && chmod 700 ~/.ssh"
+
 # Copy ssh key
 scp "$KEY" "$UBUNTU_USER@$UBUNTU_SERVER:~/.ssh/id_ed25519"
 scp "$PUBKEY" "$UBUNTU_USER@$UBUNTU_SERVER:~/.ssh/id_ed25519.pub"
+
+# Chmod
+ssh "$UBUNTU_USER@$UBUNTU_SERVER" "chmod 600 ~/.ssh/id_ed25519 && chmod 644 ~/.ssh/id_ed25519.pub"
+
+# Add public key to authorized_keys
+ssh "$UBUNTU_USER@$UBUNTU_SERVER" "cat ~/.ssh/id_ed25519.pub >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys"
+
+# Sudo copy sshd_config
+scp "$SSHD" "$UBUNTU_USER@$UBUNTU_SERVER:/tmp/sshd_config"
+ssh -t "$UBUNTU_USER@$UBUNTU_SERVER" 'sudo mv /tmp/sshd_config /etc/ssh/sshd_config && sudo systemctl restart ssh'
