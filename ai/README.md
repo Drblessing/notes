@@ -37,4 +37,4 @@ Use workspaces and projects to organize your tasks. Then, provide documents outl
 
 When using AI for coding, provide clear instructions and examples. If you want the AI to generate code, specify the programming language, libraries, and frameworks you want to use.
 
-When using AI for coding, try different models for different tasks. Some models excel at certain types of code generation or debugging, while others may struggle.
+When using AI for coding, try different models for different tasks. Some models excel at certain types of code generation or debugging, while others may struggle. Prompt the models to be diligent, not be lazy, and fill in implementation details where necessary.
