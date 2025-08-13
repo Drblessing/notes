@@ -21,7 +21,7 @@ git submodule add --depth 1 https://github.com/reactjs/react.dev.git subrepos/re
 ## Ignore changes to a submodule
 
 ```zsh
-git config -f .gitmodules submodule.<path-to-submodule>ignore all
+git config -f .gitmodules submodule.<path-to-submodule>.ignore all
 ```
 
 Example:
@@ -41,26 +41,21 @@ git submodule update --remote --force
 ## Cloning a Repository with Submodules
 
 ```zsh
-git clone --recurse-submodules <repository-url>
+git clone --recurse-submodules <repository-url> --depth 1
 ```
 
 ## Submodules
 
 **My submodules**
 
-| url                                               | Description              |
-| ------------------------------------------------- | ------------------------ |
-| https://github.com/reactjs/react.dev.git          | React documentation      |
-| https://github.com/cloudflare/cloudflare-docs.git | Cloudflare documentation |
-| https://github.com/vercel/next.js.git             | Next.js framework        |
-| https://github.com/expo/expo.git                  | Expo framework           |
-| https://github.com/openai/openai-cookbook.git     | OpenAI Cookbook          |
-| https://github.com/mrdoob/three.js.git            | Three.js library         |
-
-**Comprehensive List of Submodules**
-
 | url                                                           | Description                     |
 | ------------------------------------------------------------- | ------------------------------- |
+| https://github.com/reactjs/react.dev.git                      | React documentation             |
+| https://github.com/cloudflare/cloudflare-docs.git             | Cloudflare documentation        |
+| https://github.com/vercel/next.js.git                         | Next.js framework               |
+| https://github.com/expo/expo.git                              | Expo framework                  |
+| https://github.com/openai/openai-cookbook.git                 | OpenAI Cookbook                 |
+| https://github.com/mrdoob/three.js.git                        | Three.js library                |
 | https://github.com/python/cpython.git                         | Python programming language     |
 | https://github.com/golang/go.git                              | Go programming language         |
 | https://github.com/rust-lang/rust.git                         | Rust programming language       |
