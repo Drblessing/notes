@@ -36,6 +36,7 @@ allow 1347         "Filecoin"
 allow 2345         "Filecoin 2"
 allow 1234         "Filecoin 3"
 allow 9100         "Node Exporter"
+allow 9443         "Generic service 9443"
 
 
 # ── 6. Enable & show status ─────────────────────────────────────────────────────
