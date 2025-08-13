@@ -1,7 +1,4 @@
-# nvm_initialize
-# Assume nvm is already installed
-# either via homebrew or apt
-
+source ~/.zshrc
 mkdir -p ~/.nvm
 nvm install --lts
 

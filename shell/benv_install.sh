@@ -14,4 +14,4 @@ source ~/github/notes/bin/.benv/bin/activate
 pip install --upgrade pip
 
 # Install requirements
-pip install -r ~/github/notes/bin/requirements_tracked.txt
+pip install -r ~/github/notes/bin/requirements.txt
