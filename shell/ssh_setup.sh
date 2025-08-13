@@ -9,6 +9,8 @@ PUBKEY=${HOME}/github/notes/configs/.ssh/id_ed25519.pub
 # Set variable for ubuntu server
 UBUNTU_SERVER="192.168.7.186"
 UBUNTU_USER="drblessing"
+MY_KEY='ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEC5MkTKE9wILXHapVAxM3avUXRm/wLy8211WzZJZ2uy daniel@macbook-pro (Jun 2025)'
+
 
 # Make sure the .ssh directory exists
 ssh "$UBUNTU_USER@$UBUNTU_SERVER" "mkdir -p ~/.ssh && chmod 700 ~/.ssh"
@@ -20,8 +22,12 @@ scp "$PUBKEY" "$UBUNTU_USER@$UBUNTU_SERVER:~/.ssh/id_ed25519.pub"
 # Chmod
 ssh "$UBUNTU_USER@$UBUNTU_SERVER" "chmod 600 ~/.ssh/id_ed25519 && chmod 644 ~/.ssh/id_ed25519.pub"
 
-# Move local authorized keys file to server
-scp "$HOME/github/notes/configs/.ssh/authorized_keys" "$UBUNTU_USER@$UBUNTU_SERVER:~/.ssh/authorized_keys"
+# Authorized keys copy.
+ssh "$UBUNTU_USER@$UBUNTU_SERVER" "
+  mkdir -p ~/.ssh && chmod 700 ~/.ssh
+  touch ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys
+  grep -qxF '$MY_KEY' ~/.ssh/authorized_keys || echo '$MY_KEY' >> ~/.ssh/authorized_keys
+"
 
 # Sudo copy sshd_config
 scp "$SSHD" "$UBUNTU_USER@$UBUNTU_SERVER:/tmp/sshd_config"
