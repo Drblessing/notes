@@ -1,48 +1,33 @@
-version: '3.8'
-
 services:
-  monero-node:
-    image: sethsimmons/simple-monerod:latest
-    container_name: monero-node
+  monero:
+    image: ghcr.io/rblaine95/monero:latest
+    container_name: monero
     restart: unless-stopped
     volumes:
-      - monero-blockchain:/home/monero/.bitmonero
+      - /drive2/monero:/opt/bitmonero
     ports:
       # P2P port
       - '18080:18080'
-      # RPC port (optional, for wallet connections)
-      - '18081:18081'
-      # Restricted RPC port (optional, for public RPC)
+      # Restricted RPC port for wallet connections
       - '18089:18089'
-    command: [
-        '--non-interactive',
-        '--no-igd',
-        '--p2p-bind-ip=0.0.0.0',
-        '--p2p-bind-port=18080',
-        '--rpc-bind-ip=0.0.0.0',
-        '--rpc-bind-port=18081',
-        '--restricted-rpc',
-        '--rpc-restricted-bind-ip=0.0.0.0',
-        '--rpc-restricted-bind-port=18089',
-        '--confirm-external-bind',
-        '--no-zmq',
-        '--enable-dns-blocklist',
-        '--prune-blockchain', # Optional: remove if you want full blockchain
-      ]
-    environment:
-      - MONERO_NETWORK=mainnet
-    networks:
-      - monero-network
+    command:
+      - --non-interactive
+      - --no-igd
+      - --p2p-bind-ip=0.0.0.0
+      - --p2p-bind-port=18080
+      - --rpc-restricted-bind-ip=0.0.0.0
+      - --rpc-restricted-bind-port=18089
+      - --confirm-external-bind
+      - --enable-dns-blocklist
+      - --ban-list=/opt/bitmonero/ban_list.txt
+      - --pad-transactions
     logging:
       driver: 'json-file'
       options:
         max-size: '10m'
         max-file: '3'
-
-volumes:
-  monero-blockchain:
-    driver: local
-
-networks:
-  monero-network:
-    driver: bridge
+    healthcheck:
+      test: ['CMD', 'curl', '-f', 'http://localhost:18089/get_height']
+      interval: 30s
+      timeout: 10s
+      retries: 3
