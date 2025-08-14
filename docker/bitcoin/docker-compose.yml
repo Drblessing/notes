@@ -33,7 +33,7 @@ services:
       test:
         [
           'CMD-SHELL',
-          'bitcoin-cli -getblockchaininfo >/dev/null 2>&1 || exit 1',
+          'bitcoin-cli -datadir=/home/bitcoin/.bitcoin getblockchaininfo >/dev/null 2>&1 || exit 1',
         ]
       interval: 30s
       timeout: 10s
