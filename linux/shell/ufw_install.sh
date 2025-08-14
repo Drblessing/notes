@@ -23,13 +23,10 @@ block 8551/tcp "ETH Engine API (block public)"
 block 5052/tcp "Beacon REST API (block public)"
 block 2375/tcp "Docker API (block public)"
 block 2376/tcp "Docker API TLS (block public)"
-block 5001/tcp "IPFS API (block public)"
+block 5001/tcp "IPFS API (block public)"    
 block 8332/tcp "Bitcoin RPC (block public)"
 block 18081/tcp "Monero RPC (block public)"
 block 2345/tcp "Filecoin Lotus RPC (block public)"
-block 9100/tcp "Node Exporter metrics (block public)"
-block 9090/tcp "Admin dashboards (Cockpit/Prometheus) (block public)"
-block 9443/tcp "Admin dashboards (Portainer) (block public)"
 
 # Go live
 sudo ufw --force enable
