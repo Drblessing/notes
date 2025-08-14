@@ -16,7 +16,6 @@
 
 # Cockpit
 sudo systemctl enable --now cockpit.socket
-sudo systemctl enable --now cockpit-pcp.socket
 
 # Docker 
 sudo groupadd docker
