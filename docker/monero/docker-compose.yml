@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  monero-node:
+    image: sethsimmons/simple-monerod:latest
+    container_name: monero-node
+    restart: unless-stopped
+    volumes:
+      - monero-blockchain:/home/monero/.bitmonero
+    ports:
+      # P2P port
+      - '18080:18080'
+      # RPC port (optional, for wallet connections)
+      - '18081:18081'
+      # Restricted RPC port (optional, for public RPC)
+      - '18089:18089'
+    command: [
+        '--non-interactive',
+        '--no-igd',
+        '--p2p-bind-ip=0.0.0.0',
+        '--p2p-bind-port=18080',
+        '--rpc-bind-ip=0.0.0.0',
+        '--rpc-bind-port=18081',
+        '--restricted-rpc',
+        '--rpc-restricted-bind-ip=0.0.0.0',
+        '--rpc-restricted-bind-port=18089',
+        '--confirm-external-bind',
+        '--no-zmq',
+        '--enable-dns-blocklist',
+        '--prune-blockchain', # Optional: remove if you want full blockchain
+      ]
+    environment:
+      - MONERO_NETWORK=mainnet
+    networks:
+      - monero-network
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '10m'
+        max-file: '3'
+
+volumes:
+  monero-blockchain:
+    driver: local
+
+networks:
+  monero-network:
+    driver: bridge
