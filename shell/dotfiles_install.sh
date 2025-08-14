@@ -18,8 +18,12 @@ fi
 if [[ "$OS_TYPE" == "Linux" ]]; then
     echo "Performing Linux specific setup..."
 
-    ln -sfn ~/github/notes/configs/dotfiles/.bashrc ~/.bashrc
-    source ~/.bashrc
+    # Because Linux is more customizable,
+    # we will only append our configurations to the existing files.
+    # We will let ubuntu-server manage the default configurations.
+
+    # Append .bashrc
+    cat ~/github/notes/configs/dotfiles/.bashrc >> ~/.bashrc
 
     # Install .gitconfig
     ln -sfn ~/github/notes/configs/dotfiles/.gitconfig ~/.gitconfig 
