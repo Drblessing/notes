@@ -1,44 +1,36 @@
-# ufw_install.sh  
-# An opinionated UFW baseline
+set -euo pipefail
 
-# Reset
+# Fresh start + IPv6 on
 sudo ufw --force reset
+sudo sed -i 's/^#\?IPV6=.*/IPV6=yes/' /etc/default/ufw
 
-# Defaults
-sudo ufw default deny incoming
+# Open-by-default posture
+sudo ufw default allow incoming
 sudo ufw default allow outgoing
 
-# Helper to keep the rule list readable
-allow() { sudo ufw allow "$1" comment "$2" ; }
+# Core
+sudo ufw allow 22/tcp   comment 'SSH'
+sudo ufw limit 22/tcp   # brute-force protection
+sudo ufw allow 80/tcp   comment 'HTTP'
+sudo ufw allow 443/tcp  comment 'HTTPS'
 
-# Core access
-allow ssh          "OpenSSH"
-sudo ufw limit ssh                       # brute-force protection
+# Helper
+block() { sudo ufw deny "$1" comment "$2"; }
 
-allow http         "HTTP"
-allow https        "HTTPS"
+# 🔒 Block sensitive/admin/RPC surfaces from the internet
+block 8545/tcp "ETH JSON-RPC (block public)"
+block 8551/tcp "ETH Engine API (block public)"
+block 5052/tcp "Beacon REST API (block public)"
+block 2375/tcp "Docker API (block public)"
+block 2376/tcp "Docker API TLS (block public)"
+block 5001/tcp "IPFS API (block public)"
+block 8332/tcp "Bitcoin RPC (block public)"
+block 18081/tcp "Monero RPC (block public)"
+block 2345/tcp "Filecoin Lotus RPC (block public)"
+block 9100/tcp "Node Exporter metrics (block public)"
+block 9090/tcp "Admin dashboards (Cockpit/Prometheus) (block public)"
+block 9443/tcp "Admin dashboards (Portainer) (block public)"
 
-# Generic services
-for p in 8443 3000 5000 8000 9090; do
-    allow "$p"     "Generic service $p"
-done
-
-# Public goods
-allow 8333         "Bitcoin node"
-allow 4001         "IPFS swarm"
-allow 8080         "IPFS gateway"
-allow 5002         "IPFS WebUI"
-allow 18080        "Monero node"
-allow 30303        "Ethereum node"
-allow 1984         "Arweave node"
-allow 9001         "Tor relay"
-allow 1347         "Filecoin"
-allow 2345         "Filecoin 2"
-allow 1234         "Filecoin 3"
-allow 9100         "Node Exporter"
-allow 9443         "Generic service 9443"
-
-
-# ── 6. Enable & show status ─────────────────────────────────────────────────────
+# Go live
 sudo ufw --force enable
-sudo ufw status verbose
+sudo ufw status numbered
