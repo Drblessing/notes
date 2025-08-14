@@ -78,41 +78,41 @@ docker push image-name:tag
 
 ```bash
 # Start services
-docker-compose up
+docker compose up
 
 # Start in detached mode
-docker-compose up -d
+docker compose up -d
 
 # Build images before starting
-docker-compose up --build
+docker compose up --build
 
 # Stop services
-docker-compose down
+docker compose down
 
 # Stop and remove volumes
-docker-compose down -v
+docker compose down -v
 
 # View logs
-docker-compose logs
+docker compose logs
 
 # View logs for specific service
-docker-compose logs service-name
+docker compose logs service-name
 
 # Execute command in service
-docker-compose exec service-name command
+docker compose exec service-name command
 
 # List running services
-docker-compose ps
+docker compose ps
 ```
 
 ### Working with Multiple Compose Files
 
 ```bash
 # Use specific compose file
-docker-compose -f docker-compose.dev.yml up
+docker compose -f docker-compose.dev.yml up
 
 # Use multiple compose files
-docker-compose -f docker-compose.yml -f docker-compose.override.yml up
+docker compose -f docker-compose.yml -f docker-compose.override.yml up
 ```
 
 ## Project Structure
