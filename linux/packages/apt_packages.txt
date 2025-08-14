@@ -24,6 +24,10 @@ gh
 
 # System monitoring 
 htop
+cockpit 
+cockpit-pcp
+pcp
+python3-pcp
 
 # Utilities 
 ffmpeg
