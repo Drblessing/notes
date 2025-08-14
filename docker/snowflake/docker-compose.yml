@@ -1,0 +1,23 @@
+services:
+  snowflake:
+    image: thetorproject/snowflake-proxy:latest
+    container_name: snowflake
+    restart: unless-stopped
+    network_mode: host
+    command:
+      [
+        '-verbose',
+        '-unsafe-logging',
+        '-keep-local-addresses',
+        '-relay',
+        'wss://snowflake.bamsoftware.com/',
+      ]
+    environment:
+      - LOG_LEVEL=info
+      - NAT_PROBE=true
+      - STUN_URL=stun.l.google.com:19302
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '10m'
+        max-file: '3'
