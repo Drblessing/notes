@@ -29,5 +29,5 @@ docker compose logs -f
 # Check sync status
 
 ```bash
-docker exec monerod monerod status
+docker exec monero monerod status
 ```
