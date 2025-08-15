@@ -1,0 +1,60 @@
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --web.enable-lifecycle
+    volumes:
+      - ./prometheus:/etc/prometheus
+      - ./data/prometheus:/prometheus
+    ports:
+      - '9090:9090'
+    restart: unless-stopped
+    networks: [monitoring]
+
+  node-exporter:
+    image: prom/node-exporter:latest
+    container_name: node-exporter
+    pid: host
+    command: ['--path.rootfs=/host']
+    volumes:
+      - /:/host:ro,rslave
+    restart: unless-stopped
+    networks: [monitoring]
+
+  # one-shot init that downloads the popular Node Exporter dashboard JSON
+  dashboard-provisioner:
+    image: busybox:stable
+    container_name: grafana-dashboard-provisioner
+    command: >
+      sh -c "wget -qO /dashboards/node-exporter-full.json
+      https://grafana.com/api/dashboards/1860/revisions/latest/download
+      && echo 'Node Exporter Full dashboard downloaded.'"
+    volumes:
+      - ./grafana/dashboards:/dashboards
+    networks: [monitoring]
+    restart: 'no'
+
+  grafana:
+    image: grafana/grafana-oss:latest
+    container_name: grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin # change me later
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
+      - ./data/grafana:/var/lib/grafana
+    ports:
+      - '3000:3000'
+    depends_on:
+      - dashboard-provisioner
+      - prometheus
+    restart: unless-stopped
+    networks: [monitoring]
+
+networks:
+  monitoring:
+    driver: bridge
