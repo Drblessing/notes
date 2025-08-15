@@ -37,3 +37,51 @@ The proxy runs with the following default settings:
 - The proxy uses host networking to properly handle NAT traversal
 - Logs are limited to 10MB with 3 file rotations
 - The container will automatically restart unless explicitly stopped
+
+# Snowflake Proxy - Help Fight Censorship! 🌐
+
+## Quick Start
+
+```bash
+docker-compose up -d
+```
+
+## Monitoring Your Impact
+
+The Snowflake proxy doesn't expose Prometheus metrics, but you can track your contribution via logs:
+
+```bash
+# Total connections helped today
+docker logs snowflake 2>&1 | grep "$(date +%b\ %d)" | grep -c "connected to relay"
+
+# Live connection watching
+docker logs -f snowflake
+
+# See traffic summaries (if using -summary-interval flag)
+docker logs snowflake | grep "In the last"
+```
+
+## Integration with Central Monitoring
+
+Since Snowflake uses `network_mode: host`, it can't join the monitoring network directly. However, you can:
+
+1. Monitor the host itself via Node Exporter (already in monitoring stack)
+2. Create a custom exporter that parses Snowflake logs
+3. Use Grafana's Loki for log aggregation (future enhancement)
+
+## Understanding the Logs
+
+- `connected to relay` - You're helping someone!
+- `Received` - Active data transfer
+- `NAT type: unrestricted` - Your NAT is properly configured
+- `traffic throughput` - Bandwidth you're providing
+
+## Tips
+
+- Keep it running 24/7 for maximum impact
+- Check logs periodically to see your contribution
+- No additional configuration needed - it just works!
+
+---
+
+_Every proxy helps someone access free information!_

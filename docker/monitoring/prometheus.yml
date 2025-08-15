@@ -1,0 +1,37 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  # Host metrics
+  - job_name: 'node'
+    static_configs:
+      - targets: ['node-exporter:9100']
+
+  # Add your services here as you connect them:
+
+  # Snowflake (note: standard proxy doesn't expose metrics endpoint)
+  # You'll need to check logs for connection stats
+
+  # Tor relay
+  # - job_name: 'tor'
+  #   static_configs:
+  #     - targets: ['tor:9035']
+
+  # IPFS node
+  # - job_name: 'ipfs'
+  #   static_configs:
+  #     - targets: ['ipfs:5001']
+  #   metrics_path: /debug/metrics/prometheus
+
+  # Bitcoin node (via exporter)
+  # - job_name: 'bitcoin'
+  #   static_configs:
+  #     - targets: ['bitcoin-exporter:9332']
+
+  # Monero node (via exporter)
+  # - job_name: 'monero'
+  #   static_configs:
+  #     - targets: ['monero-exporter:9396']
+  #   static_configs:
+  #     - targets: ['monero-exporter:9396']
