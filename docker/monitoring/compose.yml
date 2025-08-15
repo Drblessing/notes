@@ -2,17 +2,36 @@ services:
   prometheus:
     image: prom/prometheus:latest
     container_name: prometheus
-    user: '65534:65534' # Run as nobody user (prometheus default)
+    user: '65534:65534' # run as nobody
     command:
       - --config.file=/etc/prometheus/prometheus.yml
       - --storage.tsdb.path=/prometheus
       - --web.enable-lifecycle
-      - --web.listen-address=0.0.0.0:9090 # Explicitly bind to all interfaces
+      - --web.listen-address=0.0.0.0:9090
     volumes:
-      - ./prometheus:/etc/prometheus:ro # Make config read-only
-      - ./data/prometheus:/prometheus
+      - ./prometheus:/etc/prometheus:ro
+      - prometheus-data:/prometheus # <-- named volume (no host perms drama)
     ports:
-      - '0.0.0.0:9091:9090' # Explicitly bind to all host interfaces
+      - '9091:9090'
+    restart: unless-stopped
+    networks: [monitoring]
+
+  grafana:
+    image: grafana/grafana-oss:latest
+    container_name: grafana
+    user: '472:472' # grafana user
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro
+      - grafana-data:/var/lib/grafana # <-- named volume
+    ports:
+      - '3000:3000'
+    depends_on:
+      - dashboard-provisioner
+      - prometheus
     restart: unless-stopped
     networks: [monitoring]
 
@@ -26,7 +45,6 @@ services:
     restart: unless-stopped
     networks: [monitoring]
 
-  # one-shot init that downloads the popular Node Exporter dashboard JSON
   dashboard-provisioner:
     image: busybox:stable
     container_name: grafana-dashboard-provisioner
@@ -39,25 +57,10 @@ services:
     networks: [monitoring]
     restart: 'no'
 
-  grafana:
-    image: grafana/grafana-oss:latest
-    container_name: grafana
-    user: '472:472' # Run as grafana user
-    environment:
-      - GF_SECURITY_ADMIN_USER=admin
-      - GF_SECURITY_ADMIN_PASSWORD=admin # change me later
-    volumes:
-      - ./grafana/provisioning:/etc/grafana/provisioning:ro # Make provisioning read-only
-      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro # Make dashboards read-only
-      - ./data/grafana:/var/lib/grafana
-    ports:
-      - '3000:3000'
-    depends_on:
-      - dashboard-provisioner
-      - prometheus
-    restart: unless-stopped
-    networks: [monitoring]
-
 networks:
   monitoring:
     driver: bridge
+
+volumes:
+  prometheus-data: {}
+  grafana-data: {}
