@@ -2,13 +2,14 @@ services:
   prometheus:
     image: prom/prometheus:latest
     container_name: prometheus
+    user: '65534:65534' # Run as nobody user (prometheus default)
     command:
       - --config.file=/etc/prometheus/prometheus.yml
       - --storage.tsdb.path=/prometheus
       - --web.enable-lifecycle
       - --web.listen-address=0.0.0.0:9090 # Explicitly bind to all interfaces
     volumes:
-      - ./prometheus:/etc/prometheus
+      - ./prometheus:/etc/prometheus:ro # Make config read-only
       - ./data/prometheus:/prometheus
     ports:
       - '0.0.0.0:9091:9090' # Explicitly bind to all host interfaces
@@ -41,12 +42,13 @@ services:
   grafana:
     image: grafana/grafana-oss:latest
     container_name: grafana
+    user: '472:472' # Run as grafana user
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin # change me later
     volumes:
-      - ./grafana/provisioning:/etc/grafana/provisioning
-      - ./grafana/dashboards:/var/lib/grafana/dashboards
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro # Make provisioning read-only
+      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro # Make dashboards read-only
       - ./data/grafana:/var/lib/grafana
     ports:
       - '3000:3000'
