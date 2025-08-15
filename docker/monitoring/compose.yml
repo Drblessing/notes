@@ -10,7 +10,7 @@ services:
       - ./prometheus:/etc/prometheus
       - ./data/prometheus:/prometheus
     ports:
-      - '9090:9090'
+      - '9091:9090' # Changed from 9090:9090 to avoid port conflict
     restart: unless-stopped
     networks: [monitoring]
 
