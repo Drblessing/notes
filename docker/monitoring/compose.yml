@@ -6,11 +6,12 @@ services:
       - --config.file=/etc/prometheus/prometheus.yml
       - --storage.tsdb.path=/prometheus
       - --web.enable-lifecycle
+      - --web.listen-address=0.0.0.0:9090 # Explicitly bind to all interfaces
     volumes:
       - ./prometheus:/etc/prometheus
       - ./data/prometheus:/prometheus
     ports:
-      - '9091:9090' # Changed from 9090:9090 to avoid port conflict
+      - '0.0.0.0:9091:9090' # Explicitly bind to all host interfaces
     restart: unless-stopped
     networks: [monitoring]
 
