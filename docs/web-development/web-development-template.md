@@ -84,11 +84,17 @@ tsconfig.json: TypeScript configuration file.
 
 ### Installation
 
-First, install the packages:
+General UI, data, and 3D packages:
 
 ```bash
-npm i swr motion lodash viem wagmi @rainbow-me/rainbowkit @tanstack/react-query three @types/three @react-three/fiber @react-three/drei
+npm i swr motion lodash three @types/three @react-three/fiber @react-three/drei lucide-react
 npm i -D daisyui
+```
+
+Optional: Blockchain/Web3 packages:
+
+```bash
+npm i viem wagmi @rainbow-me/rainbowkit @tanstack/react-query
 ```
 
 Then, add daisyui to app/globals.css:
@@ -97,19 +103,25 @@ Then, add daisyui to app/globals.css:
 @import 'daisyui';
 ```
 
-For Wagmi and RainbowKit, you'll need to wrap your application in the appropriate providers.
+If using the Web3 stack, wrap your app with Wagmi and RainbowKit providers and set up TanStack Query's QueryClientProvider.
 
 ### Explanation
+
+General:
 
 - DaisyUI: A Tailwind CSS component library that provides pre-built UI components.
 - SWR: A React Hooks library for data fetching.
 - Motion: A library for animations in React.
 - Lodash: A utility library for JavaScript that provides helpful functions for working with arrays, objects, and more.
+- Three.js: A JavaScript library for creating 3D graphics in the browser.
+- Lucide: A collection of open-source icons for React.
+
+Blockchain/Web3 (optional):
+
 - Viem: A library for interacting with Ethereum and other EVM-compatible blockchains.
 - Wagmi: A React Hooks library for Ethereum that provides a set of hooks for interacting with Ethereum and other EVM-compatible blockchains.
 - RainbowKit: A React component library for building Ethereum wallets and dapps.
 - TanStack Query: A powerful data-fetching library for React that provides hooks for fetching, caching, and synchronizing data in your application.
-- Three.js: A JavaScript library for creating 3D graphics in the browser.
 
 ## Appendix
 
