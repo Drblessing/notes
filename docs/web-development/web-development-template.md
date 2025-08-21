@@ -5,7 +5,7 @@
 1. Create project on Cloudflare workers:
 
 ```bash
-npm create cloudflare@latest -- my-cloudflare-app --framework=next
+npm create cloudflare@latest -- . --framework=next
 
 # create-next-app questions
 # Would you like to use TypeScript? Yes
