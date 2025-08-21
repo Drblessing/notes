@@ -79,7 +79,7 @@ Github Desktop is an easy and handy GUI for managing Git repositories and Github
 General UI, data, and 3D packages:
 
 ```bash
-npm i swr motion lodash three @react-three/fiber @react-three/drei lucide-react @headlessui/react @heroicons/react react-icons
+npm i swr motion lodash three @react-three/fiber @react-three/drei lucide-react @headlessui/react @heroicons/react react-icons use-sound
 npm i -d @types/three @tailwindcss/forms @tailwindcss/typography @tailwindcss/aspect-ratio
 ```
 
@@ -103,6 +103,7 @@ General:
 - React icons: An icon vending machine which bundles popular icon libraries.
 - Headless UI: A set of completely unstyled, fully accessible UI components designed to integrate beautifully with Tailwind CSS. Required for Tailwind Plus.
 - Heroicons react: Required for Tailwind Plus.
+- Use-sound: Fun React hook for playing sounds.
 - Tailwind: A utility-first CSS framework for creating custom designs.
 - Tailwind/Forms: A plugin for Tailwind CSS that provides form styles.
 - Tailwind/Typography: A plugin for Tailwind CSS that provides prose styles.

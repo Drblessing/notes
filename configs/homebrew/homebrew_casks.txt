@@ -2,4 +2,4 @@ chromedriver
 chromium
 firefox
 github
-spotify
+google-chrome
