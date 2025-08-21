@@ -2,7 +2,7 @@
 
 ## Scaffold Project with Cloudflare
 
-Create project on Cloudflare workers:
+1. Create project on Cloudflare workers:
 
 ```bash
 npm create cloudflare@latest -- my-cloudflare-app --framework=next
@@ -38,13 +38,13 @@ devDependencies:
 - @tailwindcss/postcss
 - tailwindcss
 
-Delete .vscode directory, as it contains settings for VSCode that are not needed in the project.
+2. Delete `.vscode/` and `.dev.vars`
 
-## GitHub Setup
+They are not needed for the project.
 
-Using GithubDesktop, select `add` -> `add existing repository`, then select the project directory.
+## GitHub Desktop Setup (Optional)
 
-Then, publish the repository to Github, as a private repository.
+Github Desktop is an easy and handy GUI for managing Git repositories and Github workflows. You can also use the `gh` command line tool. Github Desktop is particularly useful for repositories with multiple branches and merge conflicts.
 
 ## Directory Structure
 
@@ -62,23 +62,15 @@ Then, publish the repository to Github, as a private repository.
 ...
 ```
 
-App: Contains the main application logic and routing, as well as api routes in /api/route.ts.
-
-Components: Contains reusable UI components.
-
-Hooks: Contains custom React hooks.
-
-Lib: Contains utility functions and libraries.
-
-Public: Contains static assets like images and fonts.
-
-Types: Contains TypeScript type definitions.
-
-next.config.ts: Next.js configuration file.
-
-postcss.config.mjs: PostCSS configuration file for Tailwind CSS.
-
-tsconfig.json: TypeScript configuration file.
+**App**: Contains the main application logic and routing, as well as api routes in /api/route.ts.<br>
+**Components**: Contains reusable UI components.<br>
+**Hooks**: Contains custom React hooks.<br>
+**Lib**: Contains utility functions and libraries.<br>
+**Public**: Contains static assets like images and fonts.<br>
+**Types**: Contains TypeScript type definitions.<br>
+**next.config.ts**: Next.js configuration file. <br>
+**postcss.config.mjs**: PostCSS configuration file for Tailwind CSS. <br>
+**tsconfig.json**: TypeScript configuration file.
 
 ## Additional Packages
 
@@ -87,8 +79,8 @@ tsconfig.json: TypeScript configuration file.
 General UI, data, and 3D packages:
 
 ```bash
-npm i swr motion lodash three @types/three @react-three/fiber @react-three/drei lucide-react
-npm i -D daisyui
+npm i swr motion lodash three @react-three/fiber @react-three/drei lucide-react @headlessui/react @heroicons/react react-icons
+npm i -d @types/three @tailwindcss/forms @tailwindcss/typography @tailwindcss/aspect-ratio
 ```
 
 Optional: Blockchain/Web3 packages:
@@ -97,24 +89,27 @@ Optional: Blockchain/Web3 packages:
 npm i viem wagmi @rainbow-me/rainbowkit @tanstack/react-query
 ```
 
-Then, add daisyui to app/globals.css:
-
-```app/globals.css
-@import 'daisyui';
-```
-
 If using the Web3 stack, wrap your app with Wagmi and RainbowKit providers and set up TanStack Query's QueryClientProvider.
+
+To install a light and dark mode toggle theme, wrap your app with the `ThemeProvider` from `daisyui`.
 
 ### Explanation
 
 General:
 
-- DaisyUI: A Tailwind CSS component library that provides pre-built UI components.
 - SWR: A React Hooks library for data fetching.
 - Motion: A library for animations in React.
 - Lodash: A utility library for JavaScript that provides helpful functions for working with arrays, objects, and more.
 - Three.js: A JavaScript library for creating 3D graphics in the browser.
 - Lucide: A collection of open-source icons for React.
+- React icons: An icon vending machine which bundles popular icon libraries.
+- Headless UI: A set of completely unstyled, fully accessible UI components designed to integrate beautifully with Tailwind CSS. Required for Tailwind Plus.
+- Heroicons react: Required for Tailwind Plus.
+- Tailwind: A utility-first CSS framework for creating custom designs.
+- Tailwind/Forms: A plugin for Tailwind CSS that provides form styles.
+- Tailwind/Typography: A plugin for Tailwind CSS that provides prose styles.
+- Tailwind/Aspect Ratio: A plugin for Tailwind CSS that provides aspect ratio utilities.
+- Tailwind Plus: A premium collection of templates and components for Tailwind CSS.
 
 Blockchain/Web3 (optional):
 
@@ -123,10 +118,8 @@ Blockchain/Web3 (optional):
 - RainbowKit: A React component library for building Ethereum wallets and dapps.
 - TanStack Query: A powerful data-fetching library for React that provides hooks for fetching, caching, and synchronizing data in your application.
 
-## Appendix
+### Appendix
 
-- [shadcn ui](https://ui.shadcn.com/): A collection of free and open-source UI components built with Tailwind CSS and React.
-- [Shadcn Blocks](https://www.shadcnblocks.com/): A collection of pre-built UI components for Shadcn. Site templates, and component libraries.
-- [DaisyUI Store](https://daisyui.com/store/): A collection of professional pre-built UI components for DaisyUI. Site templates, and component libraries.
-- [Tailwind Plus](https://tailwindcss.com/plus): A collection of professional pre-built UI components for Tailwind CSS. Site templates, and component libraries. Personal: $299 one-time
-- [Tailwind Toolbox](https://www.tailwindtoolbox.com/): A collection of free and open-source UI components for Tailwind CSS. Site templates, and component libraries.
+Resources that don't have a place right now, but I want to explore in the future
+
+- Lenis: A smooth scrolling library for React.
