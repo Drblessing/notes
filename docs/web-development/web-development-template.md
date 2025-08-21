@@ -91,8 +91,6 @@ npm i viem wagmi @rainbow-me/rainbowkit @tanstack/react-query
 
 If using the Web3 stack, wrap your app with Wagmi and RainbowKit providers and set up TanStack Query's QueryClientProvider.
 
-To install a light and dark mode toggle theme, wrap your app with the `ThemeProvider` from `daisyui`.
-
 ### Explanation
 
 General:
@@ -116,7 +114,6 @@ Blockchain/Web3 (optional):
 - Viem: A library for interacting with Ethereum and other EVM-compatible blockchains.
 - Wagmi: A React Hooks library for Ethereum that provides a set of hooks for interacting with Ethereum and other EVM-compatible blockchains.
 - RainbowKit: A React component library for building Ethereum wallets and dapps.
-- TanStack Query: A powerful data-fetching library for React that provides hooks for fetching, caching, and synchronizing data in your application.
 
 ### Appendix
 
