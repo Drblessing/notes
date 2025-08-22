@@ -2,78 +2,44 @@
 
 Notes from the wild wild west of technology. Yee-haw!
 
-## Table of Contents
+## My Setup
 
-- [Installation](#installation)
-- [Setup](#setup)
-- [Public Goods Infrastructure](#public-goods-infrastructure)
-- [Subscriptions](#subscriptions)
-- [AI](#ai)
-- [Submodules](#submodules)
-- [References](#references)
-- [PGP Keys](#pgp-keys)
-
-## Installation
-
-On a new machine, run the following command:
-
-```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/danielblessing/notes/main/shell/github_notes_install.sh)"
-```
-
-## Setup
-
-| Category             | Name                                      |
-| -------------------- | ----------------------------------------- |
-| IDE                  | VSCode                                    |
-| OS                   | MacOS with UTM Virtualization for Windows |
-| Browser              | Chrome                                    |
-| Processor            | AArch64 (ARM64)                           |
-| Computer             | MacBook Pro (M1)                          |
-| VPN                  | Cloudflare WARP                           |
-| Email                | Gmail                                     |
-| Storage              | iCloud                                    |
-| Package Manager      | Homebrew                                  |
-| Calendar             | iCalendar                                 |
-| Task Manager         | Apple Reminders                           |
-| Music                | Apple Music                               |
-| AdBlock              | uBlock Origin                             |
-| Programming Language | Python, JavaScript                        |
-| Web Framework        | React, Next.js                            |
-| Hosting              | Cloudflare                                |
+| Category        | Name                                      |
+| --------------- | ----------------------------------------- |
+| IDE             | VSCode                                    |
+| OS              | MacOS with UTM Virtualization for Windows |
+| Home server OS  | ubuntu-server                             |
+| Browser         | Safari, with uBlock Origin Lite           |
+| Computer        | MacBook Pro                               |
+| VPN             | Cloudflare WARP and Mullvad               |
+| Email           | iCloud Email                              |
+| Storage         | iCloud                                    |
+| Package Manager | Homebrew                                  |
+| Calendar        | iCalendar                                 |
+| Task Manager    | Apple Reminders                           |
+| Music           | Apple Music                               |
+| Hosting         | Cloudflare                                |
+| Website         | daniel-blessing.com                       |
 
 ## Public Goods Infrastructure
 
 | Name              | Description                           |
 | ----------------- | ------------------------------------- |
+| Bitcoin Node      | Freedom money                         |
+| Monero Node       | Anonymous Freedom money               |
+| Ethereum Node     | Decentralized computer                |
+| Tor Node          | Anonymous internet                    |
 | IPFS Node         | Distributed file storage and delivery |
-| Ethereum Node     | Decentralized smart contracts         |
-| Bitcoin Node      | Decentralized money                   |
-| Monero Node       | Anonymous decentralized money         |
-| Tor Node          | Anonymous decentralized internet      |
-| Lightning Node    | Decentralized payments                |
 | Public MCP server | Public AI chatbot                     |
-| Torrent Seeding   | Seeding 1TB of open source software   |
+| Lightning Node    | Decentralized payments                |
 
-## Subscriptions
+## My AI
 
-| Name           | Description                    |
-| -------------- | ------------------------------ |
-| Apple Music    | Music streaming service        |
-| ChatGPT Plus   | AI language model subscription |
-| iCloud         | Cloud storage service          |
-| Cloudflare     | Hosting and DDoS protection    |
-| Grok           | AI language model subscription |
-| Github Copilot | AI code assistant subscription |
-
-## AI
-
-| Name           | Description                     |
-| -------------- | ------------------------------- |
-| ChatGPT        | Conversational AI by OpenAI     |
-| Claude AI      | Conversational AI by Anthropic  |
-| Github Copilot | AI assistant built-in to VSCode |
-| ChatGPT Images | Image generation by OpenAI      |
+| Model   | Description                            |
+| ------- | -------------------------------------- |
+| ChatGPT | Conversational AI by OpenAI            |
+| Grok 4  | Conversational AI by xAI               |
+| Arya    | Uncensored conversational AI by Gab AI |
 
 ## References
 
@@ -89,15 +55,3 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/danielblessing/notes/mai
 | Mastering Ethereum                                            | Comprehensive guide to Ethereum by Andreas Antonopoulos and Gavin Wood                  |
 | Monero Whitepaper                                             | The Monero cryptocurrency whitepaper describing its privacy features                    |
 | New Directions in Cryptography                                | The seminal paper introducing public-key cryptography                                   |
-
-### PGP Keys
-
-| File                      | Description                                             |
-| ------------------------- | ------------------------------------------------------- |
-| pgp/satoshi_nakamoto.asc  | PGP key attributed to Satoshi Nakamoto                  |
-| pgp/vitalik_buterin.asc   | PGP public key for Vitalik Buterin (Ethereum founder)   |
-| pgp/charles_hoskinson.asc | PGP public key for Charles Hoskinson (Cardano founder)  |
-| pgp/daniel_blessing.asc   | PGP public key for Daniel Blessing                      |
-| pgp/moneroHases.asc       | PGP signed hashes for Monero releases                   |
-| pgp/darkfail.asc          | PGP public key for Dark.fail (darknet market directory) |
-| pgp/binaryFate.asc        | PGP public key for binaryFate (Monero core team member) |
