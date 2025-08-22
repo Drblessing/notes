@@ -1,5 +1,0 @@
-chromedriver
-chromium
-firefox
-github
-google-chrome

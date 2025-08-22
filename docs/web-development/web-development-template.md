@@ -83,7 +83,21 @@ npm i swr motion lodash three @react-three/fiber @react-three/drei lucide-react 
 npm i -d @types/three @tailwindcss/forms @tailwindcss/typography @tailwindcss/aspect-ratio
 ```
 
-Optional: Blockchain/Web3 packages:
+To enable the plugins in tailwind:
+
+```javascript
+// tailwind.config.js
+module.exports = {
+  // ...
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
+};
+```
+
+### Optional: Blockchain/Web3 packages:
 
 ```bash
 npm i viem wagmi @rainbow-me/rainbowkit @tanstack/react-query

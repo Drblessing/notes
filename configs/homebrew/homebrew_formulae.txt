@@ -1,14 +1,8 @@
-deno
 fastfetch
-ffmpeg
 gh
 git-lfs
-gnupg
 htop
 jupyterlab
 nvm
 python
-ssss
-telnet
 tree
-yarn
