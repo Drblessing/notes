@@ -2,39 +2,39 @@
 
 Last Updated: August 2025
 
-A collection of my notes, tests, and documentation for AI models, tools, and services.
-
 ## My Current Models
 
-| Description     | Model           |
-| --------------- | --------------- |
-| General chat    | GPT-5           |
-| Coding          | Claude Opus 4.1 |
-| Uncensored chat | Gab AI          |
+| Description     | Model            |
+| --------------- | ---------------- |
+| General chat    | Grok 4 / Gpt - 5 |
+| Coding          | GPT-5            |
+| Uncensored chat | Gab AI Arya      |
 
 ### Applications
 
-| Application    | Description                              |
-| -------------- | ---------------------------------------- |
-| ChatGPT        | Utilize OpenAI suite of models and tools |
-| GitHub Copilot | VSCode AI coding assistant               |
-| LM Studio      | Local AI utilization                     |
-| Gab AI         | Uncensored chat                          |
+| Application    | Description                |
+| -------------- | -------------------------- |
+| VSCode Copilot | VSCode AI coding assistant |
+| LM Studio      | Local AI utilization       |
 
 ### Subscriptions
 
 | Subscription |
 | ------------ |
 | ChatGPT Plus |
-| Copilot Pro  |
+| Grok Premium |
 | Gab AI       |
 
 ## Tips and Tricks
 
-Provide the AI models as much context as possible. Take pictures, screenshots, and provide detailed descriptions of your tasks. The more information you give, the better the AI will perform.
+Provide the models with as much data as possible:
 
-Use workspaces and projects to organize your tasks. Then, provide documents outlining the project, goals, and any relevant information. This helps the AI understand the context and requirements.
+- Screenshots
+- Examples
+- Links
+- PDFs
+- Code snippets
+- Goals
+- Context
 
-When using AI for coding, provide clear instructions and examples. If you want the AI to generate code, specify the programming language, libraries, and frameworks you want to use.
-
-When using AI for coding, try different models for different tasks. Some models excel at certain types of code generation or debugging, while others may struggle. Prompt the models to be diligent, not be lazy, and fill in implementation details where necessary.
+Break prompts into smaller, manageable parts. This helps the AI focus on each specific task and produce better results.
