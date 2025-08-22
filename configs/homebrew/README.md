@@ -2,7 +2,7 @@
 
 The best package manager for macOS.
 
-[Homebrew](https://brew.sh/) is a macOS package manager that makes it easy to install and update software. We install it first to then install everything else.
+[Homebrew](https://brew.sh/) is a macOS package manager that makes it easy to install and update software.
 
 Installation:
 

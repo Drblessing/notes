@@ -15,7 +15,6 @@ else
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-
 # Activate homebrew in the current shell
 echo "Activating Homebrew..."
 if [[ "$(uname -m)" == "arm64" ]]; then
@@ -33,7 +32,6 @@ if [ -z "$NOTES_REPO_PATH" ]; then
     echo "Using default notes repository path: $NOTES_REPO_PATH"
 fi
 
-
 # Install formulae if the file exists
 if [ -f "$NOTES_REPO_PATH/configs/homebrew/homebrew_formulae.txt" ]; then
     echo "Installing Homebrew formulae..."
@@ -42,22 +40,14 @@ else
     echo "Warning: Homebrew formulae file not found at $NOTES_REPO_PATH/configs/homebrew/homebrew_formulae.txt"
 fi
 
-# Install casks if the file exists
-if [ -f "$NOTES_REPO_PATH/configs/homebrew/homebrew_casks.txt" ]; then
-    echo "Installing Homebrew casks..."
-    xargs brew install --cask < "$NOTES_REPO_PATH/configs/homebrew/homebrew_casks.txt"
-else
-    echo "Warning: Homebrew casks file not found at $NOTES_REPO_PATH/configs/homebrew/homebrew_casks.txt"
-fi
-
-# Install git lfs
-echo "Setting up Git LFS..."
-git lfs install
-
-# Create ~/.nvm directory if it doesn't exist
-mkdir -p ~/.nvm
+# Cask installation intentionally removed: opting for manual app installs to reduce supply-chain risk
 
 # Cleanup 
 echo "Performing Homebrew cleanup..."
 brew cleanup
 brew doctor
+
+# Create ~/.nvm directory if it doesn't exist
+mkdir -p ~/.nvm
+
+echo "✅ Homebrew installation complete!"

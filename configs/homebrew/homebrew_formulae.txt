@@ -1,8 +1,5 @@
 fastfetch
-gh
-git-lfs
 htop
-jupyterlab
 nvm
 python
 tree
