@@ -21,6 +21,8 @@ python3-pip
 python3-venv
 software-properties-common
 gh
+dbus-user-session
+
 
 # System monitoring 
 htop
