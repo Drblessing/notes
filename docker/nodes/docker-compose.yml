@@ -26,7 +26,7 @@ services:
         max-size: '10m'
         max-file: '3'
     healthcheck:
-      test: ['CMD-SHELL', 'bitcoin-cli getblockchaininfo || exit 1']
+      test: ['CMD', 'bitcoin-cli', 'getblockchaininfo']
       interval: 30s
       timeout: 10s
       start_period: 600s
@@ -89,8 +89,14 @@ services:
     healthcheck:
       test:
         [
-          'CMD-SHELL',
-          'wget -qO- http://127.0.0.1:8545 >/dev/null 2>&1 || curl -fsS -H ''Content-Type: application/json'' --data ''{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'' http://127.0.0.1:8545 >/dev/null 2>&1 || exit 1',
+          'CMD',
+          'curl',
+          '-fsS',
+          '-H',
+          'Content-Type: application/json',
+          '--data',
+          '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}',
+          'http://127.0.0.1:8545',
         ]
       interval: 30s
       timeout: 10s
@@ -119,11 +125,7 @@ services:
       - --jwt-secrets=/jwt/jwt.hex
       - --checkpoint-sync-url=https://mainnet.checkpoint.sigp.io
     healthcheck:
-      test:
-        [
-          'CMD-SHELL',
-          'wget -qO- http://127.0.0.1:5052/eth/v1/node/health >/dev/null 2>&1 || curl -fsS http://127.0.0.1:5052/eth/v1/node/health >/dev/null 2>&1 || exit 1',
-        ]
+      test: ['CMD', 'curl', '-fsS', 'http://127.0.0.1:5052/eth/v1/node/health']
       interval: 30s
       timeout: 10s
       retries: 20
