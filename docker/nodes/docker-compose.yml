@@ -117,6 +117,7 @@ services:
       - --datadir=/data
       - --execution-endpoint=http://reth:8551
       - --jwt-secrets=/jwt/jwt.hex
+      - --checkpoint-sync-url=https://mainnet.checkpoint.sigp.io
     healthcheck:
       test:
         [
