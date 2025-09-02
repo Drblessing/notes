@@ -2,6 +2,19 @@
 
 My lightweight docker compose for running public goods infrastructure!
 
+## Ethereum
+
+### Storage
+
+```bash
+sudo mkdir -p /drive1/ethereum
+sudo mkdir -p /drive1/ethereum/reth /drive1/ethereum/lighthouse
+sudo chown -R $USER:$USER /drive1/ethereum
+sudo chmod -R 700 /drive1/ethereum
+openssl rand -hex 32 | sudo tee /drive1/ethereum/jwt.hex >/dev/null
+sudo chmod 600 /drive1/ethereum/jwt.hex
+```
+
 ## Monero
 
 ### Storage
