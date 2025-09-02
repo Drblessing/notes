@@ -56,7 +56,10 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
-
+  snowflake:
+    image: thetorproject/snowflake-proxy:latest
+    container_name: snowflake
+    restart: unless-stopped
 volumes:
   bitcoin-data:
     driver: local
