@@ -29,6 +29,7 @@ services:
       test: ['CMD-SHELL', 'bitcoin-cli getblockchaininfo || exit 1']
       interval: 30s
       timeout: 10s
+      start_period: 600s
       retries: 20
 
   monero:
@@ -55,9 +56,10 @@ services:
       test: ['CMD', 'curl', '-f', 'http://localhost:18089/get_height']
       interval: 30s
       timeout: 10s
+      start_period: 600s
       retries: 3
   snowflake:
-    image: thetorproject/snowflake-proxy:latest
+    image: thetorproject/snowflake-proxy:v2.11.0
     container_name: snowflake
     restart: unless-stopped
 
