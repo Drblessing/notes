@@ -26,7 +26,13 @@ services:
         max-size: '10m'
         max-file: '3'
     healthcheck:
-      test: ['CMD', 'bitcoin-cli', 'getblockchaininfo']
+      test:
+        [
+          'CMD',
+          'bitcoin-cli',
+          '-datadir=/home/bitcoin/.bitcoin',
+          'getblockchaininfo',
+        ]
       interval: 30s
       timeout: 10s
       start_period: 600s
