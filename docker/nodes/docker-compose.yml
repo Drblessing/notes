@@ -92,22 +92,6 @@ services:
       - --authrpc.port=8551
       - --authrpc.jwtsecret=/data/jwt.hex
       - --port=30303
-    healthcheck:
-      test:
-        [
-          'CMD',
-          'curl',
-          '-fsS',
-          '-H',
-          'Content-Type: application/json',
-          '--data',
-          '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}',
-          'http://127.0.0.1:8545',
-        ]
-      interval: 30s
-      timeout: 10s
-      retries: 20
-      start_period: 60s
 
   lighthouse:
     image: sigp/lighthouse:v7.1.0 # tip: pin a specific version later
@@ -130,12 +114,6 @@ services:
       - --execution-endpoint=http://reth:8551
       - --jwt-secrets=/jwt/jwt.hex
       - --checkpoint-sync-url=https://mainnet.checkpoint.sigp.io
-    healthcheck:
-      test: ['CMD', 'curl', '-fsS', 'http://127.0.0.1:5052/eth/v1/node/health']
-      interval: 30s
-      timeout: 10s
-      retries: 20
-      start_period: 60s
 
 volumes:
   bitcoin-data:
