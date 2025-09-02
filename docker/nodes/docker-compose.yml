@@ -1,0 +1,74 @@
+services:
+  bitcoin:
+    image: bitcoin/bitcoin:29.0
+    container_name: bitcoin
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 1m
+    ports:
+      - '8333:8333'
+      - '8332:8332'
+    volumes:
+      - bitcoin-data:/home/bitcoin/.bitcoin
+    command:
+      - -server=1
+      - -printtoconsole=1
+      - -prune=0 # full node
+      - -natpmp=1 # auto-port map on NAT-PMP/PCP routers
+      - -rpcbind=0.0.0.0
+      - -rpcallowip=172.16.0.0/12 # Docker's internal network range
+      - -rpcallowip=127.0.0.1 # Localhost
+      - -rpcallowip=192.168.0.0/16 # Most home networks
+      - -rpcallowip=100.64.0.0/10 # Tailscale network range
+      - -rpcuser=${BITCOIN_RPC_USER:-bitcoinrpc}
+      - -rpcpassword=${BITCOIN_RPC_PASSWORD:?RPC password required}
+    logging:
+      driver: json-file
+      options:
+        max-size: '10m'
+        max-file: '3'
+    healthcheck:
+      test: ['CMD-SHELL', 'bitcoin-cli getblockchaininfo || exit 1']
+      interval: 30s
+      timeout: 10s
+      retries: 20
+
+  monero:
+    image: ghcr.io/rblaine95/monero:0.18.4.2-1
+    container_name: monero
+    restart: unless-stopped
+    volumes:
+      - monero-data:/opt/bitmonero
+    ports:
+      - '18080:18080'
+      - '18089:18089'
+    command:
+      - --non-interactive
+      - --p2p-bind-ip=0.0.0.0
+      - --rpc-restricted-bind-ip=0.0.0.0
+      - --rpc-restricted-bind-port=18089
+      - --confirm-external-bind
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '10m'
+        max-file: '3'
+    healthcheck:
+      test: ['CMD', 'curl', '-f', 'http://localhost:18089/get_height']
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  bitcoin-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /drive2/bitcoin
+  monero-data:
+    driver: local
+    driver_opts:
+      type: none
+      device: /drive2/monero
+      o: bind
