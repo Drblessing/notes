@@ -34,12 +34,9 @@ sudo chown -R $USER:$USER /drive2/bitcoin
 sudo chmod -R 700 /drive2/bitcoin
 ```
 
-### Environment Variables
+### Cookie Authentication
 
-```bash
-export BITCOIN_RPC_USER=myuser
-export BITCOIN_RPC_PASSWORD=mypass
-```
+Bitcoin RPC uses cookie auth by default. The cookie is created at /drive2/bitcoin/.cookie (host) and /home/bitcoin/.bitcoin/.cookie (container).
 
 ### Status
 
@@ -54,7 +51,5 @@ docker exec bitcoin bitcoin-cli getblockcount
 ## Run
 
 ```bash
-export BITCOIN_RPC_USER=myuser
-export BITCOIN_RPC_PASSWORD=mypass
 docker compose up -d
 ```

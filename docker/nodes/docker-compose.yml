@@ -20,8 +20,6 @@ services:
       - -rpcallowip=127.0.0.1 # Localhost
       - -rpcallowip=192.168.0.0/16 # Most home networks
       - -rpcallowip=100.64.0.0/10 # Tailscale network range
-      - -rpcuser=${BITCOIN_RPC_USER:-bitcoinrpc}
-      - -rpcpassword=${BITCOIN_RPC_PASSWORD:?RPC password required}
     logging:
       driver: json-file
       options:
