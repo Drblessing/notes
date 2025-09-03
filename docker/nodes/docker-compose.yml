@@ -83,6 +83,7 @@ services:
     command:
       - node
       - --chain=mainnet
+      - --full
       - --datadir=/data
       - --http
       - --http.addr=0.0.0.0
