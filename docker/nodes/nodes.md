@@ -66,3 +66,7 @@ docker exec bitcoin bitcoin-cli getblockcount
 ```bash
 docker compose up -d
 ```
+
+#### TODO
+
+- Add Monero Dashboard to this
