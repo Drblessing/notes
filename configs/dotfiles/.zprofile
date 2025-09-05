@@ -9,7 +9,6 @@ alias notes="code ~/github/notes"
 alias c="clear"
 alias d="directory.sh"
 alias lg="lazygit.sh"
-alias n="newsboat"
 alias h="ssh home-server"
 
 # Homebrew
@@ -23,9 +22,6 @@ alias gsc="git stash clear" # Clear all stashes
 alias gsp="git stash pop" # Restore most recent stash
 alias gp="git pull" # git fetch && git merge
 alias gs="git switch" # Switch branches
-
-# Deno
-alias dr="deno run --allow-all"
 
 # Python
 alias s="source .venv/bin/activate" # Activate Python virtual environment
