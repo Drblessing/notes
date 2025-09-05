@@ -4,11 +4,11 @@ Last Updated: August 2025
 
 ## My Current Models
 
-| Description     | Model            |
-| --------------- | ---------------- |
-| General chat    | Grok 4 / Gpt - 5 |
-| Coding          | GPT-5            |
-| Uncensored chat | Gab AI Arya      |
+| Description     | Model        |
+| --------------- | ------------ |
+| General chat    | Grok 4 GPT-5 |
+| Coding          | GPT-5        |
+| Uncensored chat | Gab AI Arya  |
 
 ### Applications
 
@@ -24,6 +24,7 @@ Last Updated: August 2025
 | ChatGPT Plus |
 | Grok Premium |
 | Gab AI       |
+| Copilot Plus |
 
 ## Tips and Tricks
 
