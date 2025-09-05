@@ -1,4 +1,4 @@
-# Set the command prompt
+# Robot activated.
 PS1=" \w 🎛️  "
 
 # Aliases
@@ -25,8 +25,19 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export TZ=America/Detroit
 
-# These should already be installed
-# . "/home/drblessing/.deno/env"
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Python
+alias s="source .venv/bin/activate" # Activate Python virtual environment
+
+# nvm 
+export NVM_DIR="$HOME/.nvm"
+if [[ -n "$HOMEBREW_PREFIX" ]]; then
+  [[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ]] && . "$HOMEBREW_PREFIX/opt/nvm/nvm.sh"
+  [[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ]] && . "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm"
+fi
+
+# Disable telemetry
+export HOMEBREW_NO_ANALYTICS=1
+export NEXT_TELEMETRY_DISABLED=1
+
+# nvm
+alias nup="nvm install --lts && nvm alias default node && echo '✅ Node.js updated to latest LTS version!'"
