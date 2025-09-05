@@ -1,8 +1,8 @@
+# Github bin Path
+export PATH="$HOME/github/notes/bin:$PATH"
+
 # Foundry
 export PATH="$PATH:~/.foundry/bin"
-
-# Path
-export PATH="$HOME/github/notes/bin:$PATH"
 
 # Aliases
 alias notes="code ~/github/notes" 
@@ -12,7 +12,7 @@ alias lg="lazygit.sh"
 alias h="ssh home-server"
 
 # Homebrew
-alias b="brew update && brew upgrade && brew cleanup"
+alias b="brew update && brew upgrade && brew cleanup && echo '✅ Homebrew packages updated!'"
 
 # Git
 alias g="git fetch && git status"
@@ -25,3 +25,6 @@ alias gs="git switch" # Switch branches
 
 # Python
 alias s="source .venv/bin/activate" # Activate Python virtual environment
+
+# nvm
+alias nup="nvm install --lts && nvm alias default node && echo '✅ Node.js updated to latest LTS version!'"
