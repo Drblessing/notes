@@ -4,10 +4,6 @@ My philosophy is to use the keyboard as much as possible, and have the most freq
 
 ## My Shortcuts
 
-Git Sync: Cmd+G
-
-Git Refresh: Cmd+R
-
 Show File Explorer: Cmd+1
 
 Show Source Control: Cmd+2
@@ -25,3 +21,5 @@ Toggle Terminal: Cmd + J
 Focus Editor Left/Right: Cmd + Shift + [ or ]
 
 Collapse Folders in Sidebar: Cmd + M
+
+Show status bar: Cmd + K -> S
