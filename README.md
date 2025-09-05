@@ -4,34 +4,31 @@ Notes from the wild wild west of technology. Yee-haw!
 
 ## My Setup
 
-| Category        | Name                                      |
-| --------------- | ----------------------------------------- |
-| IDE             | VSCode                                    |
-| OS              | MacOS with UTM Virtualization for Windows |
-| Home server OS  | ubuntu-server                             |
-| Browser         | Safari, with uBlock Origin Lite           |
-| Computer        | MacBook Pro                               |
-| VPN             | Cloudflare WARP and Mullvad               |
-| Email           | iCloud Email                              |
-| Storage         | iCloud                                    |
-| Package Manager | Homebrew                                  |
-| Calendar        | iCalendar                                 |
-| Task Manager    | Apple Reminders                           |
-| Music           | Apple Music                               |
-| Hosting         | Cloudflare                                |
-| Website         | daniel-blessing.com                       |
+| Category        | Name                                            |
+| --------------- | ----------------------------------------------- |
+| IDE             | VSCode                                          |
+| OS              | MacOS with UTM Virtualization for Windows       |
+| Home server OS  | ubuntu-server                                   |
+| Browser         | Safari with uBlock Origin Lite                  |
+| Computer        | MacBook Pro                                     |
+| VPN             | Cloudflare WARP / Mullvad / Apple Private Relay |
+| Email           | iCloud Email                                    |
+| Storage         | iCloud                                          |
+| Package Manager | Homebrew                                        |
+| Calendar        | iCalendar                                       |
+| Task Manager    | Apple Reminders                                 |
+| Music           | Apple Music                                     |
+| Hosting         | Cloudflare                                      |
+| Website         | daniel-blessing.com                             |
 
 ## Public Goods Infrastructure
 
-| Name              | Description                           |
-| ----------------- | ------------------------------------- |
-| Bitcoin Node      | Freedom money                         |
-| Monero Node       | Anonymous Freedom money               |
-| Ethereum Node     | Decentralized computer                |
-| Tor Node          | Anonymous internet                    |
-| IPFS Node         | Distributed file storage and delivery |
-| Public MCP server | Public AI chatbot                     |
-| Lightning Node    | Decentralized payments                |
+| Name            | Description            |
+| --------------- | ---------------------- |
+| Bitcoin Node    | Free money             |
+| Monero Node     | Anonymous free money   |
+| Ethereum Node   | Decentralized computer |
+| Snowflake Proxy | Censorship resistance  |
 
 ## My AI
 
