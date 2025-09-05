@@ -1,11 +1,10 @@
-# Python
 __pycache__/
-.pytest_cache/
-.ipynb_checkpoints
+.benv/
+.DS_Store
 .env
+.ipynb_checkpoints
+.pytest_cache/
 .venv
+*.log
 env/
 venv/
-*.log
-.DS_Store
-.benv/
