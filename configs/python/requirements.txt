@@ -1,25 +1,25 @@
-requests
+black
+fastapi
 jupyter
-openai
-pydoll-python
-python-dotenv
 matplotlib
 numpy
+openai
 pandas
-pyperclip
-black
-pytest
-rich
-termcolor
 pillow
+pydoll-python
 pyfiglet
-# web3
-# scikit-learn
+pyperclip
+pytest
+python-dotenv
+requests
+rich
+seaborn
+selenium
+termcolor
 # beautifulsoup4
-# seaborn
-# sqlalchemy
-# fastapi
-# selenium
-# trio
 # pytest-trio
+# scikit-learn
+# sqlalchemy
+# trio
+# web3
 # webcolors

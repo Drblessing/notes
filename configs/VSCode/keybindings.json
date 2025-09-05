@@ -127,10 +127,6 @@
     "when": "workbench.scm.active"
   },
   {
-    "key": "cmd+g",
-    "command": "git.sync"
-  },
-  {
     "key": "cmd+d",
     "command": "-notebook.addFindMatchToSelection",
     "when": "config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
@@ -139,10 +135,6 @@
     "key": "cmd+d",
     "command": "-editor.action.addSelectionToNextFindMatch",
     "when": "editorFocus"
-  },
-  {
-    "key": "cmd+r",
-    "command": "git.refresh"
   },
   {
     "key": "cmd+r",

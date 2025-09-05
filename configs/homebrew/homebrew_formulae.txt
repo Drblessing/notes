@@ -1,5 +1,13 @@
 fastfetch
+ffmpeg
+flac
+gh
+gnutls
 htop
 nvm
 python
+python
+sqlite
 tree
+webp
+xz

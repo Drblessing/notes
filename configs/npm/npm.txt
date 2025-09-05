@@ -15,3 +15,6 @@ npm list
 
 # Create a new Next.js app
 npx create-next-app@latest my-next-app
+
+# Install a package globally
+npm install -g <package-name>
