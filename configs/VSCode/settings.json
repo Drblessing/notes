@@ -202,7 +202,11 @@
   "git.detectSubmodules": false,
   "git.ignoredRepositories": ["**/subrepositories/**"],
   "git.autoRepositoryDetection": false,
-  "workbench.preferredLightColorTheme": "Default Light+",
-  "workbench.statusBar.visible": false,
-  "github.copilot.selectedCompletionModel": ""
+  "workbench.preferredLightColorTheme": "Monokai Pro Light (Filter Sun)",
+  "github.copilot.selectedCompletionModel": "",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "window.confirmSaveUntitledWorkspace": false,
+  "makefile.configureOnOpen": true,
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": false
 }
