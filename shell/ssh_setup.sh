@@ -7,9 +7,9 @@ SSHD="${HOME}/github/notes/configs/.ssh/sshd_config"
 PUBKEY=${HOME}/github/notes/configs/.ssh/id_ed25519.pub
 
 # Set variable for ubuntu server
-UBUNTU_SERVER="192.168.7.186"
-UBUNTU_USER="drblessing"
-MY_KEY='ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEC5MkTKE9wILXHapVAxM3avUXRm/wLy8211WzZJZ2uy daniel@macbook-pro (Jun 2025)'
+UBUNTU_SERVER="<fill-in-your-server-ip>"
+UBUNTU_USER="<fill-in-your-username>"
+MY_KEY='<fill-in-your-public-key>'
 
 
 # Make sure the .ssh directory exists

@@ -12,6 +12,8 @@ openssh-server
 ufw
 
 # Development tools
+dbus-user-session
+gh
 git-lfs
 nodejs
 npm
@@ -20,14 +22,12 @@ python3
 python3-pip
 python3-venv
 software-properties-common
-gh
-dbus-user-session
 
 
 # System monitoring 
-htop
 cockpit 
 cockpit-pcp
+htop
 pcp
 python3-pcp
 
@@ -36,10 +36,10 @@ ffmpeg
 tree
 
 # Networking tools
-net-tools
 iproute2
+net-tools
 speedtest-cli
 
 # Fun
-sl
 cowsay
+sl
