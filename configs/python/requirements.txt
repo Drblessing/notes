@@ -13,6 +13,8 @@ pytest
 python-dotenv
 requests
 rich
+scikit-learn
+scipy
 seaborn
 selenium
 termcolor
