@@ -4,12 +4,12 @@ numpy
 opencv-python
 pandas
 pillow
-pillow
 requests
-scikit-learn
 scikit-learn
 scipy
 seaborn
+tensorflow
 torch 
 torchvision
 tqdm
+xgboost
