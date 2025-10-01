@@ -6,6 +6,13 @@ import numpy as np
 
 
 def create_diabetes_dataset(output_path: Path = Path("data/diabetes.csv")):
+    """Create and save the diabetes dataset from sklearn to a CSV file."""
+
+    # Check if the dataset already exists
+    if output_path.exists():
+        print(f"Dataset already exists at {output_path}. Skipping creation.")
+        return
+
     # Load the diabetes dataset from sklearn
     diabetes = datasets.load_diabetes(as_frame=True)
     df = diabetes["frame"]
