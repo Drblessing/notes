@@ -14,7 +14,7 @@ def create_csv(df: pd.DataFrame, filename: str) -> None:
     """
 
     # Current directory
-    current_dir = Path(__file__).parent
+    current_dir = Path.cwd()
 
     # Data directory
     data_dir = current_dir.parent / "data"
@@ -24,3 +24,37 @@ def create_csv(df: pd.DataFrame, filename: str) -> None:
 
     # Full path to the .csv file
     file_path = data_dir / filename
+
+    # Save the DataFrame as a .csv file
+    df.to_csv(file_path)
+
+    print(f"DataFrame saved as {file_path}")
+
+
+# Load a .csv file into a DataFrame
+def load_csv(filename: str) -> pd.DataFrame:
+    """
+    Load a .csv file into a DataFrame. The .csv file should be in the 'data' directory.
+
+    Args:
+        filename (str): The name of the .csv file to load.
+    Returns:
+        pd.DataFrame: The loaded DataFrame.
+    """
+
+    # Current directory
+    current_dir = Path.cwd()
+
+    # Data directory
+    data_dir = current_dir.parent / "data"
+
+    # Full path to the .csv file
+    file_path = data_dir / filename
+
+    # Load the .csv file into a DataFrame
+    df = pd.read_csv(file_path)
+
+    print(f"DataFrame loaded from {file_path}")
+    print(df.head())
+
+    return df
