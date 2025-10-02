@@ -1,5 +1,5 @@
 # Giddy up, partner!
-# PS1=" %1~ 🐴 " Disabled to debug vscode integrated terminal
+PS1=" %1~ ❤️  "
 
 # Homebrew
 if [[ "$(uname -m)" == "arm64" ]]; then
