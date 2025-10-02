@@ -8,9 +8,8 @@ import numpy as np
 def create_diabetes_dataset(output_path: Path = Path("data/diabetes.csv")):
     """Create and save the diabetes dataset from sklearn to a CSV file."""
 
-    # Current file path
-    cur_file = Path(__file__)
-    cwd = cur_file.parent
+    # Current file directory
+    cwd = Path.cwd()
     output_path = cwd.parent / output_path
 
     # Check if the dataset already exists
@@ -28,16 +27,16 @@ def create_diabetes_dataset(output_path: Path = Path("data/diabetes.csv")):
     cur_file = Path(__file__)
     DATA_ROOT = cur_file.parent.parent / "data"
     DATA_ROOT.mkdir(parents=True, exist_ok=True)
-    df.to_csv(output_path, index=True)
+    df.to_csv(output_path)
     print(f"Diabetes dataset saved to {output_path}")
 
 
 def load_diabetes_dataset(input_path: Path = Path("data/diabetes.csv")) -> pd.DataFrame:
     """Load the diabetes dataset from a CSV file into a pandas DataFrame."""
 
-    # Current file path
-    cur_file = Path(__file__)
-    cwd = cur_file.parent
+    # Current file directory
+    cwd = Path.cwd()
+    output_path = cwd.parent / output_path
     input_path = cwd.parent / input_path
     if not input_path.exists():
         raise FileNotFoundError(
