@@ -47,6 +47,7 @@ def load_diabetes_dataset(input_path: Path = Path("data/diabetes.csv")) -> pd.Da
 
 
 if __name__ == "__main__":
-    create_diabetes_dataset()
-    df = load_diabetes_dataset()
-    print(df.head())
+    # create_diabetes_dataset()
+    # df = load_diabetes_dataset()
+    # print(df.head())
+    pass
