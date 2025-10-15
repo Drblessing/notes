@@ -1,0 +1,27 @@
+black
+fastapi
+jupyter
+matplotlib
+numpy
+openai
+pandas
+pillow
+pydoll-python
+pyfiglet
+pyperclip
+pytest
+python-dotenv
+requests
+rich
+scikit-learn
+scipy
+seaborn
+selenium
+termcolor
+# beautifulsoup4
+# pytest-trio
+# scikit-learn
+# sqlalchemy
+# trio
+# web3
+# webcolors
