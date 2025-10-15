@@ -2,6 +2,7 @@ black
 fastapi
 jupyter
 matplotlib
+mpmath
 numpy
 openai
 pandas
