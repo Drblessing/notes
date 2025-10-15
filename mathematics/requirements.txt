@@ -6,6 +6,7 @@ numpy
 openai
 pandas
 pillow
+primesieve
 pydoll-python
 pyfiglet
 pyperclip
@@ -18,10 +19,3 @@ scipy
 seaborn
 selenium
 termcolor
-# beautifulsoup4
-# pytest-trio
-# scikit-learn
-# sqlalchemy
-# trio
-# web3
-# webcolors
