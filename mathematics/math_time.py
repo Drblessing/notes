@@ -13,4 +13,6 @@ print(f"The one millionth prime is {nth_prime(1_000_000):,}")
 print(f"The one billionth prime is {nth_prime(1_000_000_000):,}")
 print(f"The one trillionth prime is {nth_prime(1_000_000_000_000):,}")
 end = time.time()
-print(f"Execution time: {end - start:.2f} seconds")
+print(
+    f"Execution time: {end - start:.2f} seconds"
+)  # Average execution time: ~ 9 minutes
