@@ -132,7 +132,7 @@ Blockchain/Web3 (optional):
 
 ### Appendix
 
-Resources that don't have a place right now, but I want to explore in the future
+Additional libraries to explore, when I have time:
 
 - Lenis: A smooth scrolling library for React.
 - MagicUI: A cutting-edge fun UI library for React.
