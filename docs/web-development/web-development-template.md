@@ -6,7 +6,6 @@
 
 ```bash
 npm create cloudflare@latest -- . --framework=next
-
 # create-next-app questions
 # Would you like to use TypeScript? Yes
 # Would you like to use ESLint? No
