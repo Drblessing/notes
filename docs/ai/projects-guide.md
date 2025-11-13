@@ -2,7 +2,7 @@
 
 ## Overview
 
-ChatGPT Projects allow you to create persistent workspaces with uploaded files, custom instructions, and context that persists across conversations. Here's how to structure your project directories for optimal results.
+ChatGPT Projects allow you to create persistent workspaces with uploaded files, custom instructions, and context that persists across conversations. Here's how to structure your project directories for optimal results, enjoy!
 
 ## Documents to Include:
 
