@@ -24,3 +24,4 @@ export NEXT_TELEMETRY_DISABLED=1
 
 # Vscode "code" command
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$HOME/.local/bin:$PATH"
