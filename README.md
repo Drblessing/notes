@@ -30,14 +30,6 @@ Notes from the wild wild west of technology. Yee-haw!
 | Ethereum Node   | Decentralized computer |
 | Snowflake Proxy | Censorship resistance  |
 
-## My AI
-
-| Model   | Description                            |
-| ------- | -------------------------------------- |
-| ChatGPT | Conversational AI by OpenAI            |
-| Grok 4  | Conversational AI by xAI               |
-| Arya    | Uncensored conversational AI by Gab AI |
-
 ## References
 
 | References                                                    | Description                                                                             |
