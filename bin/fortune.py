@@ -17,7 +17,7 @@ def cowboy_fortune():
     art = pyfiglet.figlet_format("Howdy!", font="slant")
     print(art)
     print("Your cowboy fortune for the day:")
-    print(f"    \__{random.choice(fortunes)}__/")
+    print(f"{random.choice(fortunes)}")
 
 
 if __name__ == "__main__":
