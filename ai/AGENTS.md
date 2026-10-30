@@ -10,7 +10,7 @@ The new paradigm of software engineering is spec-driven development, guided by h
 
 The repository overview lives in README.md. The goal we're pursuing lives in /specs. Always read these files, and never edit them yourselves. Ask before editing.
 
-Put a summary of your work, commands, and notes in /agents.
+If you have something important to note, put it in agents/AGENTS-README.md. Don't do it for every turn or thought you have. 
 
 ## Avoid Overengineering
 
