@@ -8,6 +8,10 @@ Use the software design philosophy found in A Philosophy of Software Design by J
 
 The new paradigm of software engineering is spec-driven development, guided by harness engineering. We create a collection of specifications, quality checks, and workflow guidelines. We instruct the agents on what we're looking for and give them guidance on the best way to achieve it. The focus remains on the goal of turning ideas into outcomes: making useful software.
 
+The repository overview lives in README.md. The goal we're pursuing lives in /specs. Always read these files, and never edit them yourselves. Ask before editing.
+
+Put a summary of your work, commands, and notes in /agents.
+
 ## Avoid Overengineering
 
 - Do not overcomplicate solutions or add unnecessary features. Focus on delivering the simplest, most effective solution that meets the requirements.
